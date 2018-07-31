@@ -89,7 +89,7 @@ only consider peirodic 1D:
 \end_layout
 
 \begin_layout Standard
-thermal term:
+thermal term(integrate k first):
 \end_layout
 
 \begin_layout Standard
@@ -100,42 +100,78 @@ thermal term:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=-\frac{L}{2\pi}\int_{-\infty}^{\infty}dk_{z}\int_{0}^{t}d\tau e^{i\omega_{0}\tau}e^{-i\omega_{k_{z}}\tau}\frac{2\mu^{2}\omega_{\vec{k}s}}{\epsilon_{0}V}\frac{1}{4}(e^{i\vec{k}\cdot(\vec{r}_{i}+\vec{r}_{j}-2\vec{o}_{\vec{k}s})}+e^{-i\vec{k}\cdot(\vec{r}_{i}+\vec{r}_{j}-2\vec{o}_{\vec{k}s})}+e^{i\vec{k}\cdot(\vec{r}_{i}-\vec{r}_{j})}+e^{-i\vec{k}\cdot(\vec{r}_{i}-\vec{r}_{j})})\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t-\tau)$
+\begin_inset Formula $=-\frac{L}{2\pi}\frac{1}{2}\int_{-\infty}^{\infty}dk_{z}\int_{0}^{t}d\tau e^{i\omega_{0}\tau}e^{-i\omega_{k_{z}}\tau}\frac{2\mu^{2}\omega_{\vec{k}s}}{\epsilon_{0}V}\frac{1}{4}(e^{i\vec{k}\cdot(\vec{r}_{i}+\vec{r}_{j}-2\vec{o}_{\vec{k}s})}+e^{-i\vec{k}\cdot(\vec{r}_{i}+\vec{r}_{j}-2\vec{o}_{\vec{k}s})}+e^{i\vec{k}\cdot(\vec{r}_{i}-\vec{r}_{j})}+e^{-i\vec{k}\cdot(\vec{r}_{i}-\vec{r}_{j})})\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t-\tau)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=-\frac{L}{2\pi}\int_{-\infty}^{\infty}dk_{z}\int_{0}^{t}d\tau e^{i\omega_{0}\tau}\frac{2\mu^{2}\omega_{\vec{k}s}}{\epsilon_{0}V}\frac{1}{4}(e^{i\vec{k}\cdot(\vec{r}_{i}+\vec{r}_{j}-2\vec{o}_{\vec{k}s}-c\tau)}+e^{-i\vec{k}\cdot(\vec{r}_{i}+\vec{r}_{j}-2\vec{o}_{\vec{k}s}+c\tau)}+e^{i\vec{k}\cdot(\vec{r}_{i}-\vec{r}_{j}-c\tau)}+e^{-i\vec{k}\cdot(\vec{r}_{i}-\vec{r}_{j}+c\tau)})\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t-\tau)$
+\begin_inset Formula $=-\frac{L}{2\pi}\frac{1}{2}\int_{-\infty}^{\infty}dk_{z}\int_{0}^{t}d\tau e^{i\omega_{0}\tau}\frac{2\mu^{2}\omega_{\vec{k}s}}{\epsilon_{0}V}\frac{1}{4}(e^{i\vec{k}\cdot(\vec{r}_{i}+\vec{r}_{j}-2\vec{o}_{\vec{k}s}-c\tau)}+e^{-i\vec{k}\cdot(\vec{r}_{i}+\vec{r}_{j}-2\vec{o}_{\vec{k}s}+c\tau)}+e^{i\vec{k}\cdot(\vec{r}_{i}-\vec{r}_{j}-c\tau)}+e^{-i\vec{k}\cdot(\vec{r}_{i}-\vec{r}_{j}+c\tau)})\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t-\tau)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=-\frac{L}{2\pi}\int_{0}^{t}d\tau e^{i\omega_{0}\tau}\frac{\mu^{2}\omega_{\vec{k}s}}{\epsilon_{0}V}\pi(\delta(\vec{r}_{i}+\vec{r}_{j}-2\vec{o}_{\vec{k}s}-c\tau)+\delta(\vec{r}_{i}+\vec{r}_{j}-2\vec{o}_{\vec{k}s}+c\tau)+\delta(\vec{r}_{i}-\vec{r}_{j}-c\tau)+\delta(\vec{r}_{i}-\vec{r}_{j}+c\tau))\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t-\tau)$
+\begin_inset Formula $=-\frac{L}{2\pi}\frac{1}{2}\int_{0}^{t}d\tau e^{i\omega_{0}\tau}\frac{\mu^{2}\omega_{\vec{k}s}}{\epsilon_{0}V}\pi(\delta(\vec{r}_{i}+\vec{r}_{j}-2\vec{o}_{\vec{k}s}-c\tau)+\delta(\vec{r}_{i}+\vec{r}_{j}-2\vec{o}_{\vec{k}s}+c\tau)+\delta(\vec{r}_{i}-\vec{r}_{j}-c\tau)+\delta(\vec{r}_{i}-\vec{r}_{j}+c\tau))\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t-\tau)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=-\frac{L}{2\pi}\frac{\mu^{2}\omega_{\vec{k}s}}{\epsilon_{0}V}\pi(\int_{0}^{t}d\tau e^{i\omega_{0}\tau}(\delta(\vec{r}_{i}+\vec{r}_{j}-2\vec{o}_{\vec{k}s}-c\tau)+\delta(\vec{r}_{i}+\vec{r}_{j}-2\vec{o}_{\vec{k}s}+c\tau))+\int_{0}^{t}d\tau e^{i\omega_{0}\tau}(\delta(\vec{r}_{i}-\vec{r}_{j}-c\tau)+\delta(\vec{r}_{i}-\vec{r}_{j}+c\tau)))\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t-\tau)$
+\begin_inset Formula $=-\frac{L}{2\pi}\frac{1}{2}\frac{\mu^{2}\omega_{\vec{k}s}}{\epsilon_{0}V}\pi(\int_{0}^{t}d\tau e^{i\omega_{0}\tau}(\delta(\vec{r}_{i}+\vec{r}_{j}-2\vec{o}_{\vec{k}s}-c\tau)+\delta(\vec{r}_{i}+\vec{r}_{j}-2\vec{o}_{\vec{k}s}+c\tau))+\int_{0}^{t}d\tau e^{i\omega_{0}\tau}(\delta(\vec{r}_{i}-\vec{r}_{j}-c\tau)+\delta(\vec{r}_{i}-\vec{r}_{j}+c\tau)))\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t-\tau)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=-\frac{L}{2\pi}\frac{\mu^{2}\omega_{\vec{k}s}}{\epsilon_{0}V}\pi(e^{ik_{0}|\vec{r}_{i}+\vec{r}_{j}-2\vec{o}_{\vec{k}s}|}/c+e^{ik_{0}r_{ij}}/c)\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t-\tau)$
+\begin_inset Formula $=-\frac{L}{2\pi}\frac{1}{2}\frac{\mu^{2}\omega_{\vec{k}s}}{\epsilon_{0}V}\pi(e^{ik_{0}|\vec{r}_{i}+\vec{r}_{j}-2\vec{o}_{\vec{k}s}|}/c+e^{ik_{0}r_{ij}}/c)\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t-\tau)$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+when
+\begin_inset Formula $o=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=-\frac{L}{2\pi}\frac{1}{2}\frac{\mu^{2}\omega_{\vec{k}s}}{\epsilon_{0}V}\pi(\cos r_{j}e^{ik_{0}r_{i}})\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t-\tau)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+thermal term(integrate t first):
 \end_layout
 
 \begin_layout Standard
 squeezing term:
+\end_layout
+
+\begin_layout Standard
+small cavity -> cavity quantization coskr (decay rate 
+\begin_inset Formula $coskr_{i}coskr_{j}$
+\end_inset
+
+, so translational symmetry)
+\end_layout
+
+\begin_layout Standard
+large cavity-> running wave quantization e^ikr (diff decay rate, translational
+ symmetry)
+\end_layout
+
+\begin_layout Standard
+small ring resonator??
 \end_layout
 
 \end_body
