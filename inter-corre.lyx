@@ -5,6 +5,10 @@
 \save_transient_properties true
 \origin unavailable
 \textclass article
+\begin_preamble
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth}
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -27,6 +31,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -159,7 +164,7 @@ sum ij we have
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=-\frac{L}{2\pi}cos(k_{0}r_{ij})e^{2ik_{0}R}2\pi\frac{\omega_{0}^{2}\mu^{2}}{\epsilon_{0}LS\hbar c^{2}k_{0z}}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)$
+\begin_inset Formula $=-\frac{1}{2}cos(k_{0}r_{ij})e^{2ik_{0}R}\frac{2\omega_{0}^{2}\mu^{2}}{\epsilon_{0}S\hbar c^{2}k_{0z}}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)$
 \end_inset
 
 
@@ -213,7 +218,102 @@ completely mix
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $ $
+\begin_inset Formula $1,$
+\end_inset
+
+
+\begin_inset Formula $\gamma'_{ij}=cos(k_{0}r_{ij})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+dephasing: 
+\end_layout
+
+\begin_layout Standard
+single atom: dephasing rate is constant, indepent of the atom's location
+\end_layout
+
+\begin_layout Standard
+two atoms: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename depahsing cos(i-j).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+concurrence:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename concur cos(i-j).png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+but in fact, we can reach the NOON state because some states are actually
+ dark state:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename stateflow.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where
+\begin_inset Formula $\gamma_{\pm}=\gamma(1\pm\gamma_{12}),\,\gamma'_{\pm}=\gamma_{1d}[\gamma'_{12}\pm\frac{1}{2}(\gamma'_{11}+\gamma'_{22})]$
+\end_inset
+
+.
+ For some positions, ++ or – are dark state.
+ Since it is impossible to make them precisely 0, we need to consider the
+ short time range and 
+\begin_inset Formula $\gamma'_{\pm}\approx\gamma{}_{\pm}\approx0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+eg: r1=0, r2=
+\begin_inset Formula $0.999\lambda_{0z}$
+\end_inset
+
+ r=1.5, t=30, state is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{array}{cccc}
+0.44 & 0 & 0 & -0.48\\
+0 & 0.008 & 0.003 & 0\\
+0 & 0.003 & 0.008 & 0\\
+-0.48 & 0 & 0 & 0.54
+\end{array}$
+\end_inset
+
+(almost NOON state)
+\end_layout
+
+\begin_layout Standard
+2, 
+\begin_inset Formula $\gamma'_{ij}=cos(k_{0}r_{i})\cos(k_{0}r_{j})$
 \end_inset
 
 
