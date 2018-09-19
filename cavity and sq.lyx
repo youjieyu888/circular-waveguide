@@ -335,59 +335,282 @@ identical cavity:(
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\dot{\rho}=\sum_{ij}\gamma(1+N)(-\rho a_{i}^{\dagger}a_{j}-a_{i}^{\dagger}a_{j}\rho+2a_{i}\rho a_{j}^{\dagger})+\gamma N(-\rho a_{i}a_{j}^{\dagger}-a_{i}a_{j}^{\dagger}\rho+2a_{i}^{\dagger}\rho a_{j})+\gamma M(\rho a_{i}a_{j}+a_{i}a_{j}\rho-2a_{i}\rho a_{j}+h.c.)$
+\begin_inset Formula $\dot{\rho}=\sum_{ij}\gamma\cosh^{2}r(-\rho a_{i}^{\dagger}a_{j}-a_{i}^{\dagger}a_{j}\rho+2a_{i}\rho a_{j}^{\dagger})+\gamma\sinh^{2}r(-\rho a_{i}a_{j}^{\dagger}-a_{i}a_{j}^{\dagger}\rho+2a_{i}^{\dagger}\rho a_{j})+\gamma\cosh r\sinh r(e^{i\theta}\rho a_{i}a_{j}+e^{i\theta}a_{i}a_{j}\rho-e^{i\theta}2a_{i}\rho a_{j}+h.c.)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\rho=\frac{1}{\sqrt{N+1}}(\frac{\sqrt{N}}{\sqrt{N+1}})^{m+n}\frac{\sqrt{(2m)!(2n)!}}{2^{m+n}n!m!}|2n,2n\rangle\langle2m,2m|$
+Bogoliubov transf:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\,S_{i}=exp(\eta^{\star}a_{i}^{2}-\eta a_{i}^{\dagger2})$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $a_{1}=a,\,a_{2}=b,\,S=exp(\eta^{\star}ab-\eta a^{\dagger}b^{\dagger})$
+\begin_inset Formula $A_{i}=S_{i}^{+}a_{i}S_{i}=\cosh(r)a_{i}-e^{-i\theta}\sinh(r)a_{i}^{\dagger}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{i}^{+}=S_{i}^{+}a_{i}^{+}S_{i}=\cosh(r)a_{i}^{+}-e^{i\theta}\sinh(r)a_{i}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $A=S^{+}aS=\cosh(r)a-e^{i\theta}\sinh(r)b^{\dagger}$
+master equation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dot{\rho}=\sum_{ij}\gamma[-\rho(\cosh ra_{i}^{\dagger}-e^{i\theta}\sinh ra_{i})(\cosh ra_{j}-e^{-i\theta}\sinh ra_{j}^{\dagger})-(\cosh ra_{i}^{\dagger}-e^{i\theta}\sinh ra_{i})(\cosh ra_{j}-e^{-i\theta}\sinh ra_{j}^{\dagger})\rho+2(\cosh ra_{j}-e^{-i\theta}\sinh ra_{j}^{\dagger})\rho(\cosh ra_{i}^{\dagger}-e^{i\theta}\sinh ra_{i})]$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $A^{+}=S^{+}a^{+}S=\cosh(r)a^{+}-e^{-i\theta}\sinh(r)b$
+\begin_inset Formula $\dot{\rho}=\sum_{ij}\gamma[-\rho A_{i}^{\dagger}A_{j}-A_{i}^{\dagger}A_{j}\rho+2A_{j}\rho A_{i}^{\dagger}]$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $B=S^{+}bS=\cosh(r)b-e^{i\theta}\sinh(r)a^{\dagger}$
+\begin_inset Formula $S_{1}S_{2}\dot{\rho S_{1}^{+}S_{2}^{+}}=\sum_{ij}\gamma[-S_{1}S_{2}\rho S_{1}^{+}S_{2}^{+}S_{1}S_{2}A_{i}^{\dagger}S_{1}^{+}S_{2}^{+}S_{1}S_{2}A_{j}S_{1}^{+}S_{2}^{+}-S_{1}S_{2}A_{i}^{\dagger}S_{1}^{+}S_{2}^{+}S_{1}S_{2}A_{j}S_{1}^{+}S_{2}^{+}S_{1}S_{2}\rho S_{1}^{+}S_{2}^{+}+2S_{1}S_{2}A_{j}S_{1}^{+}S_{2}^{+}S_{1}S_{2}\rho S_{1}^{+}S_{2}^{+}S_{1}S_{2}A_{i}^{\dagger}S_{1}^{+}S_{2}^{+}]$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $B^{+}=S^{+}b^{+}S=\cosh(r)b^{+}-e^{-i\theta}\sinh(r)a$
+\begin_inset Formula $S_{1}S_{2}\dot{\rho S_{1}^{+}S_{2}^{+}}=\sum_{ij}\gamma[-S_{1}S_{2}\rho S_{1}^{+}S_{2}^{+}a_{i}^{\dagger}a_{j}-a_{i}^{\dagger}a_{j}S_{1}S_{2}\rho S_{1}^{+}S_{2}^{+}+2a_{j}S_{1}S_{2}\rho S_{1}^{+}S_{2}^{+}a_{i}^{\dagger}]$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+def 
+\begin_inset Formula $\rho_{s}=S_{1}S_{2}\dot{\rho S_{1}^{+}S_{2}^{+}}$
+\end_inset
+
+, superscript l/r means acting on bra/ket 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dot{\rho_{s}}=\sum_{ij}\gamma[-\rho_{s}a_{i}^{\dagger}a_{j}-a_{i}^{\dagger}a_{j}\rho_{s}+2a_{j}\rho_{s}a_{i}^{\dagger}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dot{\rho_{s}}=\sum_{ij}\gamma[-\rho_{s}a_{i}^{l\dagger}a_{j}^{l}-a_{i}^{r\dagger}a_{j}^{r}\rho_{s}+2a_{j}^{r}\rho_{s}a_{i}^{l\dagger}]=L(\rho_{s})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+solve eigen equation 
+\begin_inset Formula $L(\rho_{s})=\beta\rho_{s}$
+\end_inset
+
+, and the solution to the master equation is 
+\begin_inset Formula $\rho_{s}e^{\beta t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho_{s}=|0,0\rangle\langle0,0|$
+\end_inset
+
+ is a solution with 
+\begin_inset Formula $\beta=0$
+\end_inset
+
+, the corresponding uncoupled SMSV
+\end_layout
+
+\begin_layout Standard
+Only 
+\begin_inset Formula $\beta=0$
+\end_inset
+
+ gives the physically valid steady state:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K_{+i}=a_{i}^{r\dagger}a_{i}^{l},\,K_{-i}=a_{i}^{r}a_{i}^{l\dagger},\,K_{0,i}=(n_{i}^{r}+n_{i}^{l})/2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $[K_{0},K_{\pm}]=\pm K_{\pm},[K_{-},K_{+}]=2K_{0},\,K_{+i}^{\dagger}=K_{-i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L(\rho_{s})=L_{11}(\rho_{s})+L_{22}(\rho_{s})+L_{12}(\rho_{s})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L_{11}(\rho_{s})+L_{22}(\rho_{s})$
+\end_inset
+
+ can be diagnolized with similarity transformation 
+\begin_inset Formula $U=e^{-K_{-1}-K_{-2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U^{-1}(a^{r\dagger},a^{l},a^{r},a^{l\dagger})U=(a^{r\dagger}+a^{l\dagger},a^{r}+a^{l},0,0)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+if
+\begin_inset Formula $U=e^{-K_{+1}-K_{+2}}$
+\end_inset
+
+, 
+\begin_inset Formula $U^{-1}(a^{r\dagger},a^{l},a^{r},a^{l\dagger})U=(0,0,a^{r}+a^{l},a^{r\dagger}+a^{r\dagger})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L_{12}=-a_{i}^{l\dagger}a_{j}^{l}-a_{i}^{r\dagger}a_{j}^{r}+2a_{j}^{r}a_{i}^{l\dagger}+(i\leftrightarrow j)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+try transf: 
+\begin_inset Formula $U^{-1}a^{l}U=ca^{l}+sa^{r}$
+\end_inset
+
+ , 
 \begin_inset Formula $ $
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U^{-1}\begin{array}{c}
+a_{i}^{l}\\
+a_{i}^{r}\\
+a_{i}^{l\dagger}\\
+a_{i}^{r\dagger}
+\end{array}U=\begin{array}{c}
+ca_{i}^{l}+sa_{j}^{r}\\
+s^{\star}a_{i}^{l}+ca_{j}^{r}\\
+c^{\star}a_{i}^{l\dagger}+s^{\star}a_{j}^{r\dagger}\\
+sa_{i}^{l\dagger}+c^{\star}a_{j}^{r\dagger}
+\end{array}$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L_{12}\rightarrow-(c^{\star}a_{i}^{l\dagger}+s^{\star}a_{j}^{r\dagger})(ca_{j}^{l}+sa_{i}^{r})-(sa_{i}^{l\dagger}+c^{\star}a_{j}^{r\dagger})(s^{\star}a_{j}^{l}+ca_{i}^{r})+2(s^{\star}a_{j}^{l}+ca_{i}^{r})(c^{\star}a_{i}^{l\dagger}+s^{\star}a_{j}^{r\dagger})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=-|c^{2}|a_{i}^{l\dagger}a_{j}^{l}-s^{\star}ca_{j}^{r\dagger}a_{j}^{l}-c^{\star}sa_{i}^{l\dagger}a_{i}^{r}-|s^{2}|a_{j}^{r\dagger}a_{i}^{r}-|s^{2}|a_{i}^{l\dagger}a_{j}^{l}-c^{\star}s^{\star}a_{j}^{r\dagger}a_{j}^{l}-sca_{i}^{l\dagger}a_{i}^{r}-|c^{2}|a_{j}^{r\dagger}a_{i}^{r}+2s^{\star}c^{\star}a_{j}^{l}a_{i}^{l\dagger}+2|c^{2}|a_{i}^{r}a_{i}^{l\dagger}+2s^{\star2}a_{j}^{l}a_{j}^{r\dagger}+2s^{\star}ca_{i}^{r}a_{j}^{r\dagger}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we need to get rid of ij terms:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{i}^{l\dagger}a_{j}^{l}:\,-|c^{2}|-|s^{2}|+2s^{\star}c^{\star}=0$
+\end_inset
+
+ sln s=c=1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{j}^{r\dagger}a_{i}^{r}:\,-|s^{2}|-|c^{2}|+2s^{\star}c=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{j}^{r\dagger}a_{j}^{l}:\,-s^{\star}c$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U=exp(\xi a_{i}^{l}a_{j}^{+r}-\xi^{\star}a_{i}^{l+}a_{j}^{r})$
+\end_inset
+
+, 
+\begin_inset Formula $U^{\dagger}=U^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+But they don't commute
+\end_layout
+
+\begin_layout Standard
+try:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U^{-1}\begin{array}{c}
+a_{i}^{l}\\
+a_{i}^{r}\\
+a_{i}^{l\dagger}\\
+a_{i}^{r\dagger}
+\end{array}U=\begin{array}{c}
+ca_{i}^{l}+sa_{j}^{r}\\
+s^{\star}a_{i}^{l}+ca_{j}^{r}\\
+c^{\star}a_{i}^{l\dagger}+s^{\star}a_{j}^{r\dagger}\\
+sa_{i}^{l\dagger}+c^{\star}a_{j}^{r\dagger}
+\end{array}$
+\end_inset
+
+, 
 \end_layout
 
 \begin_layout Section*
@@ -406,7 +629,7 @@ non-identical cavity:(
 \end_layout
 
 \begin_layout Standard
-for TMSV: 
+try1: for TMSV: 
 \begin_inset Formula $\frac{1}{cosh^{2}r}\Sigma_{mn}e^{i(n-m)\phi}\tanh^{m+n}r|nn\rangle\langle mm|$
 \end_inset
 
