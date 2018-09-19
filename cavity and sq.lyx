@@ -414,6 +414,101 @@ def
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula $\begin{array}{c}
+L_{1}\\
+L_{2}
+\end{array}=\begin{array}{c}
+a_{1}-a_{2}\\
+a_{1}+a_{2}
+\end{array}/\sqrt{2}$
+\end_inset
+
+,
+\begin_inset Formula $\begin{array}{c}
+a_{1}\\
+a_{2}
+\end{array}=\begin{array}{c}
+(L_{1}+L_{2})/\sqrt{2}\\
+(L_{2}-L_{1})/\sqrt{2}
+\end{array}$
+\end_inset
+
+, 
+\begin_inset Formula $[L_{i},L_{j}^{\dagger}]=\delta_{ij}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dot{\rho_{s}}=\gamma[-\frac{1}{2}\rho_{s}(L_{1}^{\dagger}+L_{2}^{\dagger})(L_{2}+L_{1})-\frac{1}{2}(L_{1}^{\dagger}+L_{2}^{\dagger})(L_{1}+L_{2})\rho_{s}+(L_{2}+L_{1})\rho_{s}(L_{1}^{\dagger}+L_{2}^{\dagger})]$
+\end_inset
+
+(1,1)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $+\gamma[-\frac{1}{2}\rho_{s}(L_{1}^{\dagger}+L_{2}^{\dagger})(L_{2}-L_{1})-\frac{1}{2}(L_{1}^{\dagger}+L_{2}^{\dagger})(L_{2}-L_{1})\rho_{s}+(L_{2}-L_{1})\rho_{s}(L_{1}^{\dagger}+L_{2}^{\dagger})]$
+\end_inset
+
+(1,2)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $+\gamma[-\frac{1}{2}\rho_{s}(-L_{1}^{\dagger}+L_{2}^{\dagger})(L_{2}+L_{1})-\frac{1}{2}(-L_{1}^{\dagger}+L_{2}^{\dagger})(L_{1}+L_{2})\rho_{s}+(L_{2}+L_{1})\rho_{s}(-L_{1}^{\dagger}+L_{2}^{\dagger})]$
+\end_inset
+
+(2,1)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $+\gamma[-\frac{1}{2}\rho_{s}(-L_{1}^{\dagger}+L_{2}^{\dagger})(L_{2}-L_{1})-\frac{1}{2}(-L_{1}^{\dagger}+L_{2}^{\dagger})(L_{2}-L_{1})\rho_{s}+(L_{2}-L_{1})\rho_{s}(-L_{1}^{\dagger}+L_{2}^{\dagger})]$
+\end_inset
+
+(2,2)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\gamma[-2\rho_{s}L_{2}^{\dagger}L_{2}-2L_{2}^{\dagger}L_{2}\rho_{s}+4L_{2}\rho_{s}L_{2}^{\dagger}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U=e^{a_{1}^{\dagger}a_{2}},\,U^{-1}a_{1}U=a_{1}+a_{2}=\sqrt{2}L_{2},\,a_{1}=\sqrt{2}UL_{2}U^{-1},\,UL_{2}^{\dagger}U^{-1}=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+def 
+\begin_inset Formula $L_{2}|n_{L}\rangle=|n-1_{L}\rangle,$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dot{\rho_{s}}=\sum_{ij}\gamma[-\frac{1}{2}\rho_{s}(L_{i}^{\dagger}L_{j}+L_{j}^{\dagger}L_{j}-L_{i}^{\dagger}L_{i}-L_{j}^{\dagger}L_{i})-\frac{1}{2}(L_{i}^{\dagger}L_{j}+L_{j}^{\dagger}L_{j}-L_{i}^{\dagger}L_{i}-L_{j}^{\dagger}L_{i})\rho_{s}+L_{j}\rho_{s}L_{i}^{\dagger}-L_{i}\rho_{s}L_{i}^{\dagger}+L_{j}\rho_{s}L_{j}^{\dagger}-L_{i}\rho_{s}L_{j}^{\dagger}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dot{\rho_{s}}=\sum_{ij}\gamma[-\frac{1}{2}\rho_{s}(L_{i}^{\dagger}L_{j}+L_{j}^{\dagger}L_{j}-L_{i}^{\dagger}L_{i}-L_{j}^{\dagger}L_{i})-\frac{1}{2}(L_{i}^{\dagger}L_{j}+L_{j}^{\dagger}L_{j}-L_{i}^{\dagger}L_{i}-L_{j}^{\dagger}L_{i})\rho_{s}+L_{j}\rho_{s}L_{i}^{\dagger}-L_{i}\rho_{s}L_{i}^{\dagger}+L_{j}\rho_{s}L_{j}^{\dagger}-L_{i}\rho_{s}L_{j}^{\dagger}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $\dot{\rho_{s}}=\sum_{ij}\gamma[-\rho_{s}a_{i}^{l\dagger}a_{j}^{l}-a_{i}^{r\dagger}a_{j}^{r}\rho_{s}+2a_{j}^{r}\rho_{s}a_{i}^{l\dagger}]=L(\rho_{s})$
 \end_inset
 
@@ -613,6 +708,13 @@ sa_{i}^{l\dagger}+c^{\star}a_{j}^{r\dagger}
 , 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula $\dot{\rho_{s}}=\sum_{ij}\gamma[-\rho_{s}a_{i}^{l\dagger}a_{j}^{l}-a_{i}^{r\dagger}a_{j}^{r}\rho_{s}+2a_{j}^{r}\rho_{s}a_{i}^{l\dagger}]=$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 non-identical cavity:(
 \begin_inset Formula $2\omega_{0}=\omega_{1}+\omega_{2}$
@@ -790,6 +892,170 @@ third term:
 
 \begin_layout Standard
 \begin_inset Formula $=e^{i(n-m)\phi}\tanh^{m+n}rM\{(e^{i\phi}m+ne^{-i\phi})\tanh^{-1}r+[e^{i\phi}(n+1)+(m+1)e^{-i\phi}]\tanh r+(1+N)[-(2m+2n)]+N[-2(m+n+2)]\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+not a sln??
+\end_layout
+
+\begin_layout Standard
+try2:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dot{\rho}=\sum_{i}\gamma(1+N)(-\rho a_{i}^{\dagger}a_{i}-a_{i}^{\dagger}a_{i}\rho+2a_{i}\rho a_{i}^{\dagger})+\gamma N(-\rho a_{i}a_{i}^{\dagger}-a_{i}a_{i}^{\dagger}\rho+2a_{i}^{\dagger}\rho a_{i})+\sum_{i\ne j}\gamma M(e^{i\theta}\rho a_{i}a_{j}+a_{i}a_{j}\rho-2a_{i}\rho a_{j}+h.c.)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Bogoliubov transf:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\,S=exp(\eta^{\star}a_{i}a_{j}-\eta a_{i}^{\dagger}a_{j}^{\dagger})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{i}=S^{+}a_{i}S=\cosh(r)a_{i}-e^{-i\theta}\sinh(r)a_{j}^{\dagger}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{i}^{+}=S^{+}a_{i}^{+}S=\cosh(r)a_{i}^{+}-e^{i\theta}\sinh(r)a_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+master equation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dot{\rho}=\sum_{i\ne j}\gamma[-\rho(\cosh ra_{i}^{\dagger}-e^{i\theta}\sinh ra_{j})(\cosh ra_{i}-e^{-i\theta}\sinh ra_{j}^{\dagger})-(\cosh ra_{i}^{\dagger}-e^{i\theta}\sinh ra_{j})(\cosh ra_{i}-e^{-i\theta}\sinh ra_{j}^{\dagger})\rho+2(\cosh ra_{i}-e^{-i\theta}\sinh ra_{j}^{\dagger})\rho(\cosh ra_{i}^{\dagger}-e^{i\theta}\sinh ra_{j})]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dot{\rho}=\sum_{i}\gamma[-\rho A_{i}^{\dagger}A_{i}-A_{i}^{\dagger}A_{i}\rho+2A_{i}\rho A_{i}^{\dagger}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S\dot{\rho}S^{\dagger}=\sum_{i}\gamma[-S\rho S^{\dagger}SA_{i}^{\dagger}S^{\dagger}SA_{i}S^{\dagger}-SA_{i}^{\dagger}S^{\dagger}SA_{i}S^{\dagger}S\rho S^{\dagger}+2SA_{i}S^{\dagger}S\rho S^{\dagger}SA_{i}^{\dagger}S^{\dagger}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dot{\rho}_{s}=\sum_{i}\gamma[-\rho_{s}SA_{i}^{\dagger}S^{\dagger}SA_{i}S^{\dagger}-SA_{i}^{\dagger}S^{\dagger}SA_{i}S^{\dagger}\rho_{s}+2SA_{i}S^{\dagger}\rho_{s}SA_{i}^{\dagger}S^{\dagger}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dot{\rho}_{s}=\sum_{i}\gamma[-\rho_{s}a_{i}^{l\dagger}a_{i}^{l}-a_{i}^{r\dagger}a_{i}^{r}\rho_{s}+2a_{i}^{r}\rho_{s}a_{i}^{l\dagger}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+solve eigen equation 
+\begin_inset Formula $L\rho_{s}=\beta\rho_{s}$
+\end_inset
+
+, and the solution to the master equation is 
+\begin_inset Formula $\rho_{s}e^{\beta t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Only 
+\begin_inset Formula $\beta=0$
+\end_inset
+
+ gives the physically valid steady state:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K_{+i}=a_{i}^{r\dagger}a_{i}^{l},\,K_{-i}=a_{i}^{r}a_{i}^{l\dagger},\,K_{0,i}=(n_{i}^{r}+n_{i}^{l})/2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $[K_{0},K_{\pm}]=\pm K_{\pm},[K_{-},K_{+}]=2K_{0},\,K_{+i}^{\dagger}=K_{-i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U=e^{-K_{-1}-K_{-2}}$
+\end_inset
+
+, 
+\begin_inset Formula $U^{-1}(a^{r\dagger},a^{l},a^{r},a^{l\dagger})U=(a^{r\dagger}+a^{l\dagger},a^{r}+a^{l},0,0)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U^{-1}LUU^{-1}\rho_{s}=\beta U^{-1}\rho_{s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U^{-1}LUU^{-1}\rho_{s}=\sum_{i}\gamma U^{-1}[-a_{i}^{l\dagger}a_{i}^{l}-a_{i}^{r\dagger}a_{i}^{r}+2a_{i}^{r}a_{i}^{l\dagger}]UU^{-1}\rho_{s}=\sum_{i}\gamma[-a_{i}^{l\dagger}(a_{i}^{l}+a_{i}^{r})-(a_{i}^{r\dagger}+a_{i}^{l\dagger})a_{i}^{r}+2a_{i}^{r}a_{i}^{l\dagger}]U^{-1}\rho_{s}=\sum_{i}\gamma[-a_{i}^{l\dagger}a_{i}^{l}-a_{i}^{r\dagger}a_{i}^{r}]U^{-1}\rho_{s}=\beta U^{-1}\rho_{s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+the only 
+\begin_inset Formula $\beta=0$
+\end_inset
+
+ sln is 
+\begin_inset Formula $U^{-1}\rho_{s}=|0,0\rangle\langle0,0|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho_{s}=e^{-K_{-1}-K_{-2}}|0,0\rangle\langle0,0|=|0,0\rangle\langle0,0|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho=S^{\dagger}|0,0\rangle\langle0,0|S=$
 \end_inset
 
 
