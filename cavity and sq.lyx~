@@ -316,6 +316,28 @@ try2: assuming diagnal is single mode squeezed vacuum and real matrix
 \end_layout
 
 \begin_layout Standard
+master equation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dot{\rho}=\gamma(1+N)(-\rho a^{\dagger}a-a^{\dagger}a\rho+2a\rho a^{\dagger})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $+\gamma N(-\rho aa^{\dagger}-aa^{\dagger}\rho+2a^{\dagger}\rho a)+\gamma M(\rho aa+aa\rho-2a\rho a+h.c.)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+steady state:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $\rho_{2m,2n}=\frac{1}{\sqrt{N+1}}(\frac{\sqrt{N}}{\sqrt{N+1}})^{m+n}\frac{\sqrt{(2m)!(2n)!}}{2^{m+n}n!m!}$
 \end_inset
 
@@ -483,10 +505,51 @@ a_{2}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $ $
+since 
+\begin_inset Formula $L_{2}^{\dagger}|0\rangle=\frac{1}{\sqrt{2}}(|01\rangle+|10\rangle)\equiv|1_{L}\rangle$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L_{2}^{\dagger}\frac{1}{\sqrt{2}}(|01\rangle+|10\rangle)=\frac{1}{2}(\sqrt{2}|02\rangle+2|11\rangle+\sqrt{2}|20\rangle)=\sqrt{2}[\frac{1}{2}(|02\rangle+\sqrt{2}|11\rangle+|20\rangle)]=\sqrt{2}|2_{L}\rangle$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L_{2}^{\dagger}\frac{1}{2}(|02\rangle+\sqrt{2}|11\rangle+|20\rangle)=\frac{\sqrt{3}}{2\sqrt{2}}(|03\rangle+\sqrt{3}|12\rangle+\sqrt{3}|21\rangle+|30\rangle)=\sqrt{3}[\frac{1}{2\sqrt{2}}(|03\rangle+\sqrt{3}|12\rangle+\sqrt{3}|21\rangle+|30\rangle)]=\sqrt{3}|3_{L}\rangle$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+...
+\end_layout
+
+\begin_layout Standard
+sln to 
+\begin_inset Formula $L\rho_{s}=0:$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho_{s}=e^{-L^{r}L^{l\dagger}}|0_{L}\rangle\langle0_{L}|=|0\rangle\langle0|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho_{s}=S_{1}^{+}S_{2}^{+}|0_{L}\rangle\langle0_{L}|S_{1}S_{2}$
+\end_inset
+
+, just like there is no interaction.
 \end_layout
 
 \begin_layout Standard
@@ -901,7 +964,14 @@ try2:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\dot{\rho}=\sum_{i}\gamma(1+N)(-\rho a_{i}^{\dagger}a_{i}-a_{i}^{\dagger}a_{i}\rho+2a_{i}\rho a_{i}^{\dagger})+\gamma N(-\rho a_{i}a_{i}^{\dagger}-a_{i}a_{i}^{\dagger}\rho+2a_{i}^{\dagger}\rho a_{i})+\sum_{i\ne j}\gamma M(e^{i\theta}\rho a_{i}a_{j}+a_{i}a_{j}\rho-2a_{i}\rho a_{j}+h.c.)$
+\begin_inset Formula $\dot{\rho}=\sum_{i}\gamma(1+N)(-\rho a_{i}^{\dagger}a_{i}-a_{i}^{\dagger}a_{i}\rho+2a_{i}\rho a_{i}^{\dagger})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $+\gamma N(-\rho a_{i}a_{i}^{\dagger}-a_{i}a_{i}^{\dagger}\rho+2a_{i}^{\dagger}\rho a_{i})+\sum_{i\ne j}\gamma M(e^{i\theta}\rho a_{i}a_{j}+a_{i}a_{j}\rho-2a_{i}\rho a_{j}+h.c.)$
 \end_inset
 
 
