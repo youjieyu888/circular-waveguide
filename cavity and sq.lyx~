@@ -327,7 +327,78 @@ master equation:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $+\gamma N(-\rho aa^{\dagger}-aa^{\dagger}\rho+2a^{\dagger}\rho a)+\gamma M(\rho aa+aa\rho-2a\rho a+h.c.)$
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $+\gamma N(-\rho aa^{\dagger}-aa^{\dagger}\rho+2a^{\dagger}\rho a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $+\gamma M(\rho aa+aa\rho-2a\rho a+h.c.)$
 \end_inset
 
 
@@ -357,7 +428,97 @@ identical cavity:(
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\dot{\rho}=\sum_{ij}\gamma\cosh^{2}r(-\rho a_{i}^{\dagger}a_{j}-a_{i}^{\dagger}a_{j}\rho+2a_{i}\rho a_{j}^{\dagger})+\gamma\sinh^{2}r(-\rho a_{i}a_{j}^{\dagger}-a_{i}a_{j}^{\dagger}\rho+2a_{i}^{\dagger}\rho a_{j})+\gamma\cosh r\sinh r(e^{i\theta}\rho a_{i}a_{j}+e^{i\theta}a_{i}a_{j}\rho-e^{i\theta}2a_{i}\rho a_{j}+h.c.)$
+k
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dot{\rho}=\sum_{ij}\gamma\cosh^{2}r(-\rho a_{i}^{\dagger}a_{j}-a_{i}^{\dagger}a_{j}\rho+2a_{i}\rho a_{j}^{\dagger})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $+\gamma\sinh^{2}r(-\rho a_{i}a_{j}^{\dagger}-a_{i}a_{j}^{\dagger}\rho+2a_{i}^{\dagger}\rho a_{j})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $+\gamma\cosh r\sinh r(e^{i\theta}\rho a_{i}a_{j}+e^{i\theta}a_{i}a_{j}\rho-e^{i\theta}2a_{i}\rho a_{j}+h.c.)$
 \end_inset
 
 
@@ -491,7 +652,7 @@ a_{2}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=\gamma[-2\rho_{s}L_{2}^{\dagger}L_{2}-2L_{2}^{\dagger}L_{2}\rho_{s}+4L_{2}\rho_{s}L_{2}^{\dagger}]$
+\begin_inset Formula $\dot{\rho_{s}}=\gamma[-2\rho_{s}L_{2}^{\dagger}L_{2}-2L_{2}^{\dagger}L_{2}\rho_{s}+4L_{2}\rho_{s}L_{2}^{\dagger}]$
 \end_inset
 
 
@@ -546,10 +707,21 @@ sln to
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\rho_{s}=S_{1}^{+}S_{2}^{+}|0_{L}\rangle\langle0_{L}|S_{1}S_{2}$
+\begin_inset Formula $\rho_{s}=|0\rangle\langle0|$
 \end_inset
 
-, just like there is no interaction.
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho=S_{1}^{+}S_{2}^{+}|0\rangle\langle0|S_{1}S_{2}$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+(just like there is no interaction.)
 \end_layout
 
 \begin_layout Standard
@@ -971,7 +1143,187 @@ try2:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $+\gamma N(-\rho a_{i}a_{i}^{\dagger}-a_{i}a_{i}^{\dagger}\rho+2a_{i}^{\dagger}\rho a_{i})+\sum_{i\ne j}\gamma M(e^{i\theta}\rho a_{i}a_{j}+a_{i}a_{j}\rho-2a_{i}\rho a_{j}+h.c.)$
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $+\gamma N(-\rho a_{i}a_{i}^{\dagger}-a_{i}a_{i}^{\dagger}\rho+2a_{i}^{\dagger}\rho a_{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $+\sum_{i\ne j}\gamma M(e^{i\theta}\rho a_{i}a_{j}+a_{i}a_{j}\rho-2a_{i}\rho a_{j}+h.c.)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which can be expressed as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dot{\rho}=\sum_{i\ne j}\gamma[-\rho(\cosh ra_{i}^{\dagger}-e^{i\theta}\sinh ra_{j})(\cosh ra_{i}-e^{-i\theta}\sinh ra_{j}^{\dagger})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $-(\cosh ra_{i}^{\dagger}-e^{i\theta}\sinh ra_{j})(\cosh ra_{i}-e^{-i\theta}\sinh ra_{j}^{\dagger})\rho$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $+2(\cosh ra_{i}-e^{-i\theta}\sinh ra_{j}^{\dagger})\rho(\cosh ra_{i}^{\dagger}-e^{i\theta}\sinh ra_{j})]$
 \end_inset
 
 
@@ -1007,13 +1359,6 @@ master equation:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\dot{\rho}=\sum_{i\ne j}\gamma[-\rho(\cosh ra_{i}^{\dagger}-e^{i\theta}\sinh ra_{j})(\cosh ra_{i}-e^{-i\theta}\sinh ra_{j}^{\dagger})-(\cosh ra_{i}^{\dagger}-e^{i\theta}\sinh ra_{j})(\cosh ra_{i}-e^{-i\theta}\sinh ra_{j}^{\dagger})\rho+2(\cosh ra_{i}-e^{-i\theta}\sinh ra_{j}^{\dagger})\rho(\cosh ra_{i}^{\dagger}-e^{i\theta}\sinh ra_{j})]$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula $\dot{\rho}=\sum_{i}\gamma[-\rho A_{i}^{\dagger}A_{i}-A_{i}^{\dagger}A_{i}\rho+2A_{i}\rho A_{i}^{\dagger}]$
 \end_inset
 
@@ -1021,21 +1366,15 @@ master equation:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $S\dot{\rho}S^{\dagger}=\sum_{i}\gamma[-S\rho S^{\dagger}SA_{i}^{\dagger}S^{\dagger}SA_{i}S^{\dagger}-SA_{i}^{\dagger}S^{\dagger}SA_{i}S^{\dagger}S\rho S^{\dagger}+2SA_{i}S^{\dagger}S\rho S^{\dagger}SA_{i}^{\dagger}S^{\dagger}]$
+define
+\begin_inset Formula $\rho_{s}=S\rho S^{\dagger}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\dot{\rho}_{s}=\sum_{i}\gamma[-\rho_{s}SA_{i}^{\dagger}S^{\dagger}SA_{i}S^{\dagger}-SA_{i}^{\dagger}S^{\dagger}SA_{i}S^{\dagger}\rho_{s}+2SA_{i}S^{\dagger}\rho_{s}SA_{i}^{\dagger}S^{\dagger}]$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\dot{\rho}_{s}=\sum_{i}\gamma[-\rho_{s}a_{i}^{l\dagger}a_{i}^{l}-a_{i}^{r\dagger}a_{i}^{r}\rho_{s}+2a_{i}^{r}\rho_{s}a_{i}^{l\dagger}]$
+\begin_inset Formula $\dot{\rho}_{s}=\sum_{i}\gamma[-\rho_{s}a_{i}^{l\dagger}a_{i}^{l}-a_{i}^{r\dagger}a_{i}^{r}\rho_{s}+2a_{i}^{r}\rho_{s}a_{i}^{l\dagger}]=L\rho_{s}$
 \end_inset
 
 
@@ -1043,22 +1382,10 @@ master equation:
 
 \begin_layout Standard
 solve eigen equation 
-\begin_inset Formula $L\rho_{s}=\beta\rho_{s}$
-\end_inset
-
-, and the solution to the master equation is 
-\begin_inset Formula $\rho_{s}e^{\beta t}$
+\begin_inset Formula $L\rho_{s}=0$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Only 
-\begin_inset Formula $\beta=0$
-\end_inset
-
- gives the physically valid steady state:
 \end_layout
 
 \begin_layout Standard
@@ -1120,7 +1447,22 @@ the only
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\rho=S^{\dagger}|0,0\rangle\langle0,0|S=$
+solve eigen equation 
+\begin_inset Formula $L\rho_{s}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho_{s}=|0,0\rangle\langle0,0|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho=S^{\dagger}|0,0\rangle\langle0,0|S=TMSV$
 \end_inset
 
 

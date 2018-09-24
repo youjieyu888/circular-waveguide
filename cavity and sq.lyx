@@ -518,7 +518,7 @@ k
 \end_inset
 
 
-\begin_inset Formula $+\gamma\cosh r\sinh r(e^{i\theta}\rho a_{i}a_{j}+e^{i\theta}a_{i}a_{j}\rho-e^{i\theta}2a_{i}\rho a_{j}+h.c.)$
+\begin_inset Formula $+\gamma\cosh r\sinh r(e^{i(\theta_{i}+\theta_{j})}\rho a_{i}a_{j}+e^{i\theta}a_{i}a_{j}\rho-e^{i\theta}2a_{i}\rho a_{j}+h.c.)$
 \end_inset
 
 
@@ -714,7 +714,7 @@ sln to
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\rho_{s}=S_{1}^{+}S_{2}^{+}|0_{L}\rangle\langle0_{L}|S_{1}S_{2}$
+\begin_inset Formula $\rho=S_{1}^{+}S_{2}^{+}|0\rangle\langle0|S_{1}S_{2}$
 \end_inset
 
 , 
