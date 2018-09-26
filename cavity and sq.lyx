@@ -586,7 +586,7 @@ def
 \begin_inset Formula $\rho_{s}=S_{1}S_{2}\dot{\rho S_{1}^{+}S_{2}^{+}}$
 \end_inset
 
-, superscript l/r means acting on bra/ket 
+, 
 \end_layout
 
 \begin_layout Standard
@@ -601,9 +601,9 @@ def
 L_{1}\\
 L_{2}
 \end{array}=\begin{array}{c}
-a_{1}-a_{2}\\
-a_{1}+a_{2}
-\end{array}/\sqrt{2}$
+\frac{1}{\sqrt{2}}(a_{1}-a_{2})\\
+\frac{1}{\sqrt{2}}(a_{1}+a_{2})
+\end{array}$
 \end_inset
 
 ,
@@ -652,7 +652,7 @@ a_{2}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\dot{\rho_{s}}=\gamma[-2\rho_{s}L_{2}^{\dagger}L_{2}-2L_{2}^{\dagger}L_{2}\rho_{s}+4L_{2}\rho_{s}L_{2}^{\dagger}]$
+\begin_inset Formula $\dot{\rho_{s}}=\gamma[-2\rho_{s}L_{2}^{\dagger}L_{2}-2L_{2}^{\dagger}L_{2}\rho_{s}+4L_{2}\rho_{s}L_{2}^{\dagger}]=\gamma[-2L_{2}^{r\dagger}L_{2}^{r}\rho_{s}-2L_{2}^{l\dagger}L_{2}^{l}\rho_{s}+4L_{2}^{l}L_{2}^{r\dagger}\rho_{s}]$
 \end_inset
 
 
@@ -697,6 +697,17 @@ sln to
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U=e^{-L^{r}L^{l\dagger}}$
+\end_inset
+
+, 
+\begin_inset Formula $U^{-1}(L_{2}^{r\dagger},L_{2}^{l},L_{2}^{l\dagger},L_{2}^{r})U=(L_{2}^{r\dagger}+L_{2}^{l\dagger},L_{2}^{l}+L^{r},L_{2}^{l\dagger},L_{2}^{r})$
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1222,7 +1233,7 @@ try2:
 \end_inset
 
 
-\begin_inset Formula $+\sum_{i\ne j}\gamma M(e^{i\theta}\rho a_{i}a_{j}+a_{i}a_{j}\rho-2a_{i}\rho a_{j}+h.c.)$
+\begin_inset Formula $+\sum_{i\ne j}\gamma M(e^{i\theta}\rho a_{i}a_{j}+e^{i\theta}a_{i}a_{j}\rho-2e^{i\theta}a_{i}\rho a_{j}+h.c.)$
 \end_inset
 
 
@@ -1233,7 +1244,7 @@ which can be expressed as:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\dot{\rho}=\sum_{i\ne j}\gamma[-\rho(\cosh ra_{i}^{\dagger}-e^{i\theta}\sinh ra_{j})(\cosh ra_{i}-e^{-i\theta}\sinh ra_{j}^{\dagger})$
+\begin_inset Formula $\dot{\rho}=\sum_{i\ne j}\frac{\gamma}{2}[-\rho(\cosh ra_{i}^{\dagger}-e^{i\theta}\sinh ra_{j})(\cosh ra_{i}-e^{-i\theta}\sinh ra_{j}^{\dagger})$
 \end_inset
 
 
@@ -1374,7 +1385,7 @@ define
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\dot{\rho}_{s}=\sum_{i}\gamma[-\rho_{s}a_{i}^{l\dagger}a_{i}^{l}-a_{i}^{r\dagger}a_{i}^{r}\rho_{s}+2a_{i}^{r}\rho_{s}a_{i}^{l\dagger}]=L\rho_{s}$
+\begin_inset Formula $\dot{\rho}_{s}=\sum_{i}\gamma[-\rho_{s}a_{i}^{\dagger}a_{i}-a_{i}^{\dagger}a_{i}\rho_{s}+2a_{i}\rho_{s}a_{i}^{\dagger}]\equiv\sum_{i}\gamma[-a_{i}^{l\dagger}a_{i}^{l}\rho_{s}-a_{i}^{r\dagger}a_{i}^{r}\rho_{s}+2a_{i}^{r}a_{i}^{l\dagger}\rho_{s}]\equiv L\rho_{s}$
 \end_inset
 
 
@@ -1383,6 +1394,13 @@ define
 \begin_layout Standard
 solve eigen equation 
 \begin_inset Formula $L\rho_{s}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $[a_{i}^{r},a_{j}^{r\dagger}]=\delta_{ij},\,[a_{i}^{l},a_{j}^{l\dagger}]=-\delta_{ij},\,[a_{i}^{l},a_{j}^{r\dagger}]=[a_{i}^{l},a_{j}^{r}]=[a_{i}^{l\dagger},a_{j}^{r}]=[a_{i}^{l\dagger},a_{j}^{r\dagger}]=0$
 \end_inset
 
 
@@ -1407,7 +1425,7 @@ solve eigen equation
 \end_inset
 
 , 
-\begin_inset Formula $U^{-1}(a^{r\dagger},a^{l},a^{r},a^{l\dagger})U=(a^{r\dagger}+a^{l\dagger},a^{r}+a^{l},0,0)$
+\begin_inset Formula $U^{-1}(a_{i}^{r\dagger},a_{i}^{l},a_{i}^{r},a_{i}^{l\dagger})U=(a_{i}^{r\dagger}+a_{i}^{l\dagger},a_{i}^{r}+a_{i}^{l},a_{i}^{r},a_{i}^{l\dagger})$
 \end_inset
 
  
@@ -1421,7 +1439,14 @@ solve eigen equation
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $U^{-1}LUU^{-1}\rho_{s}=\sum_{i}\gamma U^{-1}[-a_{i}^{l\dagger}a_{i}^{l}-a_{i}^{r\dagger}a_{i}^{r}+2a_{i}^{r}a_{i}^{l\dagger}]UU^{-1}\rho_{s}=\sum_{i}\gamma[-a_{i}^{l\dagger}(a_{i}^{l}+a_{i}^{r})-(a_{i}^{r\dagger}+a_{i}^{l\dagger})a_{i}^{r}+2a_{i}^{r}a_{i}^{l\dagger}]U^{-1}\rho_{s}=\sum_{i}\gamma[-a_{i}^{l\dagger}a_{i}^{l}-a_{i}^{r\dagger}a_{i}^{r}]U^{-1}\rho_{s}=\beta U^{-1}\rho_{s}$
+\begin_inset Formula $U^{-1}LUU^{-1}\rho_{s}=\sum_{i}\gamma U^{-1}[-a_{i}^{l\dagger}a_{i}^{l}-a_{i}^{r\dagger}a_{i}^{r}+2a_{i}^{r}a_{i}^{l\dagger}]UU^{-1}\rho_{s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\sum_{i}\gamma[-a_{i}^{l\dagger}(a_{i}^{l}+a_{i}^{r})-(a_{i}^{r\dagger}+a_{i}^{l\dagger})a_{i}^{r}+2a_{i}^{r}a_{i}^{l\dagger}]U^{-1}\rho_{s}=\sum_{i}\gamma[-a_{i}^{l\dagger}a_{i}^{l}-a_{i}^{r\dagger}a_{i}^{r}]U^{-1}\rho_{s}=\beta U^{-1}\rho_{s}$
 \end_inset
 
 
