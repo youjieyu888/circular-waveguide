@@ -52,7 +52,7 @@ where the coefficients are
 & \gamma'_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos[k_{0z}(r_{i}+r_{j})]
 \end{split}
 \end{equation}
-where $\gamma_{i}$ is the decay rate for transition $i$ in ordinary vacuum. For a single three level atom, we have $r_i=r_j$, for simplicity we set $R=r_i=0$ and $\gamma_1=\gamma_2=\gamma$. After applying the rotating wave approximation(RWA), the master equation Eq.\eqref{eq1} becomes
+where $\gamma_{i}$ is the decay rate for transition $i$ in ordinary vacuum. For a single three level atom, we have $r_i=r_j$, for simplicity we set $R=r_i=0$ and $\gamma_1=\gamma_2=\gamma$. After applying the rotating wave approximation(RWA), the master equation Eq.\eqref{eq1} becomes (see Appendix A)
 \begin{equation}
 \label{eq3}
 \begin{split}
@@ -218,11 +218,117 @@ RHS=\gamma U^{-1}[-L_2^{l\dagger}L_2^{l}-L_2^{r\dagger}L_2^{r}+2L_2^{r}L_2^{l\da
 \end{equation}
 The only solution to the steady state is $\rho_{s}=e^{-L^{r}L^{l\dagger}}|0_{L}\rangle\langle0_{L}|=|0\rangle\langle0|$ which yields $\rho=S_{1}^{+}S_{2}^{+}|0\rangle\langle0|S_{1}S_{2}$. Thus, when there are more than one cavities, as long as they are all resonant to the center frequency of the broadband squeezed vacuum, the cavity fields' steady states are single mode squeezed vacuum as if there is no interaction at all.
 
+\appendix
+
+\section{Appendix A: Derivation of master equation}
+The interaction Hamiltonian is:
+\begin{equation}
+\label{eqa0}\tag{A1}
+V(t)=-i\hbar \sum_{\vec{k}s}[D(t)a_{\vec{k}s}(t)-D^{+}(t)a^{\dagger}_{\vec{k}s}(t)],
+\end{equation}
+where
+\begin{equation}
+\label{eqa1}\tag{A2}
+\begin{gathered}
+ D(t)=\underset{i}{\sum}[\vec{\mu}_{i}\cdot\vec{u}_{\vec{k},s}(r_{i})S_{i}^{\dagger}(t)+\vec{\mu}^{*}_{i}\cdot\vec{u}_{\vec{k},s}(r_{i})S_{i}^{-}(t)]. 
+ \end{gathered}
+\end{equation}
+The reduced master equation of atoms in the reservoir is:
+\begin{equation}
+\label{eqa2}\tag{A3}
+\begin{split}
+\frac{d\rho^{S}}{dt}=&-\frac{1}{\hbar^{2}}\int_{0}^{t}d\tau Tr_{F}\{[V(t),[V(t-\tau),\rho^{S}(t-\tau)\rho^{F}\}\\
+=&-\frac{1}{\hbar^{2}}\int_{0}^{t}d\tau Tr_{F}\{V(t)V(t-\tau)\rho^{S}(t-\tau)\rho^{F}+\rho^{S}(t-\tau)\rho^{F}V(t-\tau)V(t)\\
+&-V(t)\rho^{S}(t-\tau)\rho^{F}V(t-\tau)-V(t-\tau)\rho^{S}(t-\tau)\rho^{F}V(t)\}.
+\end{split}
+\end{equation} 
+
+Here we just show how to deal with the first term in Eq.\eqref{eqa2}, the remaining terms can be calculated in the same way. For the first term, we have
+\begin{equation}
+\label{eqa3}\tag{A4}
+\begin{split}
+&-\frac{1}{\hbar^{2}}\int_{0}^{t}d\tau Tr_{F}\{V(t)V(t-\tau)\rho^{S}(t-\tau)\rho^{F}\}\\
+=&\int_{0}^{t}d\tau\underset{\vec{k}s,\vec{k}'s'}{\sum}\{D(t)D(t-\tau)Tr_{F}[\rho^{F}a_{ks}(t)a_{k's'}(t-\tau)]-D(t)D^{+}(t-\tau)Tr_{F}[\rho^{F}a_{ks}(t)a^{\dagger}_{k's'}(t-\tau)]\\
+&-D^{+}(t)D(t-\tau)Tr_{F}[\rho^{F}a^{\dagger}_{ks}(t)a_{k's'}(t-\tau)]+D^{+}(t)D^{+}(t-\tau)Tr_{F}[\rho^{F}a^{\dagger}_{ks}(t)a^{\dagger}_{k's'}(t-\tau)]\}\rho^{S}(t-\tau)\}.
+\end{split}
+\end{equation}
+Under the rotating wave approximation(RWA), we have
+\begin{equation}
+\label{eqa4}\tag{A5}
+\begin{split}
+&-\frac{1}{\hbar^{2}}\int_{0}^{t}d\tau Tr_{F}\{V(t)V(t-\tau)\rho^{S}(t-\tau)\rho^{F}\}\\
+=& \sum_{ij}\underset{\vec{k}s,\vec{k'}s'}{\sum}\int_{0}^{t}d\tau\{\vec{\mu}{}_{i}\cdot\vec{u}_{\vec{k}s}(r_{i})S_{i}^{+}e^{i\omega_{i}t}\vec{\mu}_{j}\cdot\vec{u}_{\vec{k}'s'}(r_{j})S_{j}^{+}e^{i\omega_{j}(t-\tau)}e^{-i(\omega_{\vec{k}s}+\omega_{\vec{k}'s'})t+i\omega_{\vec{k}'s'}\tau}[-\sinh(r)\cosh(r)\delta_{\vec{k}',2\vec{k}_{0}-\vec{k}}\delta_{ss'}]\\
+&-\vec{\mu}_{i}\cdot\vec{u}_{\vec{k}s}(r_{i})S_{i}^{+}e^{i\omega_{i}t}\vec{\mu}^{*}_{j}\cdot\vec{u}_{\vec{k}'s'}^{*}(r_{j})S_{j}^{-}e^{-i\omega_{j}(t-\tau)}e^{-i\omega_{\vec{k}'s'}\tau}\cosh^{2}r\delta_{\vec{k}\vec{k}'}\delta_{ss'}\\
+&-\vec{\mu}^{*}_{i}\cdot\vec{u}_{\vec{k}s}(r_{i})S_{i}^{-}e^{-i\omega_{i}t}\vec{\mu}_{j}\cdot\vec{u}^{*}_{\vec{k}'s'}(r_{j})S_{j}^{+}e^{i\omega_{j}(t-\tau)}e^{-i\omega_{\vec{k}'s'}\tau}\cosh^{2}r\delta_{\vec{k}\vec{k}'}\delta_{ss'}\\
+&-\vec{\mu}^{*}_{i}\cdot\vec{u}_{\vec{k}s}^{*}(r_{i})S_{i}^{-}e^{-i\omega_{i}t}\vec{\mu}_{j}\cdot\vec{u}_{\vec{k}'s'}(r_{j})S_{j}^{+}e^{i\omega_{j}(t-\tau)}e^{i\omega_{\vec{k}'s'}\tau}\sinh^{2}r\delta_{\vec{k}\vec{k}'}\delta_{ss'}\\
+&-\vec{\mu}_{i}\cdot\vec{u}^{*}_{\vec{k}s}(r_{i})S_{i}^{+}e^{i\omega_{i}t}\vec{\mu}^{*}_{j}\cdot\vec{u}_{\vec{k}'s'}(r_{j})S_{j}^{-}e^{-i\omega_{j}(t-\tau)}e^{i\omega_{\vec{k}'s'}\tau}\sinh^{2}r\delta_{\vec{k}\vec{k}'}\delta_{ss'}\\
+&+\vec{\mu}^{*}_{i}\cdot\vec{u}_{\vec{k}s}^{*}(r_{i})S_{i}^{-}e^{-i\omega_{i}t}\vec{\mu}^{*}_{j}\cdot\vec{u}^{*}_{\vec{k}'s'}(r_{j})S_{j}^{-}e^{-i\omega_{j}(t-\tau)}e^{i(\omega_{\vec{k}s}+\omega_{\vec{k}'s'})t-i\omega_{\vec{k}'s'}\tau}[-\sinh(r)\cosh(r)\delta_{\vec{k}',2\vec{k}_{0}-\vec{k}}\delta_{ss'}]\}\rho^{S}(t-\tau)
+\end{split}
+\end{equation}
+Here we just calculate the first and second term to show how to get the master equation Eq.\eqref{eq1}. For the second term, we have
+\begin{equation}
+\label{eqc2}\tag{A6}
+\begin{split}
+&-\underset{k_{z}}{\sum}\int_{0}^{t}d\tau\vec{\mu}_{i}\cdot\vec{u}_{\vec{k}s}(r_{i})S_{i}^{+}e^{i\omega_{i}t}\vec{\mu}_{j}^{*}\cdot\vec{u}_{\vec{k}'s'}^{*}(r_{j})S_{j}^{-}e^{-i\omega_{j}(t-\tau)}e^{-i\omega_{\vec{k}'s'}\tau}\cosh^{2}r\rho^{S}(t-\tau)\delta_{\vec{k}\vec{k}'}\delta_{ss'}\\
+=&-\frac{L}{2\pi}e^{i(\omega_{i}-\omega_{j})t}\int_{-\infty}^{\infty}dk_{z}\int_{0}^{t}d\tau e^{i\omega_{j}\tau}e^{-i\omega_{k_{z}}\tau}\frac{\omega_{k}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}e^{ik_{z}(r_{i}-r_{j})}\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t-\tau)\\
+\approx&-\frac{L}{2\pi}e^{i(\omega_{i}-\omega_{j})t}\int_{0}^{\infty}dk_{z}\int_{0}^{t}d\tau e^{i\omega_{j}\tau}e^{-i[\omega_{j}+c^{2}k_{jz}(k_{z}-k_{jz})/\omega_{j}]\tau}\frac{\omega_{k}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}[e^{ik_{z}(r_{i}-r_{j})}+e^{-ik_{z}(r_{i}-r_{j})}]\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t-\tau)\\
+\approx&-\frac{L}{2\pi}e^{i(\omega_{i}-\omega_{j})t}\int_{-k_{0z}}^{\infty}d\delta k_{z}\int_{0}^{t}d\tau e^{-i\tau c^{2}k_{jz}\delta k_{z}/\omega_{j}}\frac{\omega_{k}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}[e^{i(k_{jz}+\delta k_{z})(r_{i}-r_{j})}+e^{-i(k_{jz}+\delta k_{z})(r_{i}-r_{j})}]\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t-\tau)\\
+\approx&-\frac{L}{2\pi}e^{i(\omega_{i}-\omega_{j})t}\int_{-\infty}^{\infty}d\delta k_{z}\int_{0}^{t}d\tau e^{-i(c^{2}k_{jz}\delta k_{z}/\omega_{j})\tau}\frac{\omega_{k}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}[e^{i(k_{jz}+\delta k_{z})(r_{i}-r_{j})}+e^{-i(k_{jz}+\delta k_{z})(r_{i}-r_{j})}]\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t-\tau)\\
+\approx&-\frac{L}{2\pi}e^{i(\omega_{i}-\omega_{j})t}\int_{0}^{t}d\tau\frac{\omega_{j}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}2\pi[e^{ik_{jz}(r_{i}-r_{j})}\delta((r_{i}-r_{j})-\frac{c^{2}k_{jz}}{\omega_{0}}\tau)+e^{-ik_{jz}(r_{i}-r_{j})}\delta((r_{i}-r_{j})+\frac{c^{2}k_{jz}}{\omega_{0}}\tau)]\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t-\tau)\\
+\approx&-\frac{L}{2\pi}e^{ik_{jz}r_{ij}}\frac{\omega_{j}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}2\pi\frac{\omega_{j}}{c^{2}k_{0z}}\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t)e^{i(\omega_{i}-\omega_{j})t}\\
+\approx&-[\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}\cos(k_{0z}r_{ij})+i\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}sin(k_{0z}r_{ij})]\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t)e^{i(\omega_{i}-\omega_{j})t}\\
+\equiv &-(\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}+i\Lambda_{ij})\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t)e^{i(\omega_{i}-\omega_{j})t}
+\end{split}
+\end{equation}
+where emitter separation $r_{ij}=|r_{i}-r_{j}|$, $\gamma_{i}=2\mu_{i}^{2}\omega_{i}^{2}/\hbar\epsilon_{0}Sc^{2}k_{iz}$ which is the collective decay rate when $i=j$, and $\Lambda_{ij}=\gamma_{1d}\sin(k_{0z}r_{ij})/2$ is the collective energy shift.
+In the third line we expand $\omega_{k}=c\sqrt{(\frac{\pi}{a})^{2}+(k_{z})^{2}}$ around $k_{z}=k_{0z}$ since resonant modes provide dominant contributions. In the fifth line we extend the integration $\int_{-k_{0z}}^{\infty}dk_{z}\rightarrow\int_{-\infty}^{\infty}dk_{z}$ because the main contribution comes from the components around $\delta k_{z}=0$. In the next line, Weisskopf-Wigner approximation is used. Thus, we have obtained $\gamma_{ij}$ and $\Lambda_{ij}$ as is shown in Eq.\eqref{eq2}. 
+
+Next we need to calculate the first term (squeezing term) in Eq.\eqref{eqa4}:
+\begin{equation}
+\label{eqb8}\tag{A7}
+\begin{split}
+& e^{i(\omega_{i}+\omega_{j}-2\omega_{0})t}\underset{k_{z}}{\sum}\int_{0}^{t}d\tau\{\vec{\mu}{}_{i}\cdot\vec{u}_{2\vec{k}_{0}-\vec{k}}(r_{i})S_{i}^{+}\vec{\mu}_{j}\cdot\vec{u}_{\vec{k}}(r_{j})S_{j}^{+}e^{i(\omega_{\vec{k}}-\omega_{j})\tau}[-\sinh(r)\cosh(r)]\rho^{S}(t-\tau) \\
+&=-\frac{L}{2\pi}e^{i(\omega_{i}+\omega_{j}-2\omega_{0})t}\int_{0}^{2k_{0z}}dk_{z}\int_{0}^{t}d\tau e^{i(\omega_{k_{z}}-\omega_{j})\tau}e^{i(2k_{jz}-k_{z})(r_{i}-o_{1})}e^{ik_{z}(r_{j}-o_{1})}\frac{\sqrt{\omega_{k_{z}}\omega_{2k_{0z}-k_{z}}}\mu^{2}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)\\ 
+&-\frac{L}{2\pi}e^{i(\omega_{i}+\omega_{j}-2\omega_{0})t}\int_{-2k_{0z}}^{0}dk_{z}\int_{0}^{t}d\tau e^{i(\omega_{k_{z}}-\omega_{j})\tau}e^{i(-2k_{jz}-k_{z})(r_{i}-o_{2})}e^{ik_{z}(r_{j}-o_{2})}\frac{\sqrt{\omega_{k_{z}}\omega_{-2k_{0z}-k_{z}}}\mu^{2}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)
+\end{split}
+\end{equation}
+Putting the overall factor $e^{i(\omega_i+\omega_j-2\omega_0)t}$ aside, for $r_i=r_j$, Eq.\eqref{eqb8} reduces to 
+\begin{equation}
+\label{eqb9}\tag{A8}
+\begin{split}
+&\underset{k_{z}}{\sum}\int_{0}^{t}d\tau\{\vec{\mu}{}_{i}\cdot\vec{u}_{2\vec{k}_{0}-\vec{k}}(r_{i})S_{i}^{+}\vec{\mu}_{j}\cdot\vec{u}_{\vec{k}}(r_{j})S_{j}^{+}e^{i(\omega_{\vec{k}}-\omega_{j})\tau}[-\sinh(r)\cosh(r)]\rho^{S}(t-\tau)\\
+&=-\frac{L}{2\pi}\int_{0}^{2k_{0z}}dk_{z}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{jz}}{_{\omega_{j}}}(k_{z}-k_{jz})\tau}e^{i2k_{0z}(r_{i}-o_{1})}\frac{\sqrt{\omega_{k_{z}}\omega_{2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)\\
+&-\frac{L}{2\pi}\int_{-2k_{0z}}^{0}dk_{z}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{jz}}{_{\omega_{j}}}(k_{z}-k_{jz})\tau}e^{-i2k_{0z}(r_{i}-o_{2})}\frac{\sqrt{\omega_{k_{z}}\omega_{-2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)\\
+&=-\frac{L}{2\pi}[e^{i2k_{0z}(r_{i}-o_{1})}+e^{-i2k_{0z}(r_{i}-o_{2})}]\frac{\sqrt{\omega_{i}\omega_{j}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\int_{0}^{t}d\tau2\pi\delta(\frac{c^{2}k_{jz}}{\omega_{j}}\tau)\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)\\
+&=-e^{i2k_{jz}R}\frac{\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}\hbar Sc^{2}k_{0z}}\cos(2k_{0z}r_{i})\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t)\\
+&=-e^{i2k_{0z}R}\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}\cos(2k_{0z}r_{i})\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t)
+\end{split}
+\end{equation}
+where we have used the fact that the origin of coordinate system is at equal distant from two sources(i.e., $o_2=-o_1=R$) in the second last line. Thus, we have $\gamma'_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos(2k_{0z}r_{i})$. For $r_i\neq r_j$, Eq. \eqref{eqb8} reduces to
+\begin{equation}
+\label{eqb10}\tag{A9}
+\begin{split}
+&\underset{k_{z}}{\sum}\int_{0}^{t}d\tau\{\vec{\mu}{}_{i}\cdot\vec{u}_{2\vec{k}_{0}-\vec{k}}(r_{i})S_{i}^{+}\vec{\mu}_{j}\cdot\vec{u}_{\vec{k}}(r_{j})S_{j}^{+}e^{i(\omega_{\vec{k}}-\omega_{j})\tau}[-\sinh(r)\cosh(r)]\rho^{S}(t-\tau)\\
+&=-\frac{L}{2\pi}\int_{0}^{2k_{0z}}dk_{z}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{jz}}{_{\omega_{j}}}(k_{z}-k_{jz})\tau}e^{i2k_{0z}(r_{c}-o_{1})}e^{-i(k_{z}-k_{0z})(r_{i}-r_{j})}\frac{\sqrt{\omega_{k_{z}}\omega_{2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau) \\
+&-\frac{L}{2\pi}\int_{-2k_{0z}}^{0}dk_{z}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{jz}}{_{\omega_{j}}}(-k_{z}-k_{jz})\tau}e^{-i2k_{0z}(r_{c}-o_{2})}e^{-i(k_{z}+k_{0z})(r_{i}-r_{j})}\frac{\sqrt{\omega_{k_{z}}\omega_{-2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau) \\
+& =-\frac{L}{2\pi}e^{i2k_{0z}(r_{c}-o_{1})}\frac{\sqrt{\omega_{i}\omega_{j}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\int_{-\infty}^{\infty}dk_{z}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{jz}}{_{\omega_{j}}}(k_{z}-k_{jz})\tau}e^{-i(k_{z}-k_{0z})(r_{i}-r_{j})}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau) \\
+&-\frac{L}{2\pi}e^{-i2k_{0z}(r_{c}-o_{2})}\frac{\sqrt{\omega_{i}\omega_{j}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\int_{-\infty}^{\infty}dk_{z}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{jz}}{_{\omega_{j}}}(k_{z}-k_{jz})\tau}e^{i(k_{z}-k_{0z})(r_{i}-r_{j})}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)  \\
+& \approx-\frac{L}{2\pi}e^{i2k_{0z}R}\frac{\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\int_{0}^{t}d\tau2\pi[e^{i2k_{0z}r_{c}}\delta(r_{i}-r_{j}-\frac{c^{2}k_{0z}}{_{\omega_{0}}}\tau)+e^{-i2k_{0z}r_{c}}\delta(r_{i}-r_{j}+\frac{c^{2}k_{0z}}{_{\omega_{0}}}\tau)]\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau) \\
+&\approx-e^{i2k_{0z}R}\frac{\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}\hbar Sc^{2}k_{0z}}e^{i2k_{0z}r_{c}sgn(i-j)}S_{i}^{+}S_{j}^{+}\rho^{S}(t)\rightarrow-\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}e^{i2k_{0z}R}\cos(k_{0z}(r_{i}+r_{j}))S_{i}^{+}S_{j}^{+}\rho^{S}(t)\\
+\end{split}
+\end{equation}
+where $sgn(i-j)$ is the sign function. The last arrow is because we need to sum over $i,j$, so the imaginary part of $e^{i2k_{0z}r_{c}sgn(i-j)}$ vanishes and the neat result is that $\gamma'_{ij}=e^{i2k_{0z}R}\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}(r_{i}+r_{j}))$. As for $S_{i}^{+}\rho^{S}(t)S_{j}^{+}$ terms, the combination of the last two terms in Eq.\eqref{eqa2} will make the imaginary part of $e^{i2k_{0z}r_{c}sgn(i-j)}$ vanish. Thus, we have $\gamma'_{ij}=e^{i2k_{0z}R}\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}(r_i+r_j))$. If one needs to get $\gamma_{ij}, \gamma'_{ij}$ and $\Lambda_{ij}$in the unidirectional waveguide case, we just need to discard the second terms in the parenthesis of Eq.\eqref{eqc2} and Eq.\eqref{eqb10}.
+
+
+
 
 \begin{thebibliography}{99}
 \bibitem{You2018} Jieyu You, Zeyang Liao, Sheng-Wen Li, and M. Suhail Zubairy, Phys. Rev. A 97, 023810 
 \bibitem{Bogoliubov} Bogolubov N N 1947 J. Phys. (USSR) 11 23
 \bibitem{Wang2002} Wang S J et al. 2002 Phys. Rev. A 66 033608(2002)
 \bibitem{An} Jun-Hong An, Shun-Jin Wang, Hong-Gang Luo, Cheng-Long Jia Chin. Phys. Lett., Vol 21, No. 1
+\bibitem{Ficek2005} Zbigniew Ficek and Stuart Swain, Quantum Interference
+and Coherence(Springer, 2005).
+
 \end{thebibliography} 
 \end{document}

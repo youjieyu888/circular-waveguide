@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.6)  21 SEP 2018 12:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.6)  26 SEP 2018 15:22
 entering extended mode
 **"./cavity-cavity interaction.tex"
 ("cavity-cavity interaction.tex"
@@ -203,7 +203,14 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup6
 )
-("cavity-cavity interaction.aux")
+("cavity-cavity interaction.aux"
+
+LaTeX Warning: Label `eq13' multiply defined.
+
+
+LaTeX Warning: Label `eq18' multiply defined.
+
+)
 \openout1 = `"cavity-cavity interaction.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
@@ -218,8 +225,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count100
 \scratchdimen=\dimen127
@@ -250,26 +256,98 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 LaTeX Warning: No \author given.
 
+<fig1.png, id=1, 751.1262pt x 153.2124pt>
+File: fig1.png Graphic file (type png)
+ <use fig1.png>
+Package pdftex.def Info: fig1.png used on input line 30.
+(pdftex.def)             Requested size: 241.49895pt x 49.2604pt.
+
+<fig2.png, id=3, 436.9926pt x 250.536pt>
+File: fig2.png Graphic file (type png)
+ <use fig2.png>
+Package pdftex.def Info: fig2.png used on input line 31.
+(pdftex.def)             Requested size: 86.25pt x 49.44878pt.
+
+Overfull \hbox (6.44029pt too wide) in paragraph at lines 45--45
+[] 
+ []
+
 [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-("cavity-cavity interaction.aux") ) 
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./fig1.png> <./fig2.png>]
+ [2] [3]
+Overfull \hbox (9.1609pt too wide) in paragraph at lines 151--151
+[] 
+ []
+
+[4]
+Overfull \hbox (42.43625pt too wide) in paragraph at lines 211--213
+\OT1/cmr/m/n/10 Then we use the sim-i-lar-ity trans-for-ma-tion: $\OML/cmm/m/it
+/10 e[]$\OT1/cmr/m/n/10 , which yields $\OML/cmm/m/it/10 U[]\OT1/cmr/m/n/10 (\O
+ML/cmm/m/it/10 L[]; L[]; L[]; L[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 U \OT1/cmr/m
+/n/10 =
+ []
+
+[5]
+Overfull \hbox (94.50871pt too wide) in paragraph at lines 254--254
+[] 
+ []
+
+
+Overfull \hbox (143.62447pt too wide) in paragraph at lines 267--267
+[] 
+ []
+
+
+Overfull \hbox (198.59041pt too wide) in paragraph at lines 282--282
+[] 
+ []
+
+[6]
+Overfull \hbox (195.28564pt too wide) in paragraph at lines 294--294
+[] 
+ []
+
+
+Overfull \hbox (98.40926pt too wide) in paragraph at lines 306--306
+[] 
+ []
+
+[7]
+Overfull \hbox (178.85495pt too wide) in paragraph at lines 319--319
+[] 
+ []
+
+[8] [9] ("cavity-cavity interaction.aux")
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2572 strings out of 493335
- 34494 string characters out of 3136680
- 91007 words of memory out of 3000000
- 6051 multiletter control sequences out of 15000+200000
- 9683 words of font info for 38 fonts, out of 3000000 for 9000
+ 2635 strings out of 493335
+ 34986 string characters out of 3136680
+ 111358 words of memory out of 3000000
+ 6108 multiletter control sequences out of 15000+200000
+ 11877 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,6n,26p,343b,198s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr17.pfb>
-Output written on "cavity-cavity interaction.pdf" (1 page, 38736 bytes).
+ 42i,19n,26p,782b,227s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "cavity-cavity interaction.pdf" (9 pages, 308259 bytes).
 PDF statistics:
- 22 PDF objects out of 1000 (max. 8388607)
+ 93 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
