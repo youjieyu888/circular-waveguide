@@ -29,7 +29,7 @@ In this section, we consider a scenario where a three-level atom is located insi
 \begin{figure*}
 \includegraphics[width=0.7\columnwidth]{fig1.png}
 \includegraphics[width=0.25\columnwidth]{fig2.png}
-\caption{}
+\caption{(a) Schematic setup: A three-level atom is located inside the waveguide with the broadband squeezed vacuum incident from both ends. (b)The energy structure of the three level atom. Transition $|a\rangle\rightarrow|c\rangle$ is forbidden and $\omega_{ac}=2\omega_0$ where $\omega_0$ is the center frequency of the squeezed vacuum. $\omega_{ab}$ and $\omega_{bc}$ differ by a small amount $2\delta\omega_0$ and they are within the bandwidth of the squeezed vacuum reservoir.}
 \label{1}
 \end{figure*}
 
@@ -73,6 +73,16 @@ where $N=\sinh(r)^2$ and $M=\sinh(r)\cosh(r)$The steady state of Eq.\eqref{eq3} 
 \end{align}
 \end{subequations}
 where $sh=\sinh(r), ch=\cosh(r)$. Eq.\eqref{4e}\eqref{4f} yield $\rho_{ab}=\rho_{cb}=0$ for the steady state, and Eq.\eqref{4a}-\eqref{4d} yield $\rho_{aa}=\frac{sh^{2}}{sh^{2}+ch^{2}}$, $\rho_{cc}=\frac{ch^{2}}{sh^{2}+ch^{2}}$, $\rho_{ac}=-\frac{shch}{sh^{2}+ch^{2}}$. Thus, the steady state is actually a superposition state of $|a\rangle$ and $|c\rangle$: $\frac{sh}{\sqrt{sh^{2}+ch^{2}}}|a\rangle-\frac{ch}{\sqrt{sh^{2}+ch^{2}}}|c\rangle$. This phenomenon is similar to coherent trapping, but here we achieve the trapping for $\Xi$ structure with the squeezed vacuum reservoir, which cannot be realized with coherent pump due to spontaneous emission.
+
+In general we can study the steady state population distribution when the dipole moments of transition $|a\rangle\rightarrow|b\rangle$ and $|b\rangle\rightarrow|c\rangle$ are different, i.e., $\mu_{ab}\ne\mu_{bc}$. Although the analytical solution is quite lengthy, we can easily get the numerical solution for different $\mu_{ab}$ and $\mu_{bc}$. In Fig.~\ref{2}(a), population inversion is achieved with $\mu_{ab}<\mu_{bc}$. This can be interpreted with the help of Fig.~\ref{2}(c). Figure ~\ref{2}(c) shows that the direct transition between $|a\rangle$, $|b\rangle$, and $|c\rangle$ are allowed just like the thermal reservoir case. However, in the squeezed vacuum, there is additional paths for population flow: electrons in any of these three states can evolve into the other two through an intermediate "state" $\rho_{ac}$. Although $\rho_{ac}$ is actually not a state, and $\rho_{ac}<0$ in our convention, it can be used to elucidate our idea. When $\mu_{ab}\ll\mu_{bc}$, the transition $|a\rangle\rightarrow|b\rangle$ can be removed. Thus state $|c\rangle$ can be excited to $|a\rangle$ through $|c\rangle\rightarrow|b\rangle\rightarrow\rho_{ac}\rightarrow|a\rangle$, but $|a\rangle$ can not decay back to $|c\rangle$. Thus, the population is trapped from $|c\rangle$ to $|a\rangle$. Although the population inversion between $|a\rangle$ and $|c\rangle$ is very sensitive to the value of $M$, the population inversion between $|a\rangle$ and $|b\rangle$ still holds for $M=0.8\sqrt{N(N+1)}$, which is shown in Fig.~\ref{2}(b).
+
+\begin{figure*}
+\includegraphics[width=0.48\columnwidth]{atom_fig4.eps}
+\includegraphics[width=0.48\columnwidth]{atom_fig5.eps}
+\includegraphics[width=0.4\columnwidth]{atom_fig3.png}
+\caption{(a) The steady state population distribution for different $\mu_{ab}$ and$\mu_{bc}$. The squeezing parameter $r=1$. (b) The steady state population distribution for non-ideal squeezed vacuum which is characterized by the ratio of $M$ and $\sqrt{N(N+1)}$. (c) The allowed population flow in the squeezed vacuum. The squeezing parameter $r=1$, and $\mu_{ab}=\frac{1}{4}\mu_{bc}$.}
+\label{2}
+\end{figure*}
 %\begin{equation}
 %\label{eq4}
 %\begin{split}
@@ -84,7 +94,7 @@ where $sh=\sinh(r), ch=\cosh(r)$. Eq.\eqref{4e}\eqref{4f} yield $\rho_{ab}=\rho_
 
 
 \section{Cavity-Cavity interaction}
-In this section, we consider a similar scenario but now the atoms are replaced with single mode cavity. The total Hamiltonian is:
+In this section, we consider a similar scenario but now the atoms are replaced with single mode cavity. The schematic setup is shown in Fig.~ref{3}. The total Hamiltonian is:
 \begin{equation}
 \label{eq5}
 \begin{split}
@@ -92,6 +102,13 @@ H=\sum_{i}\hbar\omega(a^{\dagger}a_{i}+\frac{1}{2})+\hbar\sum_{i,k}\omega_{k}(a_
 \end{split}
 \end{equation}
 where $a_k$ stands for the mods in the waveguide and $a$ is the field operator of the single mode inside the cavity. The waveguide is saturated with the squeezed vacuum with the center frequency $\omega_0$. 
+
+
+\begin{figure*}
+\includegraphics[width=0.8\columnwidth]{fig3.png}
+\caption{(a) Schematic setup: two single-mode cavities are placed inside the waveguide with the broadband squeezed vacuum incident from both ends.}
+\label{3}
+\end{figure*}
 
 First, we study two non-resonant cavities coupled to the squeezed vacuum reservoir. The eigen frequencies of these two cavities are $\omega_1=\omega_0-\delta \omega$ and $\omega_2=\omega_0+\delta \omega$, following exacly the same steps as the derivation of Eq.\eqref{eq1}, we get:
 \begin{equation}

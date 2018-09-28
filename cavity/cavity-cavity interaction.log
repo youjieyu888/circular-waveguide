@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.6)  26 SEP 2018 15:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.6)  28 SEP 2018 12:37
 entering extended mode
 **"./cavity-cavity interaction.tex"
 ("cavity-cavity interaction.tex"
@@ -275,62 +275,113 @@ Overfull \hbox (6.44029pt too wide) in paragraph at lines 45--45
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./fig1.png> <./fig2.png>]
- [2] [3]
-Overfull \hbox (9.1609pt too wide) in paragraph at lines 151--151
+ [2]
+Package epstopdf Info: Source file: <atom_fig4.eps>
+(epstopdf)                    date: 2018-09-28 11:04:35
+(epstopdf)                    size: 42499 bytes
+(epstopdf)             Output file: <atom_fig4-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-09-28 11:10:31
+(epstopdf)                    size: 24570 bytes
+(epstopdf)             Command: <epstopdf --outfile=atom_fig4-eps-converted-to.
+pdf atom_fig4.eps>
+(epstopdf)             \includegraphics on input line 80.
+Package epstopdf Info: Output file is already uptodate.
+ <atom_fig4-eps-converted-to.pdf, id=25, 845.1575pt x 598.235pt>
+File: atom_fig4-eps-converted-to.pdf Graphic file (type pdf)
+
+<use atom_fig4-eps-converted-to.pdf>
+Package pdftex.def Info: atom_fig4-eps-converted-to.pdf used on input line 80.
+(pdftex.def)             Requested size: 165.59853pt x 117.21674pt.
+Package epstopdf Info: Source file: <atom_fig5.eps>
+(epstopdf)                    date: 2018-09-28 10:55:06
+(epstopdf)                    size: 40346 bytes
+(epstopdf)             Output file: <atom_fig5-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-09-28 11:10:31
+(epstopdf)                    size: 22342 bytes
+(epstopdf)             Command: <epstopdf --outfile=atom_fig5-eps-converted-to.
+pdf atom_fig5.eps>
+(epstopdf)             \includegraphics on input line 81.
+Package epstopdf Info: Output file is already uptodate.
+
+<atom_fig5-eps-converted-to.pdf, id=26, 845.1575pt x 598.235pt>
+File: atom_fig5-eps-converted-to.pdf Graphic file (type pdf)
+
+<use atom_fig5-eps-converted-to.pdf>
+Package pdftex.def Info: atom_fig5-eps-converted-to.pdf used on input line 81.
+(pdftex.def)             Requested size: 165.59853pt x 117.21674pt.
+
+<atom_fig3.png, id=27, 339.669pt x 227.8914pt>
+File: atom_fig3.png Graphic file (type png)
+ <use atom_fig3.png>
+Package pdftex.def Info: atom_fig3.png used on input line 82.
+(pdftex.def)             Requested size: 137.9979pt x 92.5876pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--83
+[][] []
+ []
+
+<fig3.png, id=28, 751.608pt x 153.2124pt>
+File: fig3.png Graphic file (type png)
+ <use fig3.png>
+Package pdftex.def Info: fig3.png used on input line 108.
+(pdftex.def)             Requested size: 276.00105pt x 56.2622pt.
+ [3] [4 <./atom_fig4-eps-converted-to.pdf> <./atom_fig5-eps-converted-to.pdf> <
+./atom_fig3.png> <./fig3.png>]
+Overfull \hbox (9.1609pt too wide) in paragraph at lines 168--168
 [] 
  []
 
-[4]
-Overfull \hbox (42.43625pt too wide) in paragraph at lines 211--213
+[5] [6]
+Overfull \hbox (42.43625pt too wide) in paragraph at lines 228--230
 \OT1/cmr/m/n/10 Then we use the sim-i-lar-ity trans-for-ma-tion: $\OML/cmm/m/it
 /10 e[]$\OT1/cmr/m/n/10 , which yields $\OML/cmm/m/it/10 U[]\OT1/cmr/m/n/10 (\O
 ML/cmm/m/it/10 L[]; L[]; L[]; L[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 U \OT1/cmr/m
 /n/10 =
  []
 
-[5]
-Overfull \hbox (94.50871pt too wide) in paragraph at lines 254--254
-[] 
- []
 
-
-Overfull \hbox (143.62447pt too wide) in paragraph at lines 267--267
-[] 
- []
-
-
-Overfull \hbox (198.59041pt too wide) in paragraph at lines 282--282
-[] 
- []
-
-[6]
-Overfull \hbox (195.28564pt too wide) in paragraph at lines 294--294
-[] 
- []
-
-
-Overfull \hbox (98.40926pt too wide) in paragraph at lines 306--306
+Overfull \hbox (94.50871pt too wide) in paragraph at lines 271--271
 [] 
  []
 
 [7]
-Overfull \hbox (178.85495pt too wide) in paragraph at lines 319--319
+Overfull \hbox (143.62447pt too wide) in paragraph at lines 284--284
 [] 
  []
 
-[8] [9] ("cavity-cavity interaction.aux")
+
+Overfull \hbox (198.59041pt too wide) in paragraph at lines 299--299
+[] 
+ []
+
+[8]
+Overfull \hbox (195.28564pt too wide) in paragraph at lines 311--311
+[] 
+ []
+
+
+Overfull \hbox (98.40926pt too wide) in paragraph at lines 323--323
+[] 
+ []
+
+[9]
+Overfull \hbox (178.85495pt too wide) in paragraph at lines 336--336
+[] 
+ []
+
+[10] [11] ("cavity-cavity interaction.aux")
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2635 strings out of 493335
- 34986 string characters out of 3136680
- 111358 words of memory out of 3000000
- 6108 multiletter control sequences out of 15000+200000
+ 2658 strings out of 493335
+ 35443 string characters out of 3136680
+ 110376 words of memory out of 3000000
+ 6126 multiletter control sequences out of 15000+200000
  11877 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,19n,26p,782b,227s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,19n,26p,1575b,227s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
@@ -345,9 +396,9 @@ TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "cavity-cavity interaction.pdf" (9 pages, 308259 bytes).
+Output written on "cavity-cavity interaction.pdf" (11 pages, 475339 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
+ 182 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
