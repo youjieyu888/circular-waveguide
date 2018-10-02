@@ -175,10 +175,10 @@ Then we study the case where two cavities are identical, i.e., $\omega_1=\omega_
 \begin{split}
 \dot{\rho}&=\sum_{ij}\gamma\cosh^{2}r(-\rho a_{i}^{\dagger}a_{j}-a_{i}^{\dagger}a_{j}\rho+2a_{i}\rho a_{j}^{\dagger})\\
 &+\gamma\sinh^{2}r(-\rho a_{i}a_{j}^{\dagger}-a_{i}a_{j}^{\dagger}\rho+2a_{i}^{\dagger}\rho a_{j})\\
-&+\gamma\cosh r\sinh r(e^{i(\theta_{i}+\theta_{j})}\rho a_{i}a_{j}+e^{i\theta}a_{i}a_{j}\rho-e^{i\theta}2a_{i}\rho a_{j}+h.c.)\\
+&+\gamma\cosh r\sinh r(e^{i(\theta_{i}+\theta_{j})}\rho a_{i}a_{j}+e^{i(\theta_{i}+\theta_{j})}a_{i}a_{j}\rho-e^{i(\theta_{i}+\theta_{j})}2a_{i}\rho a_{j}+h.c.)\\
 \end{split}
 \end{equation}
-This equation can be rearranged when $\theta_1=\theta_2=\theta$:
+This equation can be rearranged when $\theta_1=\theta_2=\frac{\theta}{2}$:
 \begin{equation}
 \label{eq14}
 \begin{split}
@@ -191,7 +191,7 @@ We introduce the Bogoliubov transformation:
 \begin{equation}
 \label{eq15}
 \begin{split}
-&S_{i}=exp(\eta^{\star}a_{i}^{2}-\eta a_{i}^{\dagger2})\\
+&S_{i}=exp(\frac{1}{2}\eta^{\star}a_{i}^{2}-\frac{1}{2}\eta a_{i}^{\dagger2})\\
 &A_{i}=S_{i}^{+}a_{i}S_{i}=\cosh(r)a_{i}-e^{-i\theta}\sinh(r)a_{i}^{\dagger} \\
 &A_{i}^{+}=S_{i}^{+}a_{i}^{+}S_{i}=\cosh(r)a_{i}^{+}-e^{i\theta}\sinh(r)a_{i}\\
 \end{split}
@@ -227,14 +227,14 @@ where $[L_{i},L_{j}^{\dagger}]=\delta_{ij}$, and the master equation becomes:
 \end{split}
 \end{equation}
 Operator $L_2^{\dagger}$ has the following properties: $$L_{2}^{\dagger}|0\rangle=\frac{1}{\sqrt{2}}(|01\rangle+|10\rangle)\equiv|1_{L}\rangle$$ $$L_{2}^{\dagger}\frac{1}{\sqrt{2}}(|01\rangle+|10\rangle)=\sqrt{2}[\frac{1}{2}(|02\rangle+\sqrt{2}|11\rangle+|20\rangle)]=\sqrt{2}|2_{L}\rangle$$  $$L_{2}^{\dagger}\frac{1}{2}(|02\rangle+\sqrt{2}|11\rangle+|20\rangle)=\sqrt{3}[\frac{1}{2\sqrt{2}}(|03\rangle+\sqrt{3}|12\rangle+\sqrt{3}|21\rangle+|30\rangle)]=\sqrt{3}|3_{L}\rangle$$  $$...$$
-Then we use the similarity transformation: $e^{-L^{r}L^{l\dagger}}$, which yields $U^{-1}(L_{2}^{r\dagger},L_{2}^{l},L_{2}^{l\dagger},L_{2}^{r})U=(L_{2}^{r\dagger}+L_{2}^{l\dagger},L_{2}^{l}+L_{2}^{r},L_{2}^{l\dagger},L_{2}^{r}) $. Thus, the master equation Eq.\eqref{eq18} becomes:
+Then we use the similarity transformation: $U=e^{-L_2^{r}L_2^{l\dagger}}$, which yields $U^{-1}(L_{2}^{r\dagger},L_{2}^{l},L_{2}^{l\dagger},L_{2}^{r})U=(L_{2}^{r\dagger}+L_{2}^{l\dagger},L_{2}^{l}+L_{2}^{r},L_{2}^{l\dagger},L_{2}^{r}) $. Thus, the master equation Eq.\eqref{eq18} becomes:
 \begin{equation}
 \label{eq18}
 \begin{split}
 RHS=\gamma U^{-1}[-L_2^{l\dagger}L_2^{l}-L_2^{r\dagger}L_2^{r}+2L_2^{r}L_2^{l\dagger}]UU^{-1}\rho_{s}=\gamma[-L_2^{l\dagger}L_2^{l}-L_2^{r\dagger}L_2^{r}]U^{-1}\rho_{s}
 \end{split}
 \end{equation}
-The only solution to the steady state is $\rho_{s}=e^{-L^{r}L^{l\dagger}}|0_{L}\rangle\langle0_{L}|=|0\rangle\langle0|$ which yields $\rho=S_{1}^{+}S_{2}^{+}|0\rangle\langle0|S_{1}S_{2}$. Thus, when there are more than one cavities, as long as they are all resonant to the center frequency of the broadband squeezed vacuum, the cavity fields' steady states are single mode squeezed vacuum as if there is no interaction at all.
+The only solution to the steady state is $\rho_{s}=e^{-L_2^{r}L_2^{l\dagger}}|0_{L}\rangle\langle0_{L}|=|0\rangle\langle0|$ which yields $\rho=S_{1}^{+}S_{2}^{+}|0\rangle\langle0|S_{1}S_{2}$. Thus, when there are more than one cavities, as long as they are all resonant to the center frequency of the broadband squeezed vacuum, the cavity fields' steady states are single mode squeezed vacuum as if there is no interaction at all.
 
 \appendix
 
