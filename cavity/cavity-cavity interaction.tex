@@ -225,7 +225,8 @@ where $[L_{i},L_{j}^{\dagger}]=\delta_{ij}$, and the master equation becomes:
 &=L\rho
 \end{split}
 \end{equation}
-Operator $L_2^{\dagger}$ has the following properties: $$L_{2}^{\dagger}|0\rangle=\frac{1}{\sqrt{2}}(|01\rangle+|10\rangle)\equiv|1_{L}\rangle$$ $$L_{2}^{\dagger}\frac{1}{\sqrt{2}}(|01\rangle+|10\rangle)=\sqrt{2}[\frac{1}{2}(|02\rangle+\sqrt{2}|11\rangle+|20\rangle)]=\sqrt{2}|2_{L}\rangle$$  $$L_{2}^{\dagger}\frac{1}{2}(|02\rangle+\sqrt{2}|11\rangle+|20\rangle)=\sqrt{3}[\frac{1}{2\sqrt{2}}(|03\rangle+\sqrt{3}|12\rangle+\sqrt{3}|21\rangle+|30\rangle)]=\sqrt{3}|3_{L}\rangle$$  $$...$$
+Operator $L_2^{\dagger}$ has the following properties: $$L_{2}^{\dagger}|0\rangle=\frac{1}{\sqrt{2}}(|01\rangle+|10\rangle)\equiv|1_{L_2}\rangle$$ $$L_{2}^{\dagger}\frac{1}{\sqrt{2}}(|01\rangle+|10\rangle)=\sqrt{2}[\frac{1}{2}(|02\rangle+\sqrt{2}|11\rangle+|20\rangle)]=\sqrt{2}|2_{L_2}\rangle$$  $$L_{2}^{\dagger}\frac{1}{2}(|02\rangle+\sqrt{2}|11\rangle+|20\rangle)=\sqrt{3}[\frac{1}{2\sqrt{2}}(|03\rangle+\sqrt{3}|12\rangle+\sqrt{3}|21\rangle+|30\rangle)]=\sqrt{3}|3_{L_2}\rangle$$  $$...$$
+while the operator $L_1^{\dagger}$ has the following properties: $$L_{1}^{\dagger}|0\rangle=\frac{1}{\sqrt{2}}(-|01\rangle+|10\rangle)\equiv|1_{L_{1}}\rangle$$ $$L_{1}^{\dagger}\frac{1}{\sqrt{2}}(-|01\rangle+|10\rangle)=\sqrt{2}[\frac{1}{2}(|02\rangle-\sqrt{2}|11\rangle+|20\rangle)]=\sqrt{2}|2_{L_{1}}\rangle$$  $$L_{1}^{\dagger}\frac{1}{2}(|02\rangle-\sqrt{2}|11\rangle+|20\rangle)=\sqrt{3}[\frac{1}{2\sqrt{2}}(-|03\rangle+\sqrt{3}|12\rangle-\sqrt{3}|21\rangle+|30\rangle)]=\sqrt{3}|3_{L_{1}}\rangle$$  $$...$$
 Then we use the similarity transformation: $U=e^{-L_2^{r}L_2^{l\dagger}}$, which yields $U^{-1}(L_{2}^{r\dagger},L_{2}^{l},L_{2}^{l\dagger},L_{2}^{r})U=(L_{2}^{r\dagger}+L_{2}^{l\dagger},L_{2}^{l}+L_{2}^{r},L_{2}^{l\dagger},L_{2}^{r}) $. Thus, the master equation Eq.\eqref{eq18} becomes:
 \begin{equation}
 \label{eq18}
@@ -233,7 +234,7 @@ Then we use the similarity transformation: $U=e^{-L_2^{r}L_2^{l\dagger}}$, which
 RHS=\gamma U^{-1}[-L_2^{l\dagger}L_2^{l}-L_2^{r\dagger}L_2^{r}+2L_2^{r}L_2^{l\dagger}]UU^{-1}\rho_{s}=\gamma[-L_2^{l\dagger}L_2^{l}-L_2^{r\dagger}L_2^{r}]U^{-1}\rho_{s}
 \end{split}
 \end{equation}
-The only solution to the steady state is $\rho_{s}=e^{-L_2^{r}L_2^{l\dagger}}|0_{L}\rangle\langle0_{L}|=|0\rangle\langle0|$ which yields $\rho=S_{1}^{+}S_{2}^{+}|0\rangle\langle0|S_{1}S_{2}$. Thus, when there are more than one cavities, as long as they are all resonant to the center frequency of the broadband squeezed vacuum, the cavity fields' steady states are single mode squeezed vacuum as if there is no interaction at all.
+The only solution to the steady state is $\rho_{s}=e^{-L_{2}^{r}L_{2}^{l\dagger}}|0_{L_{2}}m_{L_{1}}\rangle\langle0_{L_{2}}n_{L_{1}}|=|m_{L_{1}}\rangle\langle n_{L_{1}}|$ which yields $\rho=S_{1}^{+}S_{2}^{+}\frac{1}{\sqrt{m!}}(\frac{a_{1}^{\dagger}-a_{2}^{\dagger}}{\sqrt{2}})^{m}|0\rangle\langle0|\frac{1}{\sqrt{n!}}(\frac{a_{1}-a_{2}}{\sqrt{2}})^{n}S_{1}S_{2}$, which is the single mode squzeed vacuum in two modes when $m=n=0$. Generally, an initial state $\rho(0)=\sum_{mnpq}C_{mnpq}|mn\rangle\langle pq|=\sum_{mnpq}C'_{mnpq}|m_{L_{1}}p_{L_{2}}\rangle\langle n_{L_{1}}q_{L_{2}}|$ will evolve into $\sum_{mn}G_{mn}|m_{L_{1}}\rangle\langle n_{L_{1}}|$ where $G_{mn}=\sum_{mnp}C'_{mnpp}$.
 
 \appendix
 
