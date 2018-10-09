@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[aps,showpacs,onecolumn,twoside,groupedaddress]{revtex4}
 \usepackage{graphicx}
 \usepackage{epsfig}
 %\usepackage{caption}
@@ -28,14 +28,14 @@
 
 
 \section{General master equation of cavity-cavity interaction}
-In this section, we consider a scenario where two single-mode leaky cavities are placed inside the waveguide with the squeezed vacuum injected from both ends. The schematic setup is shown in Fig.~\ref{3}. Now we will study how the modes inside the cavity will evolve under the influence of the squeezed vacuum. The free Hamiltonian of cavity and waveguide modes is:
+In this section, we will derive the master equation for two single-mode leaky cavities placed inside the waveguide with the squeezed vacuum injected from both ends. The schematic setup is shown in Fig.~\ref{3}. Then we will study how the modes inside the cavity will evolve under the influence of the squeezed vacuum. The free Hamiltonian of cavity and waveguide modes is:
 \begin{equation}
 \label{eq5a}
 \begin{split}
-H_{0}=\sum_{i}\hbar\omega(a^{\dagger}a_{i}+\frac{1}{2})+\hbar\sum_{k,s}\omega_{k}(a_{k,s}^{\dagger}a_{k,s}+\frac{1}{2})
+H_{0}=\sum_{i}\hbar\omega_i(a_i^{\dagger}a_{i}+\frac{1}{2})+\hbar\sum_{k,s}\omega_{k}(a_{k,s}^{\dagger}a_{k,s}+\frac{1}{2})
 \end{split}
 \end{equation}
-where $a_k$ stands for the mods in the waveguide and $a$ is the field operator of the single mode inside the cavity. The waveguide is saturated with the squeezed vacuum with the center frequency $\omega_0$.  The interaction Hamiltonian between the cavity mode and waveguide modes is:
+where $a_k$ stands for the modes in the waveguide and $a_i$ is the field operator of the single mode inside $ith$ the cavity. The waveguide is saturated with the squeezed vacuum with the center frequency $\omega_0$.  The interaction Hamiltonian between the cavity mode and waveguide modes is:
 \begin{equation}
 \label{eqa0}
 V=-i\hbar\sum_{\vec{k}s}[Da_{\vec{k}s}-D^{+}a_{\vec{k}s}^{\dagger}]
@@ -47,7 +47,7 @@ where
  D=\underset{i}{\sum}[g_{i,k,s}^{*}a_{i}^{\dagger}+g_{i,k,s}a_{i}]
 \end{gathered}
 \end{equation}
-Here we define $g_{i,k,s}=|g_{i,k,s}|e^{-ik_z r_i}$ where $r_i$ is just a phenomenological parameter describing the location of cavity. The reduced master equation of atoms in the reservoir is:
+Here we define $g_{i,k,s}=|g_{i,k,s}|e^{-ik_z r_i}$ where $r_i$ is just a phenomenological parameter describing the location of cavity. The reduced master equation of atoms in the reservoir is\cite{Scully1997}
 \begin{equation}
 \label{eqa2}
 \begin{split}
@@ -56,7 +56,6 @@ Here we define $g_{i,k,s}=|g_{i,k,s}|e^{-ik_z r_i}$ where $r_i$ is just a phenom
 &-V(t)\rho^{S}(t-\tau)\rho^{F}V(t-\tau)-V(t-\tau)\rho^{S}(t-\tau)\rho^{F}V(t)\}.
 \end{split}
 \end{equation} 
-
 Here we just show how to deal with the first term in Eq.\eqref{eqa2}, the remaining terms can be calculated in the same way. For the first term, we have
 \begin{equation}
 \label{eqa3}
@@ -79,7 +78,7 @@ Under the rotating wave approximation(RWA), we have
 &+g_{i,k,s}a_{i}e^{-i\omega_{i}t}g_{j,k',s'}a_{j}e^{-i\omega_{j}(t-\tau)}e^{i(\omega_{\vec{k}s}+\omega_{\vec{k}'s'})t-i\omega_{\vec{k}'s'}\tau}[-\sinh(r)\cosh(r)\delta_{\vec{k}',2\vec{k}_{0}-\vec{k}}\delta_{ss'}]\}\rho^{S}(t-\tau)
 \end{split}
 \end{equation}
-Here we just calculate the first and second term to show how to get the master equation. Define $a$. For the second term, we have
+Here we just calculate the first and second term to show how to get the master equation. For the second term, we have
 \begin{equation}
 \label{eqc2}
 \begin{split}
@@ -117,7 +116,7 @@ Putting the overall factor $e^{i(\omega_i+\omega_j-2\omega_0)t}$ aside, for $i=j
 & =-e^{i2k_{0z}R}\frac{\gamma_{i}}{2}\cos(2k_{0z}r_{i})\sinh(r)\cosh(r)a_{i}^{\dagger}a_{i}^{\dagger}\rho^{S}(t)
 \end{split}
 \end{equation}
-where we have used the fact that the origin of coordinate system is at equal distant from two sources(i.e., $o_2=-o_1=R$) in the second last line. Thus, we have $\gamma'_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos(2k_{0z}r_{i})$. For $r_i\neq r_j$, Eq. \eqref{eqb8} reduces to
+where we have used the fact that the origin of coordinate system is at equal distance from two sources(i.e., $o_2=-o_1=R$) in the second last line. Thus, we have $\gamma'_{ii}=\gamma_{i}\cos(2k_{0z}r_{i})$. For $r_i\neq r_j$, Eq. \eqref{eqb8} reduces to
 \begin{equation}
 \label{eqb10}
 \begin{split}
@@ -127,10 +126,10 @@ where we have used the fact that the origin of coordinate system is at equal dis
 &=-\frac{L}{2\pi}e^{i2k_{0z}(r_{c}-o_{1})}|g_{i,2\vec{k}_{0}-\vec{k}}g_{j,\vec{k}}|\int_{-\infty}^{\infty}dk_{z}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{jz}}{_{\omega_{j}}}(k_{z}-k_{jz})\tau}e^{-i(k_{z}-k_{0z})(r_{i}-r_{j})}\sinh(r)\cosh(r)a_{i}^{\dagger}a_{j}^{\dagger}\rho^{S}(t-\tau) \\
 & -\frac{L}{2\pi}e^{-i2k_{0z}(r_{c}-o_{2})}|g_{i,2\vec{k}_{0}-\vec{k}}g_{j,\vec{k}}|\int_{-\infty}^{\infty}dk_{z}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{jz}}{_{\omega_{j}}}(k_{z}-k_{jz})\tau}e^{i(k_{z}-k_{0z})(r_{i}-r_{j})}\sinh(r)\cosh(r)a_{i}^{\dagger}a_{j}^{\dagger}\rho^{S}(t-\tau) \\
 & \approx-\frac{L}{2\pi}e^{i2k_{0z}R}|g_{i,2\vec{k}_{0}-\vec{k}}g_{j,\vec{k}}|\int_{0}^{t}d\tau2\pi[e^{i2k_{0z}r_{c}}\delta(r_{i}-r_{j}-\frac{c^{2}k_{0z}}{_{\omega_{0}}}\tau)+e^{-i2k_{0z}r_{c}}\delta(r_{i}-r_{j}+\frac{c^{2}k_{0z}}{_{\omega_{0}}}\tau)]\sinh(r)\cosh(r)a_{i}^{\dagger}a_{j}^{\dagger}\rho^{S}(t-\tau)\\
-&\approx-e^{i2k_{0z}R}L|g_{i,2\vec{k}_{0}}g_{j,\vec{k}_{0}}|e^{i2k_{0z}r_{c}sgn(i-j)}a_{i}^{\dagger}a_{j}^{\dagger}\rho^{S}(t)\rightarrow-\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}e^{i2k_{0z}R}\cos(k_{0z}(r_{i}+r_{j}))a_{i}^{\dagger}a_{j}^{\dagger}\rho^{S}(t)\\
+&\approx-e^{i2k_{0z}R}L|g_{i,\vec{k}_{0}}g_{j,\vec{k}_{0}}|e^{i2k_{0z}r_{c}sgn(i-j)}a_{i}^{\dagger}a_{j}^{\dagger}\rho^{S}(t)\rightarrow-\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}e^{i2k_{0z}R}\cos(k_{0z}(r_{i}+r_{j}))a_{i}^{\dagger}a_{j}^{\dagger}\rho^{S}(t)\\
 \end{split}
 \end{equation}
-where $sgn(i-j)$ is the sign function. The last arrow is because we need to sum over $i,j$, so the imaginary part of $e^{i2k_{0z}r_{c}sgn(i-j)}$ vanishes and the neat result is that $\gamma'_{ij}=e^{i2k_{0z}R}\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}(r_{i}+r_{j}))$. As for $a_{i}^{\dagger}\rho^{S}(t)a_{j}^{\dagger}$ terms, the combination of the last two terms in Eq.\eqref{eqa2} will make the imaginary part of $e^{i2k_{0z}r_{c}sgn(i-j)}$ vanish. Thus, we have $\gamma'_{ij}=e^{i2k_{0z}R}\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}(r_i+r_j))$. If one needs to get $\gamma_{ij}, \gamma'_{ij}$ and $\Lambda_{ij}$in the unidirectional waveguide case, we just need to discard the second terms in the parenthesis of Eq.\eqref{eqc2} and Eq.\eqref{eqb10}.
+where $sgn(i-j)$ is the sign function. The last arrow is because we need to sum over $i,j$, so the imaginary part of $e^{i2k_{0z}r_{c}sgn(i-j)}$ vanishes and the neat result is that $\gamma'_{ij}=e^{i2k_{0z}R}\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}(r_{i}+r_{j}))$. As for $a_{i}^{\dagger}\rho^{S}(t)a_{j}^{\dagger}$ terms, the combination of the last two terms in Eq.\eqref{eqa2} will make the imaginary part of $e^{i2k_{0z}r_{c}sgn(i-j)}$ vanish. Thus, we have $\gamma'_{ij}=e^{i2k_{0z}R}\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}(r_i+r_j))$.
 
 
 
@@ -140,25 +139,26 @@ where $sgn(i-j)$ is the sign function. The last arrow is because we need to sum 
 \label{3}
 \end{figure*}
 
-Thus, the general equation for cavity-cavity interaction in the squeezed vacuum is:
+Doing the above calculation for all terms in Eq.\eqref{eqa2}, we have the general equation for cavity-cavity interaction in the squeezed vacuum as follows:
 \begin{equation}
 \label{eq0}
 \begin{split}
-\dot{\rho}&=\sum_{ij}\gamma\cosh^{2}r(-\rho a_{i}^{\dagger}a_{j}-a_{i}^{\dagger}a_{j}\rho+2a_{i}\rho a_{j}^{\dagger})\\
-&+\gamma\sinh^{2}r(-\rho a_{i}a_{j}^{\dagger}-a_{i}a_{j}^{\dagger}\rho+2a_{i}^{\dagger}\rho a_{j})\\
-&+\gamma\cosh r\sinh r(e^{i\theta}\rho a_{i}a_{j}+e^{i\theta_{i}}a_{i}a_{j}\rho-e^{i\theta}2a_{i}\rho a_{j}+h.c.)\\
+\dot{\rho}&=\sum_{ij}\gamma_{ij}\cosh^{2}r(-\rho a_{i}^{\dagger}a_{j}-a_{i}^{\dagger}a_{j}\rho+2a_{i}\rho a_{j}^{\dagger})e^{i(\omega_{i}-\omega_{j})t}\\
+&+\sum_{ij}\gamma_{ij}\sinh^{2}r(-\rho a_{i}a_{j}^{\dagger}-a_{i}a_{j}^{\dagger}\rho+2a_{i}^{\dagger}\rho a_{j})e^{-i(\omega_{i}-\omega_{j})t}\\
+&+\sum_{ij}\gamma_{ij}\cosh r\sinh r[(e^{i\theta}\rho a_{i}a_{j}+e^{i\theta}a_{i}a_{j}\rho-e^{i\theta}2a_{i}\rho a_{j})e^{-i(\omega_{i}+\omega_{j})t}+H.c.]\\
 \end{split}
 \end{equation}
-First, we study two non-resonant cavities coupled to the squeezed vacuum reservoir. The eigen frequencies of these two cavities are $\omega_1=\omega_0-\delta \omega$ and $\omega_2=\omega_0+\delta \omega$, following exacly the same steps as the derivation in Appendix A with $S$ replaced by $a_k$, we get:
+\section{Steady state of non-resonant cavities}
+First, we study two non-resonant cavities coupled to the squeezed vacuum reservoir. The eigen frequencies of these two cavities are $\omega_1=\omega_0-\delta \omega$ and $\omega_2=\omega_0+\delta \omega$. Under the rotating wave approximation(RWA), Eq.\eqref{eq0} becomes:
 \begin{equation}
 \label{eq6}
 \begin{split}
 \dot{\rho}&=\sum_{i}\gamma(1+N)(-\rho a_{i}^{\dagger}a_{i}-a_{i}^{\dagger}a_{i}\rho+2a_{i}\rho a_{i}^{\dagger})\\
-&+\gamma N(-\rho a_{i}a_{i}^{\dagger}-a_{i}a_{i}^{\dagger}\rho+2a_{i}^{\dagger}\rho a_{i})\\
+&+\sum_{i}\gamma N(-\rho a_{i}a_{i}^{\dagger}-a_{i}a_{i}^{\dagger}\rho+2a_{i}^{\dagger}\rho a_{i})\\
 &+\sum_{i\ne j}\gamma M(e^{i\theta}\rho a_{i}a_{j}+e^{i\theta}a_{i}a_{j}\rho-2e^{i\theta}a_{i}\rho a_{j}+h.c.)\\
 \end{split}
 \end{equation}
-where $\theta$ is a phase factor which depends on the relative position of cavities and the squeezing source. The above equation can be re-arranged as:
+where we have assumed $\gamma_{ij}=\gamma$ for simplicity. The above equation can be re-arranged as:
 \begin{equation}
 \label{eq7}
 \begin{split}
@@ -206,17 +206,17 @@ RHS=\sum_{i}\gamma U^{-1}[-a_{i}^{l\dagger}a_{i}^{l}-a_{i}^{r\dagger}a_{i}^{r}+2
 \end{split}
 \end{equation}
 The only solution to $L\rho=0$ is $U^{-1}\rho_{s}=|0,0\rangle\langle0,0|$, which yields $\rho=S^{\dagger}\rho_S S=S^{\dagger}e^{-K_{-1}-K_{-2}}|0,0\rangle\langle0,0|S=S^{\dagger}|0,0\rangle\langle0,0|S$ which is the two mode squeezed vacuum.
-
-Then we study the case where two cavities are identical, i.e., $\omega_1=\omega_2=\omega_0$. Then the master equation becomes:
+\section{Steady state of resonant cavities}
+Next we study the case where two cavities are identical, i.e., $\omega_1=\omega_2=\omega_0$. Then the master equation becomes:
 \begin{equation}
 \label{eq13}
 \begin{split}
-\dot{\rho}&=\sum_{ij}\gamma\cosh^{2}r(-\rho a_{i}^{\dagger}a_{j}-a_{i}^{\dagger}a_{j}\rho+2a_{i}\rho a_{j}^{\dagger})\\
-&+\gamma\sinh^{2}r(-\rho a_{i}a_{j}^{\dagger}-a_{i}a_{j}^{\dagger}\rho+2a_{i}^{\dagger}\rho a_{j})\\
-&+\gamma\cosh r\sinh r(e^{i(\theta_{i}+\theta_{j})}\rho a_{i}a_{j}+e^{i(\theta_{i}+\theta_{j})}a_{i}a_{j}\rho-e^{i(\theta_{i}+\theta_{j})}2a_{i}\rho a_{j}+h.c.)\\
+\dot{\rho}&=\sum_{ij}\gamma\cosh^{2}r(-\rho a_{i}^{\dagger}a_{j}-a_{i}^{\dagger}a_{j}\rho+2a_{j}\rho a_{i}^{\dagger})\\
+&+\sum_{ij}\gamma\sinh^{2}r(-\rho a_{i}a_{j}^{\dagger}-a_{i}a_{j}^{\dagger}\rho+2a_{j}^{\dagger}\rho a_{i})\\
+&+\sum_{ij}\gamma\cosh r\sinh r(e^{i\theta}\rho a_{i}a_{j}+e^{i\theta}a_{i}a_{j}\rho-e^{i\theta}2a_{i}\rho a_{j}+h.c.)\\
 \end{split}
 \end{equation}
-This equation can be rearranged when $\theta_1=\theta_2=\frac{\theta}{2}$:
+This equation can be rearranged as follows:
 \begin{equation}
 \label{eq14}
 \begin{split}
@@ -266,7 +266,7 @@ where $[L_{i},L_{j}^{\dagger}]=\delta_{ij}$, and the master equation becomes:
 \end{equation}
 Operator $L_2^{\dagger}$ has the following properties: $$L_{2}^{\dagger}|0\rangle=\frac{1}{\sqrt{2}}(|01\rangle+|10\rangle)\equiv|1_{L_2}\rangle$$ $$L_{2}^{\dagger}\frac{1}{\sqrt{2}}(|01\rangle+|10\rangle)=\sqrt{2}[\frac{1}{2}(|02\rangle+\sqrt{2}|11\rangle+|20\rangle)]=\sqrt{2}|2_{L_2}\rangle$$  $$L_{2}^{\dagger}\frac{1}{2}(|02\rangle+\sqrt{2}|11\rangle+|20\rangle)=\sqrt{3}[\frac{1}{2\sqrt{2}}(|03\rangle+\sqrt{3}|12\rangle+\sqrt{3}|21\rangle+|30\rangle)]=\sqrt{3}|3_{L_2}\rangle$$  $$...$$
 while the operator $L_1^{\dagger}$ has the following properties: $$L_{1}^{\dagger}|0\rangle=\frac{1}{\sqrt{2}}(-|01\rangle+|10\rangle)\equiv|1_{L_{1}}\rangle$$ $$L_{1}^{\dagger}\frac{1}{\sqrt{2}}(-|01\rangle+|10\rangle)=\sqrt{2}[\frac{1}{2}(|02\rangle-\sqrt{2}|11\rangle+|20\rangle)]=\sqrt{2}|2_{L_{1}}\rangle$$  $$L_{1}^{\dagger}\frac{1}{2}(|02\rangle-\sqrt{2}|11\rangle+|20\rangle)=\sqrt{3}[\frac{1}{2\sqrt{2}}(-|03\rangle+\sqrt{3}|12\rangle-\sqrt{3}|21\rangle+|30\rangle)]=\sqrt{3}|3_{L_{1}}\rangle$$  $$...$$
-Then we use the similarity transformation: $U=e^{-L_2^{r}L_2^{l\dagger}}$, which yields $U^{-1}(L_{2}^{r\dagger},L_{2}^{l},L_{2}^{l\dagger},L_{2}^{r})U=(L_{2}^{r\dagger}+L_{2}^{l\dagger},L_{2}^{l}+L_{2}^{r},L_{2}^{l\dagger},L_{2}^{r}) $. Thus, the master equation Eq.\eqref{eq18} becomes:
+Thus, $L_1$ and $L_2$ is just another representation of $a_1$ and $a_2$. Then we use the similarity transformation: $U=e^{-L_2^{r}L_2^{l\dagger}}$, which yields $U^{-1}(L_{2}^{r\dagger},L_{2}^{l},L_{2}^{l\dagger},L_{2}^{r})U=(L_{2}^{r\dagger}+L_{2}^{l\dagger},L_{2}^{l}+L_{2}^{r},L_{2}^{l\dagger},L_{2}^{r}) $. Thus, the master equation Eq.\eqref{eq18} becomes:
 \begin{equation}
 \label{eq18}
 \begin{split}
@@ -275,14 +275,13 @@ RHS=\gamma U^{-1}[-L_2^{l\dagger}L_2^{l}-L_2^{r\dagger}L_2^{r}+2L_2^{r}L_2^{l\da
 \end{equation}
 The solutions to the steady state are $\rho_{s}=e^{-L_{2}^{r}L_{2}^{l\dagger}}|0_{L_{2}}m_{L_{1}}\rangle\langle0_{L_{2}}n_{L_{1}}|=|m_{L_{1}}\rangle\langle n_{L_{1}}|$ which yields $\rho=S_{1}^{+}S_{2}^{+}\frac{1}{\sqrt{m!}}(\frac{a_{1}^{\dagger}-a_{2}^{\dagger}}{\sqrt{2}})^{m}|0\rangle\langle0|\frac{1}{\sqrt{n!}}(\frac{a_{1}-a_{2}}{\sqrt{2}})^{n}S_{1}S_{2}$. This solution degenerates to the single mode squzeed vacuum in two modes when $m=n=0$. Generally, an initial state $\rho(0)=\sum_{mnpq}C_{mnpq}|mn\rangle\langle pq|=\sum_{mnpq}C'_{mnpq}|m_{L_{1}}p_{L_{2}}\rangle\langle n_{L_{1}}q_{L_{2}}|$ will evolve into $\sum_{mn}G_{mn}|m_{L_{1}}\rangle\langle n_{L_{1}}|$ where $G_{mn}=\sum_{mnp}C'_{mnpp}$.
 
-\appendix
-
-\section{Appendix A: Derivation of master equation}
 
 
 
 
 \begin{thebibliography}{99}
+\bibitem{Scully1997} M. O. Scully and M. S. Zubairy, Quantum Optics (Cambridge University Press, Cambrige, England, 1997).
+
 \bibitem{You2018} Jieyu You, Zeyang Liao, Sheng-Wen Li, and M. Suhail Zubairy, Phys. Rev. A 97, 023810 
 \bibitem{Bogoliubov} Bogolubov N N 1947 J. Phys. (USSR) 11 23
 \bibitem{Wang2002} Wang S J et al. 2002 Phys. Rev. A 66 033608(2002)
