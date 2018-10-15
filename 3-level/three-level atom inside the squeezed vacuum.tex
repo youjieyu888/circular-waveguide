@@ -1,4 +1,4 @@
-\documentclass[aps,showpacs,onecolumn,twoside,groupedaddress]{revtex4}
+\documentclass[aps,showpacs,twocolumn,twoside,groupedaddress]{revtex4}
 \usepackage{graphicx}
 \usepackage{epsfig}
 %\usepackage{caption}
@@ -18,23 +18,98 @@
 \renewcommand{\fnum@figure}{Fig. \thefigure}
 \makeatother
 
-\begin{document}
-\title{The dynamics of a $\Xi$-type atom in the Squeezed Vacuum}
-\maketitle 
+
+\title{Waveguide quantum electrodynamics in squeezed vacuum}
+\author{Jieyu You, Zeyang Liao\footnote{zeyangliao@physics.tamu.edu}, Sheng-Wen Li, and M. Suhail Zubairy\footnote{zubairy@physics.tamu.edu}}
+\affiliation{Institute for Quantum Science and Engineering (IQSE) and Department of Physics and Astronomy, Texas A$\&$M University, College Station, TX 77843-4242, USA }
+
+\begin{abstract}
+We study the steady state of a $\Xi$-type atom coupled to the squeezed vacuum reservoir and 
+\end{abstract}
+\pacs{42.30.-d, 42.50.Hz, 42.62.Fi}\maketitle 
 
 
+\section{Introduction}
+In thermal equilibrium, a population inversion can never exist for a system. Traditionally, the achievements of population inversion requires pushing the system into a non-equilibrated state. 
+The concept of population inversion is of fundamental importance in laser physics because the production of population inversion is a key step in the workings of a standard laser.
 
 \section{Master equation of the three level atom in the squeezed vacuum}
 In this section, we consider a scenario where a three-level atom is located inside the waveguide with the squeezed vacuum injected from both ends, as shown in Fig.~\ref{1}(a). The atomic electronic structure is shown in Fig.~\ref{1}(b) where the atomic states are labeled $|a\rangle$, $|b\rangle$, $|c\rangle$ from the excited state to the ground state. We assume that $\omega_{ac}=2\omega_0$ where $\omega_0$ is the center frequency of the broad band squeed vacuum. $\omega_{ab}$ and $\omega_{bc}$ are not equal but they are still within the bandwith of the squeezed vacuum.  
 \begin{figure*}
-\includegraphics[width=0.7\columnwidth]{fig1.png}
-\includegraphics[width=0.25\columnwidth]{fig2.png}
+\includegraphics[width=1.5\columnwidth]{fig1.png}
+\includegraphics[width=0.5\columnwidth]{fig2.png}
 \caption{(a) Schematic setup: A three-level atom is located inside the waveguide with the broadband squeezed vacuum incident from both ends. (b)The energy structure of the three level atom. Transition $|a\rangle\rightarrow|c\rangle$ is forbidden and $\omega_{ac}=2\omega_0$ where $\omega_0$ is the center frequency of the squeezed vacuum. $\omega_{ab}$ and $\omega_{bc}$ differ by a small amount $2\delta\omega_0$ and they are within the bandwidth of the squeezed vacuum reservoir.}
 \label{1}
 \end{figure*}
 
 %The general master equation of dipole-dipole interaction in the squeezed vacuum can be used to study the dynamics of the three-level atom\cite{You2018}:
-The interaction Hamiltonian is:
+
+Doing the above calculation for all terms in Eq.\eqref{eqa2}, we have the general equation for cavity-cavity interaction in the squeezed vacuum as follows:
+\begin{widetext}
+\begin{equation}
+\label{eq1}
+\begin{split}
+\frac{d\rho^{S}}{dt}=&-i\underset{i\neq j}{\sum}\Lambda_{ij}[S_{i}^{+}S_{j}^{-},\rho^{S}]e^{i(\omega_{i}-\omega_{j})t}-\frac{1}{2}\underset{i,j}{\sum}\gamma{}_{ij}(1+N)(\rho^{S}S_{i}^{+}S_{j}^{-}+S_{i}^{+}S_{j}^{-}\rho^{S}-2S_{j}^{-}\rho^{S}S_{i}^{+})e^{i(\omega_{i}-\omega_{j})t} \\
+&-\frac{1}{2}\underset{i,j}{\sum}\gamma{}_{ij}N(\rho^{S}S_{i}^{-}S_{j}^{+}+S_{i}^{-}S_{j}^{+}\rho^{S}-2S_{j}^{+}\rho^{S}S_{i}^{-})e^{-i(\omega_{i}-\omega_{j})t}\\
+&-\frac{1}{2}\sum_{\alpha=\pm}\underset{i,j}{\sum}\gamma'_{ij}Me^{2\alpha ik_{0z}R}e^{i\alpha(\omega_i+\omega_j-2\omega_0)t}(\rho^{S}S_{i}^{\alpha}S_{j}^{\alpha}+S_{i}^{\alpha}S_{j}^{\alpha}\rho^{S}-2S_{j}^{\alpha}\rho^{S}S_{i}^{\alpha})
+\end{split}
+\end{equation}
+\end{widetext}
+where the coefficients are
+\begin{equation}
+\label{eq2}
+\begin{split}
+& \gamma_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}r_{ij}) \\
+& \Lambda_{ij}=\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}\sin(k_{0z}r_{ij})\\
+& \gamma'_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos[k_{0z}(r_{i}+r_{j})]
+\end{split}
+\end{equation}
+where $\gamma_{i}$ is the decay rate for transition $i$ in ordinary vacuum. For a single three level atom, we have $r_i=r_j$, for simplicity we set $R=r_i=0$ and $\gamma_1=\gamma_2=\gamma$. After applying the rotating wave approximation(RWA), the master equation Eq.\eqref{eq1} becomes (see Appendix A)
+\begin{equation}
+\label{eq3}
+\begin{split}
+\frac{d\rho^{S}}{dt}=&-\frac{1}{2}\underset{i}{\sum}\gamma(1+N)(\rho^{S}S_{i}^{+}S_{i}^{-}+S_{i}^{+}S_{i}^{-}\rho^{S}-2S_{i}^{-}\rho^{S}S_{i}^{+})\\
+&-\frac{1}{2}\underset{i}{\sum}\gamma N(\rho^{S}S_{i}^{-}S_{i}^{+}+S_{i}^{-}S_{i}^{+}\rho^{S}-2S_{i}^{+}\rho^{S}S_{i}^{-})\\
+&-\frac{1}{2}\sum_{\alpha=\pm}\underset{i\ne j}{\sum}\gamma M(\rho^{S}S_{i}^{\alpha}S_{j}^{\alpha}+S_{i}^{\alpha}S_{j}^{\alpha}\rho^{S}-2S_{j}^{\alpha}\rho^{S}S_{i}^{\alpha})
+\end{split}
+\end{equation}
+where $N=\sinh(r)^2$ and $M=\sinh(r)\cosh(r)$The steady state of Eq.\eqref{eq3} can be derived by re-writing Eq.\eqref{eq3} as:
+\begin{widetext}
+\begin{subequations}
+\begin{align}
+&\dot{\rho}_{aa}/\gamma=-ch^{2}\rho_{aa}+sh{}^{2}\rho_{bb}-\frac{1}{2}chsh(\rho_{ac}+\rho_{ca})\label{4a} \\
+& \dot{\rho}_{bb}/\gamma=(ch^{2}\rho_{aa}-sh^{2}\rho_{bb})+(sh^{2}\rho_{cc}-ch^{2}\rho_{bb})+chsh(\rho_{ac}+\rho_{ca})\label{4b}\\
+&\dot{\rho}_{cc}/\gamma=ch^{2}\rho_{bb}-sh^{2}\rho_{cc}-\frac{1}{2}chsh(\rho_{ac}+\rho_{ca})\label{4c}\\
+&(\dot{\rho}_{ac}+\dot{\rho}_{ca})/\gamma=-\frac{1}{2}(ch^{2}+sh^{2})(\rho_{ac}+\rho_{ca})-shch(\rho_{aa}-2\rho_{bb}+\rho_{cc})\label{4d}\\
+&\dot{\rho}_{ab}/\gamma=-(1+\frac{3}{2}sh^{2})\rho_{ab}-\frac{1}{2}chsh\rho_{cb}\label{4e}\\
+&\dot{\rho}_{cb}/\gamma=-\frac{1}{2}chsh\rho_{ab}-(\frac{1}{2}+\frac{3}{2}sh^{2})\rho_{cb}\label{4f}
+\end{align}
+\end{subequations}
+\end{widetext}
+where $sh=\sinh(r), ch=\cosh(r)$. Eq.\eqref{4e}\eqref{4f} yield $\rho_{ab}=\rho_{cb}=0$ for the steady state, and Eq.\eqref{4a}-\eqref{4d} yield $\rho_{aa}=\frac{sh^{2}}{sh^{2}+ch^{2}}$, $\rho_{cc}=\frac{ch^{2}}{sh^{2}+ch^{2}}$, $\rho_{ac}=-\frac{shch}{sh^{2}+ch^{2}}$. Thus, the steady state is actually a superposition state of $|a\rangle$ and $|c\rangle$: $\frac{sh}{\sqrt{sh^{2}+ch^{2}}}|a\rangle-\frac{ch}{\sqrt{sh^{2}+ch^{2}}}|c\rangle$. This phenomenon is similar to coherent trapping, but here we achieve the trapping for $\Xi$ structure with the squeezed vacuum reservoir, which cannot be realized with coherent pump due to spontaneous emission.
+
+In general we can study the steady state population distribution when the dipole moments of transition $|a\rangle\rightarrow|b\rangle$ and $|b\rangle\rightarrow|c\rangle$ are different, i.e., $\mu_{ab}\ne\mu_{bc}$. Although the analytical solution is quite lengthy, we can easily get the numerical solution for different $\mu_{ab}$ and $\mu_{bc}$. In Fig.~\ref{2}(a), population inversion is achieved with $\mu_{ab}<\mu_{bc}$. This can be interpreted with the help of Fig.~\ref{2}(c). Figure ~\ref{2}(c) shows that the direct transition between $|a\rangle$, $|b\rangle$, and $|c\rangle$ are allowed just like the thermal reservoir case. However, in the squeezed vacuum, there is additional paths for population flow: electrons in any of these three states can evolve into the other two through an intermediate "state" $\rho_{ac}$. Although $\rho_{ac}$ is actually not a state, and $\rho_{ac}<0$ in our convention, it can be used to elucidate our idea. When $\mu_{ab}\ll\mu_{bc}$, the transition $|a\rangle\rightarrow|b\rangle$ can be removed. Thus state $|c\rangle$ can be excited to $|a\rangle$ through $|c\rangle\rightarrow|b\rangle\rightarrow\rho_{ac}\rightarrow|a\rangle$, but $|a\rangle$ can not decay back to $|c\rangle$. Thus, the population is trapped from $|c\rangle$ to $|a\rangle$. Although the population inversion between $|a\rangle$ and $|c\rangle$ is very sensitive to the value of $M$, the population inversion between $|a\rangle$ and $|b\rangle$ still holds for $M=0.8\sqrt{N(N+1)}$, which is shown in Fig.~\ref{2}(b).
+
+\begin{figure*}
+\includegraphics[width=1\columnwidth]{atom_fig4.eps}
+\includegraphics[width=1\columnwidth]{atom_fig5.eps}
+\includegraphics[width=1\columnwidth]{atom_fig3.png}
+\caption{(a) The steady state population distribution for different $\mu_{ab}$ and$\mu_{bc}$. The squeezing parameter $r=1$. (b) The steady state population distribution for non-ideal squeezed vacuum which is characterized by the ratio of $M$ and $\sqrt{N(N+1)}$. (c) The allowed population flow in the squeezed vacuum. The squeezing parameter $r=1$, and $\mu_{ab}=\frac{1}{4}\mu_{bc}$.}
+\label{2}
+\end{figure*}
+%\begin{equation}
+%\label{eq4}
+%\begin{split}
+%\frac{d\rho^{S}}{dt}=&\sum_{i\ne j}\frac{\gamma}{2}[-\rho(\cosh rS_{i}^{\dagger}+\sinh rS_{j})(\cosh rS_{i}+\sinh rS_{j}^{\dagger})\\
+%&-(\cosh rS_{i}^{\dagger}+\sinh rS_{j})(\cosh rS_{i}+\sinh rS_{j}^{\dagger})\rho\\
+%&+2(\cosh rS_{i}+\sinh rS_{j}^{\dagger})\rho(\cosh rS_{i}^{\dagger}+\sinh rS_{j})]
+%\end{split}
+%\end{equation}
+
+\begin{widetext}
+\appendix
+\section{DERIVATION OF EQ.\eqref{eq1}}
+Here we will show how to derive the master equation Eq. \eqref{eq1}. The interaction Hamiltonian is:
 \begin{equation}
 \label{eqa0}\tag{A1}
 V(t)=-i\hbar \sum_{\vec{k}s}[D(t)a_{\vec{k}s}(t)-D^{+}(t)a^{\dagger}_{\vec{k}s}(t)],
@@ -129,66 +204,10 @@ where we have used the fact that the origin of coordinate system is at equal dis
 &\approx-e^{i2k_{0z}R}\frac{\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}\hbar Sc^{2}k_{0z}}e^{i2k_{0z}r_{c}sgn(i-j)}S_{i}^{+}S_{j}^{+}\rho^{S}(t)\rightarrow-\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}e^{i2k_{0z}R}\cos(k_{0z}(r_{i}+r_{j}))S_{i}^{+}S_{j}^{+}\rho^{S}(t)\\
 \end{split}
 \end{equation}
-where $sgn(i-j)$ is the sign function. The last arrow is because we need to sum over $i,j$, so the imaginary part of $e^{i2k_{0z}r_{c}sgn(i-j)}$ vanishes and the neat result is that $\gamma'_{ij}=e^{i2k_{0z}R}\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}(r_{i}+r_{j}))$. As for $S_{i}^{+}\rho^{S}(t)S_{j}^{+}$ terms, the combination of the last two terms in Eq.\eqref{eqa2} will make the imaginary part of $e^{i2k_{0z}r_{c}sgn(i-j)}$ vanish. Thus, we have $\gamma'_{ij}=e^{i2k_{0z}R}\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}(r_i+r_j))$. 
-Doing the above calculation for all terms in Eq.\eqref{eqa2}, we have the general equation for cavity-cavity interaction in the squeezed vacuum as follows:
-\begin{equation}
-\label{eq1}
-\begin{split}
-\frac{d\rho^{S}}{dt}=&-i\underset{i\neq j}{\sum}\Lambda_{ij}[S_{i}^{+}S_{j}^{-},\rho^{S}]e^{i(\omega_{i}-\omega_{j})t}\\
-&-\frac{1}{2}\underset{i,j}{\sum}\gamma{}_{ij}(1+N)(\rho^{S}S_{i}^{+}S_{j}^{-}+S_{i}^{+}S_{j}^{-}\rho^{S}-2S_{j}^{-}\rho^{S}S_{i}^{+})e^{i(\omega_{i}-\omega_{j})t} \\
-&-\frac{1}{2}\underset{i,j}{\sum}\gamma{}_{ij}N(\rho^{S}S_{i}^{-}S_{j}^{+}+S_{i}^{-}S_{j}^{+}\rho^{S}-2S_{j}^{+}\rho^{S}S_{i}^{-})e^{-i(\omega_{i}-\omega_{j})t}\\
-&-\frac{1}{2}\sum_{\alpha=\pm}\underset{i,j}{\sum}\gamma'_{ij}Me^{2\alpha ik_{0z}R}e^{i\alpha(\omega_i+\omega_j-2\omega_0)t}(\rho^{S}S_{i}^{\alpha}S_{j}^{\alpha}+S_{i}^{\alpha}S_{j}^{\alpha}\rho^{S}-2S_{j}^{\alpha}\rho^{S}S_{i}^{\alpha})
-\end{split}
-\end{equation}
-where the coefficients are
-\begin{equation}
-\label{eq2}
-\begin{split}
-& \gamma_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}r_{ij}) \\
-& \Lambda_{ij}=\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}\sin(k_{0z}r_{ij})\\
-& \gamma'_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos[k_{0z}(r_{i}+r_{j})]
-\end{split}
-\end{equation}
-where $\gamma_{i}$ is the decay rate for transition $i$ in ordinary vacuum. For a single three level atom, we have $r_i=r_j$, for simplicity we set $R=r_i=0$ and $\gamma_1=\gamma_2=\gamma$. After applying the rotating wave approximation(RWA), the master equation Eq.\eqref{eq1} becomes (see Appendix A)
-\begin{equation}
-\label{eq3}
-\begin{split}
-\frac{d\rho^{S}}{dt}=&-\frac{1}{2}\underset{i}{\sum}\gamma(1+N)(\rho^{S}S_{i}^{+}S_{i}^{-}+S_{i}^{+}S_{i}^{-}\rho^{S}-2S_{i}^{-}\rho^{S}S_{i}^{+})\\
-&-\frac{1}{2}\underset{i}{\sum}\gamma N(\rho^{S}S_{i}^{-}S_{i}^{+}+S_{i}^{-}S_{i}^{+}\rho^{S}-2S_{i}^{+}\rho^{S}S_{i}^{-})\\
-&-\frac{1}{2}\sum_{\alpha=\pm}\underset{i\ne j}{\sum}\gamma M(\rho^{S}S_{i}^{\alpha}S_{j}^{\alpha}+S_{i}^{\alpha}S_{j}^{\alpha}\rho^{S}-2S_{j}^{\alpha}\rho^{S}S_{i}^{\alpha})
-\end{split}
-\end{equation}
-where $N=\sinh(r)^2$ and $M=\sinh(r)\cosh(r)$The steady state of Eq.\eqref{eq3} can be derived by re-writing Eq.\eqref{eq3} as:
-\begin{subequations}
-\begin{align}
-&\dot{\rho}_{aa}/\gamma=-ch^{2}\rho_{aa}+sh{}^{2}\rho_{bb}-\frac{1}{2}chsh(\rho_{ac}+\rho_{ca})\label{4a} \\
-& \dot{\rho}_{bb}/\gamma=(ch^{2}\rho_{aa}-sh^{2}\rho_{bb})+(sh^{2}\rho_{cc}-ch^{2}\rho_{bb})+chsh(\rho_{ac}+\rho_{ca})\label{4b}\\
-&\dot{\rho}_{cc}/\gamma=ch^{2}\rho_{bb}-sh^{2}\rho_{cc}-\frac{1}{2}chsh(\rho_{ac}+\rho_{ca})\label{4c}\\
-&(\dot{\rho}_{ac}+\dot{\rho}_{ca})/\gamma=-\frac{1}{2}(ch^{2}+sh^{2})(\rho_{ac}+\rho_{ca})-shch(\rho_{aa}-2\rho_{bb}+\rho_{cc})\label{4d}\\
-&\dot{\rho}_{ab}/\gamma=-(1+\frac{3}{2}sh^{2})\rho_{ab}-\frac{1}{2}chsh\rho_{cb}\label{4e}\\
-&\dot{\rho}_{cb}/\gamma=-\frac{1}{2}chsh\rho_{ab}-(\frac{1}{2}+\frac{3}{2}sh^{2})\rho_{cb}\label{4f}
-\end{align}
-\end{subequations}
-where $sh=\sinh(r), ch=\cosh(r)$. Eq.\eqref{4e}\eqref{4f} yield $\rho_{ab}=\rho_{cb}=0$ for the steady state, and Eq.\eqref{4a}-\eqref{4d} yield $\rho_{aa}=\frac{sh^{2}}{sh^{2}+ch^{2}}$, $\rho_{cc}=\frac{ch^{2}}{sh^{2}+ch^{2}}$, $\rho_{ac}=-\frac{shch}{sh^{2}+ch^{2}}$. Thus, the steady state is actually a superposition state of $|a\rangle$ and $|c\rangle$: $\frac{sh}{\sqrt{sh^{2}+ch^{2}}}|a\rangle-\frac{ch}{\sqrt{sh^{2}+ch^{2}}}|c\rangle$. This phenomenon is similar to coherent trapping, but here we achieve the trapping for $\Xi$ structure with the squeezed vacuum reservoir, which cannot be realized with coherent pump due to spontaneous emission.
+where $sgn(i-j)$ is the sign function. The last arrow is because we need to sum over $i,j$, so the imaginary part of $e^{i2k_{0z}r_{c}sgn(i-j)}$ vanishes and the neat result is that $\gamma'_{ij}=e^{i2k_{0z}R}\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}(r_{i}+r_{j}))$. As for $S_{i}^{+}\rho^{S}(t)S_{j}^{+}$ terms, the combination of the last two terms in Eq.\eqref{eqa2} will make the imaginary part of $e^{i2k_{0z}r_{c}sgn(i-j)}$ vanish. Thus, we have $\gamma'_{ij}=e^{i2k_{0z}R}\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}(r_i+r_j))$. Thus, we 
 
-In general we can study the steady state population distribution when the dipole moments of transition $|a\rangle\rightarrow|b\rangle$ and $|b\rangle\rightarrow|c\rangle$ are different, i.e., $\mu_{ab}\ne\mu_{bc}$. Although the analytical solution is quite lengthy, we can easily get the numerical solution for different $\mu_{ab}$ and $\mu_{bc}$. In Fig.~\ref{2}(a), population inversion is achieved with $\mu_{ab}<\mu_{bc}$. This can be interpreted with the help of Fig.~\ref{2}(c). Figure ~\ref{2}(c) shows that the direct transition between $|a\rangle$, $|b\rangle$, and $|c\rangle$ are allowed just like the thermal reservoir case. However, in the squeezed vacuum, there is additional paths for population flow: electrons in any of these three states can evolve into the other two through an intermediate "state" $\rho_{ac}$. Although $\rho_{ac}$ is actually not a state, and $\rho_{ac}<0$ in our convention, it can be used to elucidate our idea. When $\mu_{ab}\ll\mu_{bc}$, the transition $|a\rangle\rightarrow|b\rangle$ can be removed. Thus state $|c\rangle$ can be excited to $|a\rangle$ through $|c\rangle\rightarrow|b\rangle\rightarrow\rho_{ac}\rightarrow|a\rangle$, but $|a\rangle$ can not decay back to $|c\rangle$. Thus, the population is trapped from $|c\rangle$ to $|a\rangle$. Although the population inversion between $|a\rangle$ and $|c\rangle$ is very sensitive to the value of $M$, the population inversion between $|a\rangle$ and $|b\rangle$ still holds for $M=0.8\sqrt{N(N+1)}$, which is shown in Fig.~\ref{2}(b).
 
-\begin{figure*}
-\includegraphics[width=0.48\columnwidth]{atom_fig4.eps}
-\includegraphics[width=0.48\columnwidth]{atom_fig5.eps}
-\includegraphics[width=0.4\columnwidth]{atom_fig3.png}
-\caption{(a) The steady state population distribution for different $\mu_{ab}$ and$\mu_{bc}$. The squeezing parameter $r=1$. (b) The steady state population distribution for non-ideal squeezed vacuum which is characterized by the ratio of $M$ and $\sqrt{N(N+1)}$. (c) The allowed population flow in the squeezed vacuum. The squeezing parameter $r=1$, and $\mu_{ab}=\frac{1}{4}\mu_{bc}$.}
-\label{2}
-\end{figure*}
-%\begin{equation}
-%\label{eq4}
-%\begin{split}
-%\frac{d\rho^{S}}{dt}=&\sum_{i\ne j}\frac{\gamma}{2}[-\rho(\cosh rS_{i}^{\dagger}+\sinh rS_{j})(\cosh rS_{i}+\sinh rS_{j}^{\dagger})\\
-%&-(\cosh rS_{i}^{\dagger}+\sinh rS_{j})(\cosh rS_{i}+\sinh rS_{j}^{\dagger})\rho\\
-%&+2(\cosh rS_{i}+\sinh rS_{j}^{\dagger})\rho(\cosh rS_{i}^{\dagger}+\sinh rS_{j})]
-%\end{split}
-%\end{equation}
-
+\end{widetext}
 
 
 \begin{thebibliography}{99}
