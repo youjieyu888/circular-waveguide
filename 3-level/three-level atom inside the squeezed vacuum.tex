@@ -19,12 +19,12 @@
 \makeatother
 
 
-\title{Waveguide quantum electrodynamics in squeezed vacuum}
-\author{Jieyu You, Zeyang Liao\footnote{zeyangliao@physics.tamu.edu}, Sheng-Wen Li, and M. Suhail Zubairy\footnote{zubairy@physics.tamu.edu}}
+\title{The steady state of $\Xi$-type atoms in the squeezed vacuum reservoir}
+\author{Jieyu You, Zeyang Liao, and M. Suhail Zubairy}
 \affiliation{Institute for Quantum Science and Engineering (IQSE) and Department of Physics and Astronomy, Texas A$\&$M University, College Station, TX 77843-4242, USA }
 
 \begin{abstract}
-We study the steady state of a $\Xi$-type atom coupled to the squeezed vacuum reservoir and 
+We study the steady state of $\Xi$-type atoms coupled to the squeezed vacuum reservoir. The population inversion can occur for the steady state when the coupling strength of two transitions to the squeezed vacuum are properly set. We also discuss the possibility of the population inversion of a group of atoms in the squeezed vacuum. 
 \end{abstract}
 \pacs{42.30.-d, 42.50.Hz, 42.62.Fi}\maketitle 
 
@@ -42,9 +42,20 @@ In this section, we consider a scenario where a three-level atom is located insi
 \label{1}
 \end{figure*}
 
+
 %The general master equation of dipole-dipole interaction in the squeezed vacuum can be used to study the dynamics of the three-level atom\cite{You2018}:
 
-Doing the above calculation for all terms in Eq.\eqref{eqa2}, we have the general equation for cavity-cavity interaction in the squeezed vacuum as follows:
+The correlation functions are:
+\begin{equation}
+\label{eq0a}
+\begin{split}
+& \left\langle a_{\vec{k},s}^{\dagger}a_{\vec{k}',s'}\right\rangle =\sinh^{2}r\delta_{\vec{k}'\vec{k}}\delta_{ss'} \\
+& \left\langle a_{\vec{k},s}a_{\vec{k}',s'}^{\dagger}\right\rangle =\cosh^{2}r\delta_{\vec{k}'\vec{k}}\delta_{ss'}\\
+& \left\langle a_{\vec{k},s}^{\dagger}a_{\vec{k}',s'}^{\dagger}\right\rangle =-e^{-i\theta}\cosh(r)\sinh(r)\delta_{\vec{k}',2\vec{k}_{0}-\vec{k}}\delta_{ss'}\\
+&\left\langle a_{\vec{k},s}a_{\vec{k}',s'}\right\rangle =-e^{i\theta}\cosh(r)\sinh(r)\delta_{\vec{k}',2\vec{k}_{0}-\vec{k}}\delta_{ss'}
+\end{split}
+\end{equation}
+
 \begin{widetext}
 \begin{equation}
 \label{eq1}
@@ -106,9 +117,20 @@ In general we can study the steady state population distribution when the dipole
 %\end{split}
 %\end{equation}
 
+correlation functions: 
+\begin{equation}
+\label{eq0b}
+\begin{split}
+& \left\langle a_{\vec{k},s}^{\dagger}a_{\vec{k}',s'}\right\rangle =\sinh^{2}r\delta_{\vec{k}'\vec{k}}\delta_{ss'} \\
+& \left\langle a_{\vec{k},s}a_{\vec{k}',s'}^{\dagger}\right\rangle =\cosh^{2}r\delta_{\vec{k}'\vec{k}}\delta_{ss'}\\
+& \left\langle a_{\vec{k},s}^{\dagger}a_{\vec{k}',s'}^{\dagger}\right\rangle =-e^{-i\theta}\cosh(r)\sinh(r)\delta_{\vec{k}',-(2\vec{k}_{0}-\vec{k})}\delta_{ss'}\\
+&\left\langle a_{\vec{k},s}a_{\vec{k}',s'}\right\rangle =-e^{i\theta}\cosh(r)\sinh(r)\delta_{\vec{k}',-(2\vec{k}_{0}-\vec{k})}\delta_{ss'}
+\end{split}
+\end{equation}
+
 \begin{widetext}
 \appendix
-\section{DERIVATION OF EQ.\eqref{eq1}}
+\section{DERIVATION OF EQ.\eqref{eq1} }
 Here we will show how to derive the master equation Eq. \eqref{eq1}. The interaction Hamiltonian is:
 \begin{equation}
 \label{eqa0}\tag{A1}
@@ -206,6 +228,24 @@ where we have used the fact that the origin of coordinate system is at equal dis
 \end{equation}
 where $sgn(i-j)$ is the sign function. The last arrow is because we need to sum over $i,j$, so the imaginary part of $e^{i2k_{0z}r_{c}sgn(i-j)}$ vanishes and the neat result is that $\gamma'_{ij}=e^{i2k_{0z}R}\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}(r_{i}+r_{j}))$. As for $S_{i}^{+}\rho^{S}(t)S_{j}^{+}$ terms, the combination of the last two terms in Eq.\eqref{eqa2} will make the imaginary part of $e^{i2k_{0z}r_{c}sgn(i-j)}$ vanish. Thus, we have $\gamma'_{ij}=e^{i2k_{0z}R}\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}(r_i+r_j))$. Thus, we 
 
+\section{DERIVATION OF coefficients EQ.\eqref{eq2b} }
+Here we will show how to derive the master equation with coefficients EQ.\eqref{eq2b} from the correlation function EQ. \eqref{eq0b}. Since the only difference is the squeezing terms $\left\langle a_{\vec{k},s}^{\dagger}a_{\vec{k}',s'}^{\dagger}\right\rangle$, $\left\langle a_{\vec{k},s}a_{\vec{k}',s'}\right\rangle $, we will just start from EQ. \eqref{eqb8}. Apart from the factor $e^{i(\omega_i+omega_j-2\omega_0)t}$, EQ. \eqref{eqb8} becomes:
+
+\begin{equation}
+\label{eqb1}\tag{B1}
+\begin{split}
+&\underset{k_{z}}{\sum}\int_{0}^{t}d\tau\{\vec{\mu}{}_{i}\cdot\vec{u}_{-2\vec{k}_{0}+\vec{k}}(r_{i})S_{i}^{+}\vec{\mu}_{j}\cdot\vec{u}_{\vec{k}}(r_{j})S_{j}^{+}e^{i(\omega_{\vec{k}}-\omega_{0})\tau}[-\sinh(r)\cosh(r)]\rho^{S}(t-\tau)\\
+\approx&-\frac{L}{2\pi}\int_{0}^{2k_{0}}dk\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(k-k_{0})\tau}e^{-i(2k_{0}-k)(r_{i}-o_{2})+ik(r_{j}-o_{1})}\frac{\sqrt{\omega_{k_{z}}\omega_{2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)\\
+&-\frac{L}{2\pi}\int_{-2k_{0}}^{0}dk\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k-k_{0})\tau}e^{i(2k_{0}+k)(r_{i}-o_{2})+ik(r_{j}-o_{1})}\frac{\sqrt{\omega_{k_{z}}\omega_{-2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)\\
+=&=-\frac{L}{2\pi}\int_{0}^{2k_{0}}dk\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k_{0})\tau}e^{-i(2k_{0})(r_{i}-o_{2})}e^{ik(\frac{c^{2}k_{0}}{_{\omega_{0}}}\tau+r_{i}-o_{1}+r_{j}-o_{2})}\frac{\sqrt{\omega_{k_{z}}\omega_{2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)\\
+&-\frac{L}{2\pi}\int_{0}^{2k_{0}}dk\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k_{0})\tau}e^{i(2k_{0})(r_{i}-o_{2})}e^{ik(\frac{c^{2}k_{0}}{_{\omega_{0}}}\tau-r_{i}+o_{1}-r_{j}+o_{2})}\frac{\sqrt{\omega_{k_{z}}\omega_{-2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)\\
+\approx&-\frac{L}{2\pi}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k_{0})\tau}e^{-i(2k_{0})(r_{i})}e^{2ik_{0}o_{2}}2\pi\delta(\frac{c^{2}k_{0}}{_{\omega_{0}}}\tau+2r_{c}-o_{1}-o_{2})\frac{\sqrt{\omega_{i}\omega_{j}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)\\
+&-\frac{L}{2\pi}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k_{0})\tau}e^{i(2k_{0})(r_{i})}e^{-2ik_{0}o_{2}}2\pi\delta(\frac{c^{2}k_{0}}{_{\omega_{0}}}\tau-2r_{c}+o_{1}+o_{2})\frac{\sqrt{\omega_{i}\omega_{j}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)\\
+\approx&-\frac{L}{2\pi}e^{i(-k_{0})|2r_{c}-o_{1}-o_{2}|}e^{sgn(r_{c}-o_{1}-o_{2})i(2k_{0})(r_{i})}e^{-2ik_{0}o_{2}}2\pi\frac{\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar c^{2}k_{0z}}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t)\\
+=&-\frac{L}{2\pi}e^{sgn(2r_{c}-o_{1}-o_{2})ik_{0}(r_{i}-r_{j})}e^{ik_{0}(o_{1}-o_{2})}2\pi\frac{\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar c^{2}k_{0z}}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t)
+\end{split}
+\end{equation}
+Since we need to sum over $i,j$, the imaginary part of $e^{sgn(2r_{c}-o_{1}-o_{2})ik_{0}(r_{i}-r_{j})}$ gets canceled in  $-\frac{1}{2}cos(k_{0}r_{ij})e^{i\theta}\frac{2\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}S\hbar c^{2}k_{0z}}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t)$
 
 \end{widetext}
 
