@@ -76,6 +76,13 @@
 \begin_body
 
 \begin_layout Standard
+\begin_inset Formula $\Xi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $\underset{k_{z}}{\sum}\int_{0}^{t}d\tau\{\vec{\mu}{}_{i}\cdot\vec{u}_{-2\vec{k}_{0}+\vec{k}}(r_{i})S_{i}^{+}\vec{\mu}_{j}\cdot\vec{u}_{\vec{k}}(r_{j})S_{j}^{+}e^{i(\omega_{\vec{k}}-\omega_{0})\tau}[-\sinh(r)\cosh(r)]\rho^{S}(t-\tau)$
 \end_inset
 
@@ -83,56 +90,56 @@
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=-\frac{L}{2\pi}\int_{0}^{2k_{0}}dk\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(k-k_{0})\tau}e^{-i(2k_{0}-k)(r_{i}-o_{2})+ik(r_{j}-o_{1})}\frac{\sqrt{\omega_{k_{z}}\omega_{2k_{0z}-k_{z}}}\mu^{2}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)$
+\begin_inset Formula $\approx-\frac{L}{2\pi}\int_{0}^{2k_{0}}dk\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(k-k_{0})\tau}e^{-i(2k_{0}-k)(r_{i}-o_{2})+ik(r_{j}-o_{1})}\frac{\sqrt{\omega_{k_{z}}\omega_{2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $-\frac{L}{2\pi}\int_{-2k_{0}}^{0}dk\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k-k_{0})\tau}e^{i(2k_{0}+k)(r_{i}-o_{3})+ik(r_{j}-o_{4})}\frac{\sqrt{\omega_{k_{z}}\omega_{-2k_{0z}-k_{z}}}\mu^{2}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)$
+\begin_inset Formula $-\frac{L}{2\pi}\int_{-2k_{0}}^{0}dk\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k-k_{0})\tau}e^{i(2k_{0}+k)(r_{i}-o_{2})+ik(r_{j}-o_{1})}\frac{\sqrt{\omega_{k_{z}}\omega_{-2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=-\frac{L}{2\pi}\int_{0}^{2k_{0}}dk\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(k-k_{0})\tau}e^{-i(2k_{0}-k)(r_{i}-o_{2})+ik(r_{j}-o_{1})}\frac{\sqrt{\omega_{k_{z}}\omega_{2k_{0z}-k_{z}}}\mu^{2}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)$
+\begin_inset Formula $=-\frac{L}{2\pi}\int_{0}^{2k_{0}}dk\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(k-k_{0})\tau}e^{-i(2k_{0}-k)(r_{i}-o_{2})+ik(r_{j}-o_{1})}\frac{\sqrt{\omega_{k_{z}}\omega_{2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $-\frac{L}{2\pi}\int_{0}^{2k_{0}}dk\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(k-k_{0})\tau}e^{i(2k_{0}-k)(r_{i}-o_{3})-ik(r_{j}-o_{4})}\frac{\sqrt{\omega_{k_{z}}\omega_{-2k_{0z}-k_{z}}}\mu^{2}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)$
+\begin_inset Formula $-\frac{L}{2\pi}\int_{0}^{2k_{0}}dk\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(k-k_{0})\tau}e^{i(2k_{0}-k)(r_{i}-o_{2})-ik(r_{j}-o_{1})}\frac{\sqrt{\omega_{k_{z}}\omega_{-2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=-\frac{L}{2\pi}\int_{0}^{2k_{0}}dk\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k_{0})\tau}e^{-i(2k_{0})(r_{i}-o_{2})}e^{ik(\frac{c^{2}k_{0}}{_{\omega_{0}}}\tau+r_{i}-o_{1}+r_{j}-o_{2})}\frac{\sqrt{\omega_{k_{z}}\omega_{2k_{0z}-k_{z}}}\mu^{2}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)$
+\begin_inset Formula $=-\frac{L}{2\pi}\int_{0}^{2k_{0}}dk\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k_{0})\tau}e^{-i(2k_{0})(r_{i}-o_{2})}e^{ik(\frac{c^{2}k_{0}}{_{\omega_{0}}}\tau+r_{i}-o_{1}+r_{j}-o_{2})}\frac{\sqrt{\omega_{k_{z}}\omega_{2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $-\frac{L}{2\pi}\int_{0}^{2k_{0}}dk\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k_{0})\tau}e^{i(2k_{0})(r_{i}-o_{3})}e^{ik(\frac{c^{2}k_{0}}{_{\omega_{0}}}\tau-r_{i}+o_{3}-r_{j}+o_{4})}\frac{\sqrt{\omega_{k_{z}}\omega_{-2k_{0z}-k_{z}}}\mu^{2}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)$
+\begin_inset Formula $-\frac{L}{2\pi}\int_{0}^{2k_{0}}dk\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k_{0})\tau}e^{i(2k_{0})(r_{i}-o_{2})}e^{ik(\frac{c^{2}k_{0}}{_{\omega_{0}}}\tau-r_{i}+o_{1}-r_{j}+o_{2})}\frac{\sqrt{\omega_{k_{z}}\omega_{-2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=-\frac{L}{2\pi}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k_{0})\tau}e^{-i(2k_{0})(r_{i})}e^{2ik_{0}o_{2}}2\pi\delta(\frac{c^{2}k_{0}}{_{\omega_{0}}}\tau+2r_{c}-o_{1}-o_{2})\frac{\omega_{0}\mu^{2}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)$
+\begin_inset Formula $\approx-\frac{L}{2\pi}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k_{0})\tau}e^{-i(2k_{0})(r_{i})}e^{2ik_{0}o_{2}}2\pi\delta(\frac{c^{2}k_{0}}{_{\omega_{0}}}\tau+2r_{c}-o_{1}-o_{2})\frac{\sqrt{\omega_{i}\omega_{j}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $-\frac{L}{2\pi}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k_{0})\tau}e^{i(2k_{0})(r_{i})}e^{-2ik_{0}o_{3}}2\pi\delta(\frac{c^{2}k_{0}}{_{\omega_{0}}}\tau-2r_{c}+o_{3}+o_{4})\frac{\omega_{0}\mu^{2}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)$
+\begin_inset Formula $-\frac{L}{2\pi}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k_{0})\tau}e^{i(2k_{0})(r_{i})}e^{-2ik_{0}o_{2}}2\pi\delta(\frac{c^{2}k_{0}}{_{\omega_{0}}}\tau-2r_{c}+o_{1}+o_{2})\frac{\sqrt{\omega_{i}\omega_{j}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)$
 \end_inset
 
 
@@ -146,14 +153,14 @@
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=-\frac{L}{2\pi}e^{i(-k_{0})|2r_{c}|}e^{sgn(r_{c})i(2k_{0})(r_{i})}e^{2ik_{0}R}2\pi\frac{\omega_{0}^{2}\mu^{2}}{\epsilon_{0}LS\hbar c^{2}k_{0z}}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)$
+\begin_inset Formula $\approx-\frac{L}{2\pi}e^{i(-k_{0})|2r_{c}-o_{1}-o_{2}|}e^{sgn(r_{c}-o_{1}-o_{2})i(2k_{0})(r_{i})}e^{-2ik_{0}o_{2}}2\pi\frac{\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar c^{2}k_{0z}}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=-\frac{L}{2\pi}e^{sgn(r_{c})ik_{0}(r_{i}-r_{j})}e^{2ik_{0}R}2\pi\frac{\omega_{0}^{2}\mu^{2}}{\epsilon_{0}LS\hbar c^{2}k_{0z}}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)$
+\begin_inset Formula $=-\frac{L}{2\pi}e^{sgn(2r_{c}-o_{1}-o_{2})ik_{0}(r_{i}-r_{j})}e^{ik_{0}(o_{1}-o_{2})}2\pi\frac{\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar c^{2}k_{0z}}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t)$
 \end_inset
 
 
@@ -164,7 +171,7 @@ sum ij we have
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=-\frac{1}{2}cos(k_{0}r_{ij})e^{2ik_{0}R}\frac{2\omega_{0}^{2}\mu^{2}}{\epsilon_{0}S\hbar c^{2}k_{0z}}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)$
+\begin_inset Formula $=-\frac{1}{2}cos(k_{0}r_{ij})e^{i\theta}\frac{2\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}S\hbar c^{2}k_{0z}}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t)$
 \end_inset
 
 

@@ -12,12 +12,14 @@
 \usepackage{array}
 \usepackage{mathrsfs}
 \usepackage{bm}
+\usepackage{wasysym}
 \let\vec\bm
 
 \makeatletter
 \renewcommand{\fnum@figure}{Fig. \thefigure}
 \makeatother
 
+\begin{document}
 
 \title{The steady state of $\Xi$-type atoms in the squeezed vacuum reservoir}
 \author{Jieyu You, Zeyang Liao, and M. Suhail Zubairy}
@@ -33,8 +35,8 @@ We study the steady state of $\Xi$-type atoms coupled to the squeezed vacuum res
 In thermal equilibrium, a population inversion can never exist for a system. Traditionally, the achievements of population inversion requires pushing the system into a non-equilibrated state. 
 The concept of population inversion is of fundamental importance in laser physics because the production of population inversion is a key step in the workings of a standard laser.
 
-\section{Master equation of the three level atom in the squeezed vacuum}
-In this section, we consider a scenario where a three-level atom is located inside the waveguide with the squeezed vacuum injected from both ends, as shown in Fig.~\ref{1}(a). The atomic electronic structure is shown in Fig.~\ref{1}(b) where the atomic states are labeled $|a\rangle$, $|b\rangle$, $|c\rangle$ from the excited state to the ground state. We assume that $\omega_{ac}=2\omega_0$ where $\omega_0$ is the center frequency of the broad band squeed vacuum. $\omega_{ab}$ and $\omega_{bc}$ are not equal but they are still within the bandwith of the squeezed vacuum.  
+\section{Master equation of three level atoms in the squeezed vacuum}
+In this section, we consider a scenario where $N_a$ three-level atoms are located inside the waveguide with the squeezed vacuum injected from both ends, as shown in Fig.~\ref{1}(a). The atomic electronic structure is shown in Fig.~\ref{1}(b) where the atomic states are labeled $|a\rangle$, $|b\rangle$, $|c\rangle$ from the excited state to the ground state. We assume that $\omega_{ac}=2\omega_0$ where $\omega_0$ is the center frequency of the broad band squeed vacuum.  $\omega_{ab}$ and $\omega_{bc}$ are not equal but they are still within the bandwith of the squeezed vacuum. We assume that the squeezed vacuum bandwidth is much larger than $|\omega_{ab}-\omega_{bc}|$ so it forms a squeezed vacuum reservoir. 
 \begin{figure*}
 \includegraphics[width=1.5\columnwidth]{fig1.png}
 \includegraphics[width=0.5\columnwidth]{fig2.png}
@@ -45,7 +47,26 @@ In this section, we consider a scenario where a three-level atom is located insi
 
 %The general master equation of dipole-dipole interaction in the squeezed vacuum can be used to study the dynamics of the three-level atom\cite{You2018}:
 
-The correlation functions are:
+The atom-field system is described by the Hamiltonian \begin{equation}
+  \label{eq1}
+  \begin{gathered}
+H=H_{A}+H_{F}+H_{AF}
+ \end{gathered}
+\end{equation}
+where
+$H_{A}=\sum_{e=a,b,c}\sum_{l=1}^{N_a}\hbar\omega_{e,l}\left|e_{l}\right\rangle \left\langle e_{l}\right|$  
+is the atomic Hamiltonian, and $ \left|e_{l}\right\rangle $ is the energy state of the $l$th atom with energy $\hbar\omega_{e,l}$. The Hamiltonian of the EM field is
+$H_{F}=\sum_{\vec{k}s}\hbar\omega_{\vec{k}s}(\hat{a}_{\vec{k}s}^{\dagger}\hat{a}_{\vec{k}s}+\frac{1}{2})$
+where $\hat{a}_{\vec{k}s}$ and $\hat{a}_{\vec{k}s}^{\dagger}$ are the annihilation and creation operators of the filed mode with wavevector $ \vec{k}$, polarization $s$, and frequency $\omega_{\vec{k},s}$. The interaction Hamiltonian in electric-dipole approximation is
+$H_{AF}=-i\hbar\sum_{\vec{k}s}\sum_{i=1,2}\sum_{l=1}^{N_{a}}[\vec{\mu}_{l,i}\cdot\vec{u}_{\vec{k}s}(\vec{r}_{l,i})S_{l,i}^{+}\hat{a}_{\vec{k}s}+\vec{\mu}_{l,i}^{*}\cdot\vec{u}_{\vec{k}s}(\vec{r}_{l,i})S_{l,i}^{-}\hat{a}_{\vec{k}s}-H.c.]$
+where $ \vec{\mu}_{l,i} $ is the electric dipole moment for $ith$ transition of the $l$th atom, where $i=1$ denotes the transition from $|a\rangle$ to $|b\rangle$, and $i=2$ denotes the transition from $|b\rangle$ to $|c\rangle$. $ S_{l,i}^{+} $ and $S_{l,i}^{-} $ are the raising and lowering operator for the $l$th atom. The mode function of the squeezed vacuum is given by 
+\begin{equation}
+  \label{eq2b}
+  \begin{gathered}
+\vec{u}_{\vec{k}s}(\vec{r}_{i})=\sqrt{\frac{\omega_{\vec{k}s}}{2\epsilon_{0}\hbar V}}\vec{e}_{ks}e^{i\vec{k}\cdot(\vec{r}_{i}-\vec{o}_{\vec{k}s})}
+ \end{gathered}
+\end{equation}
+where $\vec{o}_{\vec{k}s} $ is a phenomenological parameter which includes the effects of the initial phase and the position of the squeezing source with wavevector $ \vec{k} s$\cite{You2018}. The correlation functions for the squeezed vacuum are\cite{scully1999quantum}:
 \begin{equation}
 \label{eq0a}
 \begin{split}
@@ -55,7 +76,7 @@ The correlation functions are:
 &\left\langle a_{\vec{k},s}a_{\vec{k}',s'}\right\rangle =-e^{i\theta}\cosh(r)\sinh(r)\delta_{\vec{k}',2\vec{k}_{0}-\vec{k}}\delta_{ss'}
 \end{split}
 \end{equation}
-
+For simplicity, we can set the squeezing parameter $\theta=0$, and all atoms to align along the same direction. The dynamics of the atomic system can be described by the following master equation(See Appendix A for details of derivation):
 \begin{widetext}
 \begin{equation}
 \label{eq1}
@@ -66,7 +87,7 @@ The correlation functions are:
 \end{split}
 \end{equation}
 \end{widetext}
-where the coefficients are
+where $N=\sinh(r)^2$, $M=\sinh(r)\cosh(r)$, and the coefficients are
 \begin{equation}
 \label{eq2}
 \begin{split}
@@ -75,32 +96,59 @@ where the coefficients are
 & \gamma'_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos[k_{0z}(r_{i}+r_{j})]
 \end{split}
 \end{equation}
-where $\gamma_{i}$ is the decay rate for transition $i$ in ordinary vacuum. For a single three level atom, we have $r_i=r_j$, for simplicity we set $R=r_i=0$ and $\gamma_1=\gamma_2=\gamma$. After applying the rotating wave approximation(RWA), the master equation Eq.\eqref{eq1} becomes (see Appendix A)
-\begin{equation}
-\label{eq3}
-\begin{split}
-\frac{d\rho^{S}}{dt}=&-\frac{1}{2}\underset{i}{\sum}\gamma(1+N)(\rho^{S}S_{i}^{+}S_{i}^{-}+S_{i}^{+}S_{i}^{-}\rho^{S}-2S_{i}^{-}\rho^{S}S_{i}^{+})\\
-&-\frac{1}{2}\underset{i}{\sum}\gamma N(\rho^{S}S_{i}^{-}S_{i}^{+}+S_{i}^{-}S_{i}^{+}\rho^{S}-2S_{i}^{+}\rho^{S}S_{i}^{-})\\
-&-\frac{1}{2}\sum_{\alpha=\pm}\underset{i\ne j}{\sum}\gamma M(\rho^{S}S_{i}^{\alpha}S_{j}^{\alpha}+S_{i}^{\alpha}S_{j}^{\alpha}\rho^{S}-2S_{j}^{\alpha}\rho^{S}S_{i}^{\alpha})
-\end{split}
-\end{equation}
-where $N=\sinh(r)^2$ and $M=\sinh(r)\cosh(r)$The steady state of Eq.\eqref{eq3} can be derived by re-writing Eq.\eqref{eq3} as:
+where $\gamma_{i}$ is the decay rate for transition $i$ in ordinary vacuum.
+
+\section{Steady state of a single atom}
+In this section, we will study the steady state of a single atom in the squeezed vacuum reservior. For a single three level atom, we have $r_i=r_j$, and for simplicity we set $R=r_i=0$. Then the steady state of Eq.\eqref{eq1} can be derived by re-writing it as:
+%We will discuss the steady state solution to Eq. \eqref{eq1} in two cases: $\delta\omega\ll\sqrt{\gamma_{1}\gamma_{2}}$ and $\delta\omega\apprge\sqrt{\gamma_{1}\gamma_{2}}$. When $\delta\omega\ll\sqrt{\gamma_{1}\gamma_{2}}$, Eq. \eqref{eq1} can be simplified as:
+%\begin{equation}
+%\label{eq3a}
+%\begin{split}
+%\frac{d\rho^{S}}{dt}=&-\frac{1}{2}\underset{ij}{\sum}\gamma_{ij}(1+N)(\rho^{S}S_{i}^{+}S_{j}^{-}+S_{i}^{+}S_{j}^{-}\rho^{S}-2S_{j}^{-}\rho^{S}S_{i}^{+})\\
+%&-\frac{1}{2}\underset{ij}{\sum}\gamma_{ij}N(\rho^{S}S_{i}^{-}S_{j}^{+}+S_{i}^{-}S_{j}^{+}\rho^{S}-2S_{j}^{+}\rho^{S}S_{i}^{-})\\
+%&-\frac{1}{2}\sum_{\alpha=\pm}\underset{ij}{\sum}\gamma_{ij}'M(\rho^{S}S_{i}^{\alpha}S_{j}^{\alpha}+S_{i}^{\alpha}S_{j}^{\alpha}\rho^{S}-2S_{j}^{\alpha}\rho^{S}S_{i}^{\alpha})
+%\end{split}
+%\end{equation}
+
 \begin{widetext}
 \begin{subequations}
 \begin{align}
-&\dot{\rho}_{aa}/\gamma=-ch^{2}\rho_{aa}+sh{}^{2}\rho_{bb}-\frac{1}{2}chsh(\rho_{ac}+\rho_{ca})\label{4a} \\
-& \dot{\rho}_{bb}/\gamma=(ch^{2}\rho_{aa}-sh^{2}\rho_{bb})+(sh^{2}\rho_{cc}-ch^{2}\rho_{bb})+chsh(\rho_{ac}+\rho_{ca})\label{4b}\\
-&\dot{\rho}_{cc}/\gamma=ch^{2}\rho_{bb}-sh^{2}\rho_{cc}-\frac{1}{2}chsh(\rho_{ac}+\rho_{ca})\label{4c}\\
-&(\dot{\rho}_{ac}+\dot{\rho}_{ca})/\gamma=-\frac{1}{2}(ch^{2}+sh^{2})(\rho_{ac}+\rho_{ca})-shch(\rho_{aa}-2\rho_{bb}+\rho_{cc})\label{4d}\\
-&\dot{\rho}_{ab}/\gamma=-(1+\frac{3}{2}sh^{2})\rho_{ab}-\frac{1}{2}chsh\rho_{cb}\label{4e}\\
-&\dot{\rho}_{cb}/\gamma=-\frac{1}{2}chsh\rho_{ab}-(\frac{1}{2}+\frac{3}{2}sh^{2})\rho_{cb}\label{4f}
+&\dot{\rho}_{aa}=-\gamma_{1}ch^{2}\rho_{aa}+\gamma_{1}sh{}^{2}\rho_{bb}-\frac{1}{2}\sqrt{\gamma_{1}\gamma_{2}}chsh(e^{-i(\omega_{1}+\omega_{2}-2\omega_{0})t}\rho_{ac}+e^{i(\omega_{1}+\omega_{2}-2\omega_{0})t}\rho_{ca})\label{4a} \\
+&\dot{\rho}_{bb}=\gamma_{1}(ch^{2}\rho_{aa}-sh^{2}\rho_{bb})+\gamma_{2}(sh^{2}\rho_{cc}-ch^{2}\rho_{bb})+\sqrt{\gamma_{1}\gamma_{2}}chsh(e^{-i(\omega_{1}+\omega_{2}-2\omega_{0})t}\rho_{ac}+e^{i(\omega_{1}+\omega_{2}-2\omega_{0})t}\rho_{ca})\label{4b}\\
+&\dot{\rho}_{cc}=\gamma_{2}ch^{2}\rho_{bb}-\gamma_{2}sh^{2}\rho_{cc}-\frac{1}{2}\sqrt{\gamma_{1}\gamma_{2}}chsh(e^{-i(\omega_{1}+\omega_{2}-2\omega_{0})t}\rho_{ac}+e^{i(\omega_{1}+\omega_{2}-2\omega_{0})t}\rho_{ca})\label{4c}\\
+&e^{-i(\omega_{1}+\omega_{2}-2\omega_{0})t}\dot{\rho}_{ac}+e^{i(\omega_{1}+\omega_{2}-2\omega_{0})t}\dot{\rho}_{ca}=-\frac{1}{2}(\gamma_{1}ch^{2}+\gamma_{2}sh^{2})(e^{-i(\omega_{1}+\omega_{2}-2\omega_{0})t}\rho_{ac}+e^{i(\omega_{1}+\omega_{2}-2\omega_{0})t}\rho_{ca})\\
+&-\sqrt{\gamma_{1}\gamma_{2}}shch(\rho_{aa}-2\rho_{bb}+\rho_{cc})\label{4d}\\
+&e^{i(\omega_{0}-\omega_{1})t}\dot{\rho}_{ab}+e^{-i(\omega_{0}-\omega_{1})t}\dot{\rho}_{ba}=-\frac{1}{2}((\gamma_{1}+\gamma_{2})ch^{2}+\gamma_{1}sh^{2}-\gamma_{1}chsh)(e^{i(\omega_{0}-\omega_{1})t}\rho_{ab}+e^{-i(\omega_{0}-\omega_{1})t}\rho_{ba})\\
+&-\frac{1}{2}\sqrt{\gamma_{1}\gamma_{2}}(ch-2sh)sh(e^{-i(\omega_{0}-\omega_{2})t}\rho_{cb}+e^{i(\omega_{0}-\omega_{2})t}\rho_{bc})\label{4e}\\
+&e^{-i(\omega_{0}-\omega_{2})t}\dot{\rho}_{cb}+e^{i(\omega_{0}-\omega_{2})t}\dot{\rho}_{bc}=\frac{1}{2}\sqrt{\gamma_{1}\gamma_{2}}(2ch-sh)ch(e^{i(\omega_{0}-\omega_{1})t}\rho_{ab}+e^{-i(\omega_{0}-\omega_{1})t}\rho_{bc})\\
+&-\frac{1}{2}((\gamma_{1}+\gamma_{2})sh^{2}+\gamma_{2}ch^{2}-2\gamma_{2}chsh)(e^{-i(\omega_{0}-\omega_{2})t}\rho_{cb}+e^{i(\omega_{0}-\omega_{2})t}\rho_{bc})\label{4f}
 \end{align}
 \end{subequations}
 \end{widetext}
-where $sh=\sinh(r), ch=\cosh(r)$. Eq.\eqref{4e}\eqref{4f} yield $\rho_{ab}=\rho_{cb}=0$ for the steady state, and Eq.\eqref{4a}-\eqref{4d} yield $\rho_{aa}=\frac{sh^{2}}{sh^{2}+ch^{2}}$, $\rho_{cc}=\frac{ch^{2}}{sh^{2}+ch^{2}}$, $\rho_{ac}=-\frac{shch}{sh^{2}+ch^{2}}$. Thus, the steady state is actually a superposition state of $|a\rangle$ and $|c\rangle$: $\frac{sh}{\sqrt{sh^{2}+ch^{2}}}|a\rangle-\frac{ch}{\sqrt{sh^{2}+ch^{2}}}|c\rangle$. This phenomenon is similar to coherent trapping, but here we achieve the trapping for $\Xi$ structure with the squeezed vacuum reservoir, which cannot be realized with coherent pump due to spontaneous emission.
-
-In general we can study the steady state population distribution when the dipole moments of transition $|a\rangle\rightarrow|b\rangle$ and $|b\rangle\rightarrow|c\rangle$ are different, i.e., $\mu_{ab}\ne\mu_{bc}$. Although the analytical solution is quite lengthy, we can easily get the numerical solution for different $\mu_{ab}$ and $\mu_{bc}$. In Fig.~\ref{2}(a), population inversion is achieved with $\mu_{ab}<\mu_{bc}$. This can be interpreted with the help of Fig.~\ref{2}(c). Figure ~\ref{2}(c) shows that the direct transition between $|a\rangle$, $|b\rangle$, and $|c\rangle$ are allowed just like the thermal reservoir case. However, in the squeezed vacuum, there is additional paths for population flow: electrons in any of these three states can evolve into the other two through an intermediate "state" $\rho_{ac}$. Although $\rho_{ac}$ is actually not a state, and $\rho_{ac}<0$ in our convention, it can be used to elucidate our idea. When $\mu_{ab}\ll\mu_{bc}$, the transition $|a\rangle\rightarrow|b\rangle$ can be removed. Thus state $|c\rangle$ can be excited to $|a\rangle$ through $|c\rangle\rightarrow|b\rangle\rightarrow\rho_{ac}\rightarrow|a\rangle$, but $|a\rangle$ can not decay back to $|c\rangle$. Thus, the population is trapped from $|c\rangle$ to $|a\rangle$. Although the population inversion between $|a\rangle$ and $|c\rangle$ is very sensitive to the value of $M$, the population inversion between $|a\rangle$ and $|b\rangle$ still holds for $M=0.8\sqrt{N(N+1)}$, which is shown in Fig.~\ref{2}(b).
-
+where $ch=\cosh(r)$, $sh=\sinh(r)$, and $\gamma_{1}=\gamma_{ab}$($\gamma_{2}=\gamma_{bc}$) indicates the decay rate from $|a\rangle$ to $|b\rangle$($|b\rangle$ to $|c\rangle$) in ordinary vacuum. We noticed that the equations for off diagonal elements Eq.\eqref{4e}-\eqref{4f} result in $\rho_{ab}=\rho_{bc}=0$. Since $\omega_1+\omega_2=2\omega_0$, it has a steady state solution. When $\gamma_1=\gamma_2$, the steady state solution is:
+%For the second case $\delta\omega\apprge\sqrt{\gamma_{1}\gamma_{2}}$, rotating wave approximation(RWA) can be used to simplify Eq.\eqref{eq1} as follows:
+%\begin{equation}
+%\label{eq3b}
+%\begin{split}
+%\frac{d\rho^{S}}{dt}=&-\frac{1}{2}\underset{i}{\sum}\gamma_{i}(1+N)(\rho^{S}S_{i}^{+}S_{i}^{-}+S_{i}^{+}S_{i}^{-}\rho^{S}-2S_{i}^{-}\rho^{S}S_{i}^{+})\\
+%&-\frac{1}{2}\underset{i}{\sum}\gamma_{i}N(\rho^{S}S_{i}^{-}S_{i}^{+}+S_{i}^{-}S_{i}^{+}\rho^{S}-2S_{i}^{+}\rho^{S}S_{i}^{-})\\
+%&-\frac{1}{2}\sum_{\alpha=\pm}\underset{i\ne j}{\sum}\gamma_{ij}'M(\rho^{S}S_{i}^{\alpha}S_{j}^{\alpha}+S_{i}^{\alpha}S_{j}^{\alpha}\rho^{S}-2S_{j}^{\alpha}\rho^{S}S_{i}^{\alpha})
+%\end{split}
+%\end{equation}
+%which can be re-written as:
+%\begin{widetext}
+%\begin{subequations}
+%\begin{align}
+%&\dot{\rho}_{aa}=-\gamma_{1}ch^{2}\rho_{aa}+\gamma_{1}sh{}^{2}\rho_{bb}-\frac{1}{2}\sqrt{\gamma_{1}\gamma_{2}}chsh(\rho_{ac}+\rho_{ca})\label{5a} \\
+%&\dot{\rho}_{bb}=\gamma_{1}(ch^{2}\rho_{aa}-sh^{2}\rho_{bb})+\gamma_{2}(sh^{2}\rho_{cc}-ch^{2}\rho_{bb})+\sqrt{\gamma_{1}\gamma_{2}}chsh(\rho_{ac}+\rho_{ca})\label{5b}\\
+%&\dot{\rho}_{cc}=\gamma_{2}ch^{2}\rho_{bb}-\gamma_{2}sh^{2}\rho_{cc}-\frac{1}{2}\sqrt{\gamma_{1}\gamma_{2}}chsh(\rho_{ac}+\rho_{ca})\label{5c}\\
+%&\dot{\rho}_{ac}+\dot{\rho}_{ca}=-\frac{1}{2}(\gamma_{1}ch^{2}+\gamma_{2}sh^{2})(\rho_{ac}+\rho_{ca})-\sqrt{\gamma_{1}\gamma_{2}}shch(\rho_{aa}-2\rho_{bb}+\rho_{cc})\label{5d}\\
+%&\dot{\rho}_{ab}=-\frac{1}{2}((\gamma_{1}+\gamma_{2})ch^{2}+\gamma_{1}sh^{2})\rho_{ab}-\frac{1}{2}\sqrt{\gamma_{1}\gamma_{2}}chsh\rho_{cb}\label{5e}\\
+%&\dot{\rho}_{cb}=-\frac{1}{2}\sqrt{\gamma_{1}\gamma_{2}}chsh\rho_{ab}-((\gamma_{1}+\gamma_{2})sh^{2}+\gamma_{2}ch^{2})\rho_{cb}\label{5f}
+%\end{align}
+%\end{subequations}
+%\end{widetext}
+$\rho_{aa}=\frac{sh^{2}}{sh^{2}+ch^{2}}$, $\rho_{bb}=0$, $\rho_{cc}=\frac{ch^{2}}{sh^{2}+ch^{2}}$, $\rho_{ac}=-\frac{shch}{sh^{2}+ch^{2}}$. Thus, the steady state is actually a superposition state of $|a\rangle$ and $|c\rangle$: $\frac{sh}{\sqrt{sh^{2}+ch^{2}}}|a\rangle-\frac{ch}{\sqrt{sh^{2}+ch^{2}}}|c\rangle$. This phenomenon is similar to coherent trapping, but here we achieve the trapping for $\Xi$ structure with the squeezed vacuum reservoir, which cannot be realized with coherent pump due to spontaneous emission. For the general case where $\gamma_1\ne\gamma_2$, although the analytical solution is quite lengthy, we can easily get the numerical solution for different $\mu_{ab}$ and $\mu_{bc}$. In Fig.~\ref{2}(a), population inversion is achieved with $\mu_{ab}<\mu_{bc}$. This can be interpreted with the help of Fig.~\ref{2}(c). Figure ~\ref{2}(c) shows that the direct transition between $|a\rangle$, $|b\rangle$, and $|c\rangle$ are allowed just like the thermal reservoir case. However, in the squeezed vacuum, there is additional paths for population flow: electrons in any of these three states can evolve into the other two through an intermediate "state" $\rho_{ac}$. Although $\rho_{ac}$ is actually not a state, and $\rho_{ac}<0$ in our convention, it can be used to elucidate our idea. When $\mu_{ab}\ll\mu_{bc}$, the transition $|a\rangle\rightarrow|b\rangle$ is negligible. Thus state $|c\rangle$ can be excited to $|a\rangle$ through $|c\rangle\rightarrow|b\rangle\rightarrow\rho_{ac}\rightarrow|a\rangle$, but $|a\rangle$ can not decay back to $|c\rangle$. Thus, the population is trapped from $|c\rangle$ to $|a\rangle$. Although the population inversion between $|a\rangle$ and $|c\rangle$ is very sensitive to the value of $M$, the population inversion between $|a\rangle$ and $|b\rangle$ still holds for $M=0.8\sqrt{N(N+1)}$, which is shown in Fig.~\ref{2}(b). 
 \begin{figure*}
 \includegraphics[width=1\columnwidth]{atom_fig4.eps}
 \includegraphics[width=1\columnwidth]{atom_fig5.eps}
@@ -117,7 +165,8 @@ In general we can study the steady state population distribution when the dipole
 %\end{split}
 %\end{equation}
 
-correlation functions: 
+\section{steady state of multiple atoms}
+In the last section, we showed that a single atom can achieve steady state population inversion in the squeezed vacuum reservoir. However, with Eq.\eqref{eq2}, this result can not be generated to the multi-atom case since $\gamma'_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos[k_{0z}(r_{i}+r_{j})]$. The squeezing term in Eq.\eqref{eq1} vanishes for atoms located around $r_i=\frac{\pi}{4k_{0z}}+\frac{n\pi}{2k_{0z}}$. Thus, for a group of randomly located atoms, if we want to achieve steady state population inversion in the squeezed vacuum, we need to modify our scheme. Consider the following correlation functions:
 \begin{equation}
 \label{eq0b}
 \begin{split}
@@ -127,6 +176,16 @@ correlation functions:
 &\left\langle a_{\vec{k},s}a_{\vec{k}',s'}\right\rangle =-e^{i\theta}\cosh(r)\sinh(r)\delta_{\vec{k}',-(2\vec{k}_{0}-\vec{k})}\delta_{ss'}
 \end{split}
 \end{equation}
+which indicates that photons are entangled with those from the opposite direction, then the coefficients in the the master equation Eq.\eqref{eq1} becomes 
+\begin{equation}
+\label{eq2b}
+\begin{split}
+& \gamma_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}r_{ij}) \\
+& \Lambda_{ij}=\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}\sin(k_{0z}r_{ij})\\
+& \gamma'_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos[k_{0z}(r_{ij})]
+\end{split}
+\end{equation}
+which is exactly the traditionally studied master equation\cite{tanas2004stationary} by Ficek. However, they didn't consider the effect of squeezing source, and here we give a detailed derivation on getting Eq. \eqref{eq2b} in Appendix B, where the effect of squeezing source is included. With this  
 
 \begin{widetext}
 \appendix
@@ -140,7 +199,7 @@ where
 \begin{equation}
 \label{eqa1}\tag{A2}
 \begin{gathered}
- D(t)=\underset{i}{\sum}[\vec{\mu}_{i}\cdot\vec{u}_{\vec{k},s}(r_{i})S_{i}^{\dagger}(t)+\vec{\mu}^{*}_{i}\cdot\vec{u}_{\vec{k},s}(r_{i})S_{i}^{-}(t)]. 
+D(t)=\underset{l,i}{\sum}[\vec{\mu}_{l,i}\cdot\vec{u}_{\vec{k},s}(r_{l,i})S_{l,i}^{\dagger}(t)+\vec{\mu}_{l,i}^{*}\cdot\vec{u}_{\vec{k},s}(r_{l,i})S_{l,i}^{-}(t)]
  \end{gathered}
 \end{equation}
 The reduced master equation of atoms in the reservoir is:
@@ -149,7 +208,7 @@ The reduced master equation of atoms in the reservoir is:
 \begin{split}
 \frac{d\rho^{S}}{dt}=&-\frac{1}{\hbar^{2}}\int_{0}^{t}d\tau Tr_{F}\{[V(t),[V(t-\tau),\rho^{S}(t-\tau)\rho^{F}\}\\
 =&-\frac{1}{\hbar^{2}}\int_{0}^{t}d\tau Tr_{F}\{V(t)V(t-\tau)\rho^{S}(t-\tau)\rho^{F}+\rho^{S}(t-\tau)\rho^{F}V(t-\tau)V(t)\\
-&-V(t)\rho^{S}(t-\tau)\rho^{F}V(t-\tau)-V(t-\tau)\rho^{S}(t-\tau)\rho^{F}V(t)\}.
+&-V(t)\rho^{S}(t-\tau)\rho^{F}V(t-\tau)-V(t-\tau)\rho^{S}(t-\tau)\rho^{F}V(t)\}
 \end{split}
 \end{equation} 
 Here we just show how to deal with the first term in Eq.\eqref{eqa2}, the remaining terms can be calculated in the same way. For the first term, we have
@@ -166,97 +225,89 @@ Under the rotating wave approximation(RWA), we have
 \label{eqa4}\tag{A5}
 \begin{split}
 &-\frac{1}{\hbar^{2}}\int_{0}^{t}d\tau Tr_{F}\{V(t)V(t-\tau)\rho^{S}(t-\tau)\rho^{F}\}\\
-=& \sum_{ij}\underset{\vec{k}s,\vec{k'}s'}{\sum}\int_{0}^{t}d\tau\{\vec{\mu}{}_{i}\cdot\vec{u}_{\vec{k}s}(r_{i})S_{i}^{+}e^{i\omega_{i}t}\vec{\mu}_{j}\cdot\vec{u}_{\vec{k}'s'}(r_{j})S_{j}^{+}e^{i\omega_{j}(t-\tau)}e^{-i(\omega_{\vec{k}s}+\omega_{\vec{k}'s'})t+i\omega_{\vec{k}'s'}\tau}[-\sinh(r)\cosh(r)\delta_{\vec{k}',2\vec{k}_{0}-\vec{k}}\delta_{ss'}]\\
-&-\vec{\mu}_{i}\cdot\vec{u}_{\vec{k}s}(r_{i})S_{i}^{+}e^{i\omega_{i}t}\vec{\mu}^{*}_{j}\cdot\vec{u}_{\vec{k}'s'}^{*}(r_{j})S_{j}^{-}e^{-i\omega_{j}(t-\tau)}e^{-i\omega_{\vec{k}'s'}\tau}\cosh^{2}r\delta_{\vec{k}\vec{k}'}\delta_{ss'}\\
-&-\vec{\mu}^{*}_{i}\cdot\vec{u}_{\vec{k}s}(r_{i})S_{i}^{-}e^{-i\omega_{i}t}\vec{\mu}_{j}\cdot\vec{u}^{*}_{\vec{k}'s'}(r_{j})S_{j}^{+}e^{i\omega_{j}(t-\tau)}e^{-i\omega_{\vec{k}'s'}\tau}\cosh^{2}r\delta_{\vec{k}\vec{k}'}\delta_{ss'}\\
-&-\vec{\mu}^{*}_{i}\cdot\vec{u}_{\vec{k}s}^{*}(r_{i})S_{i}^{-}e^{-i\omega_{i}t}\vec{\mu}_{j}\cdot\vec{u}_{\vec{k}'s'}(r_{j})S_{j}^{+}e^{i\omega_{j}(t-\tau)}e^{i\omega_{\vec{k}'s'}\tau}\sinh^{2}r\delta_{\vec{k}\vec{k}'}\delta_{ss'}\\
-&-\vec{\mu}_{i}\cdot\vec{u}^{*}_{\vec{k}s}(r_{i})S_{i}^{+}e^{i\omega_{i}t}\vec{\mu}^{*}_{j}\cdot\vec{u}_{\vec{k}'s'}(r_{j})S_{j}^{-}e^{-i\omega_{j}(t-\tau)}e^{i\omega_{\vec{k}'s'}\tau}\sinh^{2}r\delta_{\vec{k}\vec{k}'}\delta_{ss'}\\
-&+\vec{\mu}^{*}_{i}\cdot\vec{u}_{\vec{k}s}^{*}(r_{i})S_{i}^{-}e^{-i\omega_{i}t}\vec{\mu}^{*}_{j}\cdot\vec{u}^{*}_{\vec{k}'s'}(r_{j})S_{j}^{-}e^{-i\omega_{j}(t-\tau)}e^{i(\omega_{\vec{k}s}+\omega_{\vec{k}'s'})t-i\omega_{\vec{k}'s'}\tau}[-\sinh(r)\cosh(r)\delta_{\vec{k}',2\vec{k}_{0}-\vec{k}}\delta_{ss'}]\}\rho^{S}(t-\tau)
+=&\sum_{ijlm}\underset{\vec{k}s,\vec{k'}s'}{\sum}\int_{0}^{t}d\tau\{\vec{\mu}{}_{l,i}\cdot\vec{u}_{\vec{k}s}(r_{l,i})S_{l,i}^{+}e^{i\omega_{i}t}\vec{\mu}_{m,j}\cdot\vec{u}_{\vec{k}'s'}(r_{m,j})S_{m,j}^{+}e^{i\omega_{j}(t-\tau)}e^{-i(\omega_{\vec{k}s}+\omega_{\vec{k}'s'})t+i\omega_{\vec{k}'s'}\tau}[-\sinh(r)\cosh(r)\delta_{\vec{k}',2\vec{k}_{0}-\vec{k}}\delta_{ss'}]\\
+&-\vec{\mu}_{l,i}\cdot\vec{u}_{\vec{k}s}(r_{l,i})S_{l,i}^{+}e^{i\omega_{i}t}\vec{\mu}_{m,j}^{*}\cdot\vec{u}_{\vec{k}'s'}^{*}(r_{m,j})S_{m,j}^{-}e^{-i\omega_{j}(t-\tau)}e^{-i\omega_{\vec{k}'s'}\tau}\cosh^{2}r\delta_{\vec{k}\vec{k}'}\delta_{ss'}\\
+&-\vec{\mu}_{l,i}^{*}\cdot\vec{u}_{\vec{k}s}(r_{l,i})S_{l,i}^{-}e^{-i\omega_{i}t}\vec{\mu}_{m,j}\cdot\vec{u}_{\vec{k}'s'}^{*}(r_{m,j})S_{m,j}^{+}e^{i\omega_{j}(t-\tau)}e^{-i\omega_{\vec{k}'s'}\tau}\cosh^{2}r\delta_{\vec{k}\vec{k}'}\delta_{ss'}\\
+&-\vec{\mu}_{l,i}^{*}\cdot\vec{u}_{\vec{k}s}^{*}(r_{l,i})S_{l,i}^{-}e^{-i\omega_{i}t}\vec{\mu}_{m,j}\cdot\vec{u}_{\vec{k}'s'}(r_{m,j})S_{m,j}^{+}e^{i\omega_{j}(t-\tau)}e^{i\omega_{\vec{k}'s'}\tau}\sinh^{2}r\delta_{\vec{k}\vec{k}'}\delta_{ss'}\\
+&-\vec{\mu}_{l,i}\cdot\vec{u}_{\vec{k}s}^{*}(r_{l,i})S_{l,i}^{+}e^{i\omega_{i}t}\vec{\mu}_{m,j}^{*}\cdot\vec{u}_{\vec{k}'s'}(r_{m,j})S_{m,j}^{-}e^{-i\omega_{j}(t-\tau)}e^{i\omega_{\vec{k}'s'}\tau}\sinh^{2}r\delta_{\vec{k}\vec{k}'}\delta_{ss'}\\
+&+\vec{\mu}_{l,i}^{*}\cdot\vec{u}_{\vec{k}s}^{*}(r_{l,i})S_{l,i}^{-}e^{-i\omega_{i}t}\vec{\mu}_{m,j}^{*}\cdot\vec{u}_{\vec{k}'s'}^{*}(r_{m,j})S_{m,j}^{-}e^{-i\omega_{j}(t-\tau)}e^{i(\omega_{\vec{k}s}+\omega_{\vec{k}'s'})t-i\omega_{\vec{k}'s'}\tau}[-\sinh(r)\cosh(r)\delta_{\vec{k}',2\vec{k}_{0}-\vec{k}}\delta_{ss'}]\}\rho^{S}(t-\tau)
 \end{split}
 \end{equation}
-Here we just calculate the first and second term to show how to get the master equation Eq.\eqref{eq1}. For the second term, we have
+where $l,m$ are used for labeling different atoms, and $i,j$ are used for transitions within an atom. Here we just calculate the first and second term to show how to get the master equation Eq.\eqref{eq1}. Since all atoms are identical, $\omega_{l,i}=\omega_{i}$, $|\vec\mu_{l,i}|=|\vec\mu_i|$, and $r_{l,i}=r_{l}$ can be used to simplify Eq.\eqref{eqa4}. For the second term(thermal term), we have
 \begin{equation}
 \label{eqc2}\tag{A6}
 \begin{split}
-&-\underset{k_{z}}{\sum}\int_{0}^{t}d\tau\vec{\mu}_{i}\cdot\vec{u}_{\vec{k}s}(r_{i})S_{i}^{+}e^{i\omega_{i}t}\vec{\mu}_{j}^{*}\cdot\vec{u}_{\vec{k}'s'}^{*}(r_{j})S_{j}^{-}e^{-i\omega_{j}(t-\tau)}e^{-i\omega_{\vec{k}'s'}\tau}\cosh^{2}r\rho^{S}(t-\tau)\delta_{\vec{k}\vec{k}'}\delta_{ss'}\\
-=&-\frac{L}{2\pi}e^{i(\omega_{i}-\omega_{j})t}\int_{-\infty}^{\infty}dk_{z}\int_{0}^{t}d\tau e^{i\omega_{j}\tau}e^{-i\omega_{k_{z}}\tau}\frac{\omega_{k}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}e^{ik_{z}(r_{i}-r_{j})}\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t-\tau)\\
-\approx&-\frac{L}{2\pi}e^{i(\omega_{i}-\omega_{j})t}\int_{0}^{\infty}dk_{z}\int_{0}^{t}d\tau e^{i\omega_{j}\tau}e^{-i[\omega_{j}+c^{2}k_{jz}(k_{z}-k_{jz})/\omega_{j}]\tau}\frac{\omega_{k}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}[e^{ik_{z}(r_{i}-r_{j})}+e^{-ik_{z}(r_{i}-r_{j})}]\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t-\tau)\\
-\approx&-\frac{L}{2\pi}e^{i(\omega_{i}-\omega_{j})t}\int_{-k_{0z}}^{\infty}d\delta k_{z}\int_{0}^{t}d\tau e^{-i\tau c^{2}k_{jz}\delta k_{z}/\omega_{j}}\frac{\omega_{k}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}[e^{i(k_{jz}+\delta k_{z})(r_{i}-r_{j})}+e^{-i(k_{jz}+\delta k_{z})(r_{i}-r_{j})}]\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t-\tau)\\
-\approx&-\frac{L}{2\pi}e^{i(\omega_{i}-\omega_{j})t}\int_{-\infty}^{\infty}d\delta k_{z}\int_{0}^{t}d\tau e^{-i(c^{2}k_{jz}\delta k_{z}/\omega_{j})\tau}\frac{\omega_{k}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}[e^{i(k_{jz}+\delta k_{z})(r_{i}-r_{j})}+e^{-i(k_{jz}+\delta k_{z})(r_{i}-r_{j})}]\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t-\tau)\\
-\approx&-\frac{L}{2\pi}e^{i(\omega_{i}-\omega_{j})t}\int_{0}^{t}d\tau\frac{\omega_{j}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}2\pi[e^{ik_{jz}(r_{i}-r_{j})}\delta((r_{i}-r_{j})-\frac{c^{2}k_{jz}}{\omega_{0}}\tau)+e^{-ik_{jz}(r_{i}-r_{j})}\delta((r_{i}-r_{j})+\frac{c^{2}k_{jz}}{\omega_{0}}\tau)]\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t-\tau)\\
-\approx&-\frac{L}{2\pi}e^{ik_{jz}r_{ij}}\frac{\omega_{j}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}2\pi\frac{\omega_{j}}{c^{2}k_{0z}}\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t)e^{i(\omega_{i}-\omega_{j})t}\\
-\approx&-[\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}\cos(k_{0z}r_{ij})+i\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}sin(k_{0z}r_{ij})]\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t)e^{i(\omega_{i}-\omega_{j})t}\\
-\equiv &-(\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}+i\Lambda_{ij})\cosh^{2}rS_{i}^{+}S_{j}^{-}\rho^{S}(t)e^{i(\omega_{i}-\omega_{j})t}
+&-\underset{k_{z}}{\sum}\int_{0}^{t}d\tau\vec{\mu}_{l,i}\cdot\vec{u}_{\vec{k}s}(r_{l})S_{l,i}^{+}e^{i\omega_{i}t}\vec{\mu}_{m,j}^{*}\cdot\vec{u}_{\vec{k}'s'}^{*}(r_{m})S_{m,j}^{-}e^{-i\omega_{j}(t-\tau)}e^{-i\omega_{\vec{k}'s'}\tau}\cosh^{2}r\rho^{S}(t-\tau)\delta_{\vec{k}\vec{k}'}\delta_{ss'}\\
+=&-\frac{L}{2\pi}e^{i(\omega_{i}-\omega_{j})t}\int_{-\infty}^{\infty}dk_{z}\int_{0}^{t}d\tau e^{i\omega_{j}\tau}e^{-i\omega_{k_{z}}\tau}\frac{\omega_{k}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}e^{ik_{z}(r_{l}-r_{m})}\cosh^{2}rS_{l,i}^{+}S_{m,j}^{-}\rho^{S}(t-\tau)\\
+\approx&-\frac{L}{2\pi}e^{i(\omega_{i}-\omega_{j})t}\int_{0}^{\infty}dk_{z}\int_{0}^{t}d\tau e^{i\omega_{j}\tau}e^{-i[\omega_{j}+c^{2}k_{jz}(k_{z}-k_{jz})/\omega_{j}]\tau}\frac{\omega_{k}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}[e^{ik_{z}(r_{l}-r_{m})}+e^{-ik_{z}(r_{l}-r_{m})}]\cosh^{2}rS_{l,i}^{+}S_{m,j}^{-}\rho^{S}(t-\tau)\\
+\approx&-\frac{L}{2\pi}e^{i(\omega_{i}-\omega_{j})t}\int_{-k_{0z}}^{\infty}d\delta k_{z}\int_{0}^{t}d\tau e^{-i\tau c^{2}k_{jz}\delta k_{z}/\omega_{j}}\frac{\omega_{k}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}[e^{i(k_{jz}+\delta k_{z})(r_{l}-r_{m})}+e^{-i(k_{jz}+\delta k_{z})(r_{l}-r_{m})}]\cosh^{2}rS_{l,i}^{+}S_{m,j}^{-}\rho^{S}(t-\tau)\\
+\approx&-\frac{L}{2\pi}e^{i(\omega_{i}-\omega_{j})t}\int_{-\infty}^{\infty}d\delta k_{z}\int_{0}^{t}d\tau e^{-i(c^{2}k_{jz}\delta k_{z}/\omega_{j})\tau}\frac{\omega_{k}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}[e^{i(k_{jz}+\delta k_{z})(r_{l}-r_{m})}+e^{-i(k_{jz}+\delta k_{z})(r_{l}-r_{m})}]\cosh^{2}rS_{l,i}^{+}S_{m,j}^{-}\rho^{S}(t-\tau)\\
+\approx&-\frac{L}{2\pi}e^{i(\omega_{i}-\omega_{j})t}\int_{0}^{t}d\tau\frac{\omega_{j}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}2\pi[e^{ik_{jz}(r_{l}-r_{m})}\delta((r_{l}-r_{m})-\frac{c^{2}k_{jz}}{\omega_{0}}\tau)+e^{-ik_{jz}(r_{l}-r_{m})}\delta((r_{l}-r_{m})+\frac{c^{2}k_{jz}}{\omega_{0}}\tau)]\cosh^{2}rS_{l,i}^{+}S_{m,j}^{-}\rho^{S}(t-\tau)\\
+\approx&-\frac{L}{2\pi}e^{ik_{jz}r_{lm}}\frac{\omega_{j}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}2\pi\frac{\omega_{j}}{c^{2}k_{0z}}\cosh^{2}rS_{l,i}^{+}S_{m,j}^{-}\rho^{S}(t)e^{i(\omega_{i}-\omega_{j})t}\\
+\approx&-[\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}\cos(k_{0z}r_{lm})+i\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}sin(k_{0z}r_{lm})]\cosh^{2}rS_{l,i}^{+}S_{m,j}^{-}\rho^{S}(t)e^{i(\omega_{i}-\omega_{j})t}\\
 \end{split}
 \end{equation}
-where emitter separation $r_{ij}=|r_{i}-r_{j}|$, $\gamma_{i}=2\mu_{i}^{2}\omega_{i}^{2}/\hbar\epsilon_{0}Sc^{2}k_{iz}$ which is the collective decay rate when $i=j$, and $\Lambda_{ij}=\gamma_{1d}\sin(k_{0z}r_{ij})/2$ is the collective energy shift.
-In the third line we expand $\omega_{k}=c\sqrt{(\frac{\pi}{a})^{2}+(k_{z})^{2}}$ around $k_{z}=k_{0z}$ since resonant modes provide dominant contributions. In the fifth line we extend the integration $\int_{-k_{0z}}^{\infty}dk_{z}\rightarrow\int_{-\infty}^{\infty}dk_{z}$ because the main contribution comes from the components around $\delta k_{z}=0$. In the next line, Weisskopf-Wigner approximation is used. Thus, we have obtained $\gamma_{ij}$ and $\Lambda_{ij}$ as is shown in Eq.\eqref{eq2}. 
+where emitter separation $r_{lm}=|r_{l}-r_{m}|$, collective decay rate $\gamma_{i}=2\mu_{i}^{2}\omega_{i}^{2}/\hbar\epsilon_{0}Sc^{2}k_{iz}$, and collective energy shift $\Lambda_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\sin(k_{0z}r_{ij})/2$.
+In the third line we expand $\omega_{k}=c\sqrt{(\frac{\pi}{a})^{2}+(k_{z})^{2}}$ around $k_{z}=k_{0z}$ since resonant modes provide dominant contributions. In the fifth line we extend the integration $\int_{-k_{jz}}^{\infty}dk_{z}\rightarrow\int_{-\infty}^{\infty}dk_{z}$ because the main contribution comes from the components around $\delta k_{z}=0$. In the next line, Weisskopf-Wigner approximation is used. Since index $i$ and $j$ are always associated with index $l$ and $m$ respectively, we can combine $l,i$ as $i$, and $m,j$ as $j$ for simplicity. Thus, we have obtained $\gamma_{ij}$ and $\Lambda_{ij}$ as is shown in Eq.\eqref{eq2}. 
 
 Next we need to calculate the first term (squeezing term) in Eq.\eqref{eqa4}:
 \begin{equation}
 \label{eqb8}\tag{A7}
 \begin{split}
-& e^{i(\omega_{i}+\omega_{j}-2\omega_{0})t}\underset{k_{z}}{\sum}\int_{0}^{t}d\tau\{\vec{\mu}{}_{i}\cdot\vec{u}_{2\vec{k}_{0}-\vec{k}}(r_{i})S_{i}^{+}\vec{\mu}_{j}\cdot\vec{u}_{\vec{k}}(r_{j})S_{j}^{+}e^{i(\omega_{\vec{k}}-\omega_{j})\tau}[-\sinh(r)\cosh(r)]\rho^{S}(t-\tau) \\
-&=-\frac{L}{2\pi}e^{i(\omega_{i}+\omega_{j}-2\omega_{0})t}\int_{0}^{2k_{0z}}dk_{z}\int_{0}^{t}d\tau e^{i(\omega_{k_{z}}-\omega_{j})\tau}e^{i(2k_{jz}-k_{z})(r_{i}-o_{1})}e^{ik_{z}(r_{j}-o_{1})}\frac{\sqrt{\omega_{k_{z}}\omega_{2k_{0z}-k_{z}}}\mu^{2}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)\\ 
-&-\frac{L}{2\pi}e^{i(\omega_{i}+\omega_{j}-2\omega_{0})t}\int_{-2k_{0z}}^{0}dk_{z}\int_{0}^{t}d\tau e^{i(\omega_{k_{z}}-\omega_{j})\tau}e^{i(-2k_{jz}-k_{z})(r_{i}-o_{2})}e^{ik_{z}(r_{j}-o_{2})}\frac{\sqrt{\omega_{k_{z}}\omega_{-2k_{0z}-k_{z}}}\mu^{2}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)
+& e^{i(\omega_{i}+\omega_{j}-2\omega_{0})t}\underset{k_{z}}{\sum}\int_{0}^{t}d\tau\{\vec{\mu}{}_{l,i}\cdot\vec{u}_{2\vec{k}_{0}-\vec{k}}(r_{l})S_{l,i}^{+}\vec{\mu}_{m,j}\cdot\vec{u}_{\vec{k}}(r_{m})S_{m,j}^{+}e^{i(\omega_{\vec{k}}-\omega_{j})\tau}[-\sinh(r)\cosh(r)]\rho^{S}(t-\tau)\\
+=&-\frac{L}{2\pi}e^{i(\omega_{i}+\omega_{j}-2\omega_{0})t}\int_{0}^{2k_{0z}}dk_{z}\int_{0}^{t}d\tau e^{i(\omega_{k_{z}}-\omega_{j})\tau}e^{i(2k_{jz}-k_{z})(r_{l}-o_{1})}e^{ik_{z}(r_{m}-o_{1})}\frac{\sqrt{\omega_{k_{z}}\omega_{2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t-\tau)\\ 
+&-\frac{L}{2\pi}e^{i(\omega_{i}+\omega_{j}-2\omega_{0})t}\int_{-2k_{0z}}^{0}dk_{z}\int_{0}^{t}d\tau e^{i(\omega_{k_{z}}-\omega_{j})\tau}e^{i(-2k_{jz}-k_{z})(r_{l}-o_{2})}e^{ik_{z}(r_{m}-o_{2})}\frac{\sqrt{\omega_{k_{z}}\omega_{-2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t-\tau)
 \end{split}
 \end{equation}
-Putting the overall factor $e^{i(\omega_i+\omega_j-2\omega_0)t}$ aside, for $r_i=r_j$, Eq.\eqref{eqb8} reduces to 
+Putting aside the overall factor $e^{i(\omega_i+\omega_j-2\omega_0)t}$, for $r_l=r_j$, Eq.\eqref{eqb8} reduces to 
 \begin{equation}
 \label{eqb9}\tag{A8}
 \begin{split}
-&\underset{k_{z}}{\sum}\int_{0}^{t}d\tau\{\vec{\mu}{}_{i}\cdot\vec{u}_{2\vec{k}_{0}-\vec{k}}(r_{i})S_{i}^{+}\vec{\mu}_{j}\cdot\vec{u}_{\vec{k}}(r_{j})S_{j}^{+}e^{i(\omega_{\vec{k}}-\omega_{j})\tau}[-\sinh(r)\cosh(r)]\rho^{S}(t-\tau)\\
-&=-\frac{L}{2\pi}\int_{0}^{2k_{0z}}dk_{z}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{jz}}{_{\omega_{j}}}(k_{z}-k_{jz})\tau}e^{i2k_{0z}(r_{i}-o_{1})}\frac{\sqrt{\omega_{k_{z}}\omega_{2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)\\
-&-\frac{L}{2\pi}\int_{-2k_{0z}}^{0}dk_{z}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{jz}}{_{\omega_{j}}}(k_{z}-k_{jz})\tau}e^{-i2k_{0z}(r_{i}-o_{2})}\frac{\sqrt{\omega_{k_{z}}\omega_{-2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)\\
-&=-\frac{L}{2\pi}[e^{i2k_{0z}(r_{i}-o_{1})}+e^{-i2k_{0z}(r_{i}-o_{2})}]\frac{\sqrt{\omega_{i}\omega_{j}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\int_{0}^{t}d\tau2\pi\delta(\frac{c^{2}k_{jz}}{\omega_{j}}\tau)\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)\\
-&=-e^{i2k_{jz}R}\frac{\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}\hbar Sc^{2}k_{0z}}\cos(2k_{0z}r_{i})\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t)\\
-&=-e^{i2k_{0z}R}\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}\cos(2k_{0z}r_{i})\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t)
+&\underset{k_{z}}{\sum}\int_{0}^{t}d\tau\{\vec{\mu}{}_{l,i}\cdot\vec{u}_{2\vec{k}_{0}-\vec{k}}(r_{l})S_{l,i}^{+}\vec{\mu}_{l,j}\cdot\vec{u}_{\vec{k}}(r_{l})S_{l,j}^{+}e^{i(\omega_{\vec{k}}-\omega_{j})\tau}[-\sinh(r)\cosh(r)]\rho^{S}(t-\tau)\\
+=&-\frac{L}{2\pi}\int_{0}^{2k_{0z}}dk_{z}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{jz}}{_{\omega_{j}}}(k_{z}-k_{jz})\tau}e^{i2k_{0z}(r_{l}-o_{1})}\frac{\sqrt{\omega_{k_{z}}\omega_{2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{l,i}^{+}S_{l,j}^{+}\rho^{S}(t-\tau)\\
+&-\frac{L}{2\pi}\int_{-2k_{0z}}^{0}dk_{z}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{jz}}{_{\omega_{j}}}(k_{z}-k_{jz})\tau}e^{-i2k_{0z}(r_{l}-o_{2})}\frac{\sqrt{\omega_{k_{z}}\omega_{-2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{l,i}^{+}S_{l,j}^{+}\rho^{S}(t-\tau)\\
+=&-\frac{L}{2\pi}[e^{i2k_{0z}(r_{l}-o_{1})}+e^{-i2k_{0z}(r_{l}-o_{2})}]\frac{\sqrt{\omega_{i}\omega_{j}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\int_{0}^{t}d\tau2\pi\delta(\frac{c^{2}k_{jz}}{\omega_{j}}\tau)\sinh(r)\cosh(r)S_{l,i}^{+}S_{l,j}^{+}\rho^{S}(t-\tau)\\
+=&-e^{i2k_{jz}R}\frac{\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}\hbar Sc^{2}k_{0z}}\cos(2k_{0z}r_{l})\sinh(r)\cosh(r)S_{l,i}^{+}S_{l,j}^{+}\rho^{S}(t)\\
+=&-e^{i2k_{0z}R}\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}\cos(2k_{0z}r_{l})\sinh(r)\cosh(r)S_{l,i}^{+}S_{l,j}^{+}\rho^{S}(t)
 \end{split}
 \end{equation}
-where we have used the fact that the origin of coordinate system is at equal distant from two sources(i.e., $o_2=-o_1=R$) in the second last line. Thus, we have $\gamma'_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos(2k_{0z}r_{i})$. For $r_i\neq r_j$, Eq. \eqref{eqb8} reduces to
+where we have used the fact that the origin of coordinate system is at equal distant from two sources(i.e., $o_2=-o_1=R$) in the second last line. Incorporating index $l$ into $i$, we have $\gamma'_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos(2k_{0z}r_{i})$. For $r_i\neq r_j$, Eq. \eqref{eqb8} reduces to
 \begin{equation}
 \label{eqb10}\tag{A9}
 \begin{split}
-&\underset{k_{z}}{\sum}\int_{0}^{t}d\tau\{\vec{\mu}{}_{i}\cdot\vec{u}_{2\vec{k}_{0}-\vec{k}}(r_{i})S_{i}^{+}\vec{\mu}_{j}\cdot\vec{u}_{\vec{k}}(r_{j})S_{j}^{+}e^{i(\omega_{\vec{k}}-\omega_{j})\tau}[-\sinh(r)\cosh(r)]\rho^{S}(t-\tau)\\
-&=-\frac{L}{2\pi}\int_{0}^{2k_{0z}}dk_{z}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{jz}}{_{\omega_{j}}}(k_{z}-k_{jz})\tau}e^{i2k_{0z}(r_{c}-o_{1})}e^{-i(k_{z}-k_{0z})(r_{i}-r_{j})}\frac{\sqrt{\omega_{k_{z}}\omega_{2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau) \\
-&-\frac{L}{2\pi}\int_{-2k_{0z}}^{0}dk_{z}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{jz}}{_{\omega_{j}}}(-k_{z}-k_{jz})\tau}e^{-i2k_{0z}(r_{c}-o_{2})}e^{-i(k_{z}+k_{0z})(r_{i}-r_{j})}\frac{\sqrt{\omega_{k_{z}}\omega_{-2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau) \\
-& =-\frac{L}{2\pi}e^{i2k_{0z}(r_{c}-o_{1})}\frac{\sqrt{\omega_{i}\omega_{j}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\int_{-\infty}^{\infty}dk_{z}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{jz}}{_{\omega_{j}}}(k_{z}-k_{jz})\tau}e^{-i(k_{z}-k_{0z})(r_{i}-r_{j})}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau) \\
-&-\frac{L}{2\pi}e^{-i2k_{0z}(r_{c}-o_{2})}\frac{\sqrt{\omega_{i}\omega_{j}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\int_{-\infty}^{\infty}dk_{z}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{jz}}{_{\omega_{j}}}(k_{z}-k_{jz})\tau}e^{i(k_{z}-k_{0z})(r_{i}-r_{j})}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)  \\
-& \approx-\frac{L}{2\pi}e^{i2k_{0z}R}\frac{\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\int_{0}^{t}d\tau2\pi[e^{i2k_{0z}r_{c}}\delta(r_{i}-r_{j}-\frac{c^{2}k_{0z}}{_{\omega_{0}}}\tau)+e^{-i2k_{0z}r_{c}}\delta(r_{i}-r_{j}+\frac{c^{2}k_{0z}}{_{\omega_{0}}}\tau)]\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau) \\
-&\approx-e^{i2k_{0z}R}\frac{\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}\hbar Sc^{2}k_{0z}}e^{i2k_{0z}r_{c}sgn(i-j)}S_{i}^{+}S_{j}^{+}\rho^{S}(t)\rightarrow-\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}e^{i2k_{0z}R}\cos(k_{0z}(r_{i}+r_{j}))S_{i}^{+}S_{j}^{+}\rho^{S}(t)\\
+&\underset{k_{z}}{\sum}\int_{0}^{t}d\tau\{\vec{\mu}{}_{l,i}\cdot\vec{u}_{2\vec{k}_{0}-\vec{k}}(r_{l})S_{l,i}^{+}\vec{\mu}_{m,j}\cdot\vec{u}_{\vec{k}}(r_{m})S_{m,j}^{+}e^{i(\omega_{\vec{k}}-\omega_{j})\tau}[-\sinh(r)\cosh(r)]\rho^{S}(t-\tau)\\
+=&-\frac{L}{2\pi}\int_{0}^{2k_{0z}}dk_{z}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{jz}}{_{\omega_{j}}}(k_{z}-k_{jz})\tau}e^{i2k_{0z}(r_{c}-o_{1})}e^{-i(k_{z}-k_{0z})(r_{l}-r_{m})}\frac{\sqrt{\omega_{k_{z}}\omega_{2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t-\tau) \\
+& -\frac{L}{2\pi}\int_{-2k_{0z}}^{0}dk_{z}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{jz}}{_{\omega_{j}}}(-k_{z}-k_{jz})\tau}e^{-i2k_{0z}(r_{c}-o_{2})}e^{-i(k_{z}+k_{0z})(r_{l}-r_{m})}\frac{\sqrt{\omega_{k_{z}}\omega_{-2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t-\tau)\\
+=&-\frac{L}{2\pi}e^{i2k_{0z}(r_{c}-o_{1})}\frac{\sqrt{\omega_{i}\omega_{j}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\int_{-\infty}^{\infty}dk_{z}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{jz}}{_{\omega_{j}}}(k_{z}-k_{jz})\tau}e^{-i(k_{z}-k_{0z})(r_{l}-r_{m})}\sinh(r)\cosh(r)S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t-\tau)\\
+&-\frac{L}{2\pi}e^{-i2k_{0z}(r_{c}-o_{2})}\frac{\sqrt{\omega_{i}\omega_{j}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\int_{-\infty}^{\infty}dk_{z}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{jz}}{_{\omega_{j}}}(k_{z}-k_{jz})\tau}e^{i(k_{z}-k_{0z})(r_{l}-r_{m})}\sinh(r)\cosh(r)S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t-\tau) \\
+\approx&-\frac{L}{2\pi}e^{i2k_{0z}R}\frac{\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\int_{0}^{t}d\tau2\pi[e^{i2k_{0z}r_{c}}\delta(r_{l}-r_{m}-\frac{c^{2}k_{0z}}{_{\omega_{0}}}\tau)+e^{-i2k_{0z}r_{c}}\delta(r_{l}-r_{m}+\frac{c^{2}k_{0z}}{_{\omega_{0}}}\tau)]\sinh(r)\cosh(r)S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t-\tau) \\
+\approx&-e^{i2k_{0z}R}\frac{\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}\hbar Sc^{2}k_{0z}}e^{i2k_{0z}r_{c}sgn(r_{l}-r_{m})}S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t)\rightarrow-\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}e^{i2k_{0z}R}\cos(k_{0z}(r_{l}+r_{m}))S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t)\\
 \end{split}
 \end{equation}
-where $sgn(i-j)$ is the sign function. The last arrow is because we need to sum over $i,j$, so the imaginary part of $e^{i2k_{0z}r_{c}sgn(i-j)}$ vanishes and the neat result is that $\gamma'_{ij}=e^{i2k_{0z}R}\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}(r_{i}+r_{j}))$. As for $S_{i}^{+}\rho^{S}(t)S_{j}^{+}$ terms, the combination of the last two terms in Eq.\eqref{eqa2} will make the imaginary part of $e^{i2k_{0z}r_{c}sgn(i-j)}$ vanish. Thus, we have $\gamma'_{ij}=e^{i2k_{0z}R}\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}(r_i+r_j))$. Thus, we 
+where $sgn(r_{l}-r_{m})$ is the sign function. The last arrow is because we need to sum over $i,j$, so the imaginary part of $e^{i2k_{0z}r_{c}sgn(i-j)}$ vanishes, so the neat result is that $\gamma'_{ij}=e^{i2k_{0z}R}\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}(r_{i}+r_{j}))$ after combining index $l,i$ and $m,j$ as $i$ and $j$. As for $S_{i}^{+}\rho^{S}(t)S_{j}^{+}$ terms, the combination of the last two terms in Eq.\eqref{eqa2} will make the imaginary part of $e^{i2k_{0z}r_{c}sgn(r_{l}-r_{m})}$ vanish. Thus, we have $\gamma'_{ij}=e^{i2k_{0z}R}\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}(r_i+r_j))$ in Eq.\eqref{eq2}. 
 
 \section{DERIVATION OF coefficients EQ.\eqref{eq2b} }
-Here we will show how to derive the master equation with coefficients EQ.\eqref{eq2b} from the correlation function EQ. \eqref{eq0b}. Since the only difference is the squeezing terms $\left\langle a_{\vec{k},s}^{\dagger}a_{\vec{k}',s'}^{\dagger}\right\rangle$, $\left\langle a_{\vec{k},s}a_{\vec{k}',s'}\right\rangle $, we will just start from EQ. \eqref{eqb8}. Apart from the factor $e^{i(\omega_i+omega_j-2\omega_0)t}$, EQ. \eqref{eqb8} becomes:
+Here we will show how to derive the master equation with coefficients Eq.\eqref{eq2b} from the correlation function Eq. \eqref{eq0b}. Since the only difference is the squeezing terms $\left\langle a_{\vec{k},s}^{\dagger}a_{\vec{k}',s'}^{\dagger}\right\rangle$, $\left\langle a_{\vec{k},s}a_{\vec{k}',s'}\right\rangle $, we will just start from Eq. \eqref{eqb8}. Apart from the factor $e^{i(\omega_i+\omega_j-2\omega_0)t}$, When $r_i\ne r_j$, Eq. \eqref{eqb8} becomes:
 
 \begin{equation}
 \label{eqb1}\tag{B1}
 \begin{split}
-&\underset{k_{z}}{\sum}\int_{0}^{t}d\tau\{\vec{\mu}{}_{i}\cdot\vec{u}_{-2\vec{k}_{0}+\vec{k}}(r_{i})S_{i}^{+}\vec{\mu}_{j}\cdot\vec{u}_{\vec{k}}(r_{j})S_{j}^{+}e^{i(\omega_{\vec{k}}-\omega_{0})\tau}[-\sinh(r)\cosh(r)]\rho^{S}(t-\tau)\\
-\approx&-\frac{L}{2\pi}\int_{0}^{2k_{0}}dk\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(k-k_{0})\tau}e^{-i(2k_{0}-k)(r_{i}-o_{2})+ik(r_{j}-o_{1})}\frac{\sqrt{\omega_{k_{z}}\omega_{2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)\\
-&-\frac{L}{2\pi}\int_{-2k_{0}}^{0}dk\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k-k_{0})\tau}e^{i(2k_{0}+k)(r_{i}-o_{2})+ik(r_{j}-o_{1})}\frac{\sqrt{\omega_{k_{z}}\omega_{-2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)\\
-=&=-\frac{L}{2\pi}\int_{0}^{2k_{0}}dk\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k_{0})\tau}e^{-i(2k_{0})(r_{i}-o_{2})}e^{ik(\frac{c^{2}k_{0}}{_{\omega_{0}}}\tau+r_{i}-o_{1}+r_{j}-o_{2})}\frac{\sqrt{\omega_{k_{z}}\omega_{2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)\\
-&-\frac{L}{2\pi}\int_{0}^{2k_{0}}dk\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k_{0})\tau}e^{i(2k_{0})(r_{i}-o_{2})}e^{ik(\frac{c^{2}k_{0}}{_{\omega_{0}}}\tau-r_{i}+o_{1}-r_{j}+o_{2})}\frac{\sqrt{\omega_{k_{z}}\omega_{-2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)\\
-\approx&-\frac{L}{2\pi}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k_{0})\tau}e^{-i(2k_{0})(r_{i})}e^{2ik_{0}o_{2}}2\pi\delta(\frac{c^{2}k_{0}}{_{\omega_{0}}}\tau+2r_{c}-o_{1}-o_{2})\frac{\sqrt{\omega_{i}\omega_{j}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)\\
-&-\frac{L}{2\pi}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k_{0})\tau}e^{i(2k_{0})(r_{i})}e^{-2ik_{0}o_{2}}2\pi\delta(\frac{c^{2}k_{0}}{_{\omega_{0}}}\tau-2r_{c}+o_{1}+o_{2})\frac{\sqrt{\omega_{i}\omega_{j}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t-\tau)\\
-\approx&-\frac{L}{2\pi}e^{i(-k_{0})|2r_{c}-o_{1}-o_{2}|}e^{sgn(r_{c}-o_{1}-o_{2})i(2k_{0})(r_{i})}e^{-2ik_{0}o_{2}}2\pi\frac{\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar c^{2}k_{0z}}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t)\\
-=&-\frac{L}{2\pi}e^{sgn(2r_{c}-o_{1}-o_{2})ik_{0}(r_{i}-r_{j})}e^{ik_{0}(o_{1}-o_{2})}2\pi\frac{\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar c^{2}k_{0z}}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t)
+&\underset{k_{z}}{\sum}\int_{0}^{t}d\tau\{\vec{\mu}{}_{l,i}\cdot\vec{u}_{-2\vec{k}_{0}+\vec{k}}(r_{l})S_{l,i}^{+}\vec{\mu}_{m,j}\cdot\vec{u}_{\vec{k}}(r_{m})S_{m,j}^{+}e^{i(\omega_{\vec{k}}-\omega_{0})\tau}[-\sinh(r)\cosh(r)]\rho^{S}(t-\tau)\\
+\approx&-\frac{L}{2\pi}\int_{0}^{2k_{0}}dk\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(k-k_{0})\tau}e^{-i(2k_{0}-k)(r_{l}-o_{2})+ik(r_{m}-o_{1})}\frac{\sqrt{\omega_{k_{z}}\omega_{2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t-\tau)\\
+&-\frac{L}{2\pi}\int_{-2k_{0}}^{0}dk\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k-k_{0})\tau}e^{i(2k_{0}+k)(r_{l}-o_{2})+ik(r_{m}-o_{1})}\frac{\sqrt{\omega_{k_{z}}\omega_{-2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t-\tau)\\
+=&-\frac{L}{2\pi}\int_{0}^{2k_{0}}dk\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k_{0})\tau}e^{-i(2k_{0})(r_{l}-o_{2})}e^{ik(\frac{c^{2}k_{0}}{_{\omega_{0}}}\tau+r_{l}-o_{1}+r_{m}-o_{2})}\frac{\sqrt{\omega_{k_{z}}\omega_{2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t-\tau)\\
+&-\frac{L}{2\pi}\int_{0}^{2k_{0}}dk\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k_{0})\tau}e^{i(2k_{0})(r_{l}-o_{2})}e^{ik(\frac{c^{2}k_{0}}{_{\omega_{0}}}\tau-r_{l}+o_{1}-r_{m}+o_{2})}\frac{\sqrt{\omega_{k_{z}}\omega_{-2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t-\tau)\\
+\approx&-\frac{L}{2\pi}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k_{0})\tau}e^{-i(2k_{0})(r_{l})}e^{2ik_{0}o_{2}}2\pi\delta(\frac{c^{2}k_{0}}{_{\omega_{0}}}\tau+2r_{c}-o_{1}-o_{2})\frac{\sqrt{\omega_{i}\omega_{j}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t-\tau)\\
+&-\frac{L}{2\pi}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{0}}{_{\omega_{0}}}(-k_{0})\tau}e^{i(2k_{0})(r_{l})}e^{-2ik_{0}o_{2}}2\pi\delta(\frac{c^{2}k_{0}}{_{\omega_{0}}}\tau-2r_{c}+o_{1}+o_{2})\frac{\sqrt{\omega_{i}\omega_{j}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t-\tau)\\
+\approx&-\frac{L}{2\pi}e^{i(-k_{0})|2r_{c}-o_{1}-o_{2}|}e^{sgn(r_{c}-o_{1}-o_{2})i(2k_{0})(r_{l})}e^{-2ik_{0}o_{2}}2\pi\frac{\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar c^{2}k_{0z}}\sinh(r)\cosh(r)S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t)\\
+=&-\frac{L}{2\pi}e^{sgn(2r_{c}-o_{1}-o_{2})ik_{0}(r_{l}-r_{m})}e^{ik_{0}(o_{1}-o_{2})}2\pi\frac{\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar c^{2}k_{0z}}\sinh(r)\cosh(r)S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t)
 \end{split}
 \end{equation}
-Since we need to sum over $i,j$, the imaginary part of $e^{sgn(2r_{c}-o_{1}-o_{2})ik_{0}(r_{i}-r_{j})}$ gets canceled in  $-\frac{1}{2}cos(k_{0}r_{ij})e^{i\theta}\frac{2\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}S\hbar c^{2}k_{0z}}\sinh(r)\cosh(r)S_{i}^{+}S_{j}^{+}\rho^{S}(t)$
+Since we need to sum over $l,m,i,j$, the imaginary part of $e^{sgn(2r_{c}-o_{1}-o_{2})ik_{0}(r_{l}-r_{m})}$ gets canceled.
 
 \end{widetext}
 
 
-\begin{thebibliography}{99}
-\bibitem{You2018} Jieyu You, Zeyang Liao, Sheng-Wen Li, and M. Suhail Zubairy, Phys. Rev. A 97, 023810 
-\bibitem{Bogoliubov} Bogolubov N N 1947 J. Phys. (USSR) 11 23
-\bibitem{Wang2002} Wang S J et al. 2002 Phys. Rev. A 66 033608(2002)
-\bibitem{An} Jun-Hong An, Shun-Jin Wang, Hong-Gang Luo, Cheng-Long Jia Chin. Phys. Lett., Vol 21, No. 1
-\bibitem{Ficek2005} Zbigniew Ficek and Stuart Swain, Quantum Interference
-and Coherence(Springer, 2005).
-
-\end{thebibliography} 
+\bibliography{ref}
+\bibliographystyle{plain}
 \end{document}
