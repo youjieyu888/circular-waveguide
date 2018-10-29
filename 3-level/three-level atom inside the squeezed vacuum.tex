@@ -21,26 +21,29 @@
 
 \begin{document}
 
-\title{The steady state of $\Xi$-type atoms in the squeezed vacuum reservoir}
+\title{The steady state population inversion of $\Xi$-type atoms in the squeezed vacuum reservoir}
 \author{Jieyu You, Zeyang Liao, and M. Suhail Zubairy}
 \affiliation{Institute for Quantum Science and Engineering (IQSE) and Department of Physics and Astronomy, Texas A$\&$M University, College Station, TX 77843-4242, USA }
 
 \begin{abstract}
-We study the steady state of $\Xi$-type atoms coupled to the squeezed vacuum reservoir. The population inversion can occur for the steady state when the coupling strength of two transitions to the squeezed vacuum are properly set. We also discuss the possibility of the population inversion of a group of atoms in the squeezed vacuum. 
+We study the steady state of $\Xi$-type atoms coupled to the squeezed vacuum reservoir in the quasi-one-dimensional waveguide. We show that the population inversion can occur as the steady state when the coupling strength of two transitions of the $\Xi$-type atom to the squeezed vacuum are properly set. We also discuss the possibility of the population inversion of a group of atoms in the squeezed vacuum. 
 \end{abstract}
 \pacs{42.30.-d, 42.50.Hz, 42.62.Fi}\maketitle 
 
 
 \section{Introduction}
-In thermal equilibrium, a population inversion can never exist for a system. Traditionally, the achievements of population inversion requires pushing the system into a non-equilibrated state. 
-The concept of population inversion is of fundamental importance in laser physics because the production of population inversion is a key step in the workings of a standard laser.
+The concept of population inversion is of fundamental importance in laser physics because the production of population inversion is a key step in the workings of a standard laser. However, a population inversion can never exist for a system at thermal equilibrium because of the spontaneous emission. To achieve population inversion therefore requires pushing the system into a non-equilibrated state\cite{svelto1998principles}. In 1946, Purcell showed that the spontaneous decay rate of an emitter can be modified by engineering the electromagnetic bath environment with which the emitters interact\cite{purcell1946purcell}. One example of bath engineering is the squeezed vacuum. Although the squeezed vacuum does not change the density of the electromagnetic modes, it can still modify the decay rate of the emitter\cite{gardiner1986cw, collett1984mj,gea1988vacuum}. For two level atoms, The difference between the squeezed vacuum and the thermal reservoir with the same average photon number mainly resides in the dephasing rate\cite{gardiner1987cw, palma1989gm, agarwal1990cooperative, ficek1990spontaneous,ficek1991z, goldstein1996ev}. In addition, the previous calculations mainly consider a broadband squeezing
+in all directions of the 3-dimensional (3D) space which is difficult to be experimentally realized. In contrast
+to the 3D case, squeezing in 1D is more experimentally feasible. Suppression of the radiative decay of atomic coherence and the linewidth of the resonance fluorescence have been experimentally demonstrated in a 1D microwave transmission line coupled to single artificial atom\cite{turchette1998qa,murch2013kw, toyli2016resonance, bergeal2010analog, wang2018cavity,qin2018exponentially}. 
+
+In our study, we consider the $\Xi$-type atoms coupled to the broadband squeezed vacuum in the quasi-one-dimensional waveguide. and we found that the population of steady state is completely different than that in the thermal reservoir. We also demonstrate that the complete population inversion can be achieved with proper parameters.
 
 \section{Master equation of three level atoms in the squeezed vacuum}
-In this section, we consider a scenario where $N_a$ three-level atoms are located inside the waveguide with the squeezed vacuum injected from both ends, as shown in Fig.~\ref{1}(a). The atomic electronic structure is shown in Fig.~\ref{1}(b) where the atomic states are labeled $|a\rangle$, $|b\rangle$, $|c\rangle$ from the excited state to the ground state. We assume that $\omega_{ac}=2\omega_0$ where $\omega_0$ is the center frequency of the broad band squeed vacuum.  $\omega_{ab}$ and $\omega_{bc}$ are not equal but they are still within the bandwith of the squeezed vacuum. We assume that the squeezed vacuum bandwidth is much larger than $|\omega_{ab}-\omega_{bc}|$ so it forms a squeezed vacuum reservoir. 
+In this section, we consider a scenario where $N_a$ $\Xi$-type atoms are located inside the waveguide with the squeezed vacuum injected from both ends, as shown in Fig.~\ref{1}(a). The atomic electronic structure is shown in Fig.~\ref{1}(b) where the atomic states are labeled $|a\rangle$, $|b\rangle$, $|c\rangle$ from the excited state to the ground state. We assume that $\omega_{ac}=2\omega_0$ where $\omega_0$ is the center frequency of the broad band squeed vacuum.  $\omega_{ab}$ and $\omega_{bc}$ are not equal but they are still within the bandwith of the squeezed vacuum. We assume that the squeezed vacuum bandwidth is much larger than $|\omega_{ab}-\omega_{bc}|$ so it forms a squeezed vacuum reservoir. 
 \begin{figure*}
 \includegraphics[width=1.5\columnwidth]{fig1.png}
 \includegraphics[width=0.5\columnwidth]{fig2.png}
-\caption{(a) Schematic setup: A three-level atom is located inside the waveguide with the broadband squeezed vacuum incident from both ends. (b)The energy structure of the three level atom. Transition $|a\rangle\rightarrow|c\rangle$ is forbidden and $\omega_{ac}=2\omega_0$ where $\omega_0$ is the center frequency of the squeezed vacuum. $\omega_{ab}$ and $\omega_{bc}$ differ by a small amount $2\delta\omega_0$ and they are within the bandwidth of the squeezed vacuum reservoir.}
+\caption{(a) Schematic setup: A $\Xi$-type atom is located inside the waveguide with the broadband squeezed vacuum incident from both ends. (b)The energy structure of the three level atom. Transition $|a\rangle\rightarrow|c\rangle$ is forbidden and $\omega_{ac}=2\omega_0$ where $\omega_0$ is the center frequency of the squeezed vacuum. $\omega_{ab}$ and $\omega_{bc}$ differ by a small amount $2\delta\omega_0$ and they are within the bandwidth of the squeezed vacuum reservoir.}
 \label{1}
 \end{figure*}
 
@@ -59,14 +62,14 @@ is the atomic Hamiltonian, and $ \left|e_{l}\right\rangle $ is the energy state 
 $H_{F}=\sum_{\vec{k}s}\hbar\omega_{\vec{k}s}(\hat{a}_{\vec{k}s}^{\dagger}\hat{a}_{\vec{k}s}+\frac{1}{2})$
 where $\hat{a}_{\vec{k}s}$ and $\hat{a}_{\vec{k}s}^{\dagger}$ are the annihilation and creation operators of the filed mode with wavevector $ \vec{k}$, polarization $s$, and frequency $\omega_{\vec{k},s}$. The interaction Hamiltonian in electric-dipole approximation is
 $H_{AF}=-i\hbar\sum_{\vec{k}s}\sum_{i=1,2}\sum_{l=1}^{N_{a}}[\vec{\mu}_{l,i}\cdot\vec{u}_{\vec{k}s}(\vec{r}_{l,i})S_{l,i}^{+}\hat{a}_{\vec{k}s}+\vec{\mu}_{l,i}^{*}\cdot\vec{u}_{\vec{k}s}(\vec{r}_{l,i})S_{l,i}^{-}\hat{a}_{\vec{k}s}-H.c.]$
-where $ \vec{\mu}_{l,i} $ is the electric dipole moment for $ith$ transition of the $l$th atom, where $i=1$ denotes the transition from $|a\rangle$ to $|b\rangle$, and $i=2$ denotes the transition from $|b\rangle$ to $|c\rangle$. $ S_{l,i}^{+} $ and $S_{l,i}^{-} $ are the raising and lowering operator for the $l$th atom. The mode function of the squeezed vacuum is given by 
+where $ \vec{\mu}_{l,i} $ is the electric dipole moment for $ith$ transition of the $l$th atom, where $i=1$ denotes the transition from $|a\rangle$ to $|b\rangle$, and $i=2$ denotes the transition from $|b\rangle$ to $|c\rangle$. $ S_{l,i}^{+} $ and $S_{l,i}^{-} $ are the raising and lowering operator for transition $i$ of the $l$th atom. The mode function of the squeezed vacuum is given by
 \begin{equation}
   \label{eq2b}
   \begin{gathered}
 \vec{u}_{\vec{k}s}(\vec{r}_{i})=\sqrt{\frac{\omega_{\vec{k}s}}{2\epsilon_{0}\hbar V}}\vec{e}_{ks}e^{i\vec{k}\cdot(\vec{r}_{i}-\vec{o}_{\vec{k}s})}
  \end{gathered}
 \end{equation}
-where $\vec{o}_{\vec{k}s} $ is a phenomenological parameter which includes the effects of the initial phase and the position of the squeezing source with wavevector $ \vec{k} s$\cite{You2018}. The correlation functions for the squeezed vacuum are\cite{scully1999quantum}:
+where $\vec{o}_{\vec{k}s} $ is a phenomenological parameter which includes the effects of the initial phase and the position of the squeezing source\cite{You2018}. The correlation functions for the squeezed vacuum are\cite{scully1999quantum}:
 \begin{equation}
 \label{eq0a}
 \begin{split}
@@ -96,7 +99,7 @@ where $N=\sinh(r)^2$, $M=\sinh(r)\cosh(r)$, and the coefficients are
 & \gamma'_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos[k_{0z}(r_{i}+r_{j})]
 \end{split}
 \end{equation}
-where $\gamma_{i}$ is the decay rate for transition $i$ in ordinary vacuum.
+where $\gamma_{i}$ is the decay rate for transition $i$ in ordinary vacuum. Here we have incorporated index $l$ into $i$ for compactness.
 
 \section{Steady state of a single atom}
 In this section, we will study the steady state of a single atom in the squeezed vacuum reservior. For a single three level atom, we have $r_i=r_j$, and for simplicity we set $R=r_i=0$. Then the steady state of Eq.\eqref{eq1} can be derived by re-writing it as:
@@ -125,7 +128,7 @@ In this section, we will study the steady state of a single atom in the squeezed
 \end{align}
 \end{subequations}
 \end{widetext}
-where $ch=\cosh(r)$, $sh=\sinh(r)$, and $\gamma_{1}=\gamma_{ab}$($\gamma_{2}=\gamma_{bc}$) indicates the decay rate from $|a\rangle$ to $|b\rangle$($|b\rangle$ to $|c\rangle$) in ordinary vacuum. We noticed that the equations for off diagonal elements Eq.\eqref{4e}-\eqref{4f} result in $\rho_{ab}=\rho_{bc}=0$. Since $\omega_1+\omega_2=2\omega_0$, it has a steady state solution. When $\gamma_1=\gamma_2$, the steady state solution is:
+where $ch=\cosh(r)$, $sh=\sinh(r)$, and $\gamma_{1}=\gamma_{ab}$($\gamma_{2}=\gamma_{bc}$) indicates the decay rate from $|a\rangle$ to $|b\rangle$($|b\rangle$ to $|c\rangle$) in ordinary vacuum due to the waveguide modes. Equations \eqref{4e}-\eqref{4f} are for off diagonal elements $\rho_{ab}, \rho_{bc}$. The steady state of these two equations is $\rho_{ab}=\rho_{bc}=0$ since they are homogeneous linear equations. The first four equations Eq.\eqref{4a}-\eqref{4d} also have a steady state solution when they are combined with the constraints $\rho_{aa}+\rho_{bb}+\rho_{cc}=1$ and $\omega_1+\omega_2=2\omega_0$. It is also worth noting that Eq.\eqref{4a}-\eqref{4d} are independent of $\delta\omega$, so the difference between $\omega_{ab}$ and $\omega_{bc}$ doesn't influence the steady state for the single atom case. When $\gamma_1=\gamma_2$, the steady state solution is:
 %For the second case $\delta\omega\apprge\sqrt{\gamma_{1}\gamma_{2}}$, rotating wave approximation(RWA) can be used to simplify Eq.\eqref{eq1} as follows:
 %\begin{equation}
 %\label{eq3b}
@@ -148,7 +151,7 @@ where $ch=\cosh(r)$, $sh=\sinh(r)$, and $\gamma_{1}=\gamma_{ab}$($\gamma_{2}=\ga
 %\end{align}
 %\end{subequations}
 %\end{widetext}
-$\rho_{aa}=\frac{sh^{2}}{sh^{2}+ch^{2}}$, $\rho_{bb}=0$, $\rho_{cc}=\frac{ch^{2}}{sh^{2}+ch^{2}}$, $\rho_{ac}=-\frac{shch}{sh^{2}+ch^{2}}$. Thus, the steady state is actually a superposition state of $|a\rangle$ and $|c\rangle$: $\frac{sh}{\sqrt{sh^{2}+ch^{2}}}|a\rangle-\frac{ch}{\sqrt{sh^{2}+ch^{2}}}|c\rangle$. This phenomenon is similar to coherent trapping, but here we achieve the trapping for $\Xi$ structure with the squeezed vacuum reservoir, which cannot be realized with coherent pump due to spontaneous emission. For the general case where $\gamma_1\ne\gamma_2$, although the analytical solution is quite lengthy, we can easily get the numerical solution for different $\mu_{ab}$ and $\mu_{bc}$. In Fig.~\ref{2}(a), population inversion is achieved with $\mu_{ab}<\mu_{bc}$. This can be interpreted with the help of Fig.~\ref{2}(c). Figure ~\ref{2}(c) shows that the direct transition between $|a\rangle$, $|b\rangle$, and $|c\rangle$ are allowed just like the thermal reservoir case. However, in the squeezed vacuum, there is additional paths for population flow: electrons in any of these three states can evolve into the other two through an intermediate "state" $\rho_{ac}$. Although $\rho_{ac}$ is actually not a state, and $\rho_{ac}<0$ in our convention, it can be used to elucidate our idea. When $\mu_{ab}\ll\mu_{bc}$, the transition $|a\rangle\rightarrow|b\rangle$ is negligible. Thus state $|c\rangle$ can be excited to $|a\rangle$ through $|c\rangle\rightarrow|b\rangle\rightarrow\rho_{ac}\rightarrow|a\rangle$, but $|a\rangle$ can not decay back to $|c\rangle$. Thus, the population is trapped from $|c\rangle$ to $|a\rangle$. Although the population inversion between $|a\rangle$ and $|c\rangle$ is very sensitive to the value of $M$, the population inversion between $|a\rangle$ and $|b\rangle$ still holds for $M=0.8\sqrt{N(N+1)}$, which is shown in Fig.~\ref{2}(b). 
+$\frac{sh\sqrt{\gamma_{2}}}{\sqrt{ch^{2}\gamma_{1}+sh^{2}\gamma_{2}}}|a\rangle-\frac{ch\sqrt{\gamma_{1}}}{\sqrt{ch^{2}\gamma_{1}+sh^{2}\gamma_{2}}}|c\rangle$ which is a superposition state of $|a\rangle$ and $|c\rangle$. Thus, there is always population inversion between $|a\rangle$ and $|b\rangle$, and the population inversion between $|a\rangle$ and $|c\rangle$ occurs when $\tanh r>\sqrt{\frac{\gamma_{1}}{\gamma_{2}}}$. The population distribution for different ratios of $\frac{\gamma_{ab}}{\gamma_{bc}}$ is shown in Fig.~\ref{2}(a). The mechanism of this population inversion can be interpreted with the help of Fig.~\ref{2}(c). Figure ~\ref{2}(c) shows that the direct transition between $|a\rangle$, $|b\rangle$, and $|c\rangle$ are allowed just like the thermal reservoir case. However, in the squeezed vacuum, there is additional paths for population flow: electrons in any of these three states can evolve into the other two through an intermediate "state" $\rho_{ac}$. Although $\rho_{ac}$ is actually an off-diagonal element rather than a state, it can be used to elucidate our idea. When $\gamma_{ab}\ll\gamma_{bc}$, the transition $|a\rangle\rightarrow|b\rangle$ is negligible compared with $\gamma_{bc}$ and $\sqrt{\gamma_{ab}\gamma_{bc}}$. Thus electrons in the state $|c\rangle$ can be excited to $|a\rangle$ through $|c\rangle\rightarrow|b\rangle\rightarrow\rho_{ac}\rightarrow|a\rangle$, but $|a\rangle$ can not decay back to $|c\rangle$, which achieves the population trapping in $|a\rangle$. This phenomenon is similar to coherent trapping, but here we achieve the trapping for $\Xi$ structure with the squeezed vacuum reservoir, which cannot be realized with coherent pump due to spontaneous emission. What's more, since only a few modes are allowed in the waveguide with particular polarizations\cite{You2018},  $\gamma_{ab}\ll\gamma_{bc}$ can be achieved if we can properly manipulate the orientation of the atom. Since it is hard to achieve perfect squeezing with $M=\sqrt{N(N+1)}$ in experiments, we also study the effect of different values of M on the steady state population with parameters $\gamma_{ab}=\frac{1}{4}\gamma_{bc}$ and $r=1$, which is shown in Fig.~\ref{2}(b). Although the steady state population distribution is very sensitive to the value of $M$, the population inversion between $|a\rangle$ and $|b\rangle$ still holds for $M=0.8\sqrt{N(N+1)}$.
 \begin{figure*}
 \includegraphics[width=1\columnwidth]{atom_fig4.eps}
 \includegraphics[width=1\columnwidth]{atom_fig5.eps}
@@ -166,7 +169,7 @@ $\rho_{aa}=\frac{sh^{2}}{sh^{2}+ch^{2}}$, $\rho_{bb}=0$, $\rho_{cc}=\frac{ch^{2}
 %\end{equation}
 
 \section{steady state of multiple atoms}
-In the last section, we showed that a single atom can achieve steady state population inversion in the squeezed vacuum reservoir. However, with Eq.\eqref{eq2}, this result can not be generated to the multi-atom case since $\gamma'_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos[k_{0z}(r_{i}+r_{j})]$. The squeezing term in Eq.\eqref{eq1} vanishes for atoms located around $r_i=\frac{\pi}{4k_{0z}}+\frac{n\pi}{2k_{0z}}$. Thus, for a group of randomly located atoms, if we want to achieve steady state population inversion in the squeezed vacuum, we need to modify our scheme. Consider the following correlation functions:
+In the last section, we demonstrate that a single atom can achieve steady state population inversion in the squeezed vacuum reservoir. However, with Eq.\eqref{eq2}, this result can not be generated to the multi-atom case since $\gamma'_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos[k_{0z}(r_{i}+r_{j})]$. The squeezing term in Eq.\eqref{eq1} vanishes for atoms located around $r_i=\frac{\pi}{4k_{0z}}+\frac{n\pi}{2k_{0z}}$. Thus, for a group of randomly located atoms, if we want to achieve steady state population inversion in the squeezed vacuum, we need to modify our scheme. Here we consider the following correlation functions:
 \begin{equation}
 \label{eq0b}
 \begin{split}
@@ -185,7 +188,28 @@ which indicates that photons are entangled with those from the opposite directio
 & \gamma'_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos[k_{0z}(r_{ij})]
 \end{split}
 \end{equation}
-which is exactly the traditionally studied master equation\cite{tanas2004stationary} by Ficek. However, they didn't consider the effect of squeezing source, and here we give a detailed derivation on getting Eq. \eqref{eq2b} in Appendix B, where the effect of squeezing source is included. With this  
+which is exactly the traditionally studied master equation\cite{tanas2004stationary} by Ficek. However, they didn't consider the effect of squeezing source, so here we give a detailed derivation on getting Eq. \eqref{eq2b} in Appendix B, where the effect of squeezing source is included. With this new master equation, a single atom can reach population inversion anywhere in the waveguide, as discussed in the Sec. III. When there are multiple atoms in the waveguide, where dipole-dipole interaction needs to be considered, the population inversion still holds true. This is because transition $|a\rangle\leftrightarrow|c\rangle$ is forbidden which results in the fact that dipole-dipole interaction doesn't introduce any extra terms with $\rho_{ac}$. This can be illustrated by looking at the diagonal terms of the first atom in Eq. \eqref{eq1}. Since the general equation is too complicated to analyze, here we just consider a special case where two atoms are located in the waveguide at $r_1=0$ and $r_2=\lambda_{0z}$ respectively, and $\gamma_1=\gamma_2=\gamma$. We also use the rotating wave approximation where oscillating terms are dropped. Then we have the equations for the diagonal terms of the first atom:
+\begin{widetext}
+\begin{subequations}
+\begin{align}
+\dot{\rho}_{a_{1},a_{1}}/\gamma=&-ch^{2}\rho_{a_{1},a_{1}}+sh{}^{2}\rho_{b_{1},b_{1}}-\frac{1}{2}chsh(\rho_{a_{1},c_{1}}+\rho_{c_{1},a_{1}})-\frac{1}{2}(\rho_{a_{1}b_{2},b_{1}a_{2}}+\rho_{b_{1}a_{2},a_{1}b_{2}})\label{5a} \\
+\dot{\rho}_{b_{1},b_{1}}/\gamma=&(ch^{2}\rho_{a_{1},a_{1}}-sh^{2}\rho_{b_{1},b_{1}})+(sh^{2}\rho_{c_{1},c_{1}}-ch^{2}\rho_{b_{1},b_{1}})+chsh(\rho_{a_{1},c_{1}}+\rho_{c_{1},a_{1}})\\
+&+\frac{1}{2}(\rho_{a_{1}b_{2},b_{1}a_{2}}+\rho_{b_{1}a_{2},a_{1}b_{2}}-\rho_{b_{1}c_{2},c_{1}b_{2}}-\rho_{c_{1}b_{2},b_{1}c_{2}}) \label{5b}\\
+\dot{\rho}_{c_{1},c_{1}}/\gamma=&ch^{2}\rho_{b_{1},b_{1}}-sh^{2}\rho_{c_{1},c_{1}}-\frac{1}{2}chsh(\rho_{a_{1},c_{1}}+\rho_{c_{1},a_{1}})+\frac{1}{2}(\rho_{b_{1}c_{2},c_{1}b_{2}}+\rho_{c_{1}b_{2},b_{1}c_{2}}) \label{5c}
+\end{align}
+\end{subequations}
+\end{widetext}
+where notations like $\rho_{a_1, a_1}$ means partial trace of the second atom is taken, i.e., $\rho_{a_1, a_1}=\sum_{i_2=a,b,c}\rho_{a_1i_2, a_1i_2}$, and $\rho_{a_1b_2, b_1a_2}=\langle a_1b_2|\rho|b_1a_2\rangle$. We notice that only the last terms in Eq.\eqref{5a}-\eqref{5c} are the extra terms introduced by the dipole-dipole interaction, and the key role in population inversion $\rho_{ac}$ is not involved in them. Thus, the direct product of each atom's steady state in the single atom case $\frac{sh}{\sqrt{sh^{2}+ch^{2}}}|a\rangle-\frac{ch}{\sqrt{sh^{2}+ch^{2}}}|c\rangle$ is also the solution to Eq.\eqref{5a}-\eqref{5c}. Figure 3(a)(b) shows the steady state population distribution for different decay rate $\gamma_{ab}, \gamma_{bc}$, and for different atomic separation $r_{12}$. We can see that the dipole dipole interaction doesn't play a vital role in the population inversion. Thus, population inversion of a group of atoms can be achieved.
+
+\begin{figure*}
+\includegraphics[width=1\columnwidth]{fig3a.eps}
+\includegraphics[width=1\columnwidth]{fig3b.eps}
+\caption{(a) The steady state population distribution for different $\mu_{ab}$ and$\mu_{bc}$. Three atoms located at $r_1=0, r_2=\lambda_{0z}, r_3=2\lambda_{0z}$ are considered with the squeezing parameter $r=1$. (b) The steady state population distribution as a function of atomic separation for two atoms. The squeezing parameter $r=1$ and $\mu_{ab}=\frac{1}{4}\mu_{bc}$.}
+\label{2}
+\end{figure*}
+
+\section{SUMMARY}
+We study the $\Xi$-type atoms coupled to the broadband squeezed vacuum reservoir in a quasi-one-dimensional waveguide, with the overall transition frequency $\omega_{ac}=2\omega_0$. The atoms will evolve into a steady state where most atoms are in the excited state and almost no atoms are in the intemediate state. We also study how the non-perfect squeezing will influence our result. Our main conclusions still hold true when dipole-dipole interaction is considered.
 
 \begin{widetext}
 \appendix
@@ -303,7 +327,7 @@ Here we will show how to derive the master equation with coefficients Eq.\eqref{
 =&-\frac{L}{2\pi}e^{sgn(2r_{c}-o_{1}-o_{2})ik_{0}(r_{l}-r_{m})}e^{ik_{0}(o_{1}-o_{2})}2\pi\frac{\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar c^{2}k_{0z}}\sinh(r)\cosh(r)S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t)
 \end{split}
 \end{equation}
-Since we need to sum over $l,m,i,j$, the imaginary part of $e^{sgn(2r_{c}-o_{1}-o_{2})ik_{0}(r_{l}-r_{m})}$ gets canceled.
+Since we need to sum over $l,m,i,j$, the imaginary part of $e^{sgn(2r_{c}-o_{1}-o_{2})ik_{0}(r_{l}-r_{m})}$ gets canceled, which yields $\gamma'_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos[k_{0z}(r_{ij})]$. The above calculation is also valid when $r_i=rj$.
 
 \end{widetext}
 
