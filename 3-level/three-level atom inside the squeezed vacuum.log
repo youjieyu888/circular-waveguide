@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.6)  25 OCT 2018 15:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.6)  7 NOV 2018 11:50
 entering extended mode
 **"./three-level atom inside the squeezed vacuum.tex"
 ("three-level atom inside the squeezed vacuum.tex"
@@ -272,6 +272,12 @@ LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 
 LaTeX Warning: Label `eq1' multiply defined.
 
+
+LaTeX Warning: Label `eq2b' multiply defined.
+
+
+LaTeX Warning: Label `2' multiply defined.
+
 )
 \openout1 = `"three-level atom inside the squeezed vacuum.aux"'.
 
@@ -323,43 +329,58 @@ LaTeX Font Info:    Try loading font information for U+wasy on input line 29.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\wasysym\uwasy.fd"
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-<fig1.png, id=1, 751.1262pt x 153.2124pt>
-File: fig1.png Graphic file (type png)
- <use fig1.png>
-Package pdftex.def Info: fig1.png used on input line 41.
-(pdftex.def)             Requested size: 369.0pt x 75.26875pt.
-
-<fig2.png, id=3, 436.9926pt x 250.536pt>
-File: fig2.png Graphic file (type png)
- <use fig2.png>
-Package pdftex.def Info: fig2.png used on input line 42.
-(pdftex.def)             Requested size: 123.0pt x 70.51659pt.
-
-
-Package natbib Warning: Citation `You2018' on page 1 undefined on input line 69
-.
-
-
-Package natbib Warning: Citation `scully1999quantum' on page 1 undefined on inp
-ut line 69.
-
-[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Package epstopdf Info: Source file: <atom_fig4.eps>
-(epstopdf)                    date: 2018-09-28 11:04:35
-(epstopdf)                    size: 42499 bytes
-(epstopdf)             Output file: <atom_fig4-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-09-28 11:10:31
-(epstopdf)                    size: 24570 bytes
-(epstopdf)             Command: <epstopdf --outfile=atom_fig4-eps-converted-to.
-pdf atom_fig4.eps>
-(epstopdf)             \includegraphics on input line 153.
+Package epstopdf Info: Source file: <fig1.eps>
+(epstopdf)                    date: 2018-10-30 12:44:22
+(epstopdf)                    size: 3018549 bytes
+(epstopdf)             Output file: <fig1-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-10-30 15:30:00
+(epstopdf)                    size: 32985 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig1-eps-converted-to.pdf f
+ig1.eps>
+(epstopdf)             \includegraphics on input line 44.
 Package epstopdf Info: Output file is already uptodate.
 
-<atom_fig4-eps-converted-to.pdf, id=29, 845.1575pt x 598.235pt>
+<fig1-eps-converted-to.pdf, id=1, 750.805pt x 153.57375pt>
+File: fig1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig1-eps-converted-to.pdf>
+Package pdftex.def Info: fig1-eps-converted-to.pdf used on input line 44.
+(pdftex.def)             Requested size: 369.0pt x 75.4791pt.
+Package epstopdf Info: Source file: <fig2.eps>
+(epstopdf)                    date: 2018-10-30 12:44:24
+(epstopdf)                    size: 2871963 bytes
+(epstopdf)             Output file: <fig2-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-10-30 15:30:03
+(epstopdf)                    size: 16656 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig2-eps-converted-to.pdf f
+ig2.eps>
+(epstopdf)             \includegraphics on input line 45.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig2-eps-converted-to.pdf, id=2, 436.63126pt x 250.9375pt>
+File: fig2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig2-eps-converted-to.pdf>
+Package pdftex.def Info: fig2-eps-converted-to.pdf used on input line 45.
+(pdftex.def)             Requested size: 123.0pt x 70.68703pt.
+ [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <./fig1-eps-convert
+ed-to.pdf> <./fig2-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <atom_fig4.eps>
+(epstopdf)                    date: 2018-10-29 10:30:37
+(epstopdf)                    size: 44084 bytes
+(epstopdf)             Output file: <atom_fig4-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-10-30 11:09:22
+(epstopdf)                    size: 24354 bytes
+(epstopdf)             Command: <epstopdf --outfile=atom_fig4-eps-converted-to.
+pdf atom_fig4.eps>
+(epstopdf)             \includegraphics on input line 156.
+Package epstopdf Info: Output file is already uptodate.
+
+<atom_fig4-eps-converted-to.pdf, id=40, 845.1575pt x 598.235pt>
 File: atom_fig4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use atom_fig4-eps-converted-to.pdf>
-Package pdftex.def Info: atom_fig4-eps-converted-to.pdf used on input line 153.
+Package pdftex.def Info: atom_fig4-eps-converted-to.pdf used on input line 156.
 
 (pdftex.def)             Requested size: 246.0pt x 174.12268pt.
 Package epstopdf Info: Source file: <atom_fig5.eps>
@@ -370,71 +391,123 @@ Package epstopdf Info: Source file: <atom_fig5.eps>
 (epstopdf)                    size: 22342 bytes
 (epstopdf)             Command: <epstopdf --outfile=atom_fig5-eps-converted-to.
 pdf atom_fig5.eps>
-(epstopdf)             \includegraphics on input line 154.
+(epstopdf)             \includegraphics on input line 157.
 Package epstopdf Info: Output file is already uptodate.
 
-<atom_fig5-eps-converted-to.pdf, id=30, 845.1575pt x 598.235pt>
+<atom_fig5-eps-converted-to.pdf, id=41, 845.1575pt x 598.235pt>
 File: atom_fig5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use atom_fig5-eps-converted-to.pdf>
-Package pdftex.def Info: atom_fig5-eps-converted-to.pdf used on input line 154.
+Package pdftex.def Info: atom_fig5-eps-converted-to.pdf used on input line 157.
 
 (pdftex.def)             Requested size: 246.0pt x 174.12268pt.
+Package epstopdf Info: Source file: <atom_fig3.eps>
+(epstopdf)                    date: 2018-10-30 12:44:19
+(epstopdf)                    size: 2032290 bytes
+(epstopdf)             Output file: <atom_fig3-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-10-30 15:30:05
+(epstopdf)                    size: 15961 bytes
+(epstopdf)             Command: <epstopdf --outfile=atom_fig3-eps-converted-to.
+pdf atom_fig3.eps>
+(epstopdf)             \includegraphics on input line 158.
+Package epstopdf Info: Output file is already uptodate.
 
-<atom_fig3.png, id=31, 339.669pt x 227.8914pt>
-File: atom_fig3.png Graphic file (type png)
- <use atom_fig3.png>
-Package pdftex.def Info: atom_fig3.png used on input line 155.
-(pdftex.def)             Requested size: 246.0pt x 165.05185pt.
- [2 <./fig1.png> <./fig2.png>]
+<atom_fig3-eps-converted-to.pdf, id=42, 339.2675pt x 227.85126pt>
+File: atom_fig3-eps-converted-to.pdf Graphic file (type pdf)
 
-Package natbib Warning: Citation `tanas2004stationary' on page 3 undefined on i
-nput line 188.
+<use atom_fig3-eps-converted-to.pdf>
+Package pdftex.def Info: atom_fig3-eps-converted-to.pdf used on input line 158.
 
-
-LaTeX Warning: Reference `EQ1' on page 3 undefined on input line 192.
-
-
-Overfull \hbox (25.33131pt too wide) in paragraph at lines 235--235
-[] 
- []
-
-[3]
-Overfull \hbox (52.52876pt too wide) in paragraph at lines 249--249
-[] 
+(pdftex.def)             Requested size: 246.0pt x 165.21053pt.
+ [3]
+Underfull \hbox (badness 3769) in paragraph at lines 190--192
+\OT1/cmr/m/n/10 which is ex-actly the tra-di-tion-ally stud-ied mas-ter
  []
 
 [4 <./atom_fig4-eps-converted-to.pdf> <./atom_fig5-eps-converted-to.pdf> <./ato
-m_fig3.png>]
-Overfull \hbox (57.31157pt too wide) in paragraph at lines 261--261
+m_fig3-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig3a.eps>
+(epstopdf)                    date: 2018-10-29 10:30:37
+(epstopdf)                    size: 37807 bytes
+(epstopdf)             Output file: <fig3a-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-10-30 11:09:23
+(epstopdf)                    size: 21282 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig3a-eps-converted-to.pdf 
+fig3a.eps>
+(epstopdf)             \includegraphics on input line 205.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig3a-eps-converted-to.pdf, id=130, 845.1575pt x 598.235pt>
+File: fig3a-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig3a-eps-converted-to.pdf>
+Package pdftex.def Info: fig3a-eps-converted-to.pdf used on input line 205.
+(pdftex.def)             Requested size: 246.0pt x 174.12268pt.
+Package epstopdf Info: Source file: <fig3b.eps>
+(epstopdf)                    date: 2018-10-29 10:30:37
+(epstopdf)                    size: 38165 bytes
+(epstopdf)             Output file: <fig3b-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-10-30 11:09:24
+(epstopdf)                    size: 20392 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig3b-eps-converted-to.pdf 
+fig3b.eps>
+(epstopdf)             \includegraphics on input line 206.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig3b-eps-converted-to.pdf, id=131, 845.1575pt x 598.235pt>
+File: fig3b-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig3b-eps-converted-to.pdf>
+Package pdftex.def Info: fig3b-eps-converted-to.pdf used on input line 206.
+(pdftex.def)             Requested size: 246.0pt x 174.12268pt.
+
+
+LaTeX Warning: Reference `EQ1' on page 5 undefined on input line 216.
+
+
+Overfull \hbox (25.33131pt too wide) in paragraph at lines 259--259
 [] 
  []
 
 [5]
-Overfull \hbox (31.79868pt too wide) in paragraph at lines 286--286
+Overfull \hbox (52.52876pt too wide) in paragraph at lines 273--273
+[] 
+ []
+
+[6 <./fig3a-eps-converted-to.pdf> <./fig3b-eps-converted-to.pdf>]
+Overfull \hbox (57.31157pt too wide) in paragraph at lines 285--285
+[] 
+ []
+
+[7]
+Overfull \hbox (31.79868pt too wide) in paragraph at lines 310--310
 [] 
  []
 
 
-LaTeX Warning: Reference `EQ2B' on page 6 undefined on input line 289.
+LaTeX Warning: Reference `EQ2B' on page 8 undefined on input line 313.
 
 
-Overfull \hbox (17.63234pt too wide) in paragraph at lines 305--305
+Overfull \hbox (17.63234pt too wide) in paragraph at lines 329--329
 [] 
  []
 
-[6] ("three-level atom inside the squeezed vacuum.bbl"
+[8] ("three-level atom inside the squeezed vacuum.bbl"
+Underfull \hbox (badness 1237) in paragraph at lines 102--111
+ []\OT1/cmr/m/n/9 N. Bergeal, R. Vi-jay, V. Manucharyan, I. Sid-diqi,
+ []
 
-LaTeX Warning: Reference `LastBibItem' on page 7 undefined on input line 1.
+
+Underfull \hbox (badness 3568) in paragraph at lines 114--121
+ []\OT1/cmr/m/n/9 Z. Wang, S. Shankar, Z. Minev, P. Campagne-
+ []
 
 
-Package natbib Warning: Empty `thebibliography' environment on input line 3.
+Underfull \hbox (badness 1242) in paragraph at lines 114--121
+ \OT1/cmr/m/n/9 Ibarcq, A. Narla, and M. De-voret, arXiv preprint
+ []
 
-)
-
-Package natbib Warning: There were undefined citations.
-
-[7] ("three-level atom inside the squeezed vacuum.aux")
+) [9] ("three-level atom inside the squeezed vacuum.aux")
 
 LaTeX Warning: There were undefined references.
 
@@ -443,44 +516,43 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4473 strings out of 493335
- 57979 string characters out of 3136680
- 157250 words of memory out of 3000000
- 7886 multiletter control sequences out of 15000+200000
+ 4552 strings out of 493335
+ 59954 string characters out of 3136680
+ 157189 words of memory out of 3000000
+ 7964 multiletter control sequences out of 15000+200000
  20971 words of font info for 82 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,18n,26p,1952b,302s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,18n,26p,2457b,302s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmbsy5
-.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.p
-fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmti9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/symbols/msbm10.pfb>
-Output written on "three-level atom inside the squeezed vacuum.pdf" (7 pages, 4
-98367 bytes).
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.p
+fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex9.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmti9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/symbols/msbm10.pfb>
+Output written on "three-level atom inside the squeezed vacuum.pdf" (9 pages, 4
+73965 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
+ 295 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

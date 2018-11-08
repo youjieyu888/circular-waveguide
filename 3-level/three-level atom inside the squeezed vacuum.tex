@@ -41,8 +41,8 @@ In our study, we consider the $\Xi$-type atoms coupled to the broadband squeezed
 \section{Master equation of three level atoms in the squeezed vacuum}
 In this section, we consider a scenario where $N_a$ $\Xi$-type atoms are located inside the waveguide with the squeezed vacuum injected from both ends, as shown in Fig.~\ref{1}(a). The atomic electronic structure is shown in Fig.~\ref{1}(b) where the atomic states are labeled $|a\rangle$, $|b\rangle$, $|c\rangle$ from the excited state to the ground state. We assume that $\omega_{ac}=2\omega_0$ where $\omega_0$ is the center frequency of the broad band squeed vacuum.  $\omega_{ab}$ and $\omega_{bc}$ are not equal but they are still within the bandwith of the squeezed vacuum. We assume that the squeezed vacuum bandwidth is much larger than $|\omega_{ab}-\omega_{bc}|$ so it forms a squeezed vacuum reservoir. 
 \begin{figure*}
-\includegraphics[width=1.5\columnwidth]{fig1.png}
-\includegraphics[width=0.5\columnwidth]{fig2.png}
+\includegraphics[width=1.5\columnwidth]{fig1.eps}
+\includegraphics[width=0.5\columnwidth]{fig2.eps}
 \caption{(a) Schematic setup: A $\Xi$-type atom is located inside the waveguide with the broadband squeezed vacuum incident from both ends. (b)The energy structure of the three level atom. Transition $|a\rangle\rightarrow|c\rangle$ is forbidden and $\omega_{ac}=2\omega_0$ where $\omega_0$ is the center frequency of the squeezed vacuum. $\omega_{ab}$ and $\omega_{bc}$ differ by a small amount $2\delta\omega_0$ and they are within the bandwidth of the squeezed vacuum reservoir.}
 \label{1}
 \end{figure*}
@@ -99,7 +99,7 @@ where $N=\sinh(r)^2$, $M=\sinh(r)\cosh(r)$, and the coefficients are
 & \gamma'_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos[k_{0z}(r_{i}+r_{j})]
 \end{split}
 \end{equation}
-where $\gamma_{i}$ is the decay rate for transition $i$ in ordinary vacuum. Here we have incorporated index $l$ into $i$ for compactness.
+where $\gamma_{i}$ is the decay rate for transition $i$ in ordinary vacuum. Here we have incorporated index $l$ into $i$ for compactness, so $i$ denotes transition $ab$ for the first atom, transition $bc$ for the first atom, transition $ab$ for the second atom, transition $bc$ for the second atom, etc.
 
 \section{Steady state of a single atom}
 In this section, we will study the steady state of a single atom in the squeezed vacuum reservior. For a single three level atom, we have $r_i=r_j$, and for simplicity we set $R=r_i=0$. Then the steady state of Eq.\eqref{eq1} can be derived by re-writing it as:
@@ -119,16 +119,16 @@ In this section, we will study the steady state of a single atom in the squeezed
 &\dot{\rho}_{aa}=-\gamma_{1}ch^{2}\rho_{aa}+\gamma_{1}sh{}^{2}\rho_{bb}-\frac{1}{2}\sqrt{\gamma_{1}\gamma_{2}}chsh(e^{-i(\omega_{1}+\omega_{2}-2\omega_{0})t}\rho_{ac}+e^{i(\omega_{1}+\omega_{2}-2\omega_{0})t}\rho_{ca})\label{4a} \\
 &\dot{\rho}_{bb}=\gamma_{1}(ch^{2}\rho_{aa}-sh^{2}\rho_{bb})+\gamma_{2}(sh^{2}\rho_{cc}-ch^{2}\rho_{bb})+\sqrt{\gamma_{1}\gamma_{2}}chsh(e^{-i(\omega_{1}+\omega_{2}-2\omega_{0})t}\rho_{ac}+e^{i(\omega_{1}+\omega_{2}-2\omega_{0})t}\rho_{ca})\label{4b}\\
 &\dot{\rho}_{cc}=\gamma_{2}ch^{2}\rho_{bb}-\gamma_{2}sh^{2}\rho_{cc}-\frac{1}{2}\sqrt{\gamma_{1}\gamma_{2}}chsh(e^{-i(\omega_{1}+\omega_{2}-2\omega_{0})t}\rho_{ac}+e^{i(\omega_{1}+\omega_{2}-2\omega_{0})t}\rho_{ca})\label{4c}\\
-&e^{-i(\omega_{1}+\omega_{2}-2\omega_{0})t}\dot{\rho}_{ac}+e^{i(\omega_{1}+\omega_{2}-2\omega_{0})t}\dot{\rho}_{ca}=-\frac{1}{2}(\gamma_{1}ch^{2}+\gamma_{2}sh^{2})(e^{-i(\omega_{1}+\omega_{2}-2\omega_{0})t}\rho_{ac}+e^{i(\omega_{1}+\omega_{2}-2\omega_{0})t}\rho_{ca})\\
+&e^{-i(\omega_{1}+\omega_{2}-2\omega_{0})t}\dot{\rho}_{ac}+e^{i(\omega_{1}+\omega_{2}-2\omega_{0})t}\dot{\rho}_{ca}=-\frac{1}{2}(\gamma_{1}ch^{2}+\gamma_{2}sh^{2})(e^{-i(\omega_{1}+\omega_{2}-2\omega_{0})t}\rho_{ac}+e^{i(\omega_{1}+\omega_{2}-2\omega_{0})t}\rho_{ca})\nonumber\\
 &-\sqrt{\gamma_{1}\gamma_{2}}shch(\rho_{aa}-2\rho_{bb}+\rho_{cc})\label{4d}\\
-&e^{i(\omega_{0}-\omega_{1})t}\dot{\rho}_{ab}+e^{-i(\omega_{0}-\omega_{1})t}\dot{\rho}_{ba}=-\frac{1}{2}((\gamma_{1}+\gamma_{2})ch^{2}+\gamma_{1}sh^{2}-\gamma_{1}chsh)(e^{i(\omega_{0}-\omega_{1})t}\rho_{ab}+e^{-i(\omega_{0}-\omega_{1})t}\rho_{ba})\\
+&e^{i(\omega_{0}-\omega_{1})t}\dot{\rho}_{ab}+e^{-i(\omega_{0}-\omega_{1})t}\dot{\rho}_{ba}=-\frac{1}{2}((\gamma_{1}+\gamma_{2})ch^{2}+\gamma_{1}sh^{2}-\gamma_{1}chsh)(e^{i(\omega_{0}-\omega_{1})t}\rho_{ab}+e^{-i(\omega_{0}-\omega_{1})t}\rho_{ba})\nonumber\\
 &-\frac{1}{2}\sqrt{\gamma_{1}\gamma_{2}}(ch-2sh)sh(e^{-i(\omega_{0}-\omega_{2})t}\rho_{cb}+e^{i(\omega_{0}-\omega_{2})t}\rho_{bc})\label{4e}\\
-&e^{-i(\omega_{0}-\omega_{2})t}\dot{\rho}_{cb}+e^{i(\omega_{0}-\omega_{2})t}\dot{\rho}_{bc}=\frac{1}{2}\sqrt{\gamma_{1}\gamma_{2}}(2ch-sh)ch(e^{i(\omega_{0}-\omega_{1})t}\rho_{ab}+e^{-i(\omega_{0}-\omega_{1})t}\rho_{bc})\\
+&e^{-i(\omega_{0}-\omega_{2})t}\dot{\rho}_{cb}+e^{i(\omega_{0}-\omega_{2})t}\dot{\rho}_{bc}=\frac{1}{2}\sqrt{\gamma_{1}\gamma_{2}}(2ch-sh)ch(e^{i(\omega_{0}-\omega_{1})t}\rho_{ab}+e^{-i(\omega_{0}-\omega_{1})t}\rho_{bc})\nonumber\\
 &-\frac{1}{2}((\gamma_{1}+\gamma_{2})sh^{2}+\gamma_{2}ch^{2}-2\gamma_{2}chsh)(e^{-i(\omega_{0}-\omega_{2})t}\rho_{cb}+e^{i(\omega_{0}-\omega_{2})t}\rho_{bc})\label{4f}
 \end{align}
 \end{subequations}
 \end{widetext}
-where $ch=\cosh(r)$, $sh=\sinh(r)$, and $\gamma_{1}=\gamma_{ab}$($\gamma_{2}=\gamma_{bc}$) indicates the decay rate from $|a\rangle$ to $|b\rangle$($|b\rangle$ to $|c\rangle$) in ordinary vacuum due to the waveguide modes. Equations \eqref{4e}-\eqref{4f} are for off diagonal elements $\rho_{ab}, \rho_{bc}$. The steady state of these two equations is $\rho_{ab}=\rho_{bc}=0$ since they are homogeneous linear equations. The first four equations Eq.\eqref{4a}-\eqref{4d} also have a steady state solution when they are combined with the constraints $\rho_{aa}+\rho_{bb}+\rho_{cc}=1$ and $\omega_1+\omega_2=2\omega_0$. It is also worth noting that Eq.\eqref{4a}-\eqref{4d} are independent of $\delta\omega$, so the difference between $\omega_{ab}$ and $\omega_{bc}$ doesn't influence the steady state for the single atom case. When $\gamma_1=\gamma_2$, the steady state solution is:
+where $ch=\cosh(r)$, $sh=\sinh(r)$, and $\gamma_{1}=\gamma_{ab}$($\gamma_{2}=\gamma_{bc}$) indicates the decay rate from $|a\rangle$ to $|b\rangle$($|b\rangle$ to $|c\rangle$) in ordinary vacuum due to the waveguide modes. Equations \eqref{4e}-\eqref{4f} are for off diagonal elements $\rho_{ab}, \rho_{bc}$. The steady state of these two equations is $\rho_{ab}=\rho_{bc}=0$ since they are homogeneous linear equations. The first four equations Eq.\eqref{4a}-\eqref{4d} also have a steady state solution when they are combined with the constraints $\rho_{aa}+\rho_{bb}+\rho_{cc}=1$ and $\omega_1+\omega_2=2\omega_0$. It is also worth noting that Eq.\eqref{4a}-\eqref{4d} are independent of $\delta\omega$, so the difference between $\omega_{ab}$ and $\omega_{bc}$ doesn't influence the steady state for the single atom case. When $\gamma_1\ne\gamma_2$, the steady state solution is:
 %For the second case $\delta\omega\apprge\sqrt{\gamma_{1}\gamma_{2}}$, rotating wave approximation(RWA) can be used to simplify Eq.\eqref{eq1} as follows:
 %\begin{equation}
 %\label{eq3b}
@@ -155,8 +155,8 @@ $\frac{sh\sqrt{\gamma_{2}}}{\sqrt{ch^{2}\gamma_{1}+sh^{2}\gamma_{2}}}|a\rangle-\
 \begin{figure*}
 \includegraphics[width=1\columnwidth]{atom_fig4.eps}
 \includegraphics[width=1\columnwidth]{atom_fig5.eps}
-\includegraphics[width=1\columnwidth]{atom_fig3.png}
-\caption{(a) The steady state population distribution for different $\mu_{ab}$ and$\mu_{bc}$. The squeezing parameter $r=1$. (b) The steady state population distribution for non-ideal squeezed vacuum which is characterized by the ratio of $M$ and $\sqrt{N(N+1)}$. (c) The allowed population flow in the squeezed vacuum. The squeezing parameter $r=1$, and $\mu_{ab}=\frac{1}{4}\mu_{bc}$.}
+\includegraphics[width=1\columnwidth]{atom_fig3.eps}
+\caption{(a) The steady state population distribution for different $\mu_{ab}$ and$\mu_{bc}$. The squeezing parameter $r=1$. (b) The steady state population distribution for non-ideal squeezed vacuum which is characterized by the ratio of $M$ and $\sqrt{N(N+1)}$. (c) The allowed population flow in the squeezed vacuum. The squeezing parameter $r=1$, and $\gamma_{ab}=\frac{1}{4}\gamma_{bc}$.}
 \label{2}
 \end{figure*}
 %\begin{equation}
@@ -169,7 +169,7 @@ $\frac{sh\sqrt{\gamma_{2}}}{\sqrt{ch^{2}\gamma_{1}+sh^{2}\gamma_{2}}}|a\rangle-\
 %\end{equation}
 
 \section{steady state of multiple atoms}
-In the last section, we demonstrate that a single atom can achieve steady state population inversion in the squeezed vacuum reservoir. However, with Eq.\eqref{eq2}, this result can not be generated to the multi-atom case since $\gamma'_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos[k_{0z}(r_{i}+r_{j})]$. The squeezing term in Eq.\eqref{eq1} vanishes for atoms located around $r_i=\frac{\pi}{4k_{0z}}+\frac{n\pi}{2k_{0z}}$. Thus, for a group of randomly located atoms, if we want to achieve steady state population inversion in the squeezed vacuum, we need to modify our scheme. Here we consider the following correlation functions:
+In the last section, we demonstrate that a single atom can achieve steady state population inversion in the squeezed vacuum reservoir. However, with Eq.\eqref{eq2}, this result can not be generated to the multi-atom case since $\gamma'_{ii}=\sqrt{\gamma_{i}\gamma_{i}}\cos[2k_{0z}r_{i}]$. The squeezing term in Eq.\eqref{eq1} vanishes for atoms located around $r_i=\frac{\pi}{4k_{0z}}+\frac{n\pi}{2k_{0z}}$. Thus, for a group of randomly located atoms, if we want to achieve steady state population inversion in the squeezed vacuum, we need to modify our scheme. Here we consider the following correlation functions:
 \begin{equation}
 \label{eq0b}
 \begin{split}
@@ -193,7 +193,7 @@ which is exactly the traditionally studied master equation\cite{tanas2004station
 \begin{subequations}
 \begin{align}
 \dot{\rho}_{a_{1},a_{1}}/\gamma=&-ch^{2}\rho_{a_{1},a_{1}}+sh{}^{2}\rho_{b_{1},b_{1}}-\frac{1}{2}chsh(\rho_{a_{1},c_{1}}+\rho_{c_{1},a_{1}})-\frac{1}{2}(\rho_{a_{1}b_{2},b_{1}a_{2}}+\rho_{b_{1}a_{2},a_{1}b_{2}})\label{5a} \\
-\dot{\rho}_{b_{1},b_{1}}/\gamma=&(ch^{2}\rho_{a_{1},a_{1}}-sh^{2}\rho_{b_{1},b_{1}})+(sh^{2}\rho_{c_{1},c_{1}}-ch^{2}\rho_{b_{1},b_{1}})+chsh(\rho_{a_{1},c_{1}}+\rho_{c_{1},a_{1}})\\
+\dot{\rho}_{b_{1},b_{1}}/\gamma=&(ch^{2}\rho_{a_{1},a_{1}}-sh^{2}\rho_{b_{1},b_{1}})+(sh^{2}\rho_{c_{1},c_{1}}-ch^{2}\rho_{b_{1},b_{1}})+chsh(\rho_{a_{1},c_{1}}+\rho_{c_{1},a_{1}})\nonumber\\
 &+\frac{1}{2}(\rho_{a_{1}b_{2},b_{1}a_{2}}+\rho_{b_{1}a_{2},a_{1}b_{2}}-\rho_{b_{1}c_{2},c_{1}b_{2}}-\rho_{c_{1}b_{2},b_{1}c_{2}}) \label{5b}\\
 \dot{\rho}_{c_{1},c_{1}}/\gamma=&ch^{2}\rho_{b_{1},b_{1}}-sh^{2}\rho_{c_{1},c_{1}}-\frac{1}{2}chsh(\rho_{a_{1},c_{1}}+\rho_{c_{1},a_{1}})+\frac{1}{2}(\rho_{b_{1}c_{2},c_{1}b_{2}}+\rho_{c_{1}b_{2},b_{1}c_{2}}) \label{5c}
 \end{align}
@@ -204,7 +204,7 @@ where notations like $\rho_{a_1, a_1}$ means partial trace of the second atom is
 \begin{figure*}
 \includegraphics[width=1\columnwidth]{fig3a.eps}
 \includegraphics[width=1\columnwidth]{fig3b.eps}
-\caption{(a) The steady state population distribution for different $\mu_{ab}$ and$\mu_{bc}$. Three atoms located at $r_1=0, r_2=\lambda_{0z}, r_3=2\lambda_{0z}$ are considered with the squeezing parameter $r=1$. (b) The steady state population distribution as a function of atomic separation for two atoms. The squeezing parameter $r=1$ and $\mu_{ab}=\frac{1}{4}\mu_{bc}$.}
+\caption{(a) The steady state population distribution for different $\mu_{ab}$ and$\mu_{bc}$. Three atoms located at $r_1=0, r_2=\lambda_{0z}, r_3=2\lambda_{0z}$ are considered with the squeezing parameter $r=1$. (b) The steady state population distribution as a function of atomic separation for two atoms. The squeezing parameter $r=1$ and $\gamma_{ab}=\frac{1}{4}\gamma_{bc}$.}
 \label{2}
 \end{figure*}
 
@@ -331,7 +331,7 @@ Since we need to sum over $l,m,i,j$, the imaginary part of $e^{sgn(2r_{c}-o_{1}-
 
 \end{widetext}
 
-
 \bibliography{ref}
-\bibliographystyle{plain}
+%\begin{thebibliography}{99}
+%end{thebibliography}
 \end{document}
