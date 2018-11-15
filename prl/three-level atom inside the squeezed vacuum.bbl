@@ -1,0 +1,153 @@
+\begin{thebibliography}{20}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname bibnamefont\endcsname\relax
+  \def\bibnamefont#1{#1}\fi
+\expandafter\ifx\csname bibfnamefont\endcsname\relax
+  \def\bibfnamefont#1{#1}\fi
+\expandafter\ifx\csname citenamefont\endcsname\relax
+  \def\citenamefont#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{\citenamefont{Svelto and Hanna}(1998)}]{svelto1998principles}
+\bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Svelto}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.~C.} \bibnamefont{Hanna}},
+  \emph{\bibinfo{title}{Principles of lasers}}, vol.~\bibinfo{volume}{4}
+  (\bibinfo{publisher}{Springer}, \bibinfo{year}{1998}).
+
+\bibitem[{\citenamefont{Purcell}(1946)}]{purcell1946purcell}
+\bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Purcell}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{69}},
+  \bibinfo{pages}{681} (\bibinfo{year}{1946}).
+
+\bibitem[{\citenamefont{Gardiner}(1986)}]{gardiner1986cw}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Gardiner}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{56}},
+  \bibinfo{pages}{1917} (\bibinfo{year}{1986}).
+
+\bibitem[{\citenamefont{Collett}(1984)}]{collett1984mj}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Collett}},
+  \bibinfo{journal}{Phys. Rev. A} \textbf{\bibinfo{volume}{30}},
+  \bibinfo{pages}{1386} (\bibinfo{year}{1984}).
+
+\bibitem[{\citenamefont{Gea-Banacloche
+  et~al.}(1988)\citenamefont{Gea-Banacloche, Scully, and
+  Zubairy}}]{gea1988vacuum}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Gea-Banacloche}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Scully}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Zubairy}},
+  \bibinfo{journal}{Physica Scripta} \textbf{\bibinfo{volume}{1988}},
+  \bibinfo{pages}{81} (\bibinfo{year}{1988}).
+
+\bibitem[{\citenamefont{Gardiner}(1987)}]{gardiner1987cw}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Gardiner}},
+  \bibinfo{journal}{J. Opt. Soc. Am. B} \textbf{\bibinfo{volume}{4}},
+  \bibinfo{pages}{1683} (\bibinfo{year}{1987}).
+
+\bibitem[{\citenamefont{Palma}(1989)}]{palma1989gm}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Palma}}, \bibinfo{journal}{Opt.
+  Commun.} \textbf{\bibinfo{volume}{73}}, \bibinfo{pages}{131}
+  (\bibinfo{year}{1989}).
+
+\bibitem[{\citenamefont{Agarwal and Puri}(1990)}]{agarwal1990cooperative}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Agarwal}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Puri}},
+  \bibinfo{journal}{Physical Review A} \textbf{\bibinfo{volume}{41}},
+  \bibinfo{pages}{3782} (\bibinfo{year}{1990}).
+
+\bibitem[{\citenamefont{Ficek}(1990)}]{ficek1990spontaneous}
+\bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Ficek}},
+  \bibinfo{journal}{Physical Review A} \textbf{\bibinfo{volume}{42}},
+  \bibinfo{pages}{611} (\bibinfo{year}{1990}).
+
+\bibitem[{\citenamefont{Ficek}(1991)}]{ficek1991z}
+\bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Ficek}},
+  \bibinfo{journal}{Phys. Rev. A} \textbf{\bibinfo{volume}{44}},
+  \bibinfo{pages}{7759} (\bibinfo{year}{1991}).
+
+\bibitem[{\citenamefont{Goldstein}(1996)}]{goldstein1996ev}
+\bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Goldstein}},
+  \bibinfo{journal}{Phys. Rev. A} \textbf{\bibinfo{volume}{53}},
+  \bibinfo{pages}{3573} (\bibinfo{year}{1996}).
+
+\bibitem[{\citenamefont{Turchette}(1998)}]{turchette1998qa}
+\bibinfo{author}{\bibfnamefont{Q.}~\bibnamefont{Turchette}},
+  \bibinfo{journal}{Phys. Rev. A} \textbf{\bibinfo{volume}{58}},
+  \bibinfo{pages}{4056} (\bibinfo{year}{1998}).
+
+\bibitem[{\citenamefont{Murch}(2013)}]{murch2013kw}
+\bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Murch}},
+  \bibinfo{journal}{Nature (London)} \textbf{\bibinfo{volume}{499}},
+  \bibinfo{pages}{62} (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Toyli et~al.}(2016)\citenamefont{Toyli, Eddins, Boutin,
+  Puri, Hover, Bolkhovsky, Oliver, Blais, and Siddiqi}}]{toyli2016resonance}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Toyli}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Eddins}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Boutin}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Puri}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Hover}},
+  \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Bolkhovsky}},
+  \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Oliver}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Blais}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Siddiqi}},
+  \bibinfo{journal}{Physical Review X} \textbf{\bibinfo{volume}{6}},
+  \bibinfo{pages}{031004} (\bibinfo{year}{2016}).
+
+\bibitem[{\citenamefont{Bergeal et~al.}(2010)\citenamefont{Bergeal, Vijay,
+  Manucharyan, Siddiqi, Schoelkopf, Girvin, and Devoret}}]{bergeal2010analog}
+\bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Bergeal}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Vijay}},
+  \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Manucharyan}},
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Siddiqi}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Schoelkopf}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Girvin}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Devoret}},
+  \bibinfo{journal}{Nature Physics} \textbf{\bibinfo{volume}{6}},
+  \bibinfo{pages}{296} (\bibinfo{year}{2010}).
+
+\bibitem[{\citenamefont{Wang et~al.}(2018)\citenamefont{Wang, Shankar, Minev,
+  Campagne-Ibarcq, Narla, and Devoret}}]{wang2018cavity}
+\bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Wang}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Shankar}},
+  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Minev}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Campagne-Ibarcq}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Narla}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Devoret}},
+  \bibinfo{journal}{arXiv preprint arXiv:1807.04849}  (\bibinfo{year}{2018}).
+
+\bibitem[{\citenamefont{Qin et~al.}(2018)\citenamefont{Qin, Miranowicz, Li,
+  L{\"u}, You, and Nori}}]{qin2018exponentially}
+\bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Qin}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Miranowicz}},
+  \bibinfo{author}{\bibfnamefont{P.-B.} \bibnamefont{Li}},
+  \bibinfo{author}{\bibfnamefont{X.-Y.} \bibnamefont{L{\"u}}},
+  \bibinfo{author}{\bibfnamefont{J.-Q.} \bibnamefont{You}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Nori}},
+  \bibinfo{journal}{Physical review letters} \textbf{\bibinfo{volume}{120}},
+  \bibinfo{pages}{093601} (\bibinfo{year}{2018}).
+
+\bibitem[{\citenamefont{You et~al.}(2018)\citenamefont{You, Liao, Li, and
+  Zubairy}}]{You2018}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{You}},
+  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Liao}},
+  \bibinfo{author}{\bibfnamefont{S.-W.} \bibnamefont{Li}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.~S.} \bibnamefont{Zubairy}},
+  \bibinfo{journal}{Physical Review A} \textbf{\bibinfo{volume}{97}},
+  \bibinfo{pages}{023810} (\bibinfo{year}{2018}).
+
+\bibitem[{\citenamefont{Scully and Zubairy}(1999)}]{scully1999quantum}
+\bibinfo{author}{\bibfnamefont{M.~O.} \bibnamefont{Scully}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.~S.} \bibnamefont{Zubairy}},
+  \emph{\bibinfo{title}{Quantum optics}} (\bibinfo{year}{1999}).
+
+\bibitem[{\citenamefont{Tana{\'s} and Ficek}(2004)}]{tanas2004stationary}
+\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Tana{\'s}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Ficek}},
+  \bibinfo{journal}{Journal of Optics B: Quantum and Semiclassical Optics}
+  \textbf{\bibinfo{volume}{6}}, \bibinfo{pages}{S610} (\bibinfo{year}{2004}).
+
+\end{thebibliography}
