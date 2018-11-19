@@ -65,7 +65,7 @@ where $ \vec{\mu}_{l,i} $ is the electric dipole moment for $ith$ transition of 
 \begin{equation}
   \label{eq2b}
   \begin{gathered}
-\vec{u}_{\vec{k}s}(\vec{r}_{i})=\sqrt{\frac{\omega_{\vec{k}s}}{2\epsilon_{0}\hbar V}}\vec{e}_{ks}e^{i\vec{k}\cdot(\vec{r}_{i}-\vec{o}_{\vec{k}s})}
+\vec{u}_{\vec{k},s}(\vec{r}_{i})=\sqrt{\frac{\omega_{\vec{k}s}}{\epsilon_{0}\hbar V}}\vec{e}_{ks}\cos(\vec{k}\cdot\vec{r}_{i})
  \end{gathered}
 \end{equation}
 where $\vec{o}_{\vec{k}s} $ is a phenomenological parameter which includes the effects of the initial phase and the position of the squeezing source\cite{You2018}. The correlation functions for the squeezed vacuum are\cite{scully1999quantum}:
@@ -98,7 +98,7 @@ where $N=\sinh(r)^2$, $M=\sinh(r)\cosh(r)$, and the coefficients are
 & \gamma'_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos[k_{0z}(r_{i}+r_{j})]
 \end{split}
 \end{equation}
-where $\gamma_{i}$ is the decay rate for transition $i$ in ordinary vacuum. Here we have incorporated index $l$ into $i$ for compactness, so $i$ denotes transition $ab$ for the first atom, transition $bc$ for the first atom, transition $ab$ for the second atom, transition $bc$ for the second atom, etc.
+where $\gamma_{i}$ is the decay rate for transition $i$ in ordinary vacuum. Here we have incorporated index $l$ into $i$ for compactness, so $i$ denotes transition $ab$ for the first atom, transition $bc$ for the first atom, transition $ab$ for the second atom, transition $bc$ for the second atom, etc. For simplicity, we assume all atoms are along $z$-axis such that $\vec{r_i}=(0,0,r_i)$,
 
 In this section, we will study the steady state of a single atom in the squeezed vacuum reservior. For a single three level atom, we have $r_i=r_j$, and for simplicity we set $R=r_i=0$. Then the steady state of Eq.\eqref{eq1} can be derived by re-writing it as:
 %We will discuss the steady state solution to Eq. \eqref{eq1} in two cases: $\delta\omega\ll\sqrt{\gamma_{1}\gamma_{2}}$ and $\delta\omega\apprge\sqrt{\gamma_{1}\gamma_{2}}$. When $\delta\omega\ll\sqrt{\gamma_{1}\gamma_{2}}$, Eq. \eqref{eq1} can be simplified as:
@@ -255,14 +255,14 @@ where $l,m$ are used for labeling different atoms, and $i,j$ are used for transi
 \begin{equation}
 \label{eqc2}\tag{A6}
 \begin{split}
-&-\underset{k_{z}}{\sum}\int_{0}^{t}d\tau\vec{\mu}_{l,i}\cdot\vec{u}_{\vec{k}s}(r_{l})S_{l,i}^{+}e^{i\omega_{i}t}\vec{\mu}_{m,j}^{*}\cdot\vec{u}_{\vec{k}'s'}^{*}(r_{m})S_{m,j}^{-}e^{-i\omega_{j}(t-\tau)}e^{-i\omega_{\vec{k}'s'}\tau}\cosh^{2}r\rho^{S}(t-\tau)\delta_{\vec{k}\vec{k}'}\delta_{ss'}\\
-=&-\frac{L}{2\pi}e^{i(\omega_{i}-\omega_{j})t}\int_{-\infty}^{\infty}dk_{z}\int_{0}^{t}d\tau e^{i\omega_{j}\tau}e^{-i\omega_{k_{z}}\tau}\frac{\omega_{k}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}e^{ik_{z}(r_{l}-r_{m})}\cosh^{2}rS_{l,i}^{+}S_{m,j}^{-}\rho^{S}(t-\tau)\\
-\approx&-\frac{L}{2\pi}e^{i(\omega_{i}-\omega_{j})t}\int_{0}^{\infty}dk_{z}\int_{0}^{t}d\tau e^{i\omega_{j}\tau}e^{-i[\omega_{j}+c^{2}k_{jz}(k_{z}-k_{jz})/\omega_{j}]\tau}\frac{\omega_{k}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}[e^{ik_{z}(r_{l}-r_{m})}+e^{-ik_{z}(r_{l}-r_{m})}]\cosh^{2}rS_{l,i}^{+}S_{m,j}^{-}\rho^{S}(t-\tau)\\
-\approx&-\frac{L}{2\pi}e^{i(\omega_{i}-\omega_{j})t}\int_{-k_{0z}}^{\infty}d\delta k_{z}\int_{0}^{t}d\tau e^{-i\tau c^{2}k_{jz}\delta k_{z}/\omega_{j}}\frac{\omega_{k}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}[e^{i(k_{jz}+\delta k_{z})(r_{l}-r_{m})}+e^{-i(k_{jz}+\delta k_{z})(r_{l}-r_{m})}]\cosh^{2}rS_{l,i}^{+}S_{m,j}^{-}\rho^{S}(t-\tau)\\
-\approx&-\frac{L}{2\pi}e^{i(\omega_{i}-\omega_{j})t}\int_{-\infty}^{\infty}d\delta k_{z}\int_{0}^{t}d\tau e^{-i(c^{2}k_{jz}\delta k_{z}/\omega_{j})\tau}\frac{\omega_{k}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}[e^{i(k_{jz}+\delta k_{z})(r_{l}-r_{m})}+e^{-i(k_{jz}+\delta k_{z})(r_{l}-r_{m})}]\cosh^{2}rS_{l,i}^{+}S_{m,j}^{-}\rho^{S}(t-\tau)\\
-\approx&-\frac{L}{2\pi}e^{i(\omega_{i}-\omega_{j})t}\int_{0}^{t}d\tau\frac{\omega_{j}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}2\pi[e^{ik_{jz}(r_{l}-r_{m})}\delta((r_{l}-r_{m})-\frac{c^{2}k_{jz}}{\omega_{0}}\tau)+e^{-ik_{jz}(r_{l}-r_{m})}\delta((r_{l}-r_{m})+\frac{c^{2}k_{jz}}{\omega_{0}}\tau)]\cosh^{2}rS_{l,i}^{+}S_{m,j}^{-}\rho^{S}(t-\tau)\\
-\approx&-\frac{L}{2\pi}e^{ik_{jz}r_{lm}}\frac{\omega_{j}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}2\pi\frac{\omega_{j}}{c^{2}k_{0z}}\cosh^{2}rS_{l,i}^{+}S_{m,j}^{-}\rho^{S}(t)e^{i(\omega_{i}-\omega_{j})t}\\
-\approx&-[\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}\cos(k_{0z}r_{lm})+i\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}sin(k_{0z}r_{lm})]\cosh^{2}rS_{l,i}^{+}S_{m,j}^{-}\rho^{S}(t)e^{i(\omega_{i}-\omega_{j})t}\\
+&\\
+=&\\
+\approx&\\
+\approx&\\
+\approx&\\
+\approx&\\
+\approx&\\
+\approx&\\
 \end{split}
 \end{equation}
 where emitter separation $r_{lm}=|r_{l}-r_{m}|$, collective decay rate $\gamma_{i}=2\mu_{i}^{2}\omega_{i}^{2}/\hbar\epsilon_{0}Sc^{2}k_{iz}$, and collective energy shift $\Lambda_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\sin(k_{0z}r_{ij})/2$.
@@ -293,13 +293,13 @@ where we have used the fact that the origin of coordinate system is at equal dis
 \begin{equation}
 \label{eqb10}\tag{A9}
 \begin{split}
-&\underset{k_{z}}{\sum}\int_{0}^{t}d\tau\{\vec{\mu}{}_{l,i}\cdot\vec{u}_{2\vec{k}_{0}-\vec{k}}(r_{l})S_{l,i}^{+}\vec{\mu}_{m,j}\cdot\vec{u}_{\vec{k}}(r_{m})S_{m,j}^{+}e^{i(\omega_{\vec{k}}-\omega_{j})\tau}[-\sinh(r)\cosh(r)]\rho^{S}(t-\tau)\\
-=&-\frac{L}{2\pi}\int_{0}^{2k_{0z}}dk_{z}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{jz}}{_{\omega_{j}}}(k_{z}-k_{jz})\tau}e^{i2k_{0z}(r_{c}-o_{1})}e^{-i(k_{z}-k_{0z})(r_{l}-r_{m})}\frac{\sqrt{\omega_{k_{z}}\omega_{2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t-\tau) \\
-& -\frac{L}{2\pi}\int_{-2k_{0z}}^{0}dk_{z}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{jz}}{_{\omega_{j}}}(-k_{z}-k_{jz})\tau}e^{-i2k_{0z}(r_{c}-o_{2})}e^{-i(k_{z}+k_{0z})(r_{l}-r_{m})}\frac{\sqrt{\omega_{k_{z}}\omega_{-2k_{0z}-k_{z}}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\sinh(r)\cosh(r)S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t-\tau)\\
-=&-\frac{L}{2\pi}e^{i2k_{0z}(r_{c}-o_{1})}\frac{\sqrt{\omega_{i}\omega_{j}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\int_{-\infty}^{\infty}dk_{z}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{jz}}{_{\omega_{j}}}(k_{z}-k_{jz})\tau}e^{-i(k_{z}-k_{0z})(r_{l}-r_{m})}\sinh(r)\cosh(r)S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t-\tau)\\
-&-\frac{L}{2\pi}e^{-i2k_{0z}(r_{c}-o_{2})}\frac{\sqrt{\omega_{i}\omega_{j}}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\int_{-\infty}^{\infty}dk_{z}\int_{0}^{t}d\tau e^{i\frac{c^{2}k_{jz}}{_{\omega_{j}}}(k_{z}-k_{jz})\tau}e^{i(k_{z}-k_{0z})(r_{l}-r_{m})}\sinh(r)\cosh(r)S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t-\tau) \\
-\approx&-\frac{L}{2\pi}e^{i2k_{0z}R}\frac{\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar}\int_{0}^{t}d\tau2\pi[e^{i2k_{0z}r_{c}}\delta(r_{l}-r_{m}-\frac{c^{2}k_{0z}}{_{\omega_{0}}}\tau)+e^{-i2k_{0z}r_{c}}\delta(r_{l}-r_{m}+\frac{c^{2}k_{0z}}{_{\omega_{0}}}\tau)]\sinh(r)\cosh(r)S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t-\tau) \\
-\approx&-e^{i2k_{0z}R}\frac{\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}\hbar Sc^{2}k_{0z}}e^{i2k_{0z}r_{c}sgn(r_{l}-r_{m})}S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t)\rightarrow-\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}e^{i2k_{0z}R}\cos(k_{0z}(r_{l}+r_{m}))S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t)\\
+&\\
+=& \\
+&\\
+=&\\
+&\\
+\approx& \\
+\approx&\\
 \end{split}
 \end{equation}
 where $sgn(r_{l}-r_{m})$ is the sign function. The last arrow is because we need to sum over $i,j$, so the imaginary part of $e^{i2k_{0z}r_{c}sgn(i-j)}$ vanishes, so the neat result is that $\gamma'_{ij}=e^{i2k_{0z}R}\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}(r_{i}+r_{j}))$ after combining index $l,i$ and $m,j$ as $i$ and $j$. As for $S_{i}^{+}\rho^{S}(t)S_{j}^{+}$ terms, the combination of the last two terms in Eq.\eqref{eqa2} will make the imaginary part of $e^{i2k_{0z}r_{c}sgn(r_{l}-r_{m})}$ vanish. Thus, we have $\gamma'_{ij}=e^{i2k_{0z}R}\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}(r_i+r_j))$ in Eq.\eqref{eq2}. 

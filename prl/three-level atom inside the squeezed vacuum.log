@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500) (preloaded format=pdflatex 2018.6.19)  10 NOV 2018 14:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500) (preloaded format=pdflatex 2018.6.19)  18 NOV 2018 12:01
 entering extended mode
 **"./three-level atom inside the squeezed vacuum.tex"
 ("three-level atom inside the squeezed vacuum.tex"
@@ -340,14 +340,14 @@ Package epstopdf Info: Source file: <fig1.eps>
 (epstopdf)                    size: 32985 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig1-eps-converted-to.pdf f
 ig1.eps>
-(epstopdf)             \includegraphics on input line 44.
+(epstopdf)             \includegraphics on input line 43.
 Package epstopdf Info: Output file is already uptodate.
 <fig1-eps-converted-to.pdf, id=1, pagebox=cropbox, 750.805pt x 153.57375pt>
 File: fig1-eps-converted-to.pdf Graphic file (type pdf)
 <use fig1-eps-converted-to.pdf>
-Package pdftex.def Info: fig1-eps-converted-to.pdf  used on input line 44. on i
-nput line 44.
-Package pdftex.def Info: Requested size: 369.0pt x 75.4791pt on input line 44.
+Package pdftex.def Info: fig1-eps-converted-to.pdf  used on input line 43. on i
+nput line 43.
+Package pdftex.def Info: Requested size: 369.0pt x 75.4791pt on input line 43.
 Package epstopdf Info: Source file: <fig2.eps>
 (epstopdf)                    date: 2018-11-08 17:10:26
 (epstopdf)                    size: 2908521 bytes
@@ -356,17 +356,16 @@ Package epstopdf Info: Source file: <fig2.eps>
 (epstopdf)                    size: 16656 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig2-eps-converted-to.pdf f
 ig2.eps>
-(epstopdf)             \includegraphics on input line 45.
+(epstopdf)             \includegraphics on input line 44.
 Package epstopdf Info: Output file is already uptodate.
 <fig2-eps-converted-to.pdf, id=2, pagebox=cropbox, 436.63126pt x 250.9375pt>
 File: fig2-eps-converted-to.pdf Graphic file (type pdf)
 <use fig2-eps-converted-to.pdf>
-Package pdftex.def Info: fig2-eps-converted-to.pdf  used on input line 45. on i
-nput line 45.
-Package pdftex.def Info: Requested size: 123.0pt x 70.68703pt on input line 45.
+Package pdftex.def Info: fig2-eps-converted-to.pdf  used on input line 44. on i
+nput line 44.
+Package pdftex.def Info: Requested size: 123.0pt x 70.68703pt on input line 44.
 
- [1{C:/Users/Jieyu You/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <
-./fig1-eps-converted-to.pdf> <./fig2-eps-converted-to.pdf>]
+ [1{C:/Users/Jieyu You/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 Package epstopdf Info: Source file: <atom_fig4.eps>
 (epstopdf)                    date: 2018-10-28 13:49:59
 (epstopdf)                    size: 42271 bytes
@@ -375,16 +374,16 @@ Package epstopdf Info: Source file: <atom_fig4.eps>
 (epstopdf)                    size: 24354 bytes
 (epstopdf)             Command: <epstopdf --outfile=atom_fig4-eps-converted-to.
 pdf atom_fig4.eps>
-(epstopdf)             \includegraphics on input line 156.
+(epstopdf)             \includegraphics on input line 150.
 Package epstopdf Info: Output file is already uptodate.
-<atom_fig4-eps-converted-to.pdf, id=40, pagebox=cropbox, 845.1575pt x 598.235pt
+<atom_fig4-eps-converted-to.pdf, id=26, pagebox=cropbox, 845.1575pt x 598.235pt
 >
 File: atom_fig4-eps-converted-to.pdf Graphic file (type pdf)
 <use atom_fig4-eps-converted-to.pdf>
-Package pdftex.def Info: atom_fig4-eps-converted-to.pdf  used on input line 156
-. on input line 156.
+Package pdftex.def Info: atom_fig4-eps-converted-to.pdf  used on input line 150
+. on input line 150.
 Package pdftex.def Info: Requested size: 246.0pt x 174.12268pt on input line 15
-6.
+0.
 Package epstopdf Info: Source file: <atom_fig5.eps>
 (epstopdf)                    date: 2018-10-05 18:41:29
 (epstopdf)                    size: 42047 bytes
@@ -393,16 +392,16 @@ Package epstopdf Info: Source file: <atom_fig5.eps>
 (epstopdf)                    size: 22342 bytes
 (epstopdf)             Command: <epstopdf --outfile=atom_fig5-eps-converted-to.
 pdf atom_fig5.eps>
-(epstopdf)             \includegraphics on input line 157.
+(epstopdf)             \includegraphics on input line 151.
 Package epstopdf Info: Output file is already uptodate.
-<atom_fig5-eps-converted-to.pdf, id=41, pagebox=cropbox, 845.1575pt x 598.235pt
+<atom_fig5-eps-converted-to.pdf, id=27, pagebox=cropbox, 845.1575pt x 598.235pt
 >
 File: atom_fig5-eps-converted-to.pdf Graphic file (type pdf)
 <use atom_fig5-eps-converted-to.pdf>
-Package pdftex.def Info: atom_fig5-eps-converted-to.pdf  used on input line 157
-. on input line 157.
+Package pdftex.def Info: atom_fig5-eps-converted-to.pdf  used on input line 151
+. on input line 151.
 Package pdftex.def Info: Requested size: 246.0pt x 174.12268pt on input line 15
-7.
+1.
 Package epstopdf Info: Source file: <atom_fig3.eps>
 (epstopdf)                    date: 2018-11-08 17:10:26
 (epstopdf)                    size: 2058220 bytes
@@ -411,23 +410,22 @@ Package epstopdf Info: Source file: <atom_fig3.eps>
 (epstopdf)                    size: 15961 bytes
 (epstopdf)             Command: <epstopdf --outfile=atom_fig3-eps-converted-to.
 pdf atom_fig3.eps>
-(epstopdf)             \includegraphics on input line 158.
+(epstopdf)             \includegraphics on input line 152.
 Package epstopdf Info: Output file is already uptodate.
-<atom_fig3-eps-converted-to.pdf, id=42, pagebox=cropbox, 339.2675pt x 227.85126
+<atom_fig3-eps-converted-to.pdf, id=28, pagebox=cropbox, 339.2675pt x 227.85126
 pt>
 File: atom_fig3-eps-converted-to.pdf Graphic file (type pdf)
 <use atom_fig3-eps-converted-to.pdf>
-Package pdftex.def Info: atom_fig3-eps-converted-to.pdf  used on input line 158
-. on input line 158.
+Package pdftex.def Info: atom_fig3-eps-converted-to.pdf  used on input line 152
+. on input line 152.
 Package pdftex.def Info: Requested size: 246.0pt x 165.21053pt on input line 15
-8.
- [3]
-Underfull \hbox (badness 3769) in paragraph at lines 190--192
+2.
+ [2 <./fig1-eps-converted-to.pdf> <./fig2-eps-converted-to.pdf>]
+Underfull \hbox (badness 3769) in paragraph at lines 184--186
 \OT1/cmr/m/n/10 which is ex-actly the tra-di-tion-ally stud-ied mas-ter
  []
 
-[4 <./atom_fig4-eps-converted-to.pdf> <./atom_fig5-eps-converted-to.pdf> <./ato
-m_fig3-eps-converted-to.pdf>]
+[3]
 Package epstopdf Info: Source file: <fig3a.eps>
 (epstopdf)                    date: 2018-10-28 13:48:32
 (epstopdf)                    size: 36229 bytes
@@ -436,15 +434,15 @@ Package epstopdf Info: Source file: <fig3a.eps>
 (epstopdf)                    size: 21282 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig3a-eps-converted-to.pdf 
 fig3a.eps>
-(epstopdf)             \includegraphics on input line 205.
+(epstopdf)             \includegraphics on input line 199.
 Package epstopdf Info: Output file is already uptodate.
-<fig3a-eps-converted-to.pdf, id=130, pagebox=cropbox, 845.1575pt x 598.235pt>
+<fig3a-eps-converted-to.pdf, id=45, pagebox=cropbox, 845.1575pt x 598.235pt>
 File: fig3a-eps-converted-to.pdf Graphic file (type pdf)
 <use fig3a-eps-converted-to.pdf>
-Package pdftex.def Info: fig3a-eps-converted-to.pdf  used on input line 205. on
- input line 205.
-Package pdftex.def Info: Requested size: 246.0pt x 174.12268pt on input line 20
-5.
+Package pdftex.def Info: fig3a-eps-converted-to.pdf  used on input line 199. on
+ input line 199.
+Package pdftex.def Info: Requested size: 246.0pt x 174.12268pt on input line 19
+9.
 Package epstopdf Info: Source file: <fig3b.eps>
 (epstopdf)                    date: 2018-10-28 00:19:51
 (epstopdf)                    size: 36514 bytes
@@ -453,48 +451,49 @@ Package epstopdf Info: Source file: <fig3b.eps>
 (epstopdf)                    size: 20392 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig3b-eps-converted-to.pdf 
 fig3b.eps>
-(epstopdf)             \includegraphics on input line 206.
+(epstopdf)             \includegraphics on input line 200.
 Package epstopdf Info: Output file is already uptodate.
-<fig3b-eps-converted-to.pdf, id=131, pagebox=cropbox, 845.1575pt x 598.235pt>
+<fig3b-eps-converted-to.pdf, id=46, pagebox=cropbox, 845.1575pt x 598.235pt>
 File: fig3b-eps-converted-to.pdf Graphic file (type pdf)
 <use fig3b-eps-converted-to.pdf>
-Package pdftex.def Info: fig3b-eps-converted-to.pdf  used on input line 206. on
- input line 206.
+Package pdftex.def Info: fig3b-eps-converted-to.pdf  used on input line 200. on
+ input line 200.
 Package pdftex.def Info: Requested size: 246.0pt x 174.12268pt on input line 20
-6.
+0.
 
 
-LaTeX Warning: Reference `EQ1' on page 5 undefined on input line 216.
+LaTeX Warning: Reference `EQ1' on page 4 undefined on input line 210.
 
-
-Overfull \hbox (25.33131pt too wide) detected at line 259
-[]
- []
-
-[5]
-Overfull \hbox (52.52876pt too wide) detected at line 273
-[]
- []
-
-[6 <./fig3a-eps-converted-to.pdf> <./fig3b-eps-converted-to.pdf>]
-Overfull \hbox (57.31157pt too wide) detected at line 285
-[]
- []
-
-[7]
-Overfull \hbox (31.79868pt too wide) detected at line 310
+[4 <./atom_fig4-eps-converted-to.pdf> <./atom_fig5-eps-converted-to.pdf> <./ato
+m_fig3-eps-converted-to.pdf>]
+Overfull \hbox (25.33131pt too wide) detected at line 253
 []
  []
 
 
-LaTeX Warning: Reference `EQ2B' on page 8 undefined on input line 313.
-
-
-Overfull \hbox (17.63234pt too wide) detected at line 329
+Overfull \hbox (52.52876pt too wide) detected at line 267
 []
  []
 
-[8] ("three-level atom inside the squeezed vacuum.bbl"
+[5 <./fig3a-eps-converted-to.pdf> <./fig3b-eps-converted-to.pdf>]
+Overfull \hbox (57.31157pt too wide) detected at line 279
+[]
+ []
+
+[6]
+Overfull \hbox (31.79868pt too wide) detected at line 304
+[]
+ []
+
+
+LaTeX Warning: Reference `EQ2B' on page 7 undefined on input line 307.
+
+
+Overfull \hbox (17.63234pt too wide) detected at line 323
+[]
+ []
+
+[7] ("three-level atom inside the squeezed vacuum.bbl"
 Underfull \hbox (badness 1237) in paragraph at lines 102--111
  []\OT1/cmr/m/n/9 N. Bergeal, R. Vi-jay, V. Manucharyan, I. Sid-diqi,
  []
@@ -509,7 +508,7 @@ Underfull \hbox (badness 1242) in paragraph at lines 114--121
  \OT1/cmr/m/n/9 Ibarcq, A. Narla, and M. De-voret, arXiv preprint
  []
 
-) [9] ("three-level atom inside the squeezed vacuum.aux")
+) [8] ("three-level atom inside the squeezed vacuum.aux")
 
 LaTeX Warning: There were undefined references.
 
@@ -518,13 +517,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4546 strings out of 493312
- 60374 string characters out of 3136293
- 154777 words of memory out of 3000000
- 7976 multiletter control sequences out of 15000+200000
+ 4547 strings out of 493312
+ 60384 string characters out of 3136293
+ 162391 words of memory out of 3000000
+ 7977 multiletter control sequences out of 15000+200000
  20971 words of font info for 82 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,18n,26p,2457b,302s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,18n,26p,2457b,301s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmbsy5
 .pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.p
 fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb>
@@ -551,10 +550,10 @@ nts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 pe1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmti9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/symbols/msbm10.pfb>
-Output written on "three-level atom inside the squeezed vacuum.pdf" (9 pages, 4
-73961 bytes).
+Output written on "three-level atom inside the squeezed vacuum.pdf" (8 pages, 4
+70075 bytes).
 PDF statistics:
- 295 PDF objects out of 1000 (max. 8388607)
+ 292 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
