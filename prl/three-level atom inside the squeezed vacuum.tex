@@ -26,7 +26,7 @@
 \affiliation{Institute for Quantum Science and Engineering (IQSE) and Department of Physics and Astronomy, Texas A$\&$M University, College Station, TX 77843-4242, USA }
 
 \begin{abstract}
-We study the steady state of $\Xi$-type atoms coupled to the squeezed vacuum reservoir in the quasi-one-dimensional waveguide. We show that the population inversion can occur as the steady state when the coupling strength of two transitions of the $\Xi$-type atom to the squeezed vacuum are properly set. We also discuss the possibility of the population inversion of a group of atoms in the squeezed vacuum. 
+We study the steady state of $\Xi$-type atoms coupled to the squeezed vacuum reservoir in the quasi-one-dimensional waveguide. We show that the system evolves into a pure state where the dephasing rate is zero. What's more, the population is inverted in the steady state when the coupling strength of two transitions of the $\Xi$-type atom to the squeezed vacuum are properly set. We prove in principle that these results can be generalized to multiple interactive atoms.
 \end{abstract}
 \pacs{42.30.-d, 42.50.Hz, 42.62.Fi}\maketitle 
 
@@ -35,10 +35,9 @@ The concept of population inversion is of fundamental importance in laser physic
 in all directions of the 3-dimensional (3D) space which is difficult to be experimentally realized. In contrast
 to the 3D case, squeezing in 1D is more experimentally feasible. Suppression of the radiative decay of atomic coherence and the linewidth of the resonance fluorescence have been experimentally demonstrated in a 1D microwave transmission line coupled to single artificial atom\cite{turchette1998qa,murch2013kw, toyli2016resonance, bergeal2010analog, wang2018cavity,qin2018exponentially}. 
 
-In our study, we consider the $\Xi$-type atoms coupled to the broadband squeezed vacuum in the quasi-one-dimensional waveguide. and we found that the population of steady state is completely different than that in the thermal reservoir. We also demonstrate that the complete population inversion can be achieved with proper parameters.
+In our study, we consider the $\Xi$-type atoms coupled to the broadband squeezed vacuum in the quasi-one-dimensional waveguide. We found that the steady state is a pure state with zero dephasing rate, and the population distribution can be inverted. We also demonstrate that the complete population inversion can be achieved with proper parameters.
 
-
-In this section, we consider a scenario where $N_a$ $\Xi$-type atoms are located inside the waveguide with the squeezed vacuum injected from both ends, as shown in Fig.~\ref{1}(a). The atomic electronic structure is shown in Fig.~\ref{1}(b) where the atomic states are labeled $|a\rangle$, $|b\rangle$, $|c\rangle$ from the excited state to the ground state. We assume that $\omega_{ac}=2\omega_0$ where $\omega_0$ is the center frequency of the broad band squeed vacuum.  $\omega_{ab}$ and $\omega_{bc}$ are not equal but they are still within the bandwith of the squeezed vacuum. We assume that the squeezed vacuum bandwidth is much larger than $|\omega_{ab}-\omega_{bc}|$ so it forms a squeezed vacuum reservoir. 
+We consider a scenario where $N_a$ $\Xi$-type atoms are located inside the waveguide with the squeezed vacuum injected from both ends, as shown in Fig.~\ref{1}(a). The atomic electronic structure is shown in Fig.~\ref{1}(b) where the atomic states are labeled $|a\rangle$, $|b\rangle$, $|c\rangle$ from the excited state to the ground state. We assume that $\omega_{ac}=2\omega_0$ where $\omega_0$ is the center frequency of the broad band squeed vacuum.  $\omega_{ab}$ and $\omega_{bc}$ are not equal but they are still within the bandwith of the squeezed vacuum. We assume that the squeezed vacuum bandwidth is much larger than $|\omega_{ab}-\omega_{bc}|$ so it forms a squeezed vacuum reservoir. 
 \begin{figure*}
 \includegraphics[width=1.5\columnwidth]{fig1.eps}
 \includegraphics[width=0.5\columnwidth]{fig2.eps}
@@ -61,24 +60,7 @@ is the atomic Hamiltonian, and $ \left|e_{l}\right\rangle $ is the energy state 
 $H_{F}=\sum_{\vec{k}s}\hbar\omega_{\vec{k}s}(\hat{a}_{\vec{k}s}^{\dagger}\hat{a}_{\vec{k}s}+\frac{1}{2})$
 where $\hat{a}_{\vec{k}s}$ and $\hat{a}_{\vec{k}s}^{\dagger}$ are the annihilation and creation operators of the filed mode with wavevector $ \vec{k}$, polarization $s$, and frequency $\omega_{\vec{k},s}$. The interaction Hamiltonian in electric-dipole approximation is
 $H_{AF}=-i\hbar\sum_{\vec{k}s}\sum_{i=1,2}\sum_{l=1}^{N_{a}}[\vec{\mu}_{l,i}\cdot\vec{u}_{\vec{k}s}(\vec{r}_{l,i})S_{l,i}^{+}\hat{a}_{\vec{k}s}+\vec{\mu}_{l,i}^{*}\cdot\vec{u}_{\vec{k}s}(\vec{r}_{l,i})S_{l,i}^{-}\hat{a}_{\vec{k}s}-H.c.]$
-where $ \vec{\mu}_{l,i} $ is the electric dipole moment for $ith$ transition of the $l$th atom, where $i=1$ denotes the transition from $|a\rangle$ to $|b\rangle$, and $i=2$ denotes the transition from $|b\rangle$ to $|c\rangle$. $ S_{l,i}^{+} $ and $S_{l,i}^{-} $ are the raising and lowering operator for transition $i$ of the $l$th atom. The mode function of the squeezed vacuum is given by
-\begin{equation}
-  \label{eq2b}
-  \begin{gathered}
-\vec{u}_{\vec{k}s}(\vec{r}_{i})=\sqrt{\frac{\omega_{\vec{k}s}}{2\epsilon_{0}\hbar V}}\vec{e}_{ks}e^{i\vec{k}\cdot(\vec{r}_{i}-\vec{o}_{\vec{k}s})}
- \end{gathered}
-\end{equation}
-where $\vec{o}_{\vec{k}s} $ is a phenomenological parameter which includes the effects of the initial phase and the position of the squeezing source\cite{You2018}. The correlation functions for the squeezed vacuum are\cite{scully1999quantum}:
-\begin{equation}
-\label{eq0a}
-\begin{split}
-& \left\langle a_{\vec{k},s}^{\dagger}a_{\vec{k}',s'}\right\rangle =\sinh^{2}r\delta_{\vec{k}'\vec{k}}\delta_{ss'} \\
-& \left\langle a_{\vec{k},s}a_{\vec{k}',s'}^{\dagger}\right\rangle =\cosh^{2}r\delta_{\vec{k}'\vec{k}}\delta_{ss'}\\
-& \left\langle a_{\vec{k},s}^{\dagger}a_{\vec{k}',s'}^{\dagger}\right\rangle =-e^{-i\theta}\cosh(r)\sinh(r)\delta_{\vec{k}',2\vec{k}_{0}-\vec{k}}\delta_{ss'}\\
-&\left\langle a_{\vec{k},s}a_{\vec{k}',s'}\right\rangle =-e^{i\theta}\cosh(r)\sinh(r)\delta_{\vec{k}',2\vec{k}_{0}-\vec{k}}\delta_{ss'}
-\end{split}
-\end{equation}
-For simplicity, we can set the squeezing parameter $\theta=0$, and all atoms to align along the same direction. The dynamics of the atomic system can be described by the following master equation(See Appendix A for details of derivation):
+where $ \vec{\mu}_{l,i} $ is the electric dipole moment for $ith$ transition of the $l$th atom, where $i=1$ denotes the transition from $|a\rangle$ to $|b\rangle$, and $i=2$ denotes the transition from $|b\rangle$ to $|c\rangle$. $ S_{l,i}^{+} $ and $S_{l,i}^{-} $ are the raising and lowering operator for transition $i$ of the $l$th atom. The dynamics of the atomic system can be described by the following master equation(See Appendix A for details of derivation):
 \begin{widetext}
 \begin{equation}
 \label{eq1}
@@ -95,7 +77,7 @@ where $N=\sinh(r)^2$, $M=\sinh(r)\cosh(r)$, and the coefficients are
 \begin{split}
 & \gamma_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}r_{ij}) \\
 & \Lambda_{ij}=\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}\sin(k_{0z}r_{ij})\\
-& \gamma'_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos[k_{0z}(r_{i}+r_{j})]
+& \gamma'_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos[k_{0z}(r_{i}-r_{j})]
 \end{split}
 \end{equation}
 where $\gamma_{i}$ is the decay rate for transition $i$ in ordinary vacuum. Here we have incorporated index $l$ into $i$ for compactness, so $i$ denotes transition $ab$ for the first atom, transition $bc$ for the first atom, transition $ab$ for the second atom, transition $bc$ for the second atom, etc.
@@ -305,7 +287,26 @@ where we have used the fact that the origin of coordinate system is at equal dis
 where $sgn(r_{l}-r_{m})$ is the sign function. The last arrow is because we need to sum over $i,j$, so the imaginary part of $e^{i2k_{0z}r_{c}sgn(i-j)}$ vanishes, so the neat result is that $\gamma'_{ij}=e^{i2k_{0z}R}\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}(r_{i}+r_{j}))$ after combining index $l,i$ and $m,j$ as $i$ and $j$. As for $S_{i}^{+}\rho^{S}(t)S_{j}^{+}$ terms, the combination of the last two terms in Eq.\eqref{eqa2} will make the imaginary part of $e^{i2k_{0z}r_{c}sgn(r_{l}-r_{m})}$ vanish. Thus, we have $\gamma'_{ij}=e^{i2k_{0z}R}\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}(r_i+r_j))$ in Eq.\eqref{eq2}. 
 
 \section{DERIVATION OF coefficients EQ.\eqref{eq2b} }
-Here we will show how to derive the master equation with coefficients Eq.\eqref{eq2b} from the correlation function Eq. \eqref{eq0b}. Since the only difference is the squeezing terms $\left\langle a_{\vec{k},s}^{\dagger}a_{\vec{k}',s'}^{\dagger}\right\rangle$, $\left\langle a_{\vec{k},s}a_{\vec{k}',s'}\right\rangle $, we will just start from Eq. \eqref{eqb8}. Apart from the factor $e^{i(\omega_i+\omega_j-2\omega_0)t}$, When $r_i\ne r_j$, Eq. \eqref{eqb8} becomes:
+Here we will show how to derive the master equation with coefficients Eq.\eqref{eq2b}. The mode function of the squeezed vacuum is given by
+\begin{equation}
+  \label{eq2b}
+  \begin{gathered}
+\vec{u}_{\vec{k}s}(\vec{r}_{i})=\sqrt{\frac{\omega_{\vec{k}s}}{2\epsilon_{0}\hbar V}}\vec{e}_{ks}e^{i\vec{k}\cdot(\vec{r}_{i}-\vec{o}_{\vec{k}s})}
+ \end{gathered}
+\end{equation}
+where $\vec{o}_{\vec{k}s} $ is a phenomenological parameter which includes the effects of the initial phase and the position of the squeezing source\cite{You2018}. The correlation functions for the squeezed vacuum are\cite{scully1999quantum}:
+\begin{equation}
+\label{eq0a}
+\begin{split}
+& \left\langle a_{\vec{k},s}^{\dagger}a_{\vec{k}',s'}\right\rangle =\sinh^{2}r\delta_{\vec{k}'\vec{k}}\delta_{ss'} \\
+& \left\langle a_{\vec{k},s}a_{\vec{k}',s'}^{\dagger}\right\rangle =\cosh^{2}r\delta_{\vec{k}'\vec{k}}\delta_{ss'}\\
+& \left\langle a_{\vec{k},s}^{\dagger}a_{\vec{k}',s'}^{\dagger}\right\rangle =-e^{-i\theta}\cosh(r)\sinh(r)\delta_{\vec{k}',2\vec{k}_{0}-\vec{k}}\delta_{ss'}\\
+&\left\langle a_{\vec{k},s}a_{\vec{k}',s'}\right\rangle =-e^{i\theta}\cosh(r)\sinh(r)\delta_{\vec{k}',2\vec{k}_{0}-\vec{k}}\delta_{ss'}
+\end{split}
+\end{equation}
+For simplicity, we can set the squeezing parameter $\theta=0$, and all atoms to align along the same direction.
+
+ Since the only difference is the squeezing terms $\left\langle a_{\vec{k},s}^{\dagger}a_{\vec{k}',s'}^{\dagger}\right\rangle$, $\left\langle a_{\vec{k},s}a_{\vec{k}',s'}\right\rangle $, we will just start from Eq. \eqref{eqb8}. Apart from the factor $e^{i(\omega_i+\omega_j-2\omega_0)t}$, When $r_i\ne r_j$, Eq. \eqref{eqb8} becomes:
 
 \begin{equation}
 \label{eqb1}\tag{B1}
