@@ -71,6 +71,27 @@
 \begin_body
 
 \begin_layout Standard
+\begin_inset Formula $\frac{d\rho^{S}}{dt}=-i\underset{ijkl}{\sum}\Lambda_{ijkl}[S_{i,j}^{+}S_{k.l}^{-},\rho^{S}]e^{i(\omega_{j}-\omega_{l})t}-\frac{1}{2}\underset{ijkl}{\sum}\gamma{}_{ijkl}(1+N)(\rho^{S}S_{i,j}^{+}S_{k.l}^{-}+S_{i,j}^{+}S_{k.l}^{-}\rho^{S}-2S_{k.l}^{-}\rho^{S}S_{i,j}^{+})e^{i(\omega_{j}-\omega_{l})t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $-\frac{1}{2}\underset{ijkl}{\sum}\gamma{}_{ijkl}N(\rho^{S}S_{i,j}^{-}S_{k.l}^{+}+S_{i,j}^{-}S_{k.l}^{+}\rho^{S}-2S_{k.l}^{+}\rho^{S}S_{i,j}^{-})e^{-i(\omega_{j}-\omega_{l})t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $-\frac{1}{2}\sum_{\alpha=\pm}\underset{ijkl}{\sum}\gamma'_{ijkl}Me^{2\alpha ik_{0z}R}e^{i\alpha(\omega_{j}+\omega_{l}-2\omega_{0})t}(\rho^{S}S_{i,j}^{\alpha}S_{k.l}^{\alpha}+S_{i,j}^{\alpha}S_{k.l}^{\alpha}\rho^{S}-2S_{k.l}^{\alpha}\rho^{S}S_{i,j}^{\alpha})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 notation: atom i's jth level, atom k's l level.
 \end_layout
 
@@ -389,7 +410,7 @@ sum:
 
 \begin_layout Standard
 since 
-\begin_inset Formula $ch^{2}A^{2}\gamma{}_{N+1,1,k,1}+sh^{2}C^{2}\gamma{}_{N+1,2,k,2}+2chshCA\gamma'_{N+1,j,k,l}=ch^{2}sh^{2}(\gamma_{2}+\gamma_{1}-2\sqrt{\gamma_{1}\gamma_{2}})/\sqrt{ch^{2}\gamma_{1}+sh^{2}\gamma_{2}}=$
+\begin_inset Formula $ch^{2}A^{2}\gamma{}_{N+1,1,k,1}+sh^{2}C^{2}\gamma{}_{N+1,2,k,2}+2chshCA\gamma'_{N+1,j,k,l}=\cos(k_{0}(r_{N+1}-r_{k}))ch^{2}sh^{2}(\gamma_{2}\gamma_{1}+\gamma_{1}\gamma_{2}-2\sqrt{\gamma_{1}\gamma_{2}}\sqrt{\gamma_{1}\gamma_{2}})/\sqrt{ch^{2}\gamma_{1}+sh^{2}\gamma_{2}}=0$
 \end_inset
 
 

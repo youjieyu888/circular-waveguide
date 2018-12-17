@@ -84,9 +84,9 @@ For simplicity, we can set the squeezing parameter $\theta=0$, and all atoms to 
 \begin{equation}
 \label{eq1}
 \begin{split}
-\frac{d\rho^{S}}{dt}=&-i\underset{i\neq j}{\sum}\Lambda_{ij}[S_{i}^{+}S_{j}^{-},\rho^{S}]e^{i(\omega_{i}-\omega_{j})t}-\frac{1}{2}\underset{i,j}{\sum}\gamma{}_{ij}(1+N)(\rho^{S}S_{i}^{+}S_{j}^{-}+S_{i}^{+}S_{j}^{-}\rho^{S}-2S_{j}^{-}\rho^{S}S_{i}^{+})e^{i(\omega_{i}-\omega_{j})t} \\
-&-\frac{1}{2}\underset{i,j}{\sum}\gamma{}_{ij}N(\rho^{S}S_{i}^{-}S_{j}^{+}+S_{i}^{-}S_{j}^{+}\rho^{S}-2S_{j}^{+}\rho^{S}S_{i}^{-})e^{-i(\omega_{i}-\omega_{j})t}\\
-&-\frac{1}{2}\sum_{\alpha=\pm}\underset{i,j}{\sum}\gamma'_{ij}Me^{2\alpha ik_{0z}R}e^{i\alpha(\omega_i+\omega_j-2\omega_0)t}(\rho^{S}S_{i}^{\alpha}S_{j}^{\alpha}+S_{i}^{\alpha}S_{j}^{\alpha}\rho^{S}-2S_{j}^{\alpha}\rho^{S}S_{i}^{\alpha})
+\frac{d\rho^{S}}{dt}=&-i\underset{ijkl}{\sum}\Lambda_{ijkl}[S_{i,j}^{+}S_{k.l}^{-},\rho^{S}]e^{i(\omega_{j}-\omega_{l})t}-\frac{1}{2}\underset{ijkl}{\sum}\gamma{}_{ijkl}(1+N)(\rho^{S}S_{i,j}^{+}S_{k.l}^{-}+S_{i,j}^{+}S_{k.l}^{-}\rho^{S}-2S_{k.l}^{-}\rho^{S}S_{i,j}^{+})e^{i(\omega_{j}-\omega_{l})t}\\
+&-\frac{1}{2}\underset{ijkl}{\sum}\gamma{}_{ijkl}N(\rho^{S}S_{i,j}^{-}S_{k.l}^{+}+S_{i,j}^{-}S_{k,l}^{+}\rho^{S}-2S_{k,l}^{+}\rho^{S}S_{i,j}^{-})e^{-i(\omega_{j}-\omega_{l})t}\\
+&-\frac{1}{2}\sum_{\alpha=\pm}\underset{ijkl}{\sum}\gamma'_{ijkl}Me^{2\alpha ik_{0z}R}e^{i\alpha(\omega_{j}+\omega_{l}-2\omega_{0})t}(\rho^{S}S_{i,j}^{\alpha}S_{k.l}^{\alpha}+S_{i,j}^{\alpha}S_{k,l}^{\alpha}\rho^{S}-2S_{k,l}^{\alpha}\rho^{S}S_{i,j}^{\alpha})
 \end{split}
 \end{equation}
 \end{widetext}
@@ -94,15 +94,15 @@ where $N=\sinh(r)^2$, $M=\sinh(r)\cosh(r)$, and the coefficients are
 \begin{equation}
 \label{eq2}
 \begin{split}
-& \gamma_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}r_{ij}) \\
-& \Lambda_{ij}=\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}\sin(k_{0z}r_{ij})\\
-& \gamma'_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos[k_{0z}(r_{i}+r_{j})]
+& \gamma_{ijkl}=\sqrt{\gamma_{j}\gamma_{l}}\cos(k_{0z}r_{ik}) \\
+& \Lambda_{ijkl}=\frac{\sqrt{\gamma_{j}\gamma_{l}}}{2}\sin(k_{0z}r_{ik})\\
+& \gamma'_{ijkl}=\sqrt{\gamma_{j}\gamma_{l}}\cos[k_{0z}(r_{i}+r_{k})]
 \end{split}
 \end{equation}
-where $\gamma_{i}$ is the decay rate for transition $i$ in ordinary vacuum. Here we have incorporated index $l$ into $i$ for compactness, so $i$ denotes transition $ab$ for the first atom, transition $bc$ for the first atom, transition $ab$ for the second atom, transition $bc$ for the second atom, etc.
+where subscript $i,k$ label the atoms, $j(l)$ labels the transitions of the $ith(jth)$ atom. $\gamma_{j}$ is the decay rate for transition $j$ in ordinary vacuum.
 
 \section{Steady state of a single atom}
-In this section, we will study the steady state of a single atom in the squeezed vacuum reservior. For a single three level atom, we have $r_i=r_j$, and for simplicity we set $R=r_i=0$. Then the steady state of Eq.\eqref{eq1} can be derived by re-writing it as:
+In this section, we will study the steady state of a single atom in the squeezed vacuum reservior. For a single three level atom, we have $r_i=r_k$, and for simplicity we set $R=r_i=0$. Then the steady state of Eq.\eqref{eq1} can be derived by re-writing it as:
 %We will discuss the steady state solution to Eq. \eqref{eq1} in two cases: $\delta\omega\ll\sqrt{\gamma_{1}\gamma_{2}}$ and $\delta\omega\apprge\sqrt{\gamma_{1}\gamma_{2}}$. When $\delta\omega\ll\sqrt{\gamma_{1}\gamma_{2}}$, Eq. \eqref{eq1} can be simplified as:
 %\begin{equation}
 %\label{eq3a}
@@ -169,7 +169,7 @@ $\frac{sh\sqrt{\gamma_{2}}}{\sqrt{ch^{2}\gamma_{1}+sh^{2}\gamma_{2}}}|a\rangle-\
 %\end{equation}
 
 \section{steady state of multiple atoms}
-In the last section, we demonstrate that a single atom can achieve steady state population inversion in the squeezed vacuum reservoir. However, with Eq.\eqref{eq2}, this result can not be generated to the multi-atom case since $\gamma'_{ii}=\sqrt{\gamma_{i}\gamma_{i}}\cos[2k_{0z}r_{i}]$. The squeezing term in Eq.\eqref{eq1} vanishes for atoms located around $r_i=\frac{\pi}{4k_{0z}}+\frac{n\pi}{2k_{0z}}$. Thus, for a group of randomly located atoms, if we want to achieve steady state population inversion in the squeezed vacuum, we need to modify our scheme. Here we consider the following correlation functions:
+In the last section, we demonstrate that a single atom can achieve steady state population inversion in the squeezed vacuum reservoir. However, with Eq.\eqref{eq2}, this result can not be generated to the multi-atom case since $\gamma'_{ijij}=\sqrt{\gamma_{j}\gamma_{j}}\cos[2k_{0z}r_{i}]$. The squeezing term in Eq.\eqref{eq1} vanishes for atoms located around $r_i=\frac{\pi}{4k_{0z}}+\frac{n\pi}{2k_{0z}}$. Thus, for a group of randomly located atoms, if we want to achieve steady state population inversion in the squeezed vacuum, we need to modify our scheme. Here we consider the following correlation functions:
 \begin{equation}
 \label{eq0b}
 \begin{split}
@@ -183,34 +183,92 @@ which indicates that photons are entangled with those from the opposite directio
 \begin{equation}
 \label{eq2b}
 \begin{split}
-& \gamma_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}r_{ij}) \\
-& \Lambda_{ij}=\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}\sin(k_{0z}r_{ij})\\
-& \gamma'_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos[k_{0z}(r_{ij})]
+& \gamma_{ijkl}=\sqrt{\gamma_{i}\gamma_{k}}\cos(k_{0z}r_{jl}) \\
+& \Lambda_{ijkl}=\frac{\sqrt{\gamma_{i}\gamma_{k}}}{2}\sin(k_{0z}r_{jl})\\
+& \gamma'_{ijkl}=\sqrt{\gamma_{i}\gamma_{k}}\cos[k_{0z}(r_{jl})]
 \end{split}
 \end{equation}
-which is exactly the traditionally studied master equation\cite{tanas2004stationary} by Ficek. However, they didn't consider the effect of squeezing source, so here we give a detailed derivation on getting Eq. \eqref{eq2b} in Appendix B, where the effect of squeezing source is included. With this new master equation, a single atom can reach population inversion anywhere in the waveguide, as discussed in the Sec. III. When there are multiple atoms in the waveguide, where dipole-dipole interaction needs to be considered, the population inversion still holds true. This is because transition $|a\rangle\leftrightarrow|c\rangle$ is forbidden which results in the fact that dipole-dipole interaction doesn't introduce any extra terms with $\rho_{ac}$. This can be illustrated by looking at the diagonal terms of the first atom in Eq. \eqref{eq1}. Since the general equation is too complicated to analyze, here we just consider a special case where two atoms are located in the waveguide at $r_1=0$ and $r_2=\lambda_{0z}$ respectively, and $\gamma_1=\gamma_2=\gamma$. We also use the rotating wave approximation where oscillating terms are dropped. Then we have the equations for the diagonal terms of the first atom:
+which is exactly the traditionally studied master equation\cite{tanas2004stationary} by Ficek. However, they didn't consider the effect of squeezing source, so here we give a detailed derivation on getting Eq. \eqref{eq2b} in Appendix B, where the effect of squeezing source is included. With this new master equation, a single atom can reach population inversion anywhere in the waveguide, as discussed in the Sec. III. When there are multiple atoms in the waveguide where the dipole-dipole interaction should be considered, the population inversion still holds true. In fact, the final state is just the direct product of the steady state of independent atoms, and this will be proved with the mathematical induction. Firstly, we need to apply the rotating wave approximation on Eq.\eqref{eq1}: 
 \begin{widetext}
-\begin{subequations}
-\begin{align}
-\dot{\rho}_{a_{1},a_{1}}/\gamma=&-ch^{2}\rho_{a_{1},a_{1}}+sh{}^{2}\rho_{b_{1},b_{1}}-\frac{1}{2}chsh(\rho_{a_{1},c_{1}}+\rho_{c_{1},a_{1}})-\frac{1}{2}(\rho_{a_{1}b_{2},b_{1}a_{2}}+\rho_{b_{1}a_{2},a_{1}b_{2}})\label{5a} \\
-\dot{\rho}_{b_{1},b_{1}}/\gamma=&(ch^{2}\rho_{a_{1},a_{1}}-sh^{2}\rho_{b_{1},b_{1}})+(sh^{2}\rho_{c_{1},c_{1}}-ch^{2}\rho_{b_{1},b_{1}})+chsh(\rho_{a_{1},c_{1}}+\rho_{c_{1},a_{1}})\nonumber\\
-&+\frac{1}{2}(\rho_{a_{1}b_{2},b_{1}a_{2}}+\rho_{b_{1}a_{2},a_{1}b_{2}}-\rho_{b_{1}c_{2},c_{1}b_{2}}-\rho_{c_{1}b_{2},b_{1}c_{2}}) \label{5b}\\
-\dot{\rho}_{c_{1},c_{1}}/\gamma=&ch^{2}\rho_{b_{1},b_{1}}-sh^{2}\rho_{c_{1},c_{1}}-\frac{1}{2}chsh(\rho_{a_{1},c_{1}}+\rho_{c_{1},a_{1}})+\frac{1}{2}(\rho_{b_{1}c_{2},c_{1}b_{2}}+\rho_{c_{1}b_{2},b_{1}c_{2}}) \label{5c}
-\end{align}
-\end{subequations}
+\begin{equation}
+\label{eq5}
+\begin{split}
+\frac{d\rho^{S}}{dt}=&-i\underset{i,k,j}{\sum}\Lambda_{ijkl}[S_{i,j}^{+}S_{k.j}^{-},\rho^{S}]-\frac{1}{2}\underset{i,j,k}{\sum}\gamma{}_{ijkl}(1+N)(\rho^{S}S_{i,j}^{+}S_{k,j}^{-}+S_{i,j}^{+}S_{k,j}^{-}\rho^{S}-2S_{k,j}^{-}\rho^{S}S_{i,j}^{+}) \\
+& -\frac{1}{2}\underset{i,j,k}{\sum}\gamma{}_{ijkl}N(\rho^{S}S_{i,j}^{-}S_{k,j}^{+}+S_{i,j}^{-}S_{k,j}^{+}\rho^{S}-2S_{k,j}^{+}\rho^{S}S_{i,j}^{-})\\
+& -\frac{1}{2}\sum_{\alpha=\pm}\underset{i,k,j\ne l}{\sum}\gamma'_{ijkl}M(\rho^{S}S_{i,j}^{\alpha}S_{k,l}^{\alpha}+S_{i,j}^{\alpha}S_{k,l}^{\alpha}\rho^{S}-2S_{k,l}^{\alpha}\rho^{S}S_{i,j}^{\alpha})
+\end{split}
+\end{equation}
 \end{widetext}
-where notations like $\rho_{a_1, a_1}$ means partial trace of the second atom is taken, i.e., $\rho_{a_1, a_1}=\sum_{i_2=a,b,c}\rho_{a_1i_2, a_1i_2}$, and $\rho_{a_1b_2, b_1a_2}=\langle a_1b_2|\rho|b_1a_2\rangle$. We notice that only the last terms in Eq.\eqref{5a}-\eqref{5c} are the extra terms introduced by the dipole-dipole interaction, and the key role in population inversion $\rho_{ac}$ is not involved in them. Thus, the direct product of each atom's steady state in the single atom case $\frac{sh}{\sqrt{sh^{2}+ch^{2}}}|a\rangle-\frac{ch}{\sqrt{sh^{2}+ch^{2}}}|c\rangle$ is also the solution to Eq.\eqref{5a}-\eqref{5c}. Figure 3(a)(b) shows the steady state population distribution for different decay rate $\gamma_{ab}, \gamma_{bc}$, and for different atomic separation $r_{12}$. We can see that the dipole dipole interaction doesn't play a vital role in the population inversion. Thus, population inversion of a group of atoms can be achieved.
-
-\begin{figure*}
-\includegraphics[width=1\columnwidth]{fig3a.eps}
-\includegraphics[width=1\columnwidth]{fig3b.eps}
-\caption{(a) The steady state population distribution for different $\mu_{ab}$ and$\mu_{bc}$. Three atoms located at $r_1=0, r_2=\lambda_{0z}, r_3=2\lambda_{0z}$ are considered with the squeezing parameter $r=1$. (b) The steady state population distribution as a function of atomic separation for two atoms. The squeezing parameter $r=1$ and $\gamma_{ab}=\frac{1}{4}\gamma_{bc}$.}
-\label{2}
-\end{figure*}
-
+We assume the steady solution for $N$-atom case is: $\rho^{S}=\rho_{1}\rho_{2}...\rho_{N}$ where $\rho_{i}=(A|a_{i}\rangle+C|c_{i}\rangle)(A\langle a_{i}|+C\langle c_{i}|)$ and $A=\frac{sh\sqrt{\gamma_{2}}}{\sqrt{ch^{2}\gamma_{1}+sh^{2}\gamma_{2}}}, C=-\frac{ch\sqrt{\gamma_{1}}}{\sqrt{ch^{2}\gamma_{1}+sh^{2}\gamma_{2}}}$. Then for $N+1$-atom case, the extra terms induced by the $(N+1)th$ atom on the right hand side of Eq.\eqref{eq5} are composed of three parts: $i=k=N+1$ terms, $i=N+1, k=1~N$ terms, and $i=1~N, k=N+1$ terms. The $i=k=N+1$ terms are the exact terms for the single independent atom of the $(N+1)th$ atom, so the result is 0. The $i=N+1, k=1\sim N$ terms are 
+\begin{widetext}
+\begin{equation}
+\label{eq6}
+\begin{split}
+(i=N+1, k=1\sim N)=&-i\underset{j,k}{\sum}\Lambda_{N+1,j,k,j}[S_{N+1,j}^{+}S_{k.j}^{-},\rho^{S}]\\
+&-\frac{1}{2}\underset{j,k}{\sum}\gamma{}_{N+1,j,k,j}(ch^{2})(\rho^{S}S_{N+1,j}^{+}S_{k,j}^{-}+S_{N+1,j}^{+}S_{k,j}^{-}\rho^{S}-2S_{k,j}^{-}\rho^{S}S_{N+1,j}^{+})\\
+&-\frac{1}{2}\underset{j,k}{\sum}\gamma{}_{N+1,j,k,j}sh^{2}(\rho^{S}S_{N+1,j}^{-}S_{k,j}^{+}+S_{N+1,j}^{-}S_{k,j}^{+}\rho^{S}-2S_{k,j}^{+}\rho^{S}S_{N+1,j}^{-})\\
+&-\frac{1}{2}\sum_{\alpha=\pm}\underset{i,k,j\ne l}{\sum}\gamma'_{N+1,j,k,j}chsh(\rho^{S}S_{N+1,j}^{\alpha}S_{k,l}^{\alpha}+S_{N+1,j}^{\alpha}S_{k,l}^{\alpha}\rho^{S}-2S_{k,l}^{\alpha}\rho^{S}S_{N+1,j}^{\alpha})
+\end{split}
+\end{equation}
+\end{widetext}
+For the energy shift term (first term) of Eq.\eqref{eq6}, we have 
+\begin{equation}
+\label{eq7}
+\begin{split}
+&S_{N+1,j}^{+}S_{k.j}^{-}\rho^{S}=\rho_{1}...(S_{k.j}^{-}\rho_{k})...\rho_{N}(S_{N+1,j}^{+}\rho_{N+1})=0\\
+&\rho^{S}S_{N+1,j}^{+}S_{k.l}^{-}=\rho_{1}...(\rho_{k}S_{k.l}^{-})...\rho_{N}(\rho_{N+1}S_{N+1,j}^{+})=0
+\end{split}
+\end{equation}
+For the thermal terms(second and third term) of Eq.\eqref{eq6}, we have:
+\begin{equation}
+\label{eq8}
+\begin{split}
+\rho^{S}S_{N+1,j}^{+}S_{k,j}^{-}=&S_{N+1,j}^{+}S_{k,j}^{-}\rho^{S}=0\\
+\rho^{S}S_{N+1,j}^{-}S_{k,j}^{+}=&S_{N+1,j}^{-}S_{k,j}^{+}\rho^{S}=0\\
+S_{k,j}^{-}\rho^{S}S_{N+1,j}^{+}=&\rho_{1}...(S_{k.j}^{-}\rho_{k})...\rho_{N}(\rho_{N+1}S_{N+1,j}^{+})\\
+=&\rho_{1}...(S_{k.1}^{-}\rho_{k})...\rho_{N}(\rho_{N+1}S_{N+1,1}^{+})\\
+=&\rho_{1}...(A|b_{k}\rangle)(A\langle a_{k}|+C\langle c_{k}|)..\rho_{N}\\
+&\times(A|a_{N+1}\rangle+C|c_{N+1}\rangle)(A\langle b_{N+1}|)\\
+S_{k,j}^{+}\rho^{S}S_{N+1,j}^{-}=&\rho_{1}...(S_{k.j}^{+}\rho_{k})...\rho_{N}(\rho_{N+1}S_{N+1,j}^{-})\\
+=&\rho_{1}...(S_{k.2}^{+}\rho_{k})...\rho_{N}(\rho_{N+1}S_{N+1,2}^{-})\\
+=&\rho_{1}...(C|b_{k}\rangle)(A\langle a_{k}|+C\langle c_{k}|)...\rho_{N}\\
+&\times (A|a_{N+1}\rangle+C|c_{N+1}\rangle)(C\langle b_{N+1}|)
+\end{split}
+\end{equation}
+For the squeezed vacuum terms(forth term), we have:
+\begin{equation}
+\label{eq9}
+\begin{split}
+\rho^{S}S_{N+1,j}^{\alpha}S_{k,l}^{\alpha}&=S_{N+1,j}^{\alpha}S_{k,l}^{\alpha}\rho^{S}=0\\
+S_{k,1}^{+}\rho^{S}S_{N+1,2}^{+}&=\rho_{1}...(S_{k,1}^{+}\rho_{k})...\rho_{N}(\rho_{N+1}S_{N+1,2}^{+})=0\\
+S_{k,2}^{+}\rho^{S}S_{N+1,1}^{+}&=\rho_{1}...(S_{k,2}^{+}\rho_{k})...\rho_{N}(\rho_{N+1}S_{N+1,1}^{+})\\
+&=\rho_{1}...(C|b_{k}\rangle)(A\langle a_{k}|+C\langle c_{k}|)...\rho_{N}\\
+&\times(A|a_{N+1}\rangle+C|c_{N+1}\rangle)(A\langle b_{N+1}|)\\
+S_{k,1}^{-}\rho^{S}S_{N+1,2}^{-}&=\rho_{1}...(S_{k,1}^{-}\rho_{k})...\rho_{N}(\rho_{N+1}S_{N+1,2}^{-})\\
+&=\rho_{1}...(A|b_{k}\rangle)(A\langle a_{k}|+C\langle c_{k}|)...\rho_{N}\\
+&\times(A|a_{N+1}\rangle+C|c_{N+1}\rangle)(C\langle b_{N+1}|)\\
+S_{k,2}^{-}\rho^{S}S_{N+1,1}^{-}&=\rho_{1}...(S_{k,2}^{-}\rho_{k})...\rho_{N}(\rho_{N+1}S_{N+1,1}^{-})=0\\
+\end{split}
+\end{equation}
+Plugging Eq.\eqref{eq7}\eqref{eq8}\eqref{eq9} into expression \eqref{eq6}, we have
+\begin{widetext}
+\begin{equation}
+\label{eq10}
+\begin{split}
+(i=N+1, k=1\sim N)=&\underset{k}{\sum}\gamma{}_{N+1,1,k,1}(ch^{2})S_{k,1}^{-}\rho^{S}S_{N+1,1}^{+}+\underset{j,k}{\sum}\gamma{}_{N+1,2,k,2}sh^{2}S_{k,2}^{+}\rho^{S}S_{N+1,2}^{-}\\
+&+\sum_{\alpha=\pm}\underset{i,k,j\ne l}{\sum}\gamma'_{N+1,j,k,l}chshS_{k,l}^{\alpha}\rho^{S}S_{N+1,j}^{\alpha}\\
+=&\underset{k}{\sum}\gamma{}_{N+1,1,k,1}(ch^{2})\rho_{1}...(A|b_{k}\rangle)(A\langle a_{k}|+C\langle c_{k}|)..\rho_{N}(A|a_{N+1}\rangle+C|c_{N+1}\rangle)(A\langle b_{N+1}|)\\
+&+\underset{k}{\sum}\gamma{}_{N+1,2,k,2}sh^{2}\rho_{1}...(C|b_{k}\rangle)(A\langle a_{k}|+C\langle c_{k}|)...\rho_{N}(A|a_{N+1}\rangle+C|c_{N+1}\rangle)(C\langle b_{N+1}|)\\
+&+\underset{k}{\sum}\gamma'_{N+1,j,k,l}chsh[\rho_{1}...(C|b_{k}\rangle)(A\langle a_{k}|+C\langle c_{k}|)...\rho_{N}(A|a_{N+1}\rangle+C|c_{N+1}\rangle)(A\langle b_{N+1}|)\\
+&+\rho_{1}...(A|b_{k}\rangle)(A\langle a_{k}|+C\langle c_{k}|)...\rho_{N}(A|a_{N+1}\rangle+C|c_{N+1}\rangle)(C\langle b_{N+1}|)]\\
+=&\underset{k}{\sum}(\gamma{}_{N+1,1,k,1}ch^{2}A^{2}+\gamma{}_{N+1,2,k,2}sh^{2}C^{2}+2\gamma'_{N+1,j,k,l}chshCA)\\
+&\times\rho_{1}...(|b_{k}\rangle)(A\langle a_{k}|+C\langle c_{k}|)..\rho_{N}(A|a_{N+1}\rangle+C|c_{N+1}\rangle)(\langle b_{N+1}|)
+\end{split}
+\end{equation}
+\end{widetext}
+since $ch^{2}A^{2}\gamma{}_{N+1,1,k,1}+sh^{2}C^{2}\gamma{}_{N+1,2,k,2}+2chshCA\gamma'_{N+1,j,k,l}=0$, the extra terms induced by $i=N+1, k=1\sim N$ are 0. The same goes for $i=1\sim N, k=N+1$. Thus, the steady state of multiple atoms is merely the direct product of that in the single atom case, which also means that the dipole-dipole interaction doesn't have any effect on the final steady state.
 \section{SUMMARY}
 We study the $\Xi$-type atoms coupled to the broadband squeezed vacuum reservoir in a quasi-one-dimensional waveguide, with the overall transition frequency $\omega_{ac}=2\omega_0$. The atoms will evolve into a steady state where most atoms are in the excited state and almost no atoms are in the intemediate state. We also study how the non-perfect squeezing will influence our result. Our main conclusions still hold true when dipole-dipole interaction is considered.
-
 \begin{widetext}
 \appendix
 \section{DERIVATION OF EQ.\eqref{eq1} }
@@ -272,7 +330,7 @@ where $l,m$ are used for labeling different atoms, and $i,j$ are used for transi
 \end{split}
 \end{equation}
 where emitter separation $r_{lm}=|r_{l}-r_{m}|$, collective decay rate $\gamma_{i}=2\mu_{i}^{2}\omega_{i}^{2}/\hbar\epsilon_{0}Sc^{2}k_{iz}$, and collective energy shift $\Lambda_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\sin(k_{0z}r_{ij})/2$.
-In the third line we expand $\omega_{k}=c\sqrt{(\frac{\pi}{a})^{2}+(k_{z})^{2}}$ around $k_{z}=k_{0z}$ since resonant modes provide dominant contributions. In the fifth line we extend the integration $\int_{-k_{jz}}^{\infty}dk_{z}\rightarrow\int_{-\infty}^{\infty}dk_{z}$ because the main contribution comes from the components around $\delta k_{z}=0$. In the next line, Weisskopf-Wigner approximation is used. Since index $i$ and $j$ are always associated with index $l$ and $m$ respectively, we can combine $l,i$ as $i$, and $m,j$ as $j$ for simplicity. Thus, we have obtained $\gamma_{ij}$ and $\Lambda_{ij}$ as is shown in Eq.\eqref{eq2}. 
+In the third line we expand $\omega_{k}=c\sqrt{(\frac{\pi}{a})^{2}+(k_{z})^{2}}$ around $k_{z}=k_{0z}$ since resonant modes provide dominant contributions. In the fifth line we extend the integration $\int_{-k_{jz}}^{\infty}dk_{z}\rightarrow\int_{-\infty}^{\infty}dk_{z}$ because the main contribution comes from the components around $\delta k_{z}=0$. In the next line, Weisskopf-Wigner approximation is used. Thus, we have obtained $\gamma_{ij}$ and $\Lambda_{ij}$ as is shown in Eq.\eqref{eq2}. 
 
 Next we need to calculate the first term (squeezing term) in Eq.\eqref{eqa4}:
 \begin{equation}
@@ -308,10 +366,29 @@ where we have used the fact that the origin of coordinate system is at equal dis
 \approx&-e^{i2k_{0z}R}\frac{\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}\hbar Sc^{2}k_{0z}}e^{i2k_{0z}r_{c}sgn(r_{l}-r_{m})}S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t)\rightarrow-\frac{\sqrt{\gamma_{i}\gamma_{j}}}{2}e^{i2k_{0z}R}\cos(k_{0z}(r_{l}+r_{m}))S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t)\\
 \end{split}
 \end{equation}
-where $sgn(r_{l}-r_{m})$ is the sign function. The last arrow is because we need to sum over $i,j$, so the imaginary part of $e^{i2k_{0z}r_{c}sgn(i-j)}$ vanishes, so the neat result is that $\gamma'_{ij}=e^{i2k_{0z}R}\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}(r_{i}+r_{j}))$ after combining index $l,i$ and $m,j$ as $i$ and $j$. As for $S_{i}^{+}\rho^{S}(t)S_{j}^{+}$ terms, the combination of the last two terms in Eq.\eqref{eqa2} will make the imaginary part of $e^{i2k_{0z}r_{c}sgn(r_{l}-r_{m})}$ vanish. Thus, we have $\gamma'_{ij}=e^{i2k_{0z}R}\sqrt{\gamma_{i}\gamma_{j}}\cos(k_{0z}(r_i+r_j))$ in Eq.\eqref{eq2}. 
+where $sgn(r_{l}-r_{m})$ is the sign function. The last arrow is because we need to sum over $i,j$, so the imaginary part of $e^{i2k_{0z}r_{c}sgn(i-j)}$ vanishes, so the neat result is that $\gamma'_{ijkl}=e^{i2k_{0z}R}\sqrt{\gamma_{j}\gamma_{l}}\cos(k_{0z}(r_{i}+r_{k}))$. As for $S_{i}^{+}\rho^{S}(t)S_{j}^{+}$ terms, the combination of the last two terms in Eq.\eqref{eqa2} will make the imaginary part of $e^{i2k_{0z}r_{c}sgn(r_{l}-r_{m})}$ vanish. Thus, we have $\gamma'_{ijkl}$ in Eq.\eqref{eq2}. 
 
 \section{DERIVATION OF coefficients EQ.\eqref{eq2b} }
-Here we will show how to derive the master equation with coefficients Eq.\eqref{eq2b} from the correlation function Eq. \eqref{eq0b}. Since the only difference is the squeezing terms $\left\langle a_{\vec{k},s}^{\dagger}a_{\vec{k}',s'}^{\dagger}\right\rangle$, $\left\langle a_{\vec{k},s}a_{\vec{k}',s'}\right\rangle $, we will just start from Eq. \eqref{eqb8}. Apart from the factor $e^{i(\omega_i+\omega_j-2\omega_0)t}$, When $r_i\ne r_j$, Eq. \eqref{eqb8} becomes:
+Here we will show how to derive the master equation with coefficients Eq.\eqref{eq2b}. The mode function of the squeezed vacuum is given by
+\begin{equation}
+  \label{eq2b}
+  \begin{gathered}
+\vec{u}_{\vec{k}s}(\vec{r}_{i})=\sqrt{\frac{\omega_{\vec{k}s}}{2\epsilon_{0}\hbar V}}\vec{e}_{ks}e^{i\vec{k}\cdot(\vec{r}_{i}-\vec{o}_{\vec{k}s})}
+ \end{gathered}
+\end{equation}
+where $\vec{o}_{\vec{k}s} $ is a phenomenological parameter which includes the effects of the initial phase and the position of the squeezing source\cite{You2018}. The correlation functions for the squeezed vacuum are\cite{scully1999quantum}:
+\begin{equation}
+\label{eq0a}
+\begin{split}
+& \left\langle a_{\vec{k},s}^{\dagger}a_{\vec{k}',s'}\right\rangle =\sinh^{2}r\delta_{\vec{k}'\vec{k}}\delta_{ss'} \\
+& \left\langle a_{\vec{k},s}a_{\vec{k}',s'}^{\dagger}\right\rangle =\cosh^{2}r\delta_{\vec{k}'\vec{k}}\delta_{ss'}\\
+& \left\langle a_{\vec{k},s}^{\dagger}a_{\vec{k}',s'}^{\dagger}\right\rangle =-e^{-i\theta}\cosh(r)\sinh(r)\delta_{\vec{k}',2\vec{k}_{0}-\vec{k}}\delta_{ss'}\\
+&\left\langle a_{\vec{k},s}a_{\vec{k}',s'}\right\rangle =-e^{i\theta}\cosh(r)\sinh(r)\delta_{\vec{k}',2\vec{k}_{0}-\vec{k}}\delta_{ss'}
+\end{split}
+\end{equation}
+For simplicity, we can set the squeezing parameter $\theta=0$, and all atoms to align along the same direction.
+
+ Since the only difference is the squeezing terms $\left\langle a_{\vec{k},s}^{\dagger}a_{\vec{k}',s'}^{\dagger}\right\rangle$, $\left\langle a_{\vec{k},s}a_{\vec{k}',s'}\right\rangle $, we will just start from Eq. \eqref{eqb8}. Apart from the factor $e^{i(\omega_i+\omega_j-2\omega_0)t}$, When $r_i\ne r_j$, Eq. \eqref{eqb8} becomes:
 
 \begin{equation}
 \label{eqb1}\tag{B1}
@@ -327,7 +404,8 @@ Here we will show how to derive the master equation with coefficients Eq.\eqref{
 =&-\frac{L}{2\pi}e^{sgn(2r_{c}-o_{1}-o_{2})ik_{0}(r_{l}-r_{m})}e^{ik_{0}(o_{1}-o_{2})}2\pi\frac{\omega_{0}^{2}\mu_{i}\mu_{j}}{\epsilon_{0}LS\hbar c^{2}k_{0z}}\sinh(r)\cosh(r)S_{l,i}^{+}S_{m,j}^{+}\rho^{S}(t)
 \end{split}
 \end{equation}
-Since we need to sum over $l,m,i,j$, the imaginary part of $e^{sgn(2r_{c}-o_{1}-o_{2})ik_{0}(r_{l}-r_{m})}$ gets canceled, which yields $\gamma'_{ij}=\sqrt{\gamma_{i}\gamma_{j}}\cos[k_{0z}(r_{ij})]$. The above calculation is also valid when $r_i=rj$.
+Since we need to sum over $l,m,i,j$, the imaginary part of $e^{sgn(2r_{c}-o_{1}-o_{2})ik_{0}(r_{l}-r_{m})}$ gets canceled, which yields $\gamma'_{ijkl}=\sqrt{\gamma_{i}\gamma_{k}}\cos[k_{0z}(r_{jl})]$. The above calculation is also valid when $r_i=r_j$.
+
 
 \end{widetext}
 
