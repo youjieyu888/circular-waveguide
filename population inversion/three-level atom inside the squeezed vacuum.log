@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500) (preloaded format=pdflatex 2018.6.19)  19 DEC 2018 16:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500) (preloaded format=pdflatex 2018.6.19)  9 JAN 2019 19:09
 entering extended mode
 **"./three-level atom inside the squeezed vacuum.tex"
 ("three-level atom inside the squeezed vacuum.tex"
@@ -429,13 +429,31 @@ Underfull \hbox (badness 3769) in paragraph at lines 194--196
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 273--274
+Package epstopdf Info: Source file: <r12-fid.eps>
+(epstopdf)                    date: 2019-01-09 19:05:35
+(epstopdf)                    size: 29988 bytes
+(epstopdf)             Output file: <r12-fid-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-01-09 19:08:53
+(epstopdf)                    size: 16391 bytes
+(epstopdf)             Command: <epstopdf --outfile=r12-fid-eps-converted-to.pd
+f r12-fid.eps>
+(epstopdf)             \includegraphics on input line 275.
+Package epstopdf Info: Output file is already uptodate.
+<r12-fid-eps-converted-to.pdf, id=49, pagebox=cropbox, 845.1575pt x 598.235pt>
+File: r12-fid-eps-converted-to.pdf Graphic file (type pdf)
+<use r12-fid-eps-converted-to.pdf>
+Package pdftex.def Info: r12-fid-eps-converted-to.pdf  used on input line 275. 
+on input line 275.
+Package pdftex.def Info: Requested size: 246.0pt x 174.12268pt on input line 27
+5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--279
 \OT1/cmr/m/n/10 since $\OML/cmm/m/it/10 ch[]A[][][] \OT1/cmr/m/n/10 + \OML/cmm
 /m/it/10 sh[]C[][][] \OT1/cmr/m/n/10 +
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 273--274
+Underfull \hbox (badness 2221) in paragraph at lines 273--279
 \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 chshCA[] \OT1/cmr/m/n/10 = 0$, the ex-tra te
 rms in-duced
  []
@@ -450,33 +468,33 @@ Overfull \vbox (1.68929pt too high) has occurred while \output is active []
 [5 <./atom_fig4-eps-converted-to.pdf> <./atom_fig5-eps-converted-to.pdf> <./ato
 m_fig3-eps-converted-to.pdf>]
 
-LaTeX Warning: Reference `EQ1' on page 6 undefined on input line 278.
+LaTeX Warning: Reference `EQ1' on page 6 undefined on input line 284.
 
 
-Overfull \hbox (25.33131pt too wide) detected at line 321
+Overfull \hbox (25.33131pt too wide) detected at line 327
 []
  []
 
-[6]
-Overfull \hbox (52.52876pt too wide) detected at line 335
+[6 <./r12-fid-eps-converted-to.pdf>]
+Overfull \hbox (52.52876pt too wide) detected at line 341
 []
  []
 
 
-Overfull \hbox (57.31157pt too wide) detected at line 347
+Overfull \hbox (57.31157pt too wide) detected at line 353
 []
  []
 
 [7]
-Overfull \hbox (31.79868pt too wide) detected at line 372
+Overfull \hbox (31.79868pt too wide) detected at line 378
 []
  []
 
 
-LaTeX Warning: Reference `EQ2B' on page 8 undefined on input line 375.
+LaTeX Warning: Reference `EQ2B' on page 8 undefined on input line 381.
 
 [8]
-Overfull \hbox (17.63234pt too wide) detected at line 410
+Overfull \hbox (17.63234pt too wide) detected at line 416
 []
  []
 
@@ -504,10 +522,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4564 strings out of 493312
- 60679 string characters out of 3136293
- 159197 words of memory out of 3000000
- 7996 multiletter control sequences out of 15000+200000
+ 4571 strings out of 493312
+ 60924 string characters out of 3136293
+ 159211 words of memory out of 3000000
+ 8002 multiletter control sequences out of 15000+200000
  20971 words of font info for 82 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,18n,26p,2116b,302s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -538,9 +556,9 @@ pe1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmti9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/symbols/msbm10.pfb>
 Output written on "three-level atom inside the squeezed vacuum.pdf" (10 pages, 
-444548 bytes).
+461296 bytes).
 PDF statistics:
- 230 PDF objects out of 1000 (max. 8388607)
+ 256 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

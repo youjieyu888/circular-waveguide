@@ -270,7 +270,13 @@ Plugging Eq.\eqref{eq7}\eqref{eq8}\eqref{eq9} into expression \eqref{eq6}, we ha
 \end{split}
 \end{equation}
 \end{widetext}
-since $ch^{2}A^{2}\gamma{}_{N+1,1,k,1}+sh^{2}C^{2}\gamma{}_{N+1,2,k,2}+2chshCA\gamma'_{N+1,j,k,l}=0$, the extra terms induced by $i=N+1, k=1\sim N$ are 0. The same goes for $i=1\sim N, k=N+1$. Thus, the steady state of multiple atoms is merely the direct product of that in the single atom case, which also means that the dipole-dipole interaction doesn't have any effect on the final steady state. Therefore, just like the single atom case, for multiple atoms, as long as their dipole directions are properly set, a population inversion of almost $100\%$ can be achieved for each atom.
+since $ch^{2}A^{2}\gamma{}_{N+1,1,k,1}+sh^{2}C^{2}\gamma{}_{N+1,2,k,2}+2chshCA\gamma'_{N+1,j,k,l}=0$, the extra terms induced by $i=N+1, k=1\sim N$ are 0. The same goes for $i=1\sim N, k=N+1$. Thus, the steady state of multiple atoms is merely the direct product of that in the single atom case, which also means that the dipole-dipole interaction doesn't have any effect on the final steady state. Therefore, just like the single atom case, for multiple atoms, as long as their dipole directions are properly set, a population inversion of almost $100\%$ can be achieved for each atom. Since the cost for numeric simulation increases exponentially as the atom number increases, we only show the fidelity evolution of two-atom state in Fig. 3. The system is initially in the ground state, and it evolves into $\ensuremath{(\frac{sh\sqrt{\gamma_{2}}}{\sqrt{ch^{2}\gamma_{1}+sh^{2}\gamma_{2}}}|a_{1}\rangle-\frac{ch\sqrt{\gamma_{1}}}{\sqrt{ch^{2}\gamma_{1}+sh^{2}\gamma_{2}}}|c_{1}\rangle})(\frac{sh\sqrt{\gamma_{2}}}{\sqrt{ch^{2}\gamma_{1}+sh^{2}\gamma_{2}}}|a_{2}\rangle-\frac{ch\sqrt{\gamma_{1}}}{\sqrt{ch^{2}\gamma_{1}+sh^{2}\gamma_{2}}}|c_{2}\rangle)$ no matter what the atomic separation is.
+\begin{figure}
+\includegraphics[width=1\columnwidth]{r12-fid.eps}
+\caption{Fidelity evolution for different atomic separation. The atomic separation of $0$, $0.1\lambda_0$, $0.2\lambda_0$ are plotted, and $\tau$ is the single atom relaxation time in ordinary vacuum.}
+\label{3}
+\end{figure}
+ 
 \section{SUMMARY}
 We study the $\Xi$-type atoms coupled to the broadband squeezed vacuum reservoir in a quasi-one-dimensional waveguide, with the overall transition frequency $\omega_{ac}=2\omega_0$. The atoms will evolve into a steady state where most atoms are in the second excited state and almost no atoms are in the intemediate state as long as the dipole directions are properly set. We also study how the non-perfect squeezing will influence our result. This result can be generalized to arbitrary amount of atoms coupled to each other by dipole-dipole interaction.
 \begin{widetext}
