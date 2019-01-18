@@ -168,8 +168,8 @@ which is a superposition state of $|a\rangle$ and $|c\rangle$. Since there is no
 The steady state population distribution for different ratios of $\frac{\gamma_{ab}}{\gamma_{bc}}$ is shown in Fig.~\ref{2}(a). The mechanism of this population inversion can be interpreted with the help of Fig.~\ref{2}(c). Figure ~\ref{2}(c) shows that the direct transition between $|a\rangle$, $|b\rangle$, and $|c\rangle$ are allowed just like the thermal reservoir case. However, in the squeezed vacuum, there is additional paths for population flow: atom in any of these three states can evolve into the other two through an intermediate "state" $\rho_{ac}$. Although $\rho_{ac}$ is actually an off-diagonal element rather than a state, it can be used to elucidate our idea. When $\gamma_{ab}\ll\gamma_{bc}$, the transition $|a\rangle\rightarrow|b\rangle$ is negligible compared with $\gamma_{bc}$ and $\sqrt{\gamma_{ab}\gamma_{bc}}$. Thus the atom in the state $|c\rangle$ can be excited to $|a\rangle$ through $|c\rangle\rightarrow|b\rangle\rightarrow\rho_{ac}\rightarrow|a\rangle$, but $|a\rangle$ can not decay back to $|c\rangle$, which results in the population trapping in the $|a\rangle$. This phenomenon is similar to the coherent trapping, but here we achieve the trapping for $\Xi$ structure with the squeezed vacuum reservoir, which cannot be realized with coherent pump due to spontaneous emission. What's more, since only a few modes are allowed in the waveguide with particular polarizations \cite{You2018},  $\gamma_{ab}\ll\gamma_{bc}$ can be achieved if we can properly manipulate the orientation of the atom. Since it is hard to achieve perfect squeezing with $M=\sqrt{N(N+1)}$ in experiments, we also study the effect of different values of M on the steady state population with parameters $\gamma_{ab}=\frac{1}{4}\gamma_{bc}$ and $r=1$, which is shown in Fig.~\ref{2}(b). In general, all three energy levels have population. Although the steady state population distribution is very sensitive to the value of $M$, the population inversion between $|a\rangle$ and $|b\rangle$ still holds for $M=0.8\sqrt{N(N+1)}$. Only when $M$ is larger than $0.95$ can the population inversion occurs between the state $|a\rangle$ and the state $|c\rangle$.
 
 \begin{figure}
-\includegraphics[width=0.9\columnwidth]{atom_fig4.eps}
-\includegraphics[width=0.9\columnwidth]{atom_fig5.eps}
+\includegraphics[width=0.9\columnwidth]{pop1.eps}
+\includegraphics[width=0.9\columnwidth]{pop2.eps}
 %\includegraphics[width=0.9\columnwidth]{atom_fig3.eps}
 \caption{(a) The steady state population distribution for different $\mu_{ab}$ and$\mu_{bc}$. The squeezing parameter $r=1$. (b) The steady state population distribution for non-ideal squeezed vacuum which is characterized by the ratio of $M$ and $\sqrt{N(N+1)}$. }
 \label{2}
@@ -258,6 +258,7 @@ S_{k,j}^{+}\rho^{S}S_{N+1,j}^{-}=&\rho_{1}...(S_{k.j}^{+}\rho_{k})...\rho_{N}(\r
 &\times (A|a_{N+1}\rangle+C|c_{N+1}\rangle)(C\langle b_{N+1}|)
 \end{split}
 \end{equation}
+
 For the squeezed vacuum terms(the forth term), we have:
 \begin{equation}
 \label{eq9}
@@ -275,8 +276,10 @@ S_{k,2}^{-}\rho^{S}S_{N+1,1}^{-}&=\rho_{1}...(S_{k,2}^{-}\rho_{k})...\rho_{N}(\r
 \end{equation}
 
 \begin{figure}
-\includegraphics[width=1\columnwidth]{r12-fid.eps}
-\caption{Fidelity evolution for different atomic separation. The atomic separations of $\lambda_0$, $0.1\lambda_0$, $0.2\lambda_0$ are plotted. Squeezing parameter $r=1$ and time unit $\tau=1/\sqrt{\gamma_1\gamma_2}$ is the geometric mean of the transition $|a\rangle\rightarrow|b\rangle$ and $|b\rangle\rightarrow|c\rangle$'s spontaneous emission rate in ordinary vacuum.}
+\includegraphics[width=0.98\columnwidth]{fig4a.eps}
+\includegraphics[width=0.98\columnwidth]{fig4b.eps}
+\includegraphics[width=0.98\columnwidth]{fig4c.eps}
+\caption{(a)Fidelity evolution with different atomic separations. The atomic separations of $\lambda_0$, $0.1\lambda_0$, $0.2\lambda_0$ are plotted. Squeezing parameter $r=1$, decay rate $\frac{\gamma_1}{\gamma_2}=\frac{1}{4}$ and time unit $\tau=1/\sqrt{\gamma_{ab}\gamma_{bc}}$ is the geometric mean of the transition $|a\rangle\rightarrow|b\rangle$ and $|b\rangle\rightarrow|c\rangle$'s spontaneous emission rate in ordinary vacuum. (b) Fidelity evolution with different squeezing parameters. Squeezing parameter $r=1$, and atomic separation $r_12=\lambda_0$. (c) Fidelity evolution with different decay rates. Squeezing parameter $r=1$, and atomic separation $r_12=\lambda_0$. }
 \label{3}
 \end{figure}
 
@@ -298,14 +301,12 @@ Plugging Eq.\eqref{eq7}-\eqref{eq9} into expression \eqref{eq6}, we have
 \end{widetext}
 Since $ch^{2}A^{2}\gamma{}_{N+1,1,k,1}+sh^{2}C^{2}\gamma{}_{N+1,2,k,2}+2chshCA\gamma'_{N+1,j,k,l}=0$, the extra terms induced by $i=N+1, k=1\sim N$ are 0. The same goes for $i=1\sim N, k=N+1$. Thus, the direct product state of the steady state of single atom is also the steady state of the multiple atoms. It is interesting that the dipole-dipole interaction between the atoms doesn't have effects on the final steady state. Therefore, just like the single atom case, for multiple atoms, as long as their dipole directions are properly set, a population inversion of almost $100\%$ can be achieved for each atom. 
 
-We also numerically show that steady state of multiple atoms is indeed the direct product of steady state of single atom. Since the cost for numerical simulation increases exponentially as the atom number increases, we only show the fidelity of two-atom state with respect to theoretical steady product state as a function of time in Fig.~\ref{3}. The system is initially in the ground state. We can see that the system evolves into $\ensuremath{(\frac{sh\sqrt{\gamma_{2}}}{\sqrt{ch^{2}\gamma_{1}+sh^{2}\gamma_{2}}}|a_{1}\rangle-\frac{ch\sqrt{\gamma_{1}}}{\sqrt{ch^{2}\gamma_{1}+sh^{2}\gamma_{2}}}|c_{1}\rangle})(\frac{sh\sqrt{\gamma_{2}}}{\sqrt{ch^{2}\gamma_{1}+sh^{2}\gamma_{2}}}|a_{2}\rangle-\frac{ch\sqrt{\gamma_{1}}}{\sqrt{ch^{2}\gamma_{1}+sh^{2}\gamma_{2}}}|c_{2}\rangle)$ no matter what the atomic separation is. 
-
+We also numerically show that steady state of multiple atoms is indeed the direct product of steady state of single atom. Since the cost for numerical simulation increases exponentially as the atom number increases, we only show the fidelity of two-atom state with respect to theoretical steady product state as a function of time in Fig.~\ref{3}, where the system is initially in the ground state. We can see that the system finally evolves into $\ensuremath{(\frac{sh\sqrt{\gamma_{2}}}{\sqrt{ch^{2}\gamma_{1}+sh^{2}\gamma_{2}}}|a_{1}\rangle-\frac{ch\sqrt{\gamma_{1}}}{\sqrt{ch^{2}\gamma_{1}+sh^{2}\gamma_{2}}}|c_{1}\rangle})(\frac{sh\sqrt{\gamma_{2}}}{\sqrt{ch^{2}\gamma_{1}+sh^{2}\gamma_{2}}}|a_{2}\rangle-\frac{ch\sqrt{\gamma_{1}}}{\sqrt{ch^{2}\gamma_{1}+sh^{2}\gamma_{2}}}|c_{2}\rangle)$ regardless of the atomic separation, squeezing parameter, and the ratio of decay rate $\gamma_{ab}/\gamma_{bc}$. In Fig. ~\ref{3}(b), it takes less time to evolve into the steady state for a smaller squeezing parameter. This because a big squeezing parameter results in $M\approx N\approx N+1$, which means all the transitions in Fig. ~\ref{2c} have similar rates. Fig. ~\ref{3}(c) shows that while smaller $\gamma_{ab}$ results in higher population inversion, it takes much longer for the system to evolve into the steady state.
 
 
  
 \section{SUMMARY}
-
-We study the $\Xi$-type atoms coupled to a broadband squeezed vacuum reservoir in a quasi-one-dimensional waveguide, with the overall transition frequency $\omega_{ac}=2\omega_0$. We show that the atoms can evolve into a steady state where each atom is in the superposition state of the ground state and the second excited state even if dipole-dipole interaction between atoms exist. If the decay rate from the second excited state to the first excited state is much smaller than that from the first excited state to the ground state, the population can be almost trapped in the second excited state. This may be useful for two-photon laser.  
+We study the $\Xi$-type atoms coupled to a broadband squeezed vacuum reservoir in a quasi-one-dimensional waveguide, with the overall transition frequency $\omega_{ac}=2\omega_0$. We show that a single atom will evolve into a steady state which is a superposition of the second excited state and the ground state. If the decay rate from the second excited state to the first excited state is much smaller than that from the first excited state to the ground state, the population can be almost $100\%$ trapped in the second excited state. What's more, we prove that the above result can be generalized to an arbitrary number of atoms interacting with each other via dipole-dipole interaction,and the system's final steady state is a direct product of that in the single-atom case. We also argue that the difference in decay rates of two transitions can be effectively achieved by polarizing the incident squeezed vacuum beam in the proper direction. 
 
 
 \begin{widetext}
