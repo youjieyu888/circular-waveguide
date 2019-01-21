@@ -1,4 +1,4 @@
-\begin{thebibliography}{28}
+\begin{thebibliography}{31}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -90,6 +90,22 @@
   \bibinfo{journal}{Physical Review X} \textbf{\bibinfo{volume}{6}},
   \bibinfo{pages}{031004} (\bibinfo{year}{2016}).
 
+\bibitem[{\citenamefont{Kruse et~al.}(2016)\citenamefont{Kruse, Lange, Peise,
+  L{\"u}cke, Pezze, Arlt, Ertmer, Lisdat, Santos, Smerzi et~al.}}]{Kruse}
+\bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Kruse}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Lange}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Peise}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{L{\"u}cke}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Pezze}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Arlt}},
+  \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Ertmer}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Lisdat}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Santos}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Smerzi}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{Physical review letters}
+  \textbf{\bibinfo{volume}{117}}, \bibinfo{pages}{143004}
+  (\bibinfo{year}{2016}).
+
 \bibitem[{\citenamefont{Tana{\'s} and Ficek}(2004)}]{tanas2004stationary}
 \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Tana{\'s}}} \bibnamefont{and}
   \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Ficek}},
@@ -124,41 +140,6 @@
   \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Drummond}},
   \bibinfo{journal}{EPL (Europhysics Letters)} \textbf{\bibinfo{volume}{24}},
   \bibinfo{pages}{455} (\bibinfo{year}{1993}).
-
-\bibitem[{\citenamefont{Shen and Fan}(2005)}]{shen2005coherent}
-\bibinfo{author}{\bibfnamefont{J.-T.} \bibnamefont{Shen}} \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Fan}},
-  \bibinfo{journal}{Physical review letters} \textbf{\bibinfo{volume}{95}},
-  \bibinfo{pages}{213001} (\bibinfo{year}{2005}).
-
-\bibitem[{\citenamefont{Shen and Fan}(2007)}]{shen2007strongly}
-\bibinfo{author}{\bibfnamefont{J.-T.} \bibnamefont{Shen}} \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Fan}},
-  \bibinfo{journal}{Physical review letters} \textbf{\bibinfo{volume}{98}},
-  \bibinfo{pages}{153003} (\bibinfo{year}{2007}).
-
-\bibitem[{\citenamefont{Yudson and Reineker}(2008)}]{yudson2008multiphoton}
-\bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Yudson}} \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Reineker}},
-  \bibinfo{journal}{Physical Review A} \textbf{\bibinfo{volume}{78}},
-  \bibinfo{pages}{052713} (\bibinfo{year}{2008}).
-
-\bibitem[{\citenamefont{Liao et~al.}(2015)\citenamefont{Liao, Zeng, Zhu, and
-  Zubairy}}]{liao2015single}
-\bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Liao}},
-  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{Zeng}},
-  \bibinfo{author}{\bibfnamefont{S.-Y.} \bibnamefont{Zhu}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{M.~S.} \bibnamefont{Zubairy}},
-  \bibinfo{journal}{Physical Review A} \textbf{\bibinfo{volume}{92}},
-  \bibinfo{pages}{023806} (\bibinfo{year}{2015}).
-
-\bibitem[{\citenamefont{Liao et~al.}(2016)\citenamefont{Liao, Nha, and
-  Zubairy}}]{liao2016dynamical}
-\bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Liao}},
-  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Nha}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{M.~S.} \bibnamefont{Zubairy}},
-  \bibinfo{journal}{Physical Review A} \textbf{\bibinfo{volume}{94}},
-  \bibinfo{pages}{053842} (\bibinfo{year}{2016}).
 
 \bibitem[{\citenamefont{Turchette}(1998)}]{turchette1998qa}
 \bibinfo{author}{\bibfnamefont{Q.}~\bibnamefont{Turchette}},
@@ -202,6 +183,59 @@
   \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Nori}},
   \bibinfo{journal}{Physical review letters} \textbf{\bibinfo{volume}{120}},
   \bibinfo{pages}{093601} (\bibinfo{year}{2018}).
+
+\bibitem[{\citenamefont{Shen and Fan}(2005)}]{shen2005coherent}
+\bibinfo{author}{\bibfnamefont{J.-T.} \bibnamefont{Shen}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Fan}},
+  \bibinfo{journal}{Physical review letters} \textbf{\bibinfo{volume}{95}},
+  \bibinfo{pages}{213001} (\bibinfo{year}{2005}).
+
+\bibitem[{\citenamefont{Shen and Fan}(2007)}]{shen2007strongly}
+\bibinfo{author}{\bibfnamefont{J.-T.} \bibnamefont{Shen}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Fan}},
+  \bibinfo{journal}{Physical review letters} \textbf{\bibinfo{volume}{98}},
+  \bibinfo{pages}{153003} (\bibinfo{year}{2007}).
+
+\bibitem[{\citenamefont{Yudson and Reineker}(2008)}]{yudson2008multiphoton}
+\bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Yudson}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Reineker}},
+  \bibinfo{journal}{Physical Review A} \textbf{\bibinfo{volume}{78}},
+  \bibinfo{pages}{052713} (\bibinfo{year}{2008}).
+
+\bibitem[{\citenamefont{Liao et~al.}(2015)\citenamefont{Liao, Zeng, Zhu, and
+  Zubairy}}]{liao2015single}
+\bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Liao}},
+  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{Zeng}},
+  \bibinfo{author}{\bibfnamefont{S.-Y.} \bibnamefont{Zhu}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.~S.} \bibnamefont{Zubairy}},
+  \bibinfo{journal}{Physical Review A} \textbf{\bibinfo{volume}{92}},
+  \bibinfo{pages}{023806} (\bibinfo{year}{2015}).
+
+\bibitem[{\citenamefont{Liao et~al.}(2016{\natexlab{a}})\citenamefont{Liao,
+  Nha, and Zubairy}}]{liao2016dynamical}
+\bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Liao}},
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Nha}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.~S.} \bibnamefont{Zubairy}},
+  \bibinfo{journal}{Physical Review A} \textbf{\bibinfo{volume}{94}},
+  \bibinfo{pages}{053842} (\bibinfo{year}{2016}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Liao et~al.}(2016{\natexlab{b}})\citenamefont{Liao,
+  Zeng, Nha, and Zubairy}}]{liao2016review}
+\bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Liao}},
+  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{Zeng}},
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Nha}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.~S.} \bibnamefont{Zubairy}},
+  \bibinfo{journal}{Physica Scripta} \textbf{\bibinfo{volume}{91}},
+  \bibinfo{pages}{063004} (\bibinfo{year}{2016}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Roy et~al.}(2017)\citenamefont{Roy, Wilson, and
+  Firstenberg}}]{roy2017review}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Roy}},
+  \bibinfo{author}{\bibfnamefont{C.~M.} \bibnamefont{Wilson}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Firstenberg}},
+  \bibinfo{journal}{Reviews of Modern Physics} \textbf{\bibinfo{volume}{89}},
+  \bibinfo{pages}{021001} (\bibinfo{year}{2017}).
 
 \bibitem[{\citenamefont{Scully and Zubairy}(1999)}]{scully1999quantum}
 \bibinfo{author}{\bibfnamefont{M.~O.} \bibnamefont{Scully}} \bibnamefont{and}
