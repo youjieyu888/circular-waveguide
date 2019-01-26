@@ -141,49 +141,6 @@
   \bibinfo{journal}{EPL (Europhysics Letters)} \textbf{\bibinfo{volume}{24}},
   \bibinfo{pages}{455} (\bibinfo{year}{1993}).
 
-\bibitem[{\citenamefont{Turchette}(1998)}]{turchette1998qa}
-\bibinfo{author}{\bibfnamefont{Q.}~\bibnamefont{Turchette}},
-  \bibinfo{journal}{Phys. Rev. A} \textbf{\bibinfo{volume}{58}},
-  \bibinfo{pages}{4056} (\bibinfo{year}{1998}).
-
-\bibitem[{\citenamefont{Murch}(2013)}]{murch2013kw}
-\bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Murch}},
-  \bibinfo{journal}{Nature (London)} \textbf{\bibinfo{volume}{499}},
-  \bibinfo{pages}{62} (\bibinfo{year}{2013}).
-
-\bibitem[{\citenamefont{Bergeal et~al.}(2010)\citenamefont{Bergeal, Vijay,
-  Manucharyan, Siddiqi, Schoelkopf, Girvin, and Devoret}}]{bergeal2010analog}
-\bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Bergeal}},
-  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Vijay}},
-  \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Manucharyan}},
-  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Siddiqi}},
-  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Schoelkopf}},
-  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Girvin}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Devoret}},
-  \bibinfo{journal}{Nature Physics} \textbf{\bibinfo{volume}{6}},
-  \bibinfo{pages}{296} (\bibinfo{year}{2010}).
-
-\bibitem[{\citenamefont{Wang et~al.}(2018)\citenamefont{Wang, Shankar, Minev,
-  Campagne-Ibarcq, Narla, and Devoret}}]{wang2018cavity}
-\bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Wang}},
-  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Shankar}},
-  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Minev}},
-  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Campagne-Ibarcq}},
-  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Narla}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Devoret}},
-  \bibinfo{journal}{arXiv preprint arXiv:1807.04849}  (\bibinfo{year}{2018}).
-
-\bibitem[{\citenamefont{Qin et~al.}(2018)\citenamefont{Qin, Miranowicz, Li,
-  L{\"u}, You, and Nori}}]{qin2018exponentially}
-\bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Qin}},
-  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Miranowicz}},
-  \bibinfo{author}{\bibfnamefont{P.-B.} \bibnamefont{Li}},
-  \bibinfo{author}{\bibfnamefont{X.-Y.} \bibnamefont{L{\"u}}},
-  \bibinfo{author}{\bibfnamefont{J.-Q.} \bibnamefont{You}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Nori}},
-  \bibinfo{journal}{Physical review letters} \textbf{\bibinfo{volume}{120}},
-  \bibinfo{pages}{093601} (\bibinfo{year}{2018}).
-
 \bibitem[{\citenamefont{Shen and Fan}(2005)}]{shen2005coherent}
 \bibinfo{author}{\bibfnamefont{J.-T.} \bibnamefont{Shen}} \bibnamefont{and}
   \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Fan}},
@@ -237,9 +194,53 @@
   \bibinfo{journal}{Reviews of Modern Physics} \textbf{\bibinfo{volume}{89}},
   \bibinfo{pages}{021001} (\bibinfo{year}{2017}).
 
-\bibitem[{\citenamefont{Scully and Zubairy}(1999)}]{scully1999quantum}
+\bibitem[{\citenamefont{Turchette}(1998)}]{turchette1998qa}
+\bibinfo{author}{\bibfnamefont{Q.}~\bibnamefont{Turchette}},
+  \bibinfo{journal}{Phys. Rev. A} \textbf{\bibinfo{volume}{58}},
+  \bibinfo{pages}{4056} (\bibinfo{year}{1998}).
+
+\bibitem[{\citenamefont{Murch}(2013)}]{murch2013kw}
+\bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Murch}},
+  \bibinfo{journal}{Nature (London)} \textbf{\bibinfo{volume}{499}},
+  \bibinfo{pages}{62} (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Bergeal et~al.}(2010)\citenamefont{Bergeal, Vijay,
+  Manucharyan, Siddiqi, Schoelkopf, Girvin, and Devoret}}]{bergeal2010analog}
+\bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Bergeal}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Vijay}},
+  \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Manucharyan}},
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Siddiqi}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Schoelkopf}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Girvin}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Devoret}},
+  \bibinfo{journal}{Nature Physics} \textbf{\bibinfo{volume}{6}},
+  \bibinfo{pages}{296} (\bibinfo{year}{2010}).
+
+\bibitem[{\citenamefont{Wang et~al.}(2018)\citenamefont{Wang, Shankar, Minev,
+  Campagne-Ibarcq, Narla, and Devoret}}]{wang2018cavity}
+\bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Wang}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Shankar}},
+  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Minev}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Campagne-Ibarcq}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Narla}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Devoret}},
+  \bibinfo{journal}{arXiv preprint arXiv:1807.04849}  (\bibinfo{year}{2018}).
+
+\bibitem[{\citenamefont{Qin et~al.}(2018)\citenamefont{Qin, Miranowicz, Li,
+  L{\"u}, You, and Nori}}]{qin2018exponentially}
+\bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Qin}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Miranowicz}},
+  \bibinfo{author}{\bibfnamefont{P.-B.} \bibnamefont{Li}},
+  \bibinfo{author}{\bibfnamefont{X.-Y.} \bibnamefont{L{\"u}}},
+  \bibinfo{author}{\bibfnamefont{J.-Q.} \bibnamefont{You}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Nori}},
+  \bibinfo{journal}{Physical review letters} \textbf{\bibinfo{volume}{120}},
+  \bibinfo{pages}{093601} (\bibinfo{year}{2018}).
+
+\bibitem[{\citenamefont{Scully and Zubairy}(1997)}]{scully1999quantum}
 \bibinfo{author}{\bibfnamefont{M.~O.} \bibnamefont{Scully}} \bibnamefont{and}
   \bibinfo{author}{\bibfnamefont{M.~S.} \bibnamefont{Zubairy}},
-  \emph{\bibinfo{title}{Quantum optics}} (\bibinfo{year}{1999}).
+  \emph{\bibinfo{title}{Quantum Optics}} (\bibinfo{publisher}{Cambridge
+  University Press}, \bibinfo{year}{1997}).
 
 \end{thebibliography}
