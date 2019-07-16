@@ -152,6 +152,20 @@ perturbation theory
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula $\rho_{bb}=\rho_{bb}(0)+\frac{d\rho_{bb}}{dt}(0)t+\frac{1}{2}\frac{d^{2}\rho_{bb}}{dt^{2}}(0)t^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\gamma_{2}sh^{2}t$
+\end_inset
+
+ (not affected)
+\end_layout
+
+\begin_layout Standard
 two level:
 \end_layout
 
@@ -212,7 +226,7 @@ two level:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=sh^{2}t+(-ch^{2}\rho_{aa}+sh^{2}\rho_{bb})\frac{t^{2}}{2}$
+\begin_inset Formula $=sh^{2}t+(-ch^{2}sh^{2}-sh^{2}sh^{2})\frac{t^{2}}{2}$
 \end_inset
 
 
