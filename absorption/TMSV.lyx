@@ -71,7 +71,7 @@
 \begin_body
 
 \begin_layout Standard
-TMSV:
+TMSV(resonant):
 \end_layout
 
 \begin_layout Standard
@@ -82,7 +82,7 @@ TMSV:
 \begin_inset Formula $\omega_{0}=\omega_{1}+\omega_{2}$
 \end_inset
 
-)
+, first n interacts with mg, second n interacts with me)
 \end_layout
 
 \begin_layout Standard
@@ -113,7 +113,7 @@ TMSV:
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 e: 
 \begin_inset Formula $\frac{t^{4}}{4}g_{em}^{2}g_{mg}^{2}sh^{2}(sh^{2}+ch^{2})$
 \end_inset
@@ -121,9 +121,9 @@ e:
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 m: 
-\begin_inset Formula $t^{2}g_{mg}^{2}ch^{2}$
+\begin_inset Formula $t^{2}g_{mg}^{2}sh^{2}$
 \end_inset
 
 
@@ -131,22 +131,30 @@ m:
 
 \begin_layout Standard
 for 
-\begin_inset Formula $|sinhr,sinhr\rangle$
+\begin_inset Formula $|sinh^{2}r,\,sinh^{2}r\rangle$
 \end_inset
 
 :
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 e: 
-\begin_inset Formula $-\frac{t^{2}}{2}g_{em}sinhrg_{mg}|e\rangle|sinhr-1,sinhr-1\rangle]$
+\begin_inset Formula $-\frac{t^{2}}{2}g_{em}sinh^{2}rg_{mg}|e\rangle|sinh^{2}r-1,sinh^{2}r-1\rangle]$
 \end_inset
 
 
 \end_layout
 
+\begin_layout Enumerate
+m: 
+\begin_inset Formula $-itg_{mg}sinhr|m\rangle|sinh^{2}r-1,sinh^{2}r\rangle]$
+\end_inset
+
+ same as TMSV
+\end_layout
+
 \begin_layout Standard
-\begin_inset Formula $P_{e}=\frac{t^{4}}{4}g_{em}^{2}g_{mg}^{2}sh^{2}$
+\begin_inset Formula $P_{e}=\frac{t^{4}}{4}g_{em}^{2}g_{mg}^{2}sh^{4}$
 \end_inset
 
 
@@ -154,6 +162,119 @@ e:
 
 \begin_layout Standard
 when r->infinity, this enhancement is infinity!
+\end_layout
+
+\begin_layout Standard
+TMSV(non-resonant, but overall resonant):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\psi(0)=\frac{1}{\cosh r}|g\rangle\underset{n=0}{\sum}(\tanh r)^{n}|nn\rangle$
+\end_inset
+
+ (
+\begin_inset Formula $\omega_{mg}\sim\omega_{mg}+\Delta,\omega_{em}\sim\omega_{em}-\Delta$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $H=g_{em}(\sigma_{em}a_{em}^{\dagger}e^{-i\Delta t}+\sigma_{em}^{\dagger}a_{em}e^{i\Delta t})+g_{mg}(\sigma_{mg}a_{mg}^{\dagger}e^{i\Delta t}+\sigma_{mg}^{\dagger}a_{mg}e^{-i\Delta t})$
+\end_inset
+
+ (RWA)
+\end_layout
+
+\begin_layout Standard
+0th: 
+\begin_inset Formula $\frac{1}{\cosh r}|g\rangle\underset{n=0}{\sum}(\tanh r)^{n}|nn\rangle$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1st: 
+\begin_inset Formula $-i\int_{0}^{t}dtg_{mg}(e^{-i\Delta t})\frac{1}{\cosh r}|m\rangle\underset{n=0}{\sum}(\tanh r)^{n}\sqrt{n}|n-1,n\rangle$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=g_{mg}\frac{e^{-i\Delta t}-1}{\Delta}\frac{1}{\cosh r}|m\rangle\underset{n=0}{\sum}(\tanh r)^{n}\sqrt{n}|n-1,n\rangle$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2nd: 
+\begin_inset Formula $-i\int_{0}^{t}dt[g_{em}|e\rangle\underset{n=0}{\sum}(\tanh r)^{n}n|n-1,n-1\rangle+g_{mg}|g\rangle\underset{n=0}{\sum}(\tanh r)^{n}n|n,n\rangle]g_{mg}\frac{1-e^{i\Delta t}}{\Delta}\frac{1}{\cosh r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $[g_{em}|e\rangle\underset{n=0}{\sum}(\tanh r)^{n}n|n-1,n-1\rangle+g_{mg}|g\rangle\underset{n=0}{\sum}(\tanh r)^{n}n|n,n\rangle]g_{mg}\frac{i\Delta t-e^{i\Delta t}+1}{-\Delta^{2}}\frac{1}{\cosh r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Delta t\gg1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2nd: 
+\begin_inset Formula $[g_{em}|e\rangle\underset{n=0}{\sum}(\tanh r)^{n}n|n-1,n-1\rangle+g_{mg}|g\rangle\underset{n=0}{\sum}(\tanh r)^{n}n|n,n\rangle]g_{mg}\frac{it}{-\Delta}\frac{1}{\cosh r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e: 
+\begin_inset Formula $[g_{em}|e\rangle\underset{n=0}{\sum}(\tanh r)^{n}n|n-1,n-1\rangle]g_{mg}\frac{it}{-\Delta}\frac{1}{\cosh r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+m: 
+\begin_inset Formula $g_{mg}\frac{e^{-i\Delta t}-1}{\Delta}\frac{1}{\cosh r}|m\rangle\underset{n=0}{\sum}(\tanh r)^{n}\sqrt{n}|n-1,n\rangle$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{e}=\frac{t^{2}}{\Delta^{2}}g_{em}^{2}g_{mg}^{2}sh^{2}(sh^{2}+ch^{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+for 
+\begin_inset Formula $|sinh^{2}r,\,sinh^{2}r\rangle$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{t^{2}}{\Delta^{2}}g_{em}^{2}g_{mg}^{2}sh^{4}$
+\end_inset
+
+
 \end_layout
 
 \end_body
