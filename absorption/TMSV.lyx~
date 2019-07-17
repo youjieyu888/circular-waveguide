@@ -123,7 +123,7 @@ e:
 
 \begin_layout Enumerate
 m: 
-\begin_inset Formula $t^{2}g_{mg}^{2}ch^{2}$
+\begin_inset Formula $t^{2}g_{mg}^{2}sh^{2}$
 \end_inset
 
 
@@ -161,10 +161,6 @@ m:
 \end_layout
 
 \begin_layout Standard
-when r->infinity, this enhancement is infinity!
-\end_layout
-
-\begin_layout Standard
 TMSV(non-resonant, but overall resonant):
 \end_layout
 
@@ -173,7 +169,7 @@ TMSV(non-resonant, but overall resonant):
 \end_inset
 
  (
-\begin_inset Formula $\omega_{mg}\sim\omega_{mg}+\Delta,\omega_{em}\sim\omega_{em}-\Delta$
+\begin_inset Formula $a_{mg}:\omega_{mg}+\Delta,a_{em}:\omega_{em}-\Delta,\delta=\omega_{em}-\omega_{mg}$
 \end_inset
 
 )
@@ -183,7 +179,14 @@ TMSV(non-resonant, but overall resonant):
 \begin_inset Formula $H=g_{em}(\sigma_{em}a_{em}^{\dagger}e^{-i\Delta t}+\sigma_{em}^{\dagger}a_{em}e^{i\Delta t})+g_{mg}(\sigma_{mg}a_{mg}^{\dagger}e^{i\Delta t}+\sigma_{mg}^{\dagger}a_{mg}e^{-i\Delta t})$
 \end_inset
 
- (RWA)
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $+g_{em}(\sigma_{em}a_{mg}^{\dagger}e^{i(\Delta-\delta)t}+\sigma_{em}^{\dagger}a_{mg}e^{-i(\Delta-\delta)t})+g_{mg}(\sigma_{mg}a_{em}^{\dagger}e^{i(\delta-\Delta)t}+\sigma_{mg}^{\dagger}a_{em}e^{i(-\delta+\Delta)t})$
+\end_inset
+
+(RWA)
 \end_layout
 
 \begin_layout Standard
@@ -196,36 +199,14 @@ TMSV(non-resonant, but overall resonant):
 
 \begin_layout Standard
 1st: 
-\begin_inset Formula $-i\int_{0}^{t}dtg_{mg}(e^{-i\Delta t})\frac{1}{\cosh r}|m\rangle\underset{n=0}{\sum}(\tanh r)^{n}\sqrt{n}|n-1,n\rangle$
+\begin_inset Formula $-i\int_{0}^{t}dtg_{mg}(e^{-i\Delta t})\frac{1}{\cosh r}|m\rangle\underset{n=0}{\sum}(\tanh r)^{n}\sqrt{n}|n-1,n\rangle-i\int_{0}^{t}dt[g_{mg}e^{i(-\delta+\Delta)t}]\frac{1}{\cosh r}|m\rangle\underset{n=0}{\sum}(\tanh r)^{n}\sqrt{n}|n,n-1\rangle$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $=g_{mg}\frac{e^{-i\Delta t}-1}{\Delta}\frac{1}{\cosh r}|m\rangle\underset{n=0}{\sum}(\tanh r)^{n}\sqrt{n}|n-1,n\rangle$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-2nd: 
-\begin_inset Formula $-i\int_{0}^{t}dt[g_{em}|e\rangle\underset{n=0}{\sum}(\tanh r)^{n}n|n-1,n-1\rangle+g_{mg}|g\rangle\underset{n=0}{\sum}(\tanh r)^{n}n|n,n\rangle]g_{mg}\frac{1-e^{i\Delta t}}{\Delta}\frac{1}{\cosh r}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $[g_{em}|e\rangle\underset{n=0}{\sum}(\tanh r)^{n}n|n-1,n-1\rangle+g_{mg}|g\rangle\underset{n=0}{\sum}(\tanh r)^{n}n|n,n\rangle]g_{mg}\frac{i\Delta t-e^{i\Delta t}+1}{-\Delta^{2}}\frac{1}{\cosh r}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\Delta t\gg1$
+\begin_inset Formula $=g_{mg}\frac{e^{-i\Delta t}-1}{\Delta}\frac{1}{\cosh r}|m\rangle\underset{n=0}{\sum}(\tanh r)^{n}\sqrt{n}|n-1,n\rangle+g_{mg}\frac{e^{i(-\delta+\Delta)t}-1}{\delta-\Delta}\frac{1}{\cosh r}|m\rangle\underset{n=0}{\sum}(\tanh r)^{n}\sqrt{n}|n,n-1\rangle$
 \end_inset
 
 
@@ -233,7 +214,14 @@ TMSV(non-resonant, but overall resonant):
 
 \begin_layout Standard
 2nd: 
-\begin_inset Formula $[g_{em}|e\rangle\underset{n=0}{\sum}(\tanh r)^{n}n|n-1,n-1\rangle+g_{mg}|g\rangle\underset{n=0}{\sum}(\tanh r)^{n}n|n,n\rangle]g_{mg}\frac{it}{-\Delta}\frac{1}{\cosh r}$
+\begin_inset Formula $-i\int_{0}^{t}dt[g_{em}a_{em}e^{i\Delta t}|e\rangle+g_{mg}a_{mg}^{\dagger}e^{i\Delta t}|g\rangle+g_{em}a_{mg}e^{-i(\Delta-\delta)t}|e\rangle+g_{mg}a_{em}^{\dagger}e^{i(\delta-\Delta)t}|g\rangle][g_{mg}\frac{e^{-i\Delta t}-1}{\Delta}\frac{1}{\cosh r}\underset{n=0}{\sum}(\tanh r)^{n}\sqrt{n}|n-1,n\rangle+g_{mg}\frac{e^{i(-\delta+\Delta)t}-1}{\delta-\Delta}\frac{1}{\cosh r}\underset{n=0}{\sum}(\tanh r)^{n}\sqrt{n}|n,n-1\rangle]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Delta t\gg1,\delta\ne\Delta$
 \end_inset
 
 
@@ -241,22 +229,14 @@ TMSV(non-resonant, but overall resonant):
 
 \begin_layout Standard
 e: 
-\begin_inset Formula $[g_{em}|e\rangle\underset{n=0}{\sum}(\tanh r)^{n}n|n-1,n-1\rangle]g_{mg}\frac{it}{-\Delta}\frac{1}{\cosh r}$
+\begin_inset Formula $(-i[g_{em}|e\rangle g_{mg}\frac{t}{\Delta}\frac{1}{\cosh r}+g_{em}|e\rangle g_{mg}\frac{t}{\delta-\Delta}\frac{1}{\cosh r})\underset{n=0}{\sum}(\tanh r)^{n}n|n-1,n-1\rangle]$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-m: 
-\begin_inset Formula $g_{mg}\frac{e^{-i\Delta t}-1}{\Delta}\frac{1}{\cosh r}|m\rangle\underset{n=0}{\sum}(\tanh r)^{n}\sqrt{n}|n-1,n\rangle$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $P_{e}=\frac{t^{2}}{\Delta^{2}}g_{em}^{2}g_{mg}^{2}sh^{2}(sh^{2}+ch^{2})$
+\begin_inset Formula $P_{e}=()t^{2}g_{em}^{2}g_{mg}^{2}sh^{2}(sh^{2}+ch^{2})$
 \end_inset
 
 
